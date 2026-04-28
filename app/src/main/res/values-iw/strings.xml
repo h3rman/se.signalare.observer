@@ -63,8 +63,8 @@
     <string name="bsct_conn_block_desc_device" translatable="true">%1$s נחסם על המכשיר</string>
     <string name="bsct_conn_desc_allowed" translatable="true">מותר ב-%1$s %2$s</string>
     <string name="bsct_conn_desc_blocked" translatable="true">חסום ב-%1$s %2$s</string>
-    <string name="dns_explanation_dns_connected" translatable="true">מחובר ל-RethinkDNS</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">מחובר ל-RethinkDNS ולחומת האש</string>
+    <string name="dns_explanation_dns_connected" translatable="true">מחובר ל-Signalare Observer</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">מחובר ל-Signalare Observer ולחומת האש</string>
     <string name="notification_action_resume_vpn" translatable="true">המשך</string>
     <string name="notification_action_dns_mode" translatable="true">DNS</string>
     <string name="apps_info_title" translatable="true">אפליקציות</string>
@@ -201,7 +201,7 @@
     <string name="hsf_proxy_chip_text" translatable="true">פרוקסי פעיל</string>
     <string name="univ_ip_delete_dialog_positive" translatable="true">למחוק הכל</string>
     <string name="about_twitter" translatable="true">עקבו אחרינו בטוויטר</string>
-    <string name="about_mozilla" translatable="true">RethinkDNS היא חלק מתוכנית ה-MVP של Mozilla Builders.</string>
+    <string name="about_mozilla" translatable="true">Signalare Observer היא חלק מתוכנית ה-MVP של Mozilla Builders.</string>
     <string name="vpn_profile_error" translatable="true">לא ניתן היה להפעיל את פרופיל VPN.</string>
     <string name="cd_dns_proxy_mode_external" translatable="true">חיצוני</string>
     <string name="ctbs_dialog_negative_btn" translatable="true">חזור</string>
@@ -367,7 +367,7 @@
     <string name="http_proxy_dialog_desc" translatable="true">קבע כתובת בצורת &lt;protocol&gt;://&lt;username&gt;:&lt;password&gt;@&lt;domain-or-ip&gt;:&lt;port&gt;&lt;path&gt; לדוגמה: http://proxy.example.com:8080/</string>
     <string name="settings_connectivity_checks_desc" translatable="true">בדיקות חיבור נשלחות כדי לאמת גישה.</string>
     <string name="settings_allow_bypass_heading" translatable="true">אפשר מעקף</string>
-    <string name="settings_allow_bypass_desc" translatable="true">אפשר לאפליקציות מבקשות לעקוף את חומת האש של RethinkDNS לפי דרישה. אפליקציות ועידות אודיו/וידאו מסוימות כמו Zoom ו-Meet עשויות לדרוש מעקף לפי דרישה כדי לתפקד כראוי.</string>
+    <string name="settings_allow_bypass_desc" translatable="true">אפשר לאפליקציות מבקשות לעקוף את חומת האש של Signalare Observer לפי דרישה. אפליקציות ועידות אודיו/וידאו מסוימות כמו Zoom ו-Meet עשויות לדרוש מעקף לפי דרישה כדי לתפקד כראוי.</string>
     <string name="settings_https_desc" translatable="true">‪העברת חיבורים לנקודת קצה של HTTP(S) CONNECT.</string>
     <string name="orbot_none" translatable="true">אין (ברירת מחדל)</string>
     <string name="orbot_none_desc" translatable="true">אף אחד מן הנראים לעיל.</string>
@@ -412,7 +412,7 @@
     <string name="settings_socks5_dialog_hint_ip" translatable="true">כתובת IP</string>
     <string name="settings_ptrans_heading" translatable="true">כפה יציאת IPv4</string>
     <string name="settings_allow_lan_desc" translatable="true">אל תכלול LAN, loopback, קישורים מקומיים במנהרת ה-VPN של Rethink.</string>
-    <string name="whats_new_version_update" translatable="true">&lt;b&gt;טעון במיוחד!&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. &lt;i&gt;תכונה חדשה&lt;/i&gt;: סינון DNS מתקדם; החל את כללי הדומיין רק כאשר יישומים מתחברים.&lt;br/&gt; 2. &lt;i&gt;תכונה חדשה&lt;/i&gt;: אפשר או דחה דומיינים לכל אפליקציה.&lt;br/&gt; 3. &lt;i&gt;תכונה חדשה&lt;/i&gt;: אפשר או דחה דומיינים עבור כל היישומים.&lt;br/&gt; 4. &lt;i&gt;תכונה חדשה&lt;/i&gt;: עקיפת כללי DNS וחומת אש לכל אפליקציה.&lt;br/&gt; 5. &lt;i&gt;תכונה חדשה&lt;/i&gt;: לכידת מנות (PCAP ).&lt;br/&gt; 6. &lt;i&gt;תכונה חדשה&lt;/i&gt;: מגבר DNS; התאחדו בקשות, תגובות מטמון.&lt;br/&gt; 7. &lt;i&gt;תכונה חדשה&lt;/i&gt;: עריכת כללי דומיין ו-IP.&lt;br/&gt; 8. ושינויים קלים אחרים בממשק המשתמש ותיקוני באגים.&lt;br/&gt;&lt;br/ &gt; &lt;a href=https://svc.rethinkdns.com/r/translate&gt;עזור לתרגם את האפליקציה הזו&lt;/a&gt;</string>
+    <string name="whats_new_version_update" translatable="true">&lt;b&gt;טעון במיוחד!&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. &lt;i&gt;תכונה חדשה&lt;/i&gt;: סינון DNS מתקדם; החל את כללי הדומיין רק כאשר יישומים מתחברים.&lt;br/&gt; 2. &lt;i&gt;תכונה חדשה&lt;/i&gt;: אפשר או דחה דומיינים לכל אפליקציה.&lt;br/&gt; 3. &lt;i&gt;תכונה חדשה&lt;/i&gt;: אפשר או דחה דומיינים עבור כל היישומים.&lt;br/&gt; 4. &lt;i&gt;תכונה חדשה&lt;/i&gt;: עקיפת כללי DNS וחומת אש לכל אפליקציה.&lt;br/&gt; 5. &lt;i&gt;תכונה חדשה&lt;/i&gt;: לכידת מנות (PCAP ).&lt;br/&gt; 6. &lt;i&gt;תכונה חדשה&lt;/i&gt;: מגבר DNS; התאחדו בקשות, תגובות מטמון.&lt;br/&gt; 7. &lt;i&gt;תכונה חדשה&lt;/i&gt;: עריכת כללי דומיין ו-IP.&lt;br/&gt; 8. ושינויים קלים אחרים בממשק המשתמש ותיקוני באגים.&lt;br/&gt;&lt;br/ &gt; &lt;a href=https://svc.signalare.se/r/translate&gt;עזור לתרגם את האפליקציה הזו&lt;/a&gt;</string>
     <string name="settings_ptrans_desc" translatable="true">תרגם תעבורת IPv6 יוצאת ל-IPv4 במכשיר. הפעל אם אתה מחובר לרשת IPv4 בלבד.</string>
     <string name="settings_exclude_proxy_apps_desc" translatable="true">כאשר כבוי, למעטים Proxy (SOCKS5, HTTP, DNS) יישומים קדימה יותר ממנהרת VPN של Rethink.</string>
     <string name="settings_orbot_notification_action" translatable="true">פתיחת Orbot</string>
@@ -506,7 +506,7 @@
     <string name="battery_optimization_dialog_heading" translatable="true">כבה %1$s</string>
     <string name="restrict_dialog_message" translatable="true"><i>%1$s</i>עלול לגרום לאובדן קישוריות.שנה את ההגדרה כדי לתת לRethink להשתמש בנתונים ובעוד משאבים ברקע.</string>
     <string name="dc_custom_dns_radio" translatable="true">DNS אחר</string>
-    <string name="dc_rethink_dns_radio" translatable="true">Rethink DNS</string>
+    <string name="dc_rethink_dns_radio" translatable="true">Signalare Observer</string>
     <string name="dc_local_block_desc_1" translatable="true">בחר מתוך 195+ רשימות חסימה. לחץ כאן כדי להוריד או להגדיר רשימות חסימה.</string>
     <string name="dc_custom_block_heading" translatable="true">כללי דומיין</string>
     <string name="dc_dns_website_heading" translatable="true">הצג סמל אתר ביומני DNS (ניסיוני)</string>
@@ -515,7 +515,7 @@
     <string name="dc_proxy_dns_heading" translatable="true">אף פעם אל תעביר DNS דרך פרוקסי</string>
     <string name="dc_proxy_dns_desc" translatable="true">אל תעביר DNS דרך פרוקסי WireGuard פעיל תמיד, SOCKS5, HTTP.</string>
     <string name="about_bravedns_explantion" translatable="true">Rethink היא הדרך הקלה ביותר לנטר את פעילות האפליקציות, לעקוף צנזורה באינטרנט, ולהציב חומת אש לאפליקציות במכשיר האנדרואיד שלך.</string>
-    <string name="about_bravedns_whoarewe" translatable="true">RethinkDNS הוא פרויקט חינמי וקוד פתוח, בהובלת מהנדסים לשעבר מאמזון, IBM ו-Scientific Games.</string>
+    <string name="about_bravedns_whoarewe" translatable="true">Signalare Observer הוא פרויקט חינמי וקוד פתוח, בהובלת מהנדסים לשעבר מאמזון, IBM ו-Scientific Games.</string>
     <string name="about_bug_report" translatable="true">דוח שגיאות</string>
     <string name="about_bug_report_dialog_positive_btn" translatable="true">שליחת דוא״ל</string>
     <string name="about_bug_report_desc" translatable="true">שליחת יומני קריסה בדוא\"ל</string>
@@ -548,7 +548,7 @@
     <string name="settings_pcap_dialog_option_2" translatable="true">הוצאת פלט ל-Logcat</string>
     <string name="hs_biometeric_title" translatable="true">בטל את הנעילה של Rethink</string>
     <string name="lbl_battery_optimization" translatable="true">מיטוב סוללה</string>
-    <string name="about_website" translatable="true">בקר בrethinkdns.com</string>
+    <string name="about_website" translatable="true">בקר בsignalare.se</string>
     <string name="app_info_error" translatable="true">לא ניתן היה לפתוח את פרטי האפליקציה.</string>
     <string name="hsf_start_dialog_positive" translatable="true">התחלה</string>
     <string name="about_app_contributors" translatable="true">יוצרים</string>

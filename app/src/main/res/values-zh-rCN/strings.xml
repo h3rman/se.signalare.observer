@@ -114,7 +114,7 @@
     <string name="about_bravedns_whoarewe">Rethink 是一项自由且开源的项目，由来自亚马逊、 IBM 与 Scientific Games 的前工程师领导。</string>
     <string name="about_settings_vpn_profile">VPN 配置</string>
     <string name="about_dialog_positive_button">一起出发</string>
-    <string name="about_telegram_link">https://telegram.me/rethinkdns</string>
+    <string name="about_telegram_link">https://signalare.se</string>
     <string name="cd_dns_proxy_mode_internal">内部</string>
     <string name="dns_btm_sheet_dialog_ips"><Data><![CDATA[ %1$s %2$s <br/>]]></Data></string>
     <string name="dns_btm_sheet_chip_no_answer">无响应</string>
@@ -230,7 +230,7 @@
     <string name="title_settings">设置</string>
     <string name="untracked">未跟踪</string>
     <string name="status_protected_with_socks5_private_dns">受 SOCKS5 与私人 DNS 保护</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">已连接至 RethinkDNS 与防火墙</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">已连接至 Signalare Observer 与防火墙</string>
     <string name="dns_mode_info_explanation_new">监测、拦截并加密 DNS 请求。</string>
     <string name="alert_firewall_accessibility_exception">打开无障碍设置失败。请稍后重试！</string>
     <string name="bsct_block">对<u>此应用</u>拦截、绕行、排除或隔离</string>
@@ -268,7 +268,7 @@
     <string name="settings_theme_dialog_title">外观</string>
     <string name="settings_notification_dialog_title">选择通知操作</string>
     <string name="hsf_pause_vpn_failure">无法暂停： Rethink 未启用</string>
-    <string name="dc_rethink_dns_radio">Rethink DNS</string>
+    <string name="dc_rethink_dns_radio">Signalare Observer</string>
     <string name="dc_check_update_heading">屏蔽名单更新时提示</string>
     <string name="about_connect">联系我们</string>
     <string name="about_whats_new">%1$s 的新内容</string>
@@ -365,7 +365,7 @@
     <string name="about_github">于 GitHub 贡献</string>
     <string name="about_settings_app_info">应用数据</string>
     <string name="about_app_contributors">作者</string>
-    <string name="about_faq_link">https://www.rethinkdns.com/faq</string>
+    <string name="about_faq_link">https://www.signalare.se/faq</string>
     <string name="error_loading_log_file">读取日志文件错误</string>
     <string name="cd_custom_dns_proxy_default_ip">127.0.0.1</string>
     <string name="dns_btm_resolved_crypt">由 %2$s 经 %3$s <u>匿名</u> %1$s 解析</string>
@@ -443,7 +443,7 @@
     <string name="ada_app_exclude">排除</string>
     <string name="rt_dialog_neutral">继续</string>
     <string name="settings_vpn_heading">vpn</string>
-    <string name="settings_allow_bypass_desc">允许应用请求访问所有可用网络。这些应用可能按需绕过 RethinkDNS 的 VPN 隧道。一些如 Zoom 和 Meet 的音频/视频会议应用可能会需要按需绕行以正常运行。</string>
+    <string name="settings_allow_bypass_desc">允许应用请求访问所有可用网络。这些应用可能按需绕过 Signalare Observer 的 VPN 隧道。一些如 Zoom 和 Meet 的音频/视频会议应用可能会需要按需绕行以正常运行。</string>
     <string name="orbot_bs_status_2">HTTP 代理已设置。</string>
     <string name="settings_orbot_desc">在非 VPN 模式下使用 HTTPS/SOCKS5 的 Orbot。</string>
     <string name="settings_http_proxy_dialog_title">自定义服务器 URL</string>
@@ -485,7 +485,7 @@
     <string name="hsf_start_dialog_header">启动 %1$s</string>
     <string name="about_bug_report">漏洞报告</string>
     <string name="about_mail_bugreport_subject">[Rethink]: Bug report</string>
-    <string name="about_website_link">https://www.rethinkdns.com/</string>
+    <string name="about_website_link">https://www.signalare.se/</string>
     <string name="univ_firewall_rule_6">默认拦截所有新安装的应用</string>
     <string name="fapps_firewall_filter_bypass_universal">已绕行</string>
     <string name="settings_local_blocklist_dialog_positive">下载</string>
@@ -566,10 +566,10 @@
     <string name="lbbs_enabled">已启用</string>
     <string name="brbs_backup_dialog_positive">备份</string>
     <string name="orbot_http_desc">与 Orbot 的 HTTP 代理建立隧道。</string>
-    <string name="about_docs_link">https://docs.rethinkdns.com/</string>
+    <string name="about_docs_link">https://docs.signalare.se/</string>
     <string name="ada_app_status_allow">已放行</string>
     <string name="lbbs_copy">复制为 RDNS+ URL</string>
-    <string name="app_name">RethinkDNS</string>
+    <string name="app_name">Signalare Observer</string>
     <string name="settings_title_desc">一款可高度自定义的 DNS 与防火墙软件</string>
     <string name="app_name_small_case">rethink</string>
     <string name="title_about">关于</string>
@@ -588,7 +588,7 @@
     <string name="status_protected_with_tor">已由 Tor 保护</string>
     <string name="status_protected_with_private_dns">受私人 DNS 保护</string>
     <string name="status_strict" description="This is similar to dns_on, but the protection is being provided by the operating system, not by Rethink.  It is not color-highlighted.">私人 DNS 已启用</string>
-    <string name="dns_explanation_dns_connected">已连接至 RethinkDNS</string>
+    <string name="dns_explanation_dns_connected">已连接至 Signalare Observer</string>
     <string name="universal_firewall_explanation">根据设备事件应用防火墙规则，如在设备被锁定时或未使用某一应用程序时拦截。</string>
     <string name="notification_action_resume_vpn">恢复</string>
     <string name="bsct_conn_rule_explanation"><u>#1</u>：阻止某应用联网。 \n <u>#2</u>：阻止任意应用连接至某特定 IP 。 \n <u>#3</u>：在设备锁定时阻止所有连接（全局拦截规则）。 \n <u>#4</u>：阻止任意未使用的应用程序连接（全局拦截规则）。 \n <u>#5</u>：阻止未知应用的连接（全局拦截规则）。 \n <u>#6</u>：拦截除 DNS 外的所有 UDP 流量（全局拦截规则）。 \n <u>#7</u>：拦截绕过 DNS 的流量（全局拦截规则）。</string>
@@ -625,8 +625,8 @@
     <string name="about_mozilla">Rethink 受 Mozilla Builders 、 FOSS United 基金会、FLOSS/fund 基金的支持。</string>
     <string name="http_proxy_dialog_heading">设置 HTTP(S) CONNECT 代理</string>
     <string name="search_dns_logs"><font size="12">搜索域名或 IP</font></string>
-    <string name="whats_new_version_update">&lt;b&gt;无需惊慌 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. 新增：在用户错误报告中捕获网络引擎错误。&lt;br/&gt; 2. 新增：当且仅当“防止DNS泄漏”功能开启时，对未委派域名使用系统DNS。&lt;br/&gt; 3. 优化：WireGuard的双栈（IPv4 + IPv6）连接支持。&lt;br/&gt; 4. 优化：当网络引擎无响应时，避免阻塞UI元素。&lt;br/&gt; 5. 修复：开启“高级DNS过滤”时出现的连接超时问题。&lt;br/&gt; 6. 修复：使用域名的WireGuard对等节点端点在网络变化时出现的卡顿问题。&lt;br/&gt;&lt;br/&gt;&lt;a href=https://svc.rethinkdns.com/r/translate&gt;帮助翻译此应用&lt;/a&gt;</string>
-    <string name="about_website">访问 rethinkdns.com</string>
+    <string name="whats_new_version_update">&lt;b&gt;无需惊慌 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. 新增：在用户错误报告中捕获网络引擎错误。&lt;br/&gt; 2. 新增：当且仅当“防止DNS泄漏”功能开启时，对未委派域名使用系统DNS。&lt;br/&gt; 3. 优化：WireGuard的双栈（IPv4 + IPv6）连接支持。&lt;br/&gt; 4. 优化：当网络引擎无响应时，避免阻塞UI元素。&lt;br/&gt; 5. 修复：开启“高级DNS过滤”时出现的连接超时问题。&lt;br/&gt; 6. 修复：使用域名的WireGuard对等节点端点在网络变化时出现的卡顿问题。&lt;br/&gt;&lt;br/&gt;&lt;a href=https://svc.signalare.se/r/translate&gt;帮助翻译此应用&lt;/a&gt;</string>
+    <string name="about_website">访问 signalare.se</string>
     <string name="settings_network_all_networks_desc">启用时， Rethink 将使用所有可用的网络来连接至互联网。若未启用，则将使用 Android 认为<i>活跃</i>的任何网络。</string>
     <string name="settings_dns_proxy_dialog_app_desc">所选应用将被排除在 VPN 外，以允许其为您转发连接。</string>
     <string name="settings_app_list_default_app">无</string>
@@ -752,7 +752,7 @@
     <string name="lbbs_heading">配置逾 195 个屏蔽名单</string>
     <string name="brbs_backup_dialog_message">将应用设置、网络日志与 DNS 日志备份至单个文件内。这将重启 VPN 。</string>
     <string name="brbs_backup_dialog_failure_title">备份失败</string>
-    <string name="dc_rethink_dns">Rethink DNS</string>
+    <string name="dc_rethink_dns">Signalare Observer</string>
     <string name="lbbs_configure">配置</string>
     <string name="lbbs_search">于屏蔽名单内查找域名</string>
     <string name="brbs_backup_desc">备份应用设置、网络日志与 DNS 日志</string>
@@ -769,7 +769,7 @@
     <string name="brbs_restore_complete_toast">恢复完毕，正在重启应用……</string>
     <string name="brbs_restore_no_uri_toast">恢复失败；请重试</string>
     <string name="hsf_notification_permission_failure">于设置屏启用通知权限</string>
-    <string name="about_translate_link">https://svc.rethinkdns.com/r/translate</string>
+    <string name="about_translate_link">https://svc.signalare.se/r/translate</string>
     <string name="notif_download_cancel_content">下载已取消。</string>
     <string name="about_privacy_policy">阅读隐私政策</string>
     <string name="notification_screen_error">无法打开应用通知屏。</string>
@@ -781,7 +781,7 @@
     <string name="rt_filter_desc"><![CDATA[显示 <u>%1$s</u> 个屏蔽名单]]></string>
     <string name="rt_filter_desc_subgroups"><![CDATA[正显示 <u>%1$s</u> 个屏蔽名单，位于组： %2$s 和子分组： %3$s]]></string>
     <string name="about_app_translate">翻译</string>
-    <string name="about_privacy_policy_link">https://www.rethinkdns.com/privacy</string>
+    <string name="about_privacy_policy_link">https://www.signalare.se/privacy</string>
     <string name="intent_launch_error">无法打开 %1$s</string>
     <string name="no_browser_error">无法于浏览器打开网页。</string>
     <string name="ct_ip_port">%1$s:%2$s</string>
@@ -1183,7 +1183,7 @@
     <string name="adv_tasker_dialog_instructions" translatable="true">说明：\n 广播消息中必要的额外项：\n •key： sender\n • value：发起调用的应用包名\n\n 示例：key:sender value:com.termux\n\n 支持的操作：\n • 启动 VPN – se.signalare.observer.intent.action.VPN_START\n • 停止 VPN – se.signalare.observer.intent.action.VPN_STOP</string>
     <string name="adv_tasker_dialog_edit_hint" translatable="true">输入应用包名（示例：net.dinglisch.android.taskerm）</string>
     <string name="download_ip_info_title" translatable="true">显示服务商信息</string>
-    <string name="download_ip_info_desc" translatable="true">从 <i>rethinkdns.com</i> 获取服务提供商详情, 数据由 <i>%1$s</i> 提供</string>
+    <string name="download_ip_info_desc" translatable="true">从 <i>signalare.se</i> 获取服务提供商详情, 数据由 <i>%1$s</i> 提供</string>
     <string name="adv_taster_title" translatable="true">自动化</string>
     <string name="adv_taster_desc" translatable="true">配置可启动或停止 Rethink 的应用。</string>
     <string name="top_active_conns" translatable="true">活跃连接排行</string>

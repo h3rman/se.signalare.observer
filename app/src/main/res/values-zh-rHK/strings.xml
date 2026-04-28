@@ -26,7 +26,7 @@
     <string name="about_settings_vpn_profile">VPN 配置</string>
     <string name="about_mozilla">Rethink 受到嚟自 Mozilla Builders、FOSS United 基金會同 OSOM Products Inc 嘅支援。</string>
     <string name="about_twitter">喺 Twitter 度追蹤我哋</string>
-    <string name="about_faq_link">https://www.rethinkdns.com/faq</string>
+    <string name="about_faq_link">https://www.signalare.se/faq</string>
     <string name="dns_mode_info_title">DNS</string>
     <string name="firewall_rules">網絡規則</string>
     <string name="orbot_explanation">Orbot 係一款能夠畀其他程式更<u>安全</u>咁連線去互聯網嘅免費代理應用程式。 \nOrbot 會用到 <u>Tor</u> 嚟加密您嘅網絡流量，幫您<u>繞過網絡審查</u>，同埋抵禦威脅個人自由同隱私嘅<u>網絡監視</u>。 \n<u>TCP 代理</u>：Rethink 只會將<i>包含嘅</i>應用程式嘅 TCP 連線轉發去 Orbot。 \n<u>HTTP 代理</u>：Rethink 會同 Orbot <i>起一條</i> HTTP CONNECT 隧道，並且只會轉發<i>包含嘅</i>應用程式嘅 TCP 連線。</string>
@@ -56,7 +56,7 @@
     <string name="settings_enable_logs">啓用本地日誌</string>
     <string name="info_dialog_rethink_toast_msg">當做 RDNS+ DNS-over-HTTPS URL 複製咗</string>
     <string name="orbot_http">HTTP 代理</string>
-    <string name="whats_new_version_update">&lt;b&gt;Inside Job&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. New: IP and DNS logs for each app with a new organized view.&lt;br/&gt; 2. New: Setting to optionally &lt;i&gt;exclude&lt;/i&gt; proxy forwarder apps.&lt;br/&gt; 3. New: Bypass apps from all proxies.&lt;br/&gt; 3. Fix DNSCrypt crashing with &lt;i&gt;DNS Booster&lt;/i&gt; enabled.&lt;br/&gt; 4. Fix IPv6 to IPv4 translation in certain cases.&lt;br/&gt; 3. Other bug fixes and improvements.&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.rethinkdns.com/r/translate&gt;幫手翻譯呢個 app&lt;/a&gt;</string>
+    <string name="whats_new_version_update">&lt;b&gt;Inside Job&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. New: IP and DNS logs for each app with a new organized view.&lt;br/&gt; 2. New: Setting to optionally &lt;i&gt;exclude&lt;/i&gt; proxy forwarder apps.&lt;br/&gt; 3. New: Bypass apps from all proxies.&lt;br/&gt; 3. Fix DNSCrypt crashing with &lt;i&gt;DNS Booster&lt;/i&gt; enabled.&lt;br/&gt; 4. Fix IPv6 to IPv4 translation in certain cases.&lt;br/&gt; 3. Other bug fixes and improvements.&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.signalare.se/r/translate&gt;幫手翻譯呢個 app&lt;/a&gt;</string>
     <string name="cd_doh_dialog_heading">加 DNS over HTTPS</string>
     <string name="cd_doh_dialog_resolver_url">解析服務 URL</string>
     <string name="cd_dnscrypt_relay_heading">中繼</string>
@@ -73,8 +73,8 @@
     <string name="ada_app_metered">收費嘅網絡</string>
     <string name="ada_app_exclude">排除</string>
     <string name="rethink_sky_desc">超過 280 個地方；更長嘅在線時間；喺 cloudflare.com 上面行嘅中間解析服務</string>
-    <string name="dc_rethink_dns">Rethink DNS</string>
-    <string name="app_name">RethinkDNS</string>
+    <string name="dc_rethink_dns">Signalare Observer</string>
+    <string name="app_name">Signalare Observer</string>
     <string name="app_name_small_case">rethink</string>
     <string name="title_about">關於</string>
     <string name="title_settings">設定</string>
@@ -104,9 +104,9 @@
     <string name="status_protected_with_proxy">被代理保護住</string>
     <string name="status_strict" description="This is similar to dns_on, but the protection is being provided by the operating system, not by Rethink.  It is not color-highlighted.">私人 DNS 開着咗</string>
     <string name="status_exposed" description="This is a large message in a scary color.  It indicates that DNS queries can be surveilled or modified in transit.">未保護</string>
-    <string name="dns_explanation_dns_connected">連線咗去 RethinkDNS</string>
+    <string name="dns_explanation_dns_connected">連線咗去 Signalare Observer</string>
     <string name="dns_explanation_firewall_connected">連線咗去防火牆</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">連線咗去 RethinkDNS 同防火牆</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">連線咗去 Signalare Observer 同防火牆</string>
     <string name="notification_action_resume_vpn">恢復</string>
     <string name="notification_action_pause_vpn">暫停</string>
     <string name="notification_action_stop_vpn">停止</string>
@@ -179,7 +179,7 @@
     <string name="settings_ptrans_heading">強制 IPv4 出站</string>
     <string name="settings_ptrans_desc">喺本地將出站嘅 IPv6 流量轉換做 IPv4 流量。在您連線到只有 IPv4 嘅網絡時用。</string>
     <string name="settings_allow_bypass_heading">啓用網絡可見性</string>
-    <string name="settings_allow_bypass_desc">允許應用程式請求訪問所有用得嘅網絡。呢些 app 可能會按需要繞過 RethinkDNS 嘅 VPN 隧道。一啲例如 Zoom 同 Meet 嘅音訊／視訊會議應用程式可能會需要呢個功能嚟正常運行。</string>
+    <string name="settings_allow_bypass_desc">允許應用程式請求訪問所有用得嘅網絡。呢些 app 可能會按需要繞過 Signalare Observer 嘅 VPN 隧道。一啲例如 Zoom 同 Meet 嘅音訊／視訊會議應用程式可能會需要呢個功能嚟正常運行。</string>
     <string name="settings_lock_down_mode_desc">某啲選項喺 VPN 處於閉關模式時唔用得。<u>請去 VPN 設定</u>。</string>
     <string name="settings_proxy_header">代理</string>
     <string name="settings_socks5_heading">設定 SOCKS5 代理</string>
@@ -310,7 +310,7 @@
     <string name="dc_block_heading">規則</string>
     <string name="dc_other_dns_heading">類型</string>
     <string name="dc_custom_dns_radio">其他 DNS</string>
-    <string name="dc_rethink_dns_radio">Rethink DNS</string>
+    <string name="dc_rethink_dns_radio">Signalare Observer</string>
     <string name="dc_entries">%1$s 個項目 »</string>
     <string name="dc_local_block_heading">本地攔截清單</string>
     <string name="dc_local_block_desc_1">喺超過 195 條攔截清單之中揀。㩒一下呢度下載或者配置攔截清單。</string>
@@ -326,7 +326,7 @@
     <string name="about_bug_no_log_dialog_title">漏洞報告</string>
     <string name="about_bug_no_log_dialog_positive_btn">發送電郵</string>
     <string name="about_web">連結</string>
-    <string name="about_website">訪問 rethinkdns.com</string>
+    <string name="about_website">訪問 signalare.se</string>
     <string name="about_github">喺 GitHub 貢獻</string>
     <string name="about_faq">睇常見問題</string>
     <string name="about_docs">睇文檔</string>
@@ -347,11 +347,11 @@
     <string name="about_mail_bugreport_subject">[Rethink]: Bug report</string>
     <string name="about_mail_bugreport_text">將呢封 email send 去：hello@celzero.com</string>
     <string name="about_mail_bugreport_share_title">揀電郵供應商</string>
-    <string name="about_telegram_link">https://telegram.me/rethinkdns</string>
-    <string name="about_docs_link">https://docs.rethinkdns.com/</string>
+    <string name="about_telegram_link">https://signalare.se</string>
+    <string name="about_docs_link">https://docs.signalare.se/</string>
     <string name="about_github_link">https://github.com/celzero/rethink-app</string>
     <string name="about_twitter_handle">https://twitter.com/rethinkdns</string>
-    <string name="about_website_link">https://www.rethinkdns.com/</string>
+    <string name="about_website_link">https://www.signalare.se/</string>
     <string name="about_mozilla_alumni_link">https://builders.mozilla.community/alumni.html</string>
     <string name="about_version_install_source">v%1$s (%2$s)</string>
     <string name="about_dialog_neutral_button">建議新特性</string>
@@ -723,8 +723,8 @@
     <string name="hsf_notification_permission_failure">由設定區准許應用程式通知權限</string>
     <string name="about_privacy_policy">睇私隱政策</string>
     <string name="about_app_translate">翻譯</string>
-    <string name="about_translate_link">https://svc.rethinkdns.com/r/translate</string>
-    <string name="about_privacy_policy_link">https://www.rethinkdns.com/privacy</string>
+    <string name="about_translate_link">https://svc.signalare.se/r/translate</string>
+    <string name="about_privacy_policy_link">https://www.signalare.se/privacy</string>
     <string name="notification_screen_error">開唔到應用程式通知區。</string>
     <string name="no_browser_error">瀏覽器開唔到網頁。</string>
     <string name="intent_launch_error">開唔到 %1$s</string>

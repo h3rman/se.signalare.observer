@@ -19,7 +19,7 @@
     <string name="firewall_mode_notification_title">Захищено! Підключено до Брандмауера.</string>
     <string name="always_on_dialog_positive">Зупинити</string>
     <string name="always_on_dialog_neutral">Налаштуваннях</string>
-    <string name="app_name">RethinkDNS</string>
+    <string name="app_name">Signalare Observer</string>
     <string name="app_name_small_case">rethink</string>
     <string name="settings_title_desc">DNS та брандмауер, що легко налаштовуються</string>
     <string name="always_on_dialog_lockdown_stop_message">Rethink запускає VPN у режимі <i>Блокування</i>. Його зупинка призведе до втрати підключення до Інтернету для цього профілю користувача. Ви все одно хочете продовжити\?</string>
@@ -51,9 +51,9 @@
     <string name="status_protected_with_proxy">захищено проксі</string>
     <string name="status_strict" description="This is similar to dns_on, but the protection is being provided by the operating system, not by Rethink.  It is not color-highlighted.">ввімкнено приватний dns</string>
     <string name="status_exposed" description="This is a large message in a scary color.  It indicates that DNS queries can be surveilled or modified in transit.">не захищено</string>
-    <string name="dns_explanation_dns_connected">Підключено до RethinkDNS</string>
+    <string name="dns_explanation_dns_connected">Підключено до Signalare Observer</string>
     <string name="dns_explanation_firewall_connected">Підключено до Брандмауера</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">Підключено до RethinkDNS та Брандмауера</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">Підключено до Signalare Observer та Брандмауера</string>
     <string name="notification_action_resume_vpn">ПРОДОВЖИТИ</string>
     <string name="notification_action_pause_vpn">ПАУЗА</string>
     <string name="notification_action_stop_vpn">СТОП</string>
@@ -113,8 +113,8 @@
     <string name="fapps_metered_unblock_dialog_message" translatable="true">Дозволити з’єднання в обмеженій (мобільній) мережі для <i>перелічених</i> застосунків\?</string>
     <string name="network_log_app_name_unknown" translatable="true">Невідомо</string>
     <string name="network_log_app_name_unnamed" translatable="true">Без назви (%1$s)</string>
-    <string name="accessibility_notification_content" translatable="true">Служба доступності RethinkDNS зупинилася або вийшла з ладу. Більше не блокує фонові застосунки. Натисніть, щоб увімкнути знову.</string>
-    <string name="accessibility_failure_toast" translatable="true">Служба доступності RethinkDNS зупинилася або вийшла з ладу. Більше не блокує фонові застосунки.</string>
+    <string name="accessibility_notification_content" translatable="true">Служба доступності Signalare Observer зупинилася або вийшла з ладу. Більше не блокує фонові застосунки. Натисніть, щоб увімкнути знову.</string>
+    <string name="accessibility_failure_toast" translatable="true">Служба доступності Signalare Observer зупинилася або вийшла з ладу. Більше не блокує фонові застосунки.</string>
     <string name="pause_desc" translatable="true">Примітка: %1$s заблоковані застосунки продовжуватимуть блокуватися брандмауером.</string>
     <string name="firewall_rule_block_app" translatable="true">Застосунок заблоковано</string>
     <string name="firewall_rule_foreground" translatable="true">Застосунок не використовується</string>
@@ -130,7 +130,7 @@
     <string name="new_app_notification_action_toast_deny" translatable="true">Відмовлено в підключенні до мережі для застосунку</string>
     <string name="notif_dialog_pause_dialog_title" translatable="true">Застосунок призупинено!</string>
     <string name="notif_dialog_pause_dialog_message" translatable="true">Застосунок у стані паузи, відновити, щоб продовжити</string>
-    <string name="notif_channel_desc_vpn_failure" translatable="true">Повідомляти, коли Android або інший VPN-застосунок зупиняє RethinkDNS</string>
+    <string name="notif_channel_desc_vpn_failure" translatable="true">Повідомляти, коли Android або інший VPN-застосунок зупиняє Signalare Observer</string>
     <string name="category_name_sys_apps" translatable="true">Системні застосунки</string>
     <string name="ada_noapp_dialog_title" translatable="true">Немає такого застосунку</string>
     <string name="ada_noapp_dialog_message" translatable="true">Інформація про застосунок відсутня. Можливо, цей застосунок було видалено\?</string>
@@ -218,7 +218,7 @@
     <string name="bsct_conn_rule_explanation" translatable="true"><u>#1</u>: Блокує підключення програми до Інтернету. \n <u>#2</u>: Блокує підключення будь-якої програми до певної IP-адреси. \n <u>#3</u>: Блокує всі з\'єднання, коли пристрій заблоковано (Універсальний брандмауер). \n <u>#4</u>: Блокує будь-які програми, які не використовуються (Універсальний брандмауер). \n <u>#5</u>: Блокує з’єднання, коли вихідна програма невідома (Universal Firewall). \n <u>#6</u>: Блокує весь UDP-трафік, окрім DNS (універсальний брандмауер). \n <u>#7</u>: Блокувати з’єднання, коли DNS обходиться (Universal Firewall).</string>
     <string name="settings_allow_bypass_desc" translatable="true">Дозволити застосункам, що запитують, доступ до всіх доступних мереж. Ці застосунки можуть обходити VPN тунель Rethink за вимогою. Деякі застосунки для аудіо чи відео конференцій, такі як Zoom та Meet, можуть потребувати цього для належної роботи.</string>
     <string name="settings_https_desc" translatable="true">Пересилати з\'єднання за протоколом HTTP(s).</string>
-    <string name="whats_new_version_update" translatable="true">&lt;b&gt;Don\'t Panic 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. Нове: Фіксування помилок мережі у користувацьких звітах про помилки.&lt;br/&gt;2. Нове: використовуйте Системний DNS для неделегованих доменних імен, якщо провайдер застосовує політику Запобігання витоку DNS.&lt;br/&gt; 3. Покращення: підключення WireGuard з подвійним стеком (IPv4 + IPv6).&lt;br/&gt; 4. Покращення: уникайте блокування елементів інтерфейсу користувача, коли мережа не відповідає.&lt;br/&gt; 5. Виправлення: Час очікування з’єднання з увімкненою розширеною фільтрацією DNS.&lt;br/&gt; 6. Виправлення: Кінцеві точки вузлів WireGuard з доменними іменами залежать від змін у мережі.&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.rethinkdns.com/r/translate&gt;Допоможіть перекласти цей застосунок&lt;/a&gt;</string>
+    <string name="whats_new_version_update" translatable="true">&lt;b&gt;Don\'t Panic 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. Нове: Фіксування помилок мережі у користувацьких звітах про помилки.&lt;br/&gt;2. Нове: використовуйте Системний DNS для неделегованих доменних імен, якщо провайдер застосовує політику Запобігання витоку DNS.&lt;br/&gt; 3. Покращення: підключення WireGuard з подвійним стеком (IPv4 + IPv6).&lt;br/&gt; 4. Покращення: уникайте блокування елементів інтерфейсу користувача, коли мережа не відповідає.&lt;br/&gt; 5. Виправлення: Час очікування з’єднання з увімкненою розширеною фільтрацією DNS.&lt;br/&gt; 6. Виправлення: Кінцеві точки вузлів WireGuard з доменними іменами залежать від змін у мережі.&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.signalare.se/r/translate&gt;Допоможіть перекласти цей застосунок&lt;/a&gt;</string>
     <string name="orbot_explanation" translatable="true">Orbot – це безплатний застосунок-проксі, який дає змогу іншим застосункам <u>безпечніше</u> використовувати Інтернет. \nOrbot використовує <u>Tor</u> для шифрування вашого Інтернет-трафіку, що допомагає вам <u>обійти цензуру</u> та захиститися від форм <u>мережевого спостереження</u>, які загрожують особистій свободі та конфіденційності. \n<u>TCP Proxy</u>: Rethink пересилає до Orbot лише TCP-сегменти посилань <i>доданих</i> застосунків. \n<u>Http Proxy</u>; Rethink <i>встановлює</i> тунель HTTP ПІДКЛЮЧЕННЯ до Orbot і пересилає лише TCP-сегменти посилань <i>доданих</i> застосунків.</string>
     <string name="settings_import_export_desc" translatable="true">Вручну створіть резервну копію або відновіть дані та налаштування застосунку.</string>
     <string name="settings_socks_forwarding_desc_no_app" translatable="true">Переадресація на %1$s:%2$s</string>
@@ -312,7 +312,7 @@
     <string name="new_app_notification_action_toast_allow" translatable="true">Для застосунку дозволено підключення до мережі</string>
     <string name="bsac_title_desc" translatable="true">Правила застосовуються лише до цього застосунку.</string>
     <string name="firewall_rule_trusted_domain_desc" translatable="true"><![CDATA[This connection was allowed because the <i>домен</i> встановлено як довірений домен.<br/><br/> Щоб змінити, перейдіть на екран <i>Брандмауер для конкретного додатка</i>.]]></string>
-    <string name="new_app_bulk_notification_content" translatable="true">RethinkDNS заблокував новий застосунок %1$s . Натисніть, щоб переглянути або змінити.</string>
+    <string name="new_app_bulk_notification_content" translatable="true">Signalare Observer заблокував новий застосунок %1$s . Натисніть, щоб переглянути або змінити.</string>
     <string name="ssv_app_network_activity_heading" description="This label will appear on the stats screen as a header for allowed apps." translatable="true">найбільш дозволені застосунки</string>
     <string name="ssv_app_blocked_heading" description="This label will appear on the stats screen as a header for blocked applications." translatable="true">найбільш заблоковані застосунки</string>
     <string name="always_on_dialog_heading" translatable="true">Вимкнути Постійно ввімкнений VPN</string>
@@ -425,7 +425,7 @@
     <string name="about_whats_new" translatable="true">Що нового у %1$s</string>
     <string name="about_bravedns_whoarewe" translatable="true">Rethink – це безкоштовний проєкт з відкритим вихідним кодом, який очолюють колишні інженери з Amazon, IBM та Scientific Games.</string>
     <string name="univ_firewall_heading" translatable="true">Універсальні правила брандмауера</string>
-    <string name="about_website" translatable="true">Відвідайте rethinkdns.com</string>
+    <string name="about_website" translatable="true">Відвідайте signalare.se</string>
     <string name="about_email" translatable="true">Напишіть нам</string>
     <string name="about_bug_report" translatable="true">Звіт про помилку</string>
     <string name="about_docs" translatable="true">Читати документацію</string>
@@ -877,7 +877,7 @@
     <string name="firewall_status_excluded" translatable="true">виключено з DNS та фаєрвола</string>
     <string name="hs_biometeric_desc" translatable="true">Використовувати біометричну автентифікацію, щоб розблоковувати Rethink</string>
     <string name="hs_biometeric_error" translatable="true">Помилка біометричної автентифікації</string>
-    <string name="dc_rethink_dns_radio" translatable="true">Rethink DNS</string>
+    <string name="dc_rethink_dns_radio" translatable="true">Signalare Observer</string>
     <string name="dc_dns_leaks_desc" translatable="true">Якщо ввімкнено, Rethink захоплює всі пакети на порту 53 і пересилає їх до визначеної користувачем кінцевої точки DNS</string>
     <string name="dns_connected_no_count" translatable="true">Під’єднано</string>
     <string name="dns_connected" translatable="true">Під’єднано dns</string>
@@ -1141,7 +1141,7 @@
     <string name="adv_tasker_dialog_instructions" translatable="true">Інструкції:\nНеобхідні додаткові елементи в трансляції:\n• Ключ: відправник\n• Значення: Назва пакета програми, що викликає\n\nПриклад: ключ: відправник значення: com.termux\n\nПідтримувані дії:\n• Запустити VPN – se.signalare.observer.intent.action.VPN_START\n• Зупинити VPN – se.signalare.observer.intent.action.VPN_STOP</string>
     <string name="adv_tasker_dialog_edit_hint" translatable="true">Введіть назву пакета (приклад: net.dinglisch.android.taskerm)</string>
     <string name="download_ip_info_title" translatable="true">Показати інформацію про постачальника</string>
-    <string name="download_ip_info_desc" translatable="true">Отримує інформацію про постачальників послуг для веб-сайтів з <i>rethinkdns.com</i>, що працює на <i>%1$s</i></string>
+    <string name="download_ip_info_desc" translatable="true">Отримує інформацію про постачальників послуг для веб-сайтів з <i>signalare.se</i>, що працює на <i>%1$s</i></string>
     <string name="adv_taster_title" translatable="true">Автоматизація</string>
     <string name="adv_taster_desc" translatable="true">Налаштуйте програми, які можуть запускати або зупиняти Rethink.</string>
     <string name="top_active_conns" translatable="true">найактивніші з\'єднання</string>

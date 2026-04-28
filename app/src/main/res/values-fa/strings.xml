@@ -10,7 +10,7 @@
     <string name="pause_mode_notification_title">متوقف شد! برنامه های مسدود شده همچنان دیوار آتش می شوند.</string>
     <string name="orbot_install_dialog_message">Orbot ویژگی ها و عملکرد Tor را به اندروید می آورد.</string>
     <string name="pause_text">متوقف شده</string>
-    <string name="app_name">RethinkDNS</string>
+    <string name="app_name">Signalare Observer</string>
     <string name="settings_title_desc">DNS و فایروال بسیار قابل تنظیم</string>
     <string name="orbot_install_dialog_positive">نصب</string>
     <string name="about_title_desc">شناسایی و مسدود کردن تهدیدات امنیتی شبکه</string>
@@ -27,9 +27,9 @@
     <string name="dns_mode_info_explanation_new">درخواست های DNS را نظارت، مسدود و رمزگذاری کنید.</string>
     <string name="dns_firewall_mode_info_explanation_new">همه موارد فوق + دور زدن سانسور اینترنت.</string>
     <string name="universal_firewall_explanation">قوانین دیوار آتش را بر روی همه برنامه ها بر اساس رویدادهای دستگاه اعمال کنید، به عنوان مثال، دیوار آتش زمانی که دستگاه قفل است یا زمانی که یک برنامه خاص در حال استفاده نیست.</string>
-    <string name="accessibility_service_description">RethinkDNS از سرویس دسترس پذیری برای شناسایی و فایروال برنامه های پس زمینه استفاده می کند. RethinkDNS هیچ اطلاعاتی را جمع آوری یا نمی فروشد.</string>
+    <string name="accessibility_service_description">Signalare Observer از سرویس دسترس پذیری برای شناسایی و فایروال برنامه های پس زمینه استفاده می کند. Signalare Observer هیچ اطلاعاتی را جمع آوری یا نمی فروشد.</string>
     <string name="status_protected_with_http_private_dns">محافظت شده با پروکسی http و dns خصوصی</string>
-    <string name="slide_2_desc">RethinkDNS ساده ترین راه برای نظارت بر فعالیت شبکه، دور زدن سانسور اینترنت و برنامه های فایروال در دستگاه اندرویدی شما است.</string>
+    <string name="slide_2_desc">Signalare Observer ساده ترین راه برای نظارت بر فعالیت شبکه، دور زدن سانسور اینترنت و برنامه های فایروال در دستگاه اندرویدی شما است.</string>
     <string name="slide_1_desc">Rethink یک نرم‌افزار متن‌باز است که توسط برنامه Mozilla Builders MVP و FOSS United Foundation پشتیبانی می‌شود.</string>
     <string name="status_protected_with_proxy_private_dns">محافظت شده با پروکسی و dns خصوصی</string>
     <string name="slide_1_title">رایگان و متن‌باز</string>
@@ -58,7 +58,7 @@
     <string name="lbl_logs" translatable="true">گزارشها</string>
     <string name="lbl_domain_rules" translatable="true">قوانین دامنه</string>
     <string name="status_failing" description="This text appears if the connection is currently not working correctly. [CHAR_LIMIT=NONE]" translatable="true">شکست خوردن</string>
-    <string name="dns_explanation_dns_connected" translatable="true">به RethinkDNS متصل شد</string>
+    <string name="dns_explanation_dns_connected" translatable="true">به Signalare Observer متصل شد</string>
     <string name="title_statistics" translatable="true">آمار</string>
     <string name="lbl_dismiss" translatable="true">نادیده گرفتن</string>
     <string name="lbl_all" translatable="true">همه</string>
@@ -112,9 +112,9 @@
 \n
 \nRethink هیچ اطلاعاتی را جمع آوری نکرده و به هیچ وجه از شما جاسوسی نمی کند.</string>
     <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">متصل به DNS و دیوار آتش Rethink</string>
-    <string name="alert_firewall_accessibility_regrant_explanation" translatable="true">سرویس دسترسی RethinkDNS متوقف شده یا از کار افتاده است. <i><b>به تنظیمات رفته و RethinkDNS را اجباراً متوقف کنید</b></i> و دوباره آن را برای استفاده از <i>ویژگی مسدود کردن هر برنامه‌ای که از آن</i> استفاده نمی‌کنید، راه‌اندازی کنید.
+    <string name="alert_firewall_accessibility_regrant_explanation" translatable="true">سرویس دسترسی Signalare Observer متوقف شده یا از کار افتاده است. <i><b>به تنظیمات رفته و Signalare Observer را اجباراً متوقف کنید</b></i> و دوباره آن را برای استفاده از <i>ویژگی مسدود کردن هر برنامه‌ای که از آن</i> استفاده نمی‌کنید، راه‌اندازی کنید.
 \n
-\nRethinkDNS از سرویس دسترسی برای ردیابی برنامه هایی که در حال استفاده هستند (پیش زمینه) در برابر برنامه هایی که در حال استفاده نیستند (پس زمینه) استفاده می کند.</string>
+\nSignalare Observer از سرویس دسترسی برای ردیابی برنامه هایی که در حال استفاده هستند (پیش زمینه) در برابر برنامه هایی که در حال استفاده نیستند (پس زمینه) استفاده می کند.</string>
     <string name="bsct_conn_rule_explanation" translatable="true">&lt;u&gt;#1&lt;/u&gt;: اتصال یک برنامه به اینترنت را مسدود می‌کند.\n.&lt;/u&gt;&lt;u&gt;#2&lt;/u&gt;: اتصال هر برنامه ای را به یک IP خاص مسدود می کند.\n.&lt;u&gt;#3&lt;/u&gt;: وقتی دستگاه قفل است، همه اتصالات را مسدود می‌کند (دیوار آتش کلی).\n.&lt;u&gt;#4&lt;/u&gt;: هر برنامه ای را که استفاده نمی شود، مسدود می کند (دیوار آتش کلی).\n.&lt;u&gt;#5&lt;/u&gt;: هنگامی که منبع برنامه ناشناخته باشد، اتصالات را مسدود می کند (دیوار آتش کلی). \n.&lt;u&gt;#6&lt;/u&gt;: تمام ترافیک UDP به جز DNS (دیوار آتش کلی) را مسدود می کند.\n.&lt;u&gt;#7&lt;/u&gt;: هنگامی که DNS دور زده می‌شود، اتصالات را مسدود کنید (دیوار آتش کلی).</string>
     <string name="always_on_dialog_stop_message" translatable="true">VPN همیشه روشن برای Rethink فعال است. آیا مطمئنید که در هر صورت می‌خواهید Rethink را متوقف کنید؟</string>
     <string name="always_on_dialog_positive" translatable="true">توقف</string>
@@ -233,8 +233,8 @@
 \n%2$s</string>
     <string name="orbot_status_arg_2" translatable="true">TCP</string>
     <string name="orbot_title" translatable="true">Orbot و پروکسی ها</string>
-    <string name="orbot_stop_dialog_dns_message" translatable="true">RethinkDNS برای ارسال DNS queries به Orbot تنظیم شده است. در صورت نیاز تغییر دهید.</string>
-    <string name="orbot_stop_dialog_message" translatable="true">RethinkDNS ارسال اتصالات به Orbot را متوقف کرده است، اما ممکن است که Orbot همچنان در پس‌زمینه درحال اجرا باشد.</string>
+    <string name="orbot_stop_dialog_dns_message" translatable="true">Signalare Observer برای ارسال DNS queries به Orbot تنظیم شده است. در صورت نیاز تغییر دهید.</string>
+    <string name="orbot_stop_dialog_message" translatable="true">Signalare Observer ارسال اتصالات به Orbot را متوقف کرده است، اما ممکن است که Orbot همچنان در پس‌زمینه درحال اجرا باشد.</string>
     <string name="orbot_bs_status_2" translatable="true">پروکسی HTTP تنظیم شد (برنامه ها ممکن است آن را نادیده بگیرند).</string>
     <string name="orbot_bs_status_4" translatable="true">راه اندازی تور (Orbot) بعنوان پروکسی با یک کلیک.</string>
     <string name="orbot_bs_status_trying_connect" translatable="true">در حال راه اندازی Orbot…</string>
@@ -440,7 +440,7 @@
     <string name="hsf_chip_appearance" translatable="true">تم: %1$s</string>
     <string name="dc_custom_dns_radio" translatable="true">دی‌ان‌ اس سایر</string>
     <string name="about_bug_no_log_dialog_positive_btn" translatable="true">ارسال ایمیل</string>
-    <string name="about_website" translatable="true">بازدید rethinkdns.com</string>
+    <string name="about_website" translatable="true">بازدید signalare.se</string>
     <string name="about_faq" translatable="true">مشاهده سوالات متداول</string>
     <string name="about_docs" translatable="true">اسناد را بخوانید</string>
     <string name="about_app_update_check" translatable="true">بررسی به‌روزرسانی‌های برنامه</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">RethinkDNS</string>
+    <string name="app_name">Signalare Observer</string>
     <string name="app_name_small_case">rethink</string>
     <string name="title_about">關於</string>
     <string name="title_settings">設定</string>
@@ -152,8 +152,8 @@
     <string name="warning_title" description="Status indicator text shown in a warning notification.">警告： Rethink 已被停用</string>
     <string name="block">攔截</string>
     <string name="alert_permission_accessibility">權限 - 無障礙設定</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">已連線至 RethinkDNS 與防火牆</string>
-    <string name="dns_explanation_dns_connected">已連線至 RethinkDNS</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">已連線至 Signalare Observer 與防火牆</string>
+    <string name="dns_explanation_dns_connected">已連線至 Signalare Observer</string>
     <string name="status_protected_with_http_private_dns">已由 HTTP 代理與私人 DNS 保護</string>
     <string name="status_protected_with_socks5">已由 SOCKS5 代理保護</string>
     <string name="status_protected_with_http">已由 HTTP 代理保護</string>
@@ -187,7 +187,7 @@
     <string name="app_mode_choose">選擇模式</string>
     <string name="connection_http3">HTTP3</string>
     <string name="settings_ip_network_heading">選擇 IP 版本</string>
-    <string name="settings_allow_bypass_desc">允許應用程式請求訪問所有可用網路。這些應用程式可能按需繞過 RethinkDNS 的 VPN 隧道。一些如 Zoom 和 Meet 的音訊/視訊會議應用程式可能會需要此功能以正常執行。</string>
+    <string name="settings_allow_bypass_desc">允許應用程式請求訪問所有可用網路。這些應用程式可能按需繞過 Signalare Observer 的 VPN 隧道。一些如 Zoom 和 Meet 的音訊/視訊會議應用程式可能會需要此功能以正常執行。</string>
     <string name="settings_proxy_header">代理</string>
     <string name="settings_socks5_heading">設定 SOCKS5 代理</string>
     <string name="settings_lock_down_mode_desc">某些選項在 VPN 處於閉關模式時不可用。<u>請移步 VPN 設定</u>。</string>
@@ -209,7 +209,7 @@
     <string name="orbot_install_dialog_message">Orbot 將 Tor 的特性與功能帶入 Android 。</string>
     <string name="orbot_install_dialog_positive">安裝</string>
     <string name="orbot_install_activity_error">似乎出了一些問題，請稍後再試</string>
-    <string name="whats_new_version_update">&lt;b&gt;別慌張 2&lt;/b&gt;&lt;br /&gt;&lt;br /&gt; 1. 新功能: 在使用者錯誤報告中引入網路引擎的錯誤。&lt;br /&gt; 2. 新功能: 若且唯若「防止 DNS 洩漏」功能啟動時，使用系統 DNS 解析未授權的網域名稱。&lt;br /&gt; 3. 改進: 支援雙協定 (IPv4 + IPv6) WireGuard 連線。&lt;br /&gt; 4. 改進: 當網路引擎沒有回應時，避免鎖定圖形介面元素，&lt;br /&gt; 5. 修正: 進階 DNS 過濾的連線逾時偵測預設為 ON。&lt;br /&gt; 6. 修正: 當網路環境改變時，卡住含網域名稱的 WireGuard 端點。&lt;br /&gt;&lt;br /&gt;&lt;a href= https:// svc.rethinkdns.com/ r/ translate&gt;歡迎一起翻譯這個應用程式&lt;/a&gt;</string>
+    <string name="whats_new_version_update">&lt;b&gt;別慌張 2&lt;/b&gt;&lt;br /&gt;&lt;br /&gt; 1. 新功能: 在使用者錯誤報告中引入網路引擎的錯誤。&lt;br /&gt; 2. 新功能: 若且唯若「防止 DNS 洩漏」功能啟動時，使用系統 DNS 解析未授權的網域名稱。&lt;br /&gt; 3. 改進: 支援雙協定 (IPv4 + IPv6) WireGuard 連線。&lt;br /&gt; 4. 改進: 當網路引擎沒有回應時，避免鎖定圖形介面元素，&lt;br /&gt; 5. 修正: 進階 DNS 過濾的連線逾時偵測預設為 ON。&lt;br /&gt; 6. 修正: 當網路環境改變時，卡住含網域名稱的 WireGuard 端點。&lt;br /&gt;&lt;br /&gt;&lt;a href= https:// svc.signalare.se/ r/ translate&gt;歡迎一起翻譯這個應用程式&lt;/a&gt;</string>
     <string name="settings_orbot_header">Orbot\t❯</string>
     <string name="settings_orbot_desc">在非 VPN 模式下使用 HTTPS/SOCKS5 的 Orbot。</string>
     <string name="settings_network_all_networks">使用所有可用網路（實驗性）</string>
@@ -218,7 +218,7 @@
     <string name="hs_download_positive_website">瀏覽網站</string>
     <string name="hsf_proxy_chip_text">已啟用代理</string>
     <string name="dns_btm_latency_ms">%1$s 秒</string>
-    <string name="dc_rethink_dns_radio">Rethink DNS</string>
+    <string name="dc_rethink_dns_radio">Signalare Observer</string>
     <string name="firewall_rule_unknown_desc"><![CDATA[此連線因無法得知<i>來源應用程式</i>而被攔截。<br/><br/>若需更改，請至<i>全局</i>選項卡。]]></string>
     <string name="new_app_bulk_notification_title">注意</string>
     <string name="cd_no_rule_initial">無</string>
@@ -302,7 +302,7 @@
     <string name="category_name_others">其他</string>
     <string name="ci_dialog_title">新增 IP / 埠規則</string>
     <string name="ada_network_log_title">此應用程式的網路日誌</string>
-    <string name="dc_rethink_dns">Rethink DNS</string>
+    <string name="dc_rethink_dns">Signalare Observer</string>
     <string name="dc_dns_crypt">DNSCrypt</string>
     <string name="brbs_restore_dialog_failure_positive">重試復原</string>
     <string name="brbs_restore_complete_toast">復原完畢，正在重啟應用程式……</string>
@@ -481,7 +481,7 @@
     <string name="about_bug_no_log_dialog_message">無法取得崩潰日誌。請問您是否想要手動報告漏洞？</string>
     <string name="about_bug_no_log_dialog_positive_btn">寄送電子郵件</string>
     <string name="about_web">連結</string>
-    <string name="about_website">訪問 rethinkdns.com</string>
+    <string name="about_website">訪問 signalare.se</string>
     <string name="about_github">於 GitHub 貢獻</string>
     <string name="about_faq">查閱常見問題</string>
     <string name="about_docs">閱讀文件</string>
@@ -505,12 +505,12 @@
     <string name="about_mail_bugreport_subject">[Rethink]: Bug report</string>
     <string name="about_mail_bugreport_text">將此封郵件寄送至： hello@celzero.com</string>
     <string name="about_mail_bugreport_share_title">選擇電子郵件供應商</string>
-    <string name="about_telegram_link">https://telegram.me/rethinkdns</string>
-    <string name="about_docs_link">https://docs.rethinkdns.com/</string>
-    <string name="about_faq_link">https://www.rethinkdns.com/faq</string>
+    <string name="about_telegram_link">https://signalare.se</string>
+    <string name="about_docs_link">https://docs.signalare.se/</string>
+    <string name="about_faq_link">https://www.signalare.se/faq</string>
     <string name="about_github_link">https://github.com/celzero/rethink-app</string>
     <string name="about_twitter_handle">https://twitter.com/rethinkdns</string>
-    <string name="about_website_link">https://www.rethinkdns.com/</string>
+    <string name="about_website_link">https://www.signalare.se/</string>
     <string name="about_mozilla_alumni_link">https://builders.mozilla.community/alumni.html</string>
     <string name="about_version">v%1$s</string>
     <string name="about_version_install_source">v%1$s (%2$s)</string>
@@ -765,8 +765,8 @@
     <string name="rt_filter_desc"><![CDATA[顯示 <u>%1$s</u> 個攔截清單]]></string>
     <string name="rt_filter_desc_subgroups"><![CDATA[正顯示 <u>%1$s</u> 個攔截清單，位於組： %2$s 與子分組： %3$s]]></string>
     <string name="about_app_translate">翻譯</string>
-    <string name="about_translate_link">https://svc.rethinkdns.com/r/translate</string>
-    <string name="about_privacy_policy_link">https://www.rethinkdns.com/privacy</string>
+    <string name="about_translate_link">https://svc.signalare.se/r/translate</string>
+    <string name="about_privacy_policy_link">https://www.signalare.se/privacy</string>
     <string name="notification_screen_error">無法開啟應用程式通知區。</string>
     <string name="intent_launch_error">無法開啟 %1$s</string>
     <string name="no_browser_error">無法於瀏覽器開啟網頁。</string>

@@ -200,9 +200,9 @@
     <string name="status_protected_with_wg_private_dns" translatable="true">protejat cu WireGuard și DNS privat</string>
     <string name="status_strict" description="This is similar to dns_on, but the protection is being provided by the operating system, not by Rethink.  It is not color-highlighted." translatable="true">DNS-ul privat este activat</string>
     <string name="status_exposed" description="This is a large message in a scary color.  It indicates that DNS queries can be surveilled or modified in transit." translatable="true">neprotejat</string>
-    <string name="dns_explanation_dns_connected" translatable="true">Conectat la RethinkDNS</string>
+    <string name="dns_explanation_dns_connected" translatable="true">Conectat la Signalare Observer</string>
     <string name="dns_explanation_firewall_connected" translatable="true">Conectat la Firewall</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">Conectat la RethinkDNS și Firewall</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">Conectat la Signalare Observer și Firewall</string>
     <string name="universal_firewall_explanation" translatable="true">Aplică regulile Firewall-ului la toate aplicațiile în funcție de evenimentele de pe dispozitiv; de exemplu, protejează când dispozitivul este blocat sau când o anumită aplicație nu rulează.</string>
     <string name="notification_action_resume_vpn" translatable="true">CONTINUĂ</string>
     <string name="notification_action_pause_vpn" translatable="true">PAUZĂ</string>
@@ -289,7 +289,7 @@
     <string name="download_update_dialog_message_success" translatable="true">Lista de blocat a fost descărcată cu succes.</string>
     <string name="download_update_dialog_failure_message" translatable="true">Serverele noastre sunt nefuncționale sau conexiunea nu a fost realizată. Încearcă din nou mai târziu.</string>
     <string name="download_update_dialog_trylater_title" translatable="true">Nu se poate actualiza acum</string>
-    <string name="whats_new_version_update" translatable="true">&lt;b&gt;Nu intra în panică 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. Nou: Captează erorile de retea în rapoartele cu bug-uri la utilizator.&lt;br/&gt; 2. Nou: utilizează System DNS pentru numele de domenii nedelegate când Previne scurgerile DNS este activ.&lt;br/&gt; 3. Îmbunătățiri: Conectivitate WireGuard Dual-stack (IPv4 + IPv6).&lt;br/&gt; 4. Îmbunătățiri: Împiedică blocarea elementelor UI când rețeaua este blocată.&lt;br/&gt; 5. Fix: Expirarea conexiunilor cu Filtrare DNS avansată ACTIVĂ.&lt;br/&gt; 6. Fix: Endpoint-uri WireGuard pereche cu nume de domenii menținute după schimbările rețelei .&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.rethinkdns.com/r/translate&gt;Help translate this app&lt;/a&gt;</string>
+    <string name="whats_new_version_update" translatable="true">&lt;b&gt;Nu intra în panică 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. Nou: Captează erorile de retea în rapoartele cu bug-uri la utilizator.&lt;br/&gt; 2. Nou: utilizează System DNS pentru numele de domenii nedelegate când Previne scurgerile DNS este activ.&lt;br/&gt; 3. Îmbunătățiri: Conectivitate WireGuard Dual-stack (IPv4 + IPv6).&lt;br/&gt; 4. Îmbunătățiri: Împiedică blocarea elementelor UI când rețeaua este blocată.&lt;br/&gt; 5. Fix: Expirarea conexiunilor cu Filtrare DNS avansată ACTIVĂ.&lt;br/&gt; 6. Fix: Endpoint-uri WireGuard pereche cu nume de domenii menținute după schimbările rețelei .&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.signalare.se/r/translate&gt;Help translate this app&lt;/a&gt;</string>
     <string name="connection_http3" translatable="true">HTTP3</string>
     <string name="settings_ip_network_heading" translatable="true">Alege versiunea IP</string>
     <string name="settings_ip_network_desc" translatable="true">Alege o versiune de Internet Protocol.</string>
@@ -456,7 +456,7 @@
     <string name="dc_block_heading" translatable="true">reguli</string>
     <string name="dc_other_dns_heading" translatable="true">tip</string>
     <string name="dc_custom_dns_radio" translatable="true">Alte DNS</string>
-    <string name="dc_rethink_dns_radio" translatable="true">Rethink DNS</string>
+    <string name="dc_rethink_dns_radio" translatable="true">Signalare Observer</string>
     <string name="dc_entries" translatable="true">%1$s intrări »</string>
     <string name="dc_local_block_heading" translatable="true">Liste de blocat de pe dispozitiv</string>
     <string name="hsf_pause_vpn_failure" translatable="true">Rethink nu poate fi pus în pauză deoarece e inactiv</string>
@@ -474,7 +474,7 @@
     <string name="about_bug_no_log_dialog_title" translatable="true">Raport bug</string>
     <string name="about_bug_no_log_dialog_positive_btn" translatable="true">Trimite e-mail</string>
     <string name="about_web" translatable="true">link-uri</string>
-    <string name="about_website" translatable="true">Vizitează rethinkdns.com</string>
+    <string name="about_website" translatable="true">Vizitează signalare.se</string>
     <string name="about_github" translatable="true">Contribuie pe GitHub</string>
     <string name="about_docs" translatable="true">Vezi documentația</string>
     <string name="about_privacy_policy" translatable="true">Vezi Politica de confidențialitate</string>
@@ -1125,7 +1125,7 @@
     <string name="adv_tasker_dialog_instructions" translatable="true">Instructiuni:\n Extras cerute la transmitere:\n • Key: expeditor\n • Value: Numele de pachet al aplicației solicitante\n\n Exemplu: key:expeditor value:com.termux\n\n Acțiuni suportate:\n • Start VPN – se.signalare.observer.intent.action.VPN_START\n • Stop VPN – se.signalare.observer.intent.action.VPN_STOP</string>
     <string name="adv_tasker_dialog_edit_hint" translatable="true">Introdu numele de pachet (example: net.dinglisch.android.taskerm)</string>
     <string name="download_ip_info_title" translatable="true">Arată informații despre ISP</string>
-    <string name="download_ip_info_desc" translatable="true">Oferă detalii ISP-ului pentru website-uri de la <i>rethinkdns.com</i>, cu sprijinul <i>%1$s</i></string>
+    <string name="download_ip_info_desc" translatable="true">Oferă detalii ISP-ului pentru website-uri de la <i>signalare.se</i>, cu sprijinul <i>%1$s</i></string>
     <string name="adv_taster_title" translatable="true">Automatizare</string>
     <string name="adv_taster_desc" translatable="true">Configurează aplicațiile care pot porni sau opri Rethink.</string>
     <string name="top_active_conns" translatable="true">top conexiuni active</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">RethinkDNS</string>
+    <string name="app_name">Signalare Observer</string>
     <string name="app_name_small_case">rethink</string>
     <string name="title_settings">Einstellungen</string>
     <string name="title_about">Über</string>
@@ -40,9 +40,9 @@
     <string name="status_protected_with_proxy">geschützt mit Proxy</string>
     <string name="status_strict" description="This is similar to dns_on, but the protection is being provided by the operating system, not by Rethink.  It is not color-highlighted.">private DNS ist eingeschaltet</string>
     <string name="status_exposed" description="This is a large message in a scary color.  It indicates that DNS queries can be surveilled or modified in transit.">nicht geschützt</string>
-    <string name="dns_explanation_dns_connected">Verbunden mit RethinkDNS</string>
+    <string name="dns_explanation_dns_connected">Verbunden mit Signalare Observer</string>
     <string name="dns_explanation_firewall_connected">Verbunden mit der Firewall</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">Verbunden mit RethinkDNS und Firewall</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">Verbunden mit Signalare Observer und Firewall</string>
     <string name="notification_action_resume_vpn">FORTSETZEN</string>
     <string name="notification_action_pause_vpn">PAUSE</string>
     <string name="notification_action_stop_vpn">STOPP</string>
@@ -118,7 +118,7 @@
     <string name="info_dialog_rethink_toast_msg">Kopiert als RDNS+ DNS-über-HTTPS URL</string>
     <string name="app_mode_wireguard">VPN</string>
     <string name="relative_time_yesterday">Gestern</string>
-    <string name="settings_allow_bypass_desc">Anfragenden Apps erlauben, alle verfügbaren Netzwerke zu benutzen. Diese Apps könnten die RethinkDNS-Firewall bei Bedarf umgehen. Einige Audio-/Videokonferenz-Apps wie Zoom und Meet können dies erfordern, um richtig zu funktionieren.</string>
+    <string name="settings_allow_bypass_desc">Anfragenden Apps erlauben, alle verfügbaren Netzwerke zu benutzen. Diese Apps könnten die Signalare Observer-Firewall bei Bedarf umgehen. Einige Audio-/Videokonferenz-Apps wie Zoom und Meet können dies erfordern, um richtig zu funktionieren.</string>
     <string name="orbot_http_desc">Baut einen HTTP-CONNECT-Tunnel zu Orbot auf.</string>
     <string name="orbot_stop_dialog_message">Rethink hat aufgehört Verbindungen zu Orbot weiterzuleiten, aber Orbot läuft vielleicht noch im Hintergrund.</string>
     <string name="orbot_explanation">Orbot ist eine kostenlose Proxy-App, die es anderen Apps ermöglicht, das Internet <u>sicherer</u> zu nutzen.\nOrbot verwendet <u>Tor</u>, um deinen Internetverkehr zu verschlüsseln, was dir dabei hilft, <u>Zensur zu umgehen</u> und dich gegen Formen der <u>Netzwerküberwachung</u> zu verteidigen, die die persönliche Freiheit und Privatsphäre bedrohen.\n<u>TCP Proxy</u>: Rethink leitet nur TCP-Verbindungen von <i>eingeschlossenen</i> Apps an Orbot weiter.\n<u>HTTP Proxy</u>: Rethink <i>stellt</i> einen HTTP CONNECT-Tunnel zu Orbot <i>her</i> und leitet nur TCP-Verbindungen von <i>eingeschlossenen</i> Apps weiter.</string>
@@ -145,7 +145,7 @@
     <string name="search_custom_domains"><font size="12">Domänennamen suchen</font></string>
     <string name="search_rethinkplus_file_tag"><font size="12">Suche in Blocklisten</font></string>
     <string name="app_mode_choose">Modus wählen</string>
-    <string name="whats_new_version_update">&lt;b&gt;Don\'t Panic 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; \n1. Neu: Netzwerk-Engine-Fehler können nun für Nutzermeldungen erfasst werden.&lt;br/&gt; \n2. Neu: System-DNS wird nun für nicht delegierte Domainnamen verwendet, wenn „DNS-Leaks verhindern“ aktiviert ist.&lt;br/&gt; \n3. Verbesserung: Dual-Stack-Verbindung (IPv4 + IPv6) mit WireGuard.&lt;br/&gt; \n4. Verbesserung: UI-Elemente werden nicht mehr blockiert, wenn die Netzwerk-Engine nicht reagiert.&lt;br/&gt; \n5. Fehlerbehebung: Verbindungsabbrüche bei aktiviertem erweitertem DNS-Filter.&lt;br/&gt; \n6. Fehlerbehebung: WireGuard-Endpunkte mit Domainnamen hängen bei Netzwerkänderungen fest.&lt;br/&gt;&lt;br/&gt; \n&lt;a href=https://svc.rethinkdns.com/r/translate&gt;Hilf mit, diese App zu übersetzen&lt;/a&gt;</string>
+    <string name="whats_new_version_update">&lt;b&gt;Don\'t Panic 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; \n1. Neu: Netzwerk-Engine-Fehler können nun für Nutzermeldungen erfasst werden.&lt;br/&gt; \n2. Neu: System-DNS wird nun für nicht delegierte Domainnamen verwendet, wenn „DNS-Leaks verhindern“ aktiviert ist.&lt;br/&gt; \n3. Verbesserung: Dual-Stack-Verbindung (IPv4 + IPv6) mit WireGuard.&lt;br/&gt; \n4. Verbesserung: UI-Elemente werden nicht mehr blockiert, wenn die Netzwerk-Engine nicht reagiert.&lt;br/&gt; \n5. Fehlerbehebung: Verbindungsabbrüche bei aktiviertem erweitertem DNS-Filter.&lt;br/&gt; \n6. Fehlerbehebung: WireGuard-Endpunkte mit Domainnamen hängen bei Netzwerkänderungen fest.&lt;br/&gt;&lt;br/&gt; \n&lt;a href=https://svc.signalare.se/r/translate&gt;Hilf mit, diese App zu übersetzen&lt;/a&gt;</string>
     <string name="connection_http3">HTTP3</string>
     <string name="relative_time_today">Heute</string>
     <string name="app_mode_dns_firewall">DNS und Firewall (Standard)</string>
@@ -172,7 +172,7 @@
     <string name="settings_https_disabled_error">Verbunden mit %1$s. Ausschalten, um fortzufahren.</string>
     <string name="orbot_install_dialog_neutral">Webseite</string>
     <string name="settings_socks5_disabled_error">Verbunden mit %1$s. Ausschalten, um fortzufahren.</string>
-    <string name="settings_autostart_bootup_desc">RethinkDNS beim Einschalten des Geräts starten, wenn es beim Herunterfahren lief.</string>
+    <string name="settings_autostart_bootup_desc">Signalare Observer beim Einschalten des Geräts starten, wenn es beim Herunterfahren lief.</string>
     <string name="slide_1_title">Kostenlos und quelloffen</string>
     <string name="settings_ptrans_heading">IPv4-Ausgang erzwingen</string>
     <string name="settings_socks5_heading">SOCKS5-Proxy einrichten</string>
@@ -391,7 +391,7 @@
     <string name="rethink_sky_desc">280+ Standorte; höhere Betriebszeit; Stub-Resolver läuft auf cloudflare.com</string>
     <string name="bsrf_sub_group_heading">Untergruppe</string>
     <string name="bsrf_clear_filter">Leeren</string>
-    <string name="dc_rethink_dns">Rethink DNS</string>
+    <string name="dc_rethink_dns">Signalare Observer</string>
     <string name="dc_doh">DNS über HTTPS</string>
     <string name="dc_dns_crypt">DNSCrypt</string>
     <string name="dc_dns_proxy">DNS-Proxy</string>
@@ -533,13 +533,13 @@
     <string name="about_twitter">Folge uns auf Twitter</string>
     <string name="about_mozilla">Rethink wird von Mozilla Builders, FOSS United Foundation und FLOSS/fund unterstützt.</string>
     <string name="about_dialog_positive_button">Los geht\'s</string>
-    <string name="about_telegram_link">https://telegram.me/rethinkdns</string>
-    <string name="about_faq_link">https://www.rethinkdns.com/faq</string>
-    <string name="about_docs_link">https://docs.rethinkdns.com/</string>
+    <string name="about_telegram_link">https://signalare.se</string>
+    <string name="about_faq_link">https://www.signalare.se/faq</string>
+    <string name="about_docs_link">https://docs.signalare.se/</string>
     <string name="about_mozilla_alumni_link">https://builders.mozilla.community/alumni.html</string>
-    <string name="about_translate_link">https://svc.rethinkdns.com/r/translate</string>
+    <string name="about_translate_link">https://svc.signalare.se/r/translate</string>
     <string name="about_version">v%1$s</string>
-    <string name="about_privacy_policy_link">https://www.rethinkdns.com/privacy</string>
+    <string name="about_privacy_policy_link">https://www.signalare.se/privacy</string>
     <string name="no_browser_error">Die Webseite kann nicht im Browser geöffnet werden.</string>
     <string name="notification_screen_error">Der Benachrichtigungsbildschirm der App konnte nicht gestartet werden.</string>
     <string name="log_file_not_available">Kein Absturzbericht gefunden</string>
@@ -575,7 +575,7 @@
     <string name="about_bug_no_log_dialog_message">Es konnten keine Absturzprotokolle abgerufen werden. Möchtest du den Fehler manuell melden?</string>
     <string name="about_bug_no_log_dialog_positive_btn">E-Mail senden</string>
     <string name="about_web">Links</string>
-    <string name="about_website">Besuche rethinkdns.com</string>
+    <string name="about_website">Besuche signalare.se</string>
     <string name="about_github">Auf GitHub beitragen</string>
     <string name="about_faq">FAQs anzeigen</string>
     <string name="about_docs">Dokumentation lesen</string>
@@ -597,7 +597,7 @@
     <string name="about_mail_bugreport_share_title">E-Mail-Anbieter auswählen</string>
     <string name="about_github_link">https://github.com/celzero/rethink-app</string>
     <string name="about_twitter_handle">https://twitter.com/rethinkdns</string>
-    <string name="about_website_link">https://www.rethinkdns.com/</string>
+    <string name="about_website_link">https://www.signalare.se/</string>
     <string name="about_version_install_source">v%1$s (%2$s)</string>
     <string name="about_dialog_neutral_button">Funktion vorschlagen</string>
     <string name="app_info_error">App-Info konnte nicht gestartet werden.</string>
@@ -712,7 +712,7 @@
                                               <a href="https://central.sonatype.com/">Sonatype</a><br/>
                                               ]]></string>
     <string name="dc_custom_dns_radio">Anderer DNS</string>
-    <string name="dc_rethink_dns_radio">Rethink DNS</string>
+    <string name="dc_rethink_dns_radio">Signalare Observer</string>
     <string name="dc_entries">%1$s Einträge »</string>
     <string name="dc_local_block_desc_1">Wähle aus über 195 Blocklisten. Tippe hier, um Blocklisten herunterzuladen oder zu konfigurieren.</string>
     <string name="dc_local_block_heading">Geräteinterne Sperrlisten</string>
@@ -1159,7 +1159,7 @@
     <string name="adv_tasker_dialog_instructions" translatable="true">Anleitung:\nErforderliche Extras in der Broadcast-Nachricht:\n • Schlüssel: sender\n • Wert: Der Paketname der aufrufenden App\n\n Beispiel: key:sender value:com.termux\n\n Unterstützte Aktionen:\n • VPN starten – se.signalare.observer.intent.action.VPN_START\n • VPN stoppen – se.signalare.observer.intent.action.VPN_STOP</string>
     <string name="adv_tasker_dialog_edit_hint" translatable="true">Paketnamen eingeben (Beispiel: net.dinglisch.android.taskerm)</string>
     <string name="download_ip_info_title" translatable="true">Providerinformationen anzeigen</string>
-    <string name="download_ip_info_desc" translatable="true">Ruft Details zu Dienstanbietern für Websites von <i>rethinkdns.com</i> ab, bereitgestellt von <i>%1$s</i></string>
+    <string name="download_ip_info_desc" translatable="true">Ruft Details zu Dienstanbietern für Websites von <i>signalare.se</i> ab, bereitgestellt von <i>%1$s</i></string>
     <string name="adv_taster_title" translatable="true">Automatisierung</string>
     <string name="adv_taster_desc" translatable="true">Konfiguriere Apps, die Rethink starten oder stoppen können.</string>
     <string name="top_active_conns" translatable="true">Top aktive Verbindungen</string>

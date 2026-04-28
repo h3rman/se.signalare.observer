@@ -19,7 +19,7 @@
     <string name="allow" translatable="true">Cho phép</string>
     <string name="block" translatable="true">Chặn</string>
     <string name="exclude" translatable="true">Loại trừ</string>
-    <string name="warning_title" description="Status indicator text shown in a warning notification." translatable="true">Cảnh báo: RethinkDNS đã bị hủy kích hoạt</string>
+    <string name="warning_title" description="Status indicator text shown in a warning notification." translatable="true">Cảnh báo: Signalare Observer đã bị hủy kích hoạt</string>
     <string name="notification_content" description="Indicates what will happen if the user taps the notification." translatable="true">Nhấn để thay đổi cài đặt bảo vệ</string>
     <string name="dns_mode_notification_title" translatable="true">Được bảo vệ! Đã kết nối với DNS nhanh và an toàn.</string>
     <string name="firewall_mode_notification_title" translatable="true">Được bảo vệ! Đã kết nối với Tường lửa.</string>
@@ -40,7 +40,7 @@
     <string name="status_strict" description="This is similar to dns_on, but the protection is being provided by the operating system, not by Rethink.  It is not color-highlighted." translatable="true">DNS riêng tư đang bật</string>
     <string name="status_exposed" description="This is a large message in a scary color.  It indicates that DNS queries can be surveilled or modified in transit." translatable="true">Chưa được bảo vệ</string>
     <string name="dns_explanation_firewall_connected" translatable="true">Đã kết nối với tường lửa</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">Đã kết nối với RethinkDNS và tường lửa</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">Đã kết nối với Signalare Observer và tường lửa</string>
     <string name="notification_action_stop_vpn" translatable="true">DỪNG</string>
     <string name="notification_action_dns_firewall_mode" translatable="true">DNS + tường lửa</string>
     <string name="dns_mode_info_title" translatable="true">DNS</string>
@@ -57,13 +57,13 @@
     <string name="conn_track_clear_logs_title" translatable="true">Xóa tất cả nhật ký mạng\?</string>
     <string name="ssv_see_more" translatable="true">Hiển thị tất cả</string>
     <string name="slide_1_desc" translatable="true">Rethink là một phần mềm mã nguồn mở được hỗ trợ bởi chương trình MVP của Mozilla Builders, FOSS United Foundation.</string>
-    <string name="slide_2_desc" translatable="true">RethinkDNS là cách dễ nhất để giám sát hoạt động mạng, vượt qua kiểm duyệt Internet và các ứng dụng tường lửa trên thiết bị Android của bạn.</string>
+    <string name="slide_2_desc" translatable="true">Signalare Observer là cách dễ nhất để giám sát hoạt động mạng, vượt qua kiểm duyệt Internet và các ứng dụng tường lửa trên thiết bị Android của bạn.</string>
     <string name="rdns_plus" translatable="true">RDNS Plus</string>
     <string name="hybrid_mode_notification_title" translatable="true">Được bảo vệ! Đã kết nối với DNS + Tường lửa.</string>
     <string name="status_waiting" description="This text appears during the connection process if Intra needs user permission or the phone is offline." translatable="true">đang chờ</string>
     <string name="status_dns_server_down" translatable="true">máy chủ dns ngừng hoạt động</string>
     <string name="status_protected_with_proxy_private_dns" translatable="true">"đã được bảo vệ bởi proxy &amp;  dns riêng tư"</string>
-    <string name="dns_explanation_dns_connected" translatable="true">Đã kết nối với RethinkDNS</string>
+    <string name="dns_explanation_dns_connected" translatable="true">Đã kết nối với Signalare Observer</string>
     <string name="notification_action_pause_vpn" translatable="true">NGƯNG</string>
     <string name="notification_action_dns_mode" translatable="true">DNS</string>
     <string name="dns_firewall_mode_info_explanation_new" translatable="true">Tất cả những điều trên + bỏ qua kiểm duyệt Internet.</string>
@@ -79,7 +79,7 @@
     <string name="universal_firewall_explanation" translatable="true">Áp dụng các quy tắc tường lửa trên tất cả các ứng dụng dựa trên các hoạt động của thiết bị, chẳng hạn như bật tường lửa khi thiết bị đang khóa màn hình hoặc khi một ứng dụng cụ thể không được sử dụng.</string>
     <string name="firewall_rules" translatable="true">Quy tắc mạng</string>
     <string name="firewall_mode_info_explanation_new" translatable="true">Giám sát hoạt động mạng và hoạt động tường lửa của bất kỳ ứng dụng hoặc địa chỉ IP nào.</string>
-    <string name="alert_firewall_accessibility_explanation" translatable="true">RethinkDNS sử dụng dịch vụ trợ năng để theo dõi xem những ứng dụng nào đang được sử dụng trực tiếp (foreground) và những ứng dụng nào đang không được sử dụng trực tiếp/chạy ngầm (background).\n\nRethinkDNS không thu thập bất kỳ thông tin nào hoặc theo dõi bạn dưới bất kỳ hình thức nào.</string>
+    <string name="alert_firewall_accessibility_explanation" translatable="true">Signalare Observer sử dụng dịch vụ trợ năng để theo dõi xem những ứng dụng nào đang được sử dụng trực tiếp (foreground) và những ứng dụng nào đang không được sử dụng trực tiếp/chạy ngầm (background).\n\nSignalare Observer không thu thập bất kỳ thông tin nào hoặc theo dõi bạn dưới bất kỳ hình thức nào.</string>
     <string name="conn_track_clear_logs_message" translatable="true">Thao tác này chỉ xóa nhật ký mạng chứ không xóa các quy tắc tường lửa. Hoạt động này là không thể đảo ngược. Bạn có muốn tiếp tục\?</string>
     <string name="dns_query_clear_logs_title" translatable="true">Xoá tất cả nhật ký DNS\?</string>
     <string name="dns_query_clear_logs_message" translatable="true">Thao tác này sẽ xóa nhật ký DNS trên thiết bị. Hoạt động này là không thể đảo ngược. Bạn có muốn tiếp tục\?</string>
@@ -121,9 +121,9 @@
     <string name="configure_dns_connection_name" translatable="true">Đã kết nối với %1$s</string>
     <string name="configure_dns_crypt" translatable="true">DNSCrypt: %1$s trình phân giải</string>
     <string name="http_proxy_dialog_heading" translatable="true">Đặt proxy HTTP(S) CONNECT</string>
-    <string name="alert_firewall_accessibility_regrant_explanation" translatable="true">Dịch vụ trợ năng RethinkDNS đã dừng hoạt động hoặc đang gặp sự cố. <i><b>Chuyển đến Cài đặt và Buộc dừng</b></i> RethinkDNS và khởi động lại tính năng để sử dụng<i>Chặn mọi ứng dụng không sử dụng</i>.
+    <string name="alert_firewall_accessibility_regrant_explanation" translatable="true">Dịch vụ trợ năng Signalare Observer đã dừng hoạt động hoặc đang gặp sự cố. <i><b>Chuyển đến Cài đặt và Buộc dừng</b></i> Signalare Observer và khởi động lại tính năng để sử dụng<i>Chặn mọi ứng dụng không sử dụng</i>.
 \n
-\nRethinkDNS sử dụng dịch vụ trợ năng để theo dõi xem những nào ứng dụng đang được sử dụng trực tiếp (foreground) và những ứng dụng nào đang không được sử dụng trực tiếp/chạy ngầm (background).</string>
+\nSignalare Observer sử dụng dịch vụ trợ năng để theo dõi xem những nào ứng dụng đang được sử dụng trực tiếp (foreground) và những ứng dụng nào đang không được sử dụng trực tiếp/chạy ngầm (background).</string>
     <string name="bsct_conn_desc_allowed" translatable="true">đã được cho phép trên %1$s %2$s</string>
     <string name="always_on_dialog_lockdown_stop_message" translatable="true">Rethink đang chạy VPN ở chế độ <i>Lockdown</i>. Nếu dừng nó sẽ dẫn đến mất kết nối Internet trên hồ sơ người dùng này. Bạn có muốn tiếp tục không?</string>
     <string name="bsct_conn_rule_explanation" translatable="true"><u>#1</u>: Chặn ứng dụng kết nối với Internet. \n <u>#2</u>: Chặn bất kỳ ứng dụng nào kết nối với một IP cụ thể. \n <u>#3</u>: Chặn tất cả các kết nối khi thiết bị đang khóa màn hình (Tường lửa chung). \n <u>#4</u>: Chặn bất kỳ ứng dụng nào không được sử dụng (Tường lửa chung). \n <u>#5</u>: Chặn kết nối khi ứng dụng có nguồn gốc không được xác định (Tường lửa chung). \n <u>#6</u>: Chặn tất cả lưu lượng UDP ngoại trừ DNS (Tường lửa chung). \n <u>#7</u>: Chặn kết nối khi DNS bị bỏ qua (Tường lửa chung).</string>
@@ -243,7 +243,7 @@
     <string name="settings_notification_dialog_title" translatable="true">Chọn hành động thông báo</string>
     <string name="settings_notification_dialog_option_1" translatable="true">"
 \nTạm dừng/Dừng (mặc định):
-\nHiển thị hai nút để nhanh chóng tạm dừng và dừng RethinkDNS."</string>
+\nHiển thị hai nút để nhanh chóng tạm dừng và dừng Signalare Observer."</string>
     <string name="settings_notification_dialog_option_3" translatable="true">"
 \nKhông có:
 \nKhông hiển thị nút nào.
@@ -263,7 +263,7 @@
     <string name="firewall_status_blocked" translatable="true">bị chặn</string>
     <string name="firewall_status_unknown" translatable="true">không rõ</string>
     <string name="ct_bs_app_info_error" translatable="true">Không tìm thấy thông tin ứng dụng</string>
-    <string name="hs_biometeric_title" translatable="true">Mở khoá RethinkDNS</string>
+    <string name="hs_biometeric_title" translatable="true">Mở khoá Signalare Observer</string>
     <string name="hs_biometeric_desc" translatable="true">Sử dụng xác thực sinh trắc học để mở khóa Rethink</string>
     <string name="hs_biometeric_error" translatable="true">Lỗi xác thực sinh trắc học</string>
     <string name="firewall_card_status_active" translatable="true">ứng dụng %1$s</string>
@@ -282,14 +282,14 @@
     <string name="title_about" translatable="true">About</string>
     <string name="download_update_dialog_trylater_message" translatable="true">Không thể thực hiện cập nhật ngay bây giờ, vui lòng thử lại sau.</string>
     <string name="search_rethinkplus_file_tag" translatable="true"><font size="12">Tìm kiếm danh sách chặn</font></string>
-    <string name="whats_new_version_update" translatable="true">&lt;b&gt;Đừng Hoảng Loạn 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. Mới: Bắt giữ các lỗi máy mạng trong báo cáo lỗi người dùng.&lt;br/&gt; 2. Mới: sử dụng DNS hệ thống cho những yêu cầu không được chuyển giao nếu cài đặt Ngăn ngừa rò rỉ DNS được BẬT.&lt;br/&gt; 3. Cải tiến: Kết nối WireGuard Dual-stack (IPv4 + IPv6).&lt;br/&gt; 4. Cải tiến: Phòng tránh việc chặn các yếu tố giao diện khi máy mạng không phản hồi.&lt;br/&gt; 5. Sửa: Kết nối hết hạn khi cài đặt Lọc DNS Nâng cao được BẬT.&lt;br/&gt; 6. Sửa: Điểm cuối ngang hàng WireGuard với tên miền bị treo khi có sự thay đổi mạng.&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.rethinkdns.com/r/translate&gt;Giúp dịch ứng dụng này&lt;/a&gt;</string>
+    <string name="whats_new_version_update" translatable="true">&lt;b&gt;Đừng Hoảng Loạn 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. Mới: Bắt giữ các lỗi máy mạng trong báo cáo lỗi người dùng.&lt;br/&gt; 2. Mới: sử dụng DNS hệ thống cho những yêu cầu không được chuyển giao nếu cài đặt Ngăn ngừa rò rỉ DNS được BẬT.&lt;br/&gt; 3. Cải tiến: Kết nối WireGuard Dual-stack (IPv4 + IPv6).&lt;br/&gt; 4. Cải tiến: Phòng tránh việc chặn các yếu tố giao diện khi máy mạng không phản hồi.&lt;br/&gt; 5. Sửa: Kết nối hết hạn khi cài đặt Lọc DNS Nâng cao được BẬT.&lt;br/&gt; 6. Sửa: Điểm cuối ngang hàng WireGuard với tên miền bị treo khi có sự thay đổi mạng.&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.signalare.se/r/translate&gt;Giúp dịch ứng dụng này&lt;/a&gt;</string>
     <string name="settings_allow_bypass_desc" translatable="true">Cho phép các ứng dụng yêu cầu truy cập vào tất cả các mạng có sẵn. Các ứng dụng này có thể bỏ qua đường hầm VPN của Rethink theo yêu cầu. Một số ứng dụng hội nghị âm thanh/video như Zoom và Meet có thể cần tính năng này để hoạt động bình thường.</string>
     <string name="settings_import_export_heading" translatable="true">Sao lưu và khôi phục</string>
     <string name="settings_https_desc" translatable="true">Chuyển tiếp các kết nối tới điểm cuối HTTP(S) CONNECT.</string>
     <string name="orbot_bs_status_4" translatable="true">Thiết lập Tor-as-a-Proxy (Orbot) chỉ bằng một cú nhấp.</string>
     <string name="orbot_stop_dialog_message" translatable="true">Rethink đã ngừng chuyển tiếp kết nối tới Orbot, nhưng Orbot có thể đang chạy nền.</string>
     <string name="orbot_stop_dialog_dns_message" translatable="true">Rethink được thiết lập để chuyển tiếp các truy vấn DNS tới Orbot. Thay đổi theo yêu cầu.</string>
-    <string name="orbot_explanation" translatable="true">Orbot là ứng dụng proxy miễn phí hỗ trợ các ứng dụng khác sử dụng Internet <u>an toàn hơn</u>. \nOrbot sử dụng <u>Tor</u> để mã hóa lưu lượng truy cập Internet giúp bạn <u>vượt qua kiểm duyệt</u> và chống lại các hình thức <u>giám sát mạng</u> đe dọa quyền tự do và quyền riêng tư cá nhân. \n<u>TCP Proxy</u>: RethinkDNS chỉ chuyển tiếp các kết nối TCP của tất cả trừ các ứng dụng bị loại trừ tới Orbot. \n<u>Proxy HTTP</u>: RethinkDNS<i>đặt</i> proxy HTTP nhưng không bắt buộc các ứng dụng phải sử dụng nó. Thông thường, các trình duyệt như Chrome và Firefox sử dụng nó. Các ứng dụng sử dụng proxy HTTP(S) sẽ bỏ qua cả quy tắc Tường lửa và DNS.</string>
+    <string name="orbot_explanation" translatable="true">Orbot là ứng dụng proxy miễn phí hỗ trợ các ứng dụng khác sử dụng Internet <u>an toàn hơn</u>. \nOrbot sử dụng <u>Tor</u> để mã hóa lưu lượng truy cập Internet giúp bạn <u>vượt qua kiểm duyệt</u> và chống lại các hình thức <u>giám sát mạng</u> đe dọa quyền tự do và quyền riêng tư cá nhân. \n<u>TCP Proxy</u>: Signalare Observer chỉ chuyển tiếp các kết nối TCP của tất cả trừ các ứng dụng bị loại trừ tới Orbot. \n<u>Proxy HTTP</u>: Signalare Observer<i>đặt</i> proxy HTTP nhưng không bắt buộc các ứng dụng phải sử dụng nó. Thông thường, các trình duyệt như Chrome và Firefox sử dụng nó. Các ứng dụng sử dụng proxy HTTP(S) sẽ bỏ qua cả quy tắc Tường lửa và DNS.</string>
     <string name="settings_orbot_disabled_error" translatable="true">Tắt proxy HTTP(S) và/hoặc SOCKS5 để tiếp tục thiết lập Tor-as-a-proxy.</string>
     <string name="settings_autostart_bootup_desc" translatable="true">Khi bật nguồn thiết bị, khởi động Rethink nếu nó vẫn đang chạy trước khi tắt máy.</string>
     <string name="settings_network_all_networks_desc" translatable="true">Khi được bật, Rethink sẽ sử dụng tất cả các mạng khả dụng để kết nối với Internet. Nếu không, nó sẽ sử dụng bất kỳ mạng nào được Android coi là <i> đang hoạt động</i>.</string>
@@ -406,7 +406,7 @@
     <string name="hsf_proxy_chip_removed_toast" translatable="true">Đã xoá proxy</string>
     <string name="about_mail_to" translatable="true">hello@celzero.com</string>
     <string name="about_settings_notification" translatable="true">Cài đặt thông báo</string>
-    <string name="dc_rethink_dns_radio" translatable="true">Rethink DNS</string>
+    <string name="dc_rethink_dns_radio" translatable="true">Signalare Observer</string>
     <string name="dc_block_heading" translatable="true">quy tắc</string>
     <string name="dc_entries" translatable="true">%1$s mục »</string>
     <string name="about_app_contributors" translatable="true">Tác giả</string>
@@ -428,7 +428,7 @@
     <string name="about_bug_report_dialog_positive_btn" translatable="true">Gửi email</string>
     <string name="about_web" translatable="true">liên kết</string>
     <string name="about_bug_no_log_dialog_title" translatable="true">Báo cáo lỗi</string>
-    <string name="about_website" translatable="true">Truy cập rethinkdns.com</string>
+    <string name="about_website" translatable="true">Truy cập signalare.se</string>
     <string name="about_privacy_policy" translatable="true">Đọc chính sách bảo mật</string>
     <string name="error_loading_log_file" translatable="true">Lỗi khi tải tệp nhật ký</string>
     <string name="cd_custom_doh_url_name" translatable="true">DoH %1$s</string>

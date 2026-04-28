@@ -25,7 +25,7 @@
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:padding="5dp"
-        android:text="RethinkDNS List"
+        android:text="Signalare Observer List"
         android:textColor="?attr/primaryLightColorText"
         android:textIsSelectable="true"
         android:textSize="@dimen/extra_large_font_text_view"

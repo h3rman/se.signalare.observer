@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">RethinkDNS</string>
+    <string name="app_name">Signalare Observer</string>
     <string name="title_about" translatable="true">Rólunk</string>
     <string name="about_title_desc" translatable="true">Hálózatbiztonsági fenyegetések észlelése és blokkolása</string>
     <string name="lbl_rules" translatable="true">szabályok</string>
@@ -21,7 +21,7 @@
     <string name="lbl_dns_servers" translatable="true">DNS Szerverek</string>
     <string name="lbl_applications" translatable="true">Alkalmazások</string>
     <string name="lbl_ip_rules" translatable="true">IP szabályok</string>
-    <string name="accessibility_service_description" translatable="true">A RethinkDNS a Kisegítő lehetőségeket használja a háttérben futó alkalmazások észlelésére és tűzfalazására. A RethinkDNS nem gyűjt vagy ad el semmilyen információt.</string>
+    <string name="accessibility_service_description" translatable="true">A Signalare Observer a Kisegítő lehetőségeket használja a háttérben futó alkalmazások észlelésére és tűzfalazására. A Signalare Observer nem gyűjt vagy ad el semmilyen információt.</string>
     <string name="skip" translatable="true">Kihagy</string>
     <string name="finish" translatable="true">Befejezés</string>
     <string name="lbl_cancel" translatable="true">Mégse</string>
@@ -53,7 +53,7 @@
     <string name="lbl_anonymous" translatable="true">névtelen</string>
     <string name="lbl_peer" translatable="true">Partner</string>
     <string name="firewall_mode_notification_title" translatable="true">Védett! Csatlakozva a tűzfalhoz.</string>
-    <string name="warning_title" description="Status indicator text shown in a warning notification." translatable="true">Figyelmeztetés: A RethinkDNS-t kikapcsolták</string>
+    <string name="warning_title" description="Status indicator text shown in a warning notification." translatable="true">Figyelmeztetés: A Signalare Observer-t kikapcsolták</string>
     <string name="status_protected_with_private_dns" translatable="true">privát DNS segítségével védett</string>
     <string name="status_protected_with_http" translatable="true">HTTP proxy segítségével védett</string>
     <string name="status_strict" description="This is similar to dns_on, but the protection is being provided by the operating system, not by Rethink.  It is not color-highlighted." translatable="true">a privát DNS engedélyezve</string>
@@ -100,7 +100,7 @@
     <string name="bsct_app_info" translatable="true">Alkalmazás információ</string>
     <string name="bsct_conn_rule_explanation" translatable="true"><u>#1</u>: Megakadályozza, hogy egy alkalmazás csatlakozzon az internethez.\n<u>#2</u>: Megakadályozza, hogy bármely alkalmazás csatlakozzon egy adott IP-címhez.\n<u>#3</u>: Minden kapcsolatot blokkol, amikor az eszköz zárolva van (Univerzális tűzfal).\n<u>#4</u>: Blokkolja azokat az alkalmazásokat, amelyek nincsenek használatban (Univerzális tűzfal).\n<u>#5</u>: Blokkolja a kapcsolatokat, ha a forrásalkalmazás ismeretlen (Univerzális tűzfal).\n<u>#6</u>: Blokkolja az összes UDP-forgalmat, kivéve a DNS-t (Univerzális tűzfal).\n<u>#7</u>: Blokkolja a kapcsolatokat, ha a DNS megkerülésre kerül (Univerzális tűzfal).</string>
     <string name="download_update_dialog_failure_message" translatable="true">Vagy a szervereink nem elérhetők, vagy a kapcsolat nem jött létre. Kérjük, próbálja meg később.</string>
-    <string name="whats_new_version_update" translatable="true"><b>Ne pánikoljon 2</b><b>Új:</b> A hálózati motor hibáinak rögzítése a felhasználói hibajelentésekben.<b>Új:</b> A rendszer DNS használata nem delegált domain nevekhez, <b>ha</b> a „DNS-szivárgás megelőzése” <b>be van kapcsolva</b>.<b>Fejlesztés:</b> Dual-stack (IPv4 + IPv6) WireGuard kapcsolat.<b>Fejlesztés:</b> A felhasználói felület elemei nem blokkolódnak, ha a hálózati motor nem válaszol.<b>Javítás:</b> Kapcsolati időtúllépés, ha az „Advanced DNS filtering” be van kapcsolva.<b>Javítás:</b> A WireGuard partner végpontok, amelyek domain nevet használnak, lefagynak hálózati váltáskor.<a href="https://svc.rethinkdns.com/r/translate">Segítsen az alkalmazás fordításában</a></string>
+    <string name="whats_new_version_update" translatable="true"><b>Ne pánikoljon 2</b><b>Új:</b> A hálózati motor hibáinak rögzítése a felhasználói hibajelentésekben.<b>Új:</b> A rendszer DNS használata nem delegált domain nevekhez, <b>ha</b> a „DNS-szivárgás megelőzése” <b>be van kapcsolva</b>.<b>Fejlesztés:</b> Dual-stack (IPv4 + IPv6) WireGuard kapcsolat.<b>Fejlesztés:</b> A felhasználói felület elemei nem blokkolódnak, ha a hálózati motor nem válaszol.<b>Javítás:</b> Kapcsolati időtúllépés, ha az „Advanced DNS filtering” be van kapcsolva.<b>Javítás:</b> A WireGuard partner végpontok, amelyek domain nevet használnak, lefagynak hálózati váltáskor.<a href="https://svc.signalare.se/r/translate">Segítsen az alkalmazás fordításában</a></string>
     <string name="connection_http3" translatable="true">HTTP3</string>
     <string name="settings_connectivity_checks_desc" translatable="true">Kapcsolódási ellenőrzések elküldésre kerülnek a hozzáférhetőség megállapítására.</string>
     <string name="settings_allow_bypass_desc" translatable="true">Engedélyezze a kérelmező alkalmazásoknak, hogy hozzáférjenek az összes elérhető hálózathoz. Ezek az alkalmazások szükség szerint kikerülhetik a Rethink VPN alagútját. Néhány audio/video konferencia alkalmazás, mint a Zoom és a Meet, szükségelheti ezt a megfelelő működéshez.</string>
@@ -153,7 +153,7 @@
     <string name="search_firewall_all_apps" translatable="true"><font size="12">Alkalmazások keresése uid, név alapján</font></string>
     <string name="search_universal_ips" translatable="true"><font size="12">IP-címek keresése</font></string>
     <string name="always_on_dialog_positive" translatable="true">Leállítás</string>
-    <string name="private_dns_dialog_desc" translatable="true">A Rethink DNS beállításait felülírja az Android \"Privát DNS\" funkciója.\n\nA Rethink DNS használatához nyissa meg az Android Beállításokat, és kapcsolja ki a \"Privát DNS\" funkciót.</string>
+    <string name="private_dns_dialog_desc" translatable="true">A Signalare Observer beállításait felülírja az Android \"Privát DNS\" funkciója.\n\nA Signalare Observer használatához nyissa meg az Android Beállításokat, és kapcsolja ki a \"Privát DNS\" funkciót.</string>
     <string name="univ_firewall_dialog_title" translatable="true">IP-szabály törlése?</string>
     <string name="dns_crypt_url_remove_success" translatable="true">A DNSCrypt feloldó törölve.</string>
     <string name="dns_crypt_relay_remove_dialog_title" translatable="true">DNSCrypt átjáró törlése?</string>
@@ -171,7 +171,7 @@
     <string name="orbot_bs_status_2" translatable="true">HTTP Proxy be van állítva (az alkalmazások figyelmen kívül hagyhatják).</string>
     <string name="orbot_app_issue" translatable="true">Nem sikerült elindítani az Orbot-ot. Telepítve van?</string>
     <string name="orbot_bs_status_trying_connect" translatable="true">Orbot beállítása…</string>
-    <string name="orbot_stop_dialog_dns_message" translatable="true">A RethinkDNS úgy van beállítva, hogy továbbítja a DNS-lekérdezéseket az Orbotnak. Módosítsa szükség szerint.</string>
+    <string name="orbot_stop_dialog_dns_message" translatable="true">A Signalare Observer úgy van beállítva, hogy továbbítja a DNS-lekérdezéseket az Orbotnak. Módosítsa szükség szerint.</string>
     <string name="orbot_stop_dialog_negative" translatable="true">Orbot leállítása</string>
     <string name="orbot_stop_dialog_neutral" translatable="true">DNS módosítása</string>
     <string name="orbot_title" translatable="true">Orbot és proxyk</string>
@@ -214,8 +214,8 @@
     <string name="notification_action_dns_firewall_mode" translatable="true">DNS + tűzfal</string>
     <string name="status_protected_with_tor" translatable="true">Tor segítségével védett</string>
     <string name="status_protected_with_wg" translatable="true">WireGuard segítségével védett</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">RethinkDNS-hez és tűzfalhoz csatlakoztatva</string>
-    <string name="alert_firewall_accessibility_explanation" translatable="true">A RethinkDNS az kisegítő szolgáltatást használja, annak nyomon követésére, hogy mely alkalmazások vannak használatban, (előtérben) és melyek nem a (háttérben).\n\nA RethinkDNS nem gyűjt semmilyen információt, és nem kémkedik Ön után semmilyen módon.</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">Signalare Observer-hez és tűzfalhoz csatlakoztatva</string>
+    <string name="alert_firewall_accessibility_explanation" translatable="true">A Signalare Observer az kisegítő szolgáltatást használja, annak nyomon követésére, hogy mely alkalmazások vannak használatban, (előtérben) és melyek nem a (háttérben).\n\nA Signalare Observer nem gyűjt semmilyen információt, és nem kémkedik Ön után semmilyen módon.</string>
     <string name="alert_firewall_accessibility_regrant_explanation" translatable="true">A Rethink kisegítő szolgáltatása leállt vagy összeomlott. <i><b>Menj a Beállításokba és kényszerített leállítást végezve</b></i> állítsd le a Rethink alkalmazást, majd indítsd újra, hogy használhasd a <i>Blokkolja az alkalmazásokat, amelyek nincsenek használatban</i> funkciót.\n\nA Rethink a kisegítő szolgáltatást használ, annak követésére, hogy mely alkalmazások vannak használatban (előtérben) és melyek nem (háttérben).</string>
     <string name="pcap_failure_toast" translatable="true">Hiba a pcap fájl létrehozásában, Próbálja újra!</string>
     <string name="lbl_listen_port" translatable="true">Figyelő port</string>
@@ -280,7 +280,7 @@
     <string name="status_protected_with_socks5" translatable="true">SOCKS proxy segítségével védett</string>
     <string name="status_protected_with_proxy" translatable="true">proxyval védett</string>
     <string name="status_exposed" description="This is a large message in a scary color.  It indicates that DNS queries can be surveilled or modified in transit." translatable="true">nem védett</string>
-    <string name="dns_explanation_dns_connected" translatable="true">Csatlakozva a RethinkDNS-hez</string>
+    <string name="dns_explanation_dns_connected" translatable="true">Csatlakozva a Signalare Observer-hez</string>
     <string name="dns_explanation_firewall_connected" translatable="true">Tűzfalhoz csatlakoztatva</string>
     <string name="notification_action_pause_vpn" translatable="true">SZÜNET</string>
     <string name="notification_action_stop_vpn" translatable="true">LEÁLLÍTÁS</string>
@@ -340,16 +340,16 @@
     <string name="orbot_bs_status_3" translatable="true">Továbbítás %1$s Orbotnak, HTTP Proxy is beállítva.</string>
     <string name="orbot_status_arg_3" translatable="true">DNS és TCP</string>
     <string name="orbot_stop_dialog_title" translatable="true">Kézi beavatkozás szükséges</string>
-    <string name="orbot_stop_dialog_message" translatable="true">A RethinkDNS leállította a kapcsolatok továbbítását az Orbothoz, de az Orbot talán fut a háttérben.</string>
+    <string name="orbot_stop_dialog_message" translatable="true">A Signalare Observer leállította a kapcsolatok továbbítását az Orbothoz, de az Orbot talán fut a háttérben.</string>
     <string name="orbot_install_dialog_positive" translatable="true">Telepítés</string>
     <string name="orbot_install_dialog_neutral" translatable="true">weboldal</string>
     <string name="settings_orbot_heading" translatable="true">Orbot beállítása</string>
     <string name="settings_orbot_header" translatable="true">Orbot ❯</string>
-    <string name="settings_socks5_vpn_disabled_error" translatable="true">A folytatáshoz indítsa el a RethinkDNS-t.</string>
+    <string name="settings_socks5_vpn_disabled_error" translatable="true">A folytatáshoz indítsa el a Signalare Observer-t.</string>
     <string name="settings_orbot_notification_action" translatable="true">Orbot megnyitása</string>
     <string name="settings_general_header" translatable="true">általános</string>
     <string name="settings_network_all_networks" translatable="true">Az összes elérhető hálózat használata (kísérleti)</string>
-    <string name="settings_network_all_networks_desc" translatable="true">Ha engedélyezve van, a RethinkDNS az összes elérhető hálózatot használja az internethez való csatlakozáshoz. Ha nem, akkor azt a hálózatot használja, amelyet az Android a <i>aktívnak ítél</i>.</string>
+    <string name="settings_network_all_networks_desc" translatable="true">Ha engedélyezve van, a Signalare Observer az összes elérhető hálózatot használja az internethez való csatlakozáshoz. Ha nem, akkor azt a hálózatot használja, amelyet az Android a <i>aktívnak ítél</i>.</string>
     <string name="settings_check_update_desc" translatable="true">Hetente egyszer automatikusan ellenőrizze az alkalmazásfrissítéseket.</string>
     <string name="settings_rinr_desc_disabled" translatable="true">Irányítsa vissza a Rethink saját forgalmát – például a tiltólista letöltéseket, kapcsolatellenőrzéseket, DNS-kapcsolatokat – az alagúton (VPN-en) keresztül.</string>
     <string name="settings_rinr_dialog_title" translatable="true">Visszacsatolási (loopback) mód (kísérleti)</string>
@@ -387,7 +387,7 @@
     <string name="firewall_status_block_unmetered" translatable="true">kapcsolat letiltva, a korlátlan Wi-Fi hálózatokon</string>
     <string name="firewall_status_block_metered" translatable="true">blokkolva a díjköteles (mobil) hálózatokon</string>
     <string name="hs_biometeric_title" translatable="true">Rethink feloldása</string>
-    <string name="hs_biometeric_desc" translatable="true">Használja a biometrikus hitelesítést a RethinkDNS feloldásához</string>
+    <string name="hs_biometeric_desc" translatable="true">Használja a biometrikus hitelesítést a Signalare Observer feloldásához</string>
     <string name="hs_biometeric_feature_not_supported" translatable="true">A biometrikus hitelesítés nem támogatott vagy le van tiltva ezen az eszközön</string>
     <string name="hs_biometeric_failed" translatable="true">A biometrikus hitelesítés sikertelen</string>
     <string name="firewall_card_text_active" translatable="true">%1$s blokkolva\n%2$s megkerülve\n%3$s kizárva\n%4$s elkülönítve</string>
@@ -430,13 +430,13 @@
     <string name="hsf_whats_new_remove_text" translatable="true">Bezárás…</string>
     <string name="hsf_blocklist_updating_text" translatable="true">Engedélyezés…</string>
     <string name="hsf_chip_appearance" translatable="true">Téma: %1$s</string>
-    <string name="hsf_pause_vpn_failure" translatable="true">Nem lehet szüneteltetni: RethinkDNS nem aktív</string>
+    <string name="hsf_pause_vpn_failure" translatable="true">Nem lehet szüneteltetni: Signalare Observer nem aktív</string>
     <string name="battery_optimization_dialog_heading" translatable="true">%1$s letiltása</string>
     <string name="restrict_dialog_message" translatable="true">A(z) <i>%1$s</i> kapcsolatvesztést okozhat. Módosítsa a beállítást, hogy a Rethink a háttérben is használhassa az adatforgalmat és egyéb erőforrásokat.</string>
     <string name="dc_block_heading" translatable="true">szabályok</string>
     <string name="dc_other_dns_heading" translatable="true">típus</string>
     <string name="dc_custom_dns_radio" translatable="true">Egyéb DNS</string>
-    <string name="dc_rethink_dns_radio" translatable="true">Rethink DNS</string>
+    <string name="dc_rethink_dns_radio" translatable="true">Signalare Observer</string>
     <string name="dc_entries" translatable="true">%1$s bejegyzések 🔗</string>
     <string name="dc_local_block_heading" translatable="true">Eszközön tárolt blokklisták</string>
     <string name="dc_local_block_desc_1" translatable="true">Válasszon több mint 185+ blokklista közül. Kattintson ide a blokklisták letöltéséhez vagy konfigurálásához.</string>
@@ -449,8 +449,8 @@
     <string name="dc_check_update_desc" translatable="true">Ellenőrizze a blokklisták frissítését <i>három</i> naponként egyszer</string>
     <string name="dc_proxy_dns_heading" translatable="true">Soha ne használd proxyként a DNS-t</string>
     <string name="dc_proxy_dns_desc" translatable="true">Ne továbbítsa a DNS-forgalmat proxy-n keresztül, ha folyamatosan aktív WireGuard, SOCKS5 vagy HTTP proxy-t használ.</string>
-    <string name="about_bravedns_explantion" translatable="true">A Rethink DNS a legegyszerűbb módja annak, hogy nyomon kövesse az alkalmazások tevékenységét, megkerülje az internetes cenzúrát, és tűzfalat állítson be az alkalmazásokhoz Android készülékén..</string>
-    <string name="about_bravedns_whoarewe" translatable="true">A Rethink DNS egy ingyenes és nyílt forráskódú projekt, amelyet az Amazon, az IBM és a Scientific Games korábbi mérnökei vezetnek.</string>
+    <string name="about_bravedns_explantion" translatable="true">A Signalare Observer a legegyszerűbb módja annak, hogy nyomon kövesse az alkalmazások tevékenységét, megkerülje az internetes cenzúrát, és tűzfalat állítson be az alkalmazásokhoz Android készülékén..</string>
+    <string name="about_bravedns_whoarewe" translatable="true">A Signalare Observer egy ingyenes és nyílt forráskódú projekt, amelyet az Amazon, az IBM és a Scientific Games korábbi mérnökei vezetnek.</string>
     <string name="about_bravedns_toreport_text" translatable="true">segítség és visszajelzés</string>
     <string name="about_bug_report_desc" translatable="true">összeomlási naplók (crash logok) elküldése e-mailben</string>
     <string name="about_join_telegram" translatable="true">Telegram</string>
@@ -460,7 +460,7 @@
     <string name="about_bug_no_log_dialog_message" translatable="true">Nem sikerült lekérni az összeomlási naplókat. Szeretné manuálisan jelenteni a hibát?</string>
     <string name="about_bug_no_log_dialog_positive_btn" translatable="true">Email küldése</string>
     <string name="about_web" translatable="true">linkek</string>
-    <string name="about_website" translatable="true">Látogasson el a rethinkdns.com oldalra</string>
+    <string name="about_website" translatable="true">Látogasson el a signalare.se oldalra</string>
     <string name="about_github" translatable="true">Hozzájárulás a GitHubon</string>
     <string name="about_faq" translatable="true">GYIK megtekintése</string>
     <string name="about_docs" translatable="true">Dokumentumok olvasása</string>
@@ -475,14 +475,14 @@
     <string name="about_settings_notification" translatable="true">Értesítési beállítások</string>
     <string name="about_whats_new" translatable="true">Mi az újdonság a(z) %1$s verzióban</string>
     <string name="about_twitter" translatable="true">Kövessen minket Twitteren</string>
-    <string name="about_mozilla" translatable="true">A RethinkDNS projektet a Mozilla Builders és a FOSS United Alapítvány támogatja.</string>
+    <string name="about_mozilla" translatable="true">A Signalare Observer projektet a Mozilla Builders és a FOSS United Alapítvány támogatja.</string>
     <string name="about_app_update_check" translatable="true">Alkalmazásfrissítések ellenőrzése</string>
     <string name="about_app_contributors" translatable="true">Szerzők</string>
     <string name="about_app_translate" translatable="true">Fordítás</string>
     <string name="about_dialog_positive_button" translatable="true">Gyerünk</string>
     <string name="about_mail_to" translatable="true">hello@celzero.com</string>
     <string name="about_mail_to_string" translatable="true">e-mail indítása:</string>
-    <string name="about_mail_subject" translatable="true">[RethinkDNS]:</string>
+    <string name="about_mail_subject" translatable="true">[Signalare Observer]:</string>
     <string name="about_mail_bugreport_subject" translatable="true">[Rethink]: Hibajelentés</string>
     <string name="about_mail_bugreport_text" translatable="true">E-mail küldése a következő e-mail címre: hello@celzero.com</string>
     <string name="about_mail_bugreport_share_title" translatable="true">E-mail szolgáltató kiválasztása</string>
@@ -777,7 +777,7 @@
     <string name="firewall_rule_proxied_desc" translatable="true"><![CDATA[Ez a kapcsolat továbbítva lett a felhasználó által preferált proxyhoz.<br/><br/> A módosításhoz lépj a <i>Proxy</i> részhez a <i>Konfiguráció</i> képernyőn.]]></string>
     <string name="new_app_bulk_notification_title" translatable="true">Figyelem</string>
     <string name="new_app_bulk_notification_content" translatable="true">A Rethink blokkolt %1$s új alkalmazást. Koppintson a megtekintéshez vagy módosításhoz.</string>
-    <string name="new_app_notification_content" translatable="true">A RethinkDNS blokkolta a nemrég telepített alkalmazást, %1$s.</string>
+    <string name="new_app_notification_content" translatable="true">A Signalare Observer blokkolta a nemrég telepített alkalmazást, %1$s.</string>
     <string name="new_app_notification_action_deny" translatable="true">Tartsa blokkolva</string>
     <string name="new_app_notification_action_toast_allow" translatable="true">Az alkalmazás számára engedélyezve lett a hálózati kapcsolat</string>
     <string name="new_app_notification_action_toast_deny" translatable="true">Hálózati kapcsolat megtagadva az alkalmazáshoz</string>
@@ -865,7 +865,7 @@
     <string name="ada_app_dns_settings" translatable="true">DNS-beállítások</string>
     <string name="ada_delete_logs_dialog_title" description="Appears as dialog title to clear the logs in app specific screen" translatable="true">Naplók ürítése</string>
     <string name="ada_delete_logs_dialog_desc" description="Appears as dialog description to clear the logs in app specific screen" translatable="true">Az alkalmazáshoz tartozó összes napló törlése.</string>
-    <string name="bypass_dns_firewall_tooltip">A(z) %1$s csak a Rethink DNS-sel működik</string>
+    <string name="bypass_dns_firewall_tooltip">A(z) %1$s csak a Signalare Observer-sel működik</string>
     <string name="exclude_apps_from_proxy">Az alkalmazás megkerüli az összes proxy szervert</string>
     <string name="exclude_apps_from_proxy_failure_toast">Ez az alkalmazás megkerüli a proxykat</string>
     <string name="bsac_title_desc" translatable="true">A szabályok csak erre az alkalmazásra vonatkoznak.</string>
@@ -1122,7 +1122,7 @@
     <string name="adv_tasker_dialog_instructions" translatable="true">Utasítások:\nKötelező extra adatok a broadcast üzenetben:\n• Kulcs: sender\n• Érték: A hívó alkalmazás csomagneve\n\nPélda: key:sender value:com.termux\n\nTámogatott műveletek:\n• VPN indítása– se.signalare.observer.intent.action.VPN_START\n• VPN leállítása – se.signalare.observer.intent.action.VPN_STOP</string>
     <string name="adv_tasker_dialog_edit_hint" translatable="true">Adja meg a csomag nevét (például: net.dinglisch.android.taskerm), amely jogosult a Rethink VPN indítására vagy leállítására</string>
     <string name="download_ip_info_title" translatable="true">Szolgáltató információinak megjelenítése</string>
-    <string name="download_ip_info_desc" translatable="true">Lekéri a weboldalak szolgáltatói adatait a <i>rethinkdns.com</i> oldalról, a következő által működtetve: <i>%1$s</i></string>
+    <string name="download_ip_info_desc" translatable="true">Lekéri a weboldalak szolgáltatói adatait a <i>signalare.se</i> oldalról, a következő által működtetve: <i>%1$s</i></string>
     <string name="adv_taster_desc" translatable="true">Alkalmazások konfigurálása, amelyek elindíthatják vagy leállíthatják a Rethink szolgáltatást.</string>
     <string name="top_active_conns" translatable="true">Top aktív kapcsolatok</string>
     <string name="load_more" translatable="true">Összes betöltése</string>

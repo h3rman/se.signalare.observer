@@ -134,9 +134,9 @@
     <string name="status_protected_with_wg_private_dns" translatable="true">beskyttet med wireguard &amp; privat dns</string>
     <string name="status_strict" description="This is similar to dns_on, but the protection is being provided by the operating system, not by Rethink.  It is not color-highlighted." translatable="true">privat dns er aktiveret</string>
     <string name="status_exposed" description="This is a large message in a scary color.  It indicates that DNS queries can be surveilled or modified in transit." translatable="true">ikke beskyttet</string>
-    <string name="dns_explanation_dns_connected" translatable="true">Tilsluttet RethinkDNS</string>
+    <string name="dns_explanation_dns_connected" translatable="true">Tilsluttet Signalare Observer</string>
     <string name="dns_explanation_firewall_connected" translatable="true">Tilsluttet firewall</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">Tilsluttet RethinkDNS og firewall</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">Tilsluttet Signalare Observer og firewall</string>
     <string name="universal_firewall_explanation" translatable="true">Anvend firewall-regler på alle programmer baseret på enhedshændelser, f.eks. firewall når enheden er låst, eller når en bestemt app ikke er i brug.</string>
     <string name="notification_action_resume_vpn" translatable="true">FORTSÆT</string>
     <string name="notification_action_pause_vpn" translatable="true">SÆT PÅ PAUSE</string>

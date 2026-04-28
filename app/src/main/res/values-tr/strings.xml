@@ -16,7 +16,7 @@
     <string name="notification_content" description="Indicates what will happen if the user taps the notification.">Koruma ayarını değiştirmek için dokunun</string>
     <string name="dns_mode_notification_title">Korunuyor! Hızlı ve Güvenli DNS\'e Bağlandı.</string>
     <string name="firewall_mode_notification_title">Korunuyor! Güvenlik Duvarına Bağlandı.</string>
-    <string name="app_name">RethinkDNS</string>
+    <string name="app_name">Signalare Observer</string>
     <string name="hybrid_mode_notification_title">Korunuyor! DNS ve Güvenlik Duvarına Bağlandı.</string>
     <string name="title_settings">Ayarlar</string>
     <string name="about_title_desc">Ağ güvenliği tehditlerini tespit edin ve engelleyin</string>
@@ -43,7 +43,7 @@
     <string name="status_protected_with_socks5_private_dns">socks5 ve özel dns ile korunuyor</string>
     <string name="status_protected_with_socks5">socks vekil sunucusu ile korunuyor</string>
     <string name="status_protected_with_http">http vekil sunucusu ile korunuyor</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">RethinkDNS ve güvenlik duvarına bağlandı</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">Signalare Observer ve güvenlik duvarına bağlandı</string>
     <string name="universal_firewall_explanation">Aygıt olaylarına göre tüm uygulamalara güvenlik duvarı kuralları uygulayın; örneğin, aygıt kilitlendiğinde veya belirli bir uygulama kullanımda olmadığında güvenlik duvarı uygulayın.</string>
     <string name="notification_action_resume_vpn">SÜRDÜR</string>
     <string name="notification_action_pause_vpn">DURAKLAT</string>
@@ -58,7 +58,7 @@
     <string name="status_strict" description="This is similar to dns_on, but the protection is being provided by the operating system, not by Rethink.  It is not color-highlighted.">özel dns etkin</string>
     <string name="status_exposed" description="This is a large message in a scary color.  It indicates that DNS queries can be surveilled or modified in transit.">korunmuyor</string>
     <string name="dns_explanation_firewall_connected">Güvenlik duvarına bağlandı</string>
-    <string name="dns_explanation_dns_connected">RethinkDNS\'e bağlandı</string>
+    <string name="dns_explanation_dns_connected">Signalare Observer\'e bağlandı</string>
     <string name="settings_https_heading">HTTP(S) BAĞLAN Vekili Kurulumu</string>
     <string name="settings_https_desc">HTTP(S) BAĞLAN son noktası için ileri bağlantılar.</string>
     <string name="orbot">Orbot</string>
@@ -175,7 +175,7 @@
     <string name="brbs_backup_title">Yedekle</string>
     <string name="brbs_backup_dialog_failure_message">Yedekleme yapılamadı. Tekrar deneyelim mi\?</string>
     <string name="dns_proxy_desc_no_app">%1$s:%2$s</string>
-    <string name="dc_rethink_dns">Rethink DNS</string>
+    <string name="dc_rethink_dns">Signalare Observer</string>
     <string name="dns_crypt_relay_remove_dialog_message">DNSCrypt aktarıcısını kayıtlı yapılandırmadan silin.</string>
     <string name="search_custom_domains"><font size="12">Alan adlarını arama</font></string>
     <string name="orbot_bs_status_3">%1$s adresinden Orbot\'a yönlendirme, HTTP Proxy de ayarlandı.</string>
@@ -199,8 +199,8 @@
     <string name="ci_block">Engelle</string>
     <string name="ada_network_log_title">bu uygulama için ağ günlüğü</string>
     <string name="lbbs_heading">195+ blok listesini yapılandır</string>
-    <string name="about_telegram_link">https://telegram.me/rethinkdns</string>
-    <string name="about_website_link">https://www.rethinkdns.com/</string>
+    <string name="about_telegram_link">https://signalare.se</string>
+    <string name="about_website_link">https://www.signalare.se/</string>
     <string name="brbs_backup_dialog_failure_positive">Yedeklemeyi Yeniden Dene</string>
     <string name="brbs_restore_dialog_failure_title">Geri yükleme başarısız oldu</string>
     <string name="dns_btm_latency_ms">%1$ss</string>
@@ -442,7 +442,7 @@
     <string name="lbl_advanced">gelişmiş</string>
     <string name="bsrf_sub_group_heading">Alt grup</string>
     <string name="lbbs_search">Blok listelerindeki alan adlarını arama</string>
-    <string name="about_docs_link">https://docs.rethinkdns.com/</string>
+    <string name="about_docs_link">https://docs.signalare.se/</string>
     <string name="radio_sky_btn">⛅ Gökyüzü</string>
     <string name="configure_dns_connected_doh_status">HTTPS üzerinden DNS</string>
     <string name="settings_enable_logs">Aygıt üzerinde günlük kaydını etkinleştirme</string>
@@ -453,7 +453,7 @@
     <string name="settings_dns_proxy_dialog_positive_btn">set</string>
     <string name="settings_ip_dialog_ipv6">IPv6 (deneysel)</string>
     <string name="hsf_proxy_chip_text">Proxy etkin</string>
-    <string name="dc_rethink_dns_radio">Rethink DNS</string>
+    <string name="dc_rethink_dns_radio">Signalare Observer</string>
     <string name="dc_local_block_heading">Cihaz üzerinde blok listeleri</string>
     <string name="about_app_contributors">Katkıda bulunanlar</string>
     <string name="cd_custom_dns_proxy_name_default">Vekil</string>
@@ -483,7 +483,7 @@
     <string name="settings_ip_dialog_ipv46">Otomatik (deneysel)</string>
     <string name="firewall_status_isolate">izole edilmiş</string>
     <string name="lbl_proceed">Devam Et</string>
-    <string name="about_website">rethinkdns.com adresini ziyaret edin</string>
+    <string name="about_website">signalare.se adresini ziyaret edin</string>
     <string name="about_settings">sistem</string>
     <string name="cd_custom_dns_proxy_title">Özel DNS Proxy</string>
     <string name="cd_dns_proxy_mode_external">Harici</string>
@@ -496,12 +496,12 @@
     <string name="update_complete_action_snack">YENİDEN BAŞLAT</string>
     <string name="new_app_notification_content">Rethink son yüklenen %1$s uygulamasını engelledi.</string>
     <string name="category_name_others">Diğer</string>
-    <string name="settings_notification_dialog_option_1">\nDuraklat / Durdur (varsayılan):\nRethinkDNS\'i hızlı bir şekilde duraklatmak ve durdurmak için iki düğme gösterir.</string>
+    <string name="settings_notification_dialog_option_1">\nDuraklat / Durdur (varsayılan):\nSignalare Observer\'i hızlı bir şekilde duraklatmak ve durdurmak için iki düğme gösterir.</string>
     <string name="ada_noapp_dialog_title">Böyle bir uygulama yok</string>
     <string name="rt_download_start">Engelleme listeleri indiriliyor…</string>
     <string name="lbbs_update_check">Güncellemeleri denetle</string>
     <string name="brbs_title">Yedekle &amp; Geri Yükle</string>
-    <string name="about_faq_link">https://www.rethinkdns.com/faq</string>
+    <string name="about_faq_link">https://www.signalare.se/faq</string>
     <string name="local_blocklist_redownload">Güncel!</string>
     <string name="settings_ptrans_desc">Giden IPv6 trafiğini aygıt üzerinde IPv4\'e çevirin. Yalnızca IPv4 olan bir ağa bağlıysanız etkinleştirin.</string>
     <string name="settings_theme_dialog_themes_1">Sistem tarafından ayarlanır</string>
@@ -583,7 +583,7 @@
     <string name="download_update_dialog_message">Uygulamanın yeni sürümü web sitesinden indirilebilir. Devam etmek istiyor musunuz\?</string>
     <string name="download_update_dialog_message_ok">Zaten en son sürümü kullanıyorsunuz.</string>
     <string name="info_dialog_url_copy_toast_msg">URL kopyalandı</string>
-    <string name="whats_new_version_update">&lt;b&gt;Azami çaba&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. Yeni: Kullanıcı hata raporlarında ağ motoru hatalarını yakalayın.&lt;i&gt;Maksimum&lt;/i&gt;.&lt;br/&gt;2. Yeni: \"DNS sızıntılarını engelle\" seçeneği açık olduğunda, delegelenmemiş alan adları için Sistem DNS\'ini kullanma.&lt;br/&gt; 3. Geliştirme: İkili yığın (IPv4 + IPv6) WireGuard bağlantısı.&lt;br/&gt; 4. Geliştirme: Ağ motoru yanıt vermediğinde arayüz öğelerinin engellenmesini önleme.&lt;br/&gt; 5. Düzeltme: Gelişmiş DNS filtreleme açıkken bağlantı zaman aşımı sorunları.&lt;br/&gt; 6. Düzeltme: Domain adlarına sahip WireGuard peer uç noktaları, ağ değişikliklerinde donuyor.&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.rethinkdns.com/r/translate&gt;Bu uygulamanın çevirisine yardımcı olun&lt;/a&gt;</string>
+    <string name="whats_new_version_update">&lt;b&gt;Azami çaba&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. Yeni: Kullanıcı hata raporlarında ağ motoru hatalarını yakalayın.&lt;i&gt;Maksimum&lt;/i&gt;.&lt;br/&gt;2. Yeni: \"DNS sızıntılarını engelle\" seçeneği açık olduğunda, delegelenmemiş alan adları için Sistem DNS\'ini kullanma.&lt;br/&gt; 3. Geliştirme: İkili yığın (IPv4 + IPv6) WireGuard bağlantısı.&lt;br/&gt; 4. Geliştirme: Ağ motoru yanıt vermediğinde arayüz öğelerinin engellenmesini önleme.&lt;br/&gt; 5. Düzeltme: Gelişmiş DNS filtreleme açıkken bağlantı zaman aşımı sorunları.&lt;br/&gt; 6. Düzeltme: Domain adlarına sahip WireGuard peer uç noktaları, ağ değişikliklerinde donuyor.&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.signalare.se/r/translate&gt;Bu uygulamanın çevirisine yardımcı olun&lt;/a&gt;</string>
     <string name="settings_ip_network_desc">İnternet Protokolü sürümleri arasından seçim yapın.</string>
     <string name="orbot_http">HTTP Vekili</string>
     <string name="orbot_bs_status_2">HTTP Vekili ayarlandı.</string>
@@ -780,8 +780,8 @@
     <string name="settings_app_notification_a13_heading">Uygulama Bildirimi</string>
     <string name="about_privacy_policy">Gizlilik ilkesini oku</string>
     <string name="about_app_translate">Çevir</string>
-    <string name="about_translate_link">https://svc.rethinkdns.com/r/translate</string>
-    <string name="about_privacy_policy_link">https://www.rethinkdns.com/privacy</string>
+    <string name="about_translate_link">https://svc.signalare.se/r/translate</string>
+    <string name="about_privacy_policy_link">https://www.signalare.se/privacy</string>
     <string name="notification_screen_error">Uygulama Bildirim ekranı başlatılamadı.</string>
     <string name="intent_launch_error">Sayım başlatılmadı %1$s</string>
     <string name="no_browser_error">Tarayıcıdan web sayfası açılamıyor.</string>
@@ -1011,7 +1011,7 @@
     <string name="status_protected_with_wg_private_dns" translatable="true">wireguard &amp; özel dns i̇le korunuyor</string>
     <string name="crypt_adguard_family_desc" translatable="true">Güvenli arama ve yetişkinlere yönelik içerik engelleme özellikli Adguard DNS.</string>
     <string name="bad_config_reason_syntax_error" translatable="true">Sözdizimi hatası</string>
-    <string name="hs_biometeric_desc" translatable="true">RethinkDNS\'in kilidini açmak için biyometrik kimlik doğrulamayı kullanın</string>
+    <string name="hs_biometeric_desc" translatable="true">Signalare Observer\'in kilidini açmak için biyometrik kimlik doğrulamayı kullanın</string>
     <string name="fapps_unblock_dialog_message" translatable="true"><i>Listelenen</i> uygulamalar için bağlantılara izin ver\?</string>
     <string name="crypt_relay_france" translatable="true">Paris, Fransa\'da barındırılan ve https://cryptostrom.is/ tarafından sağlanan anonimleştirilmiş DNS aktarıcısı.</string>
     <string name="ssv_see_more" translatable="true">Tümünü Göster</string>
@@ -1183,7 +1183,7 @@
     <string name="adv_tasker_dialog_instructions" translatable="true">Talimatlar:\n Yayında gerekli ekstralar:\n • Anahtar: sender\n • Değer: Çağıran uygulamanın paket adı\n\nÖrnek: anahtar:sender değer:com.termux\n\n Desteklenen eylemler:\n • VPN Başlat – se.signalare.observer.intent.action.VPN_START\n • VPN Durdur – se.signalare.observer.intent.action.VPN_STOP</string>
     <string name="adv_tasker_dialog_edit_hint" translatable="true">Paket adını girin (örnek: net.dinglisch.android.taskerm)</string>
     <string name="download_ip_info_title" translatable="true">Sağlayıcı bilgilerini göster</string>
-    <string name="download_ip_info_desc" translatable="true">Web siteleri için hizmet sağlayıcı bilgilerini <i>rethinkdns.com</i>\'dan alır, <i>%1$s</i> tarafından desteklenir</string>
+    <string name="download_ip_info_desc" translatable="true">Web siteleri için hizmet sağlayıcı bilgilerini <i>signalare.se</i>\'dan alır, <i>%1$s</i> tarafından desteklenir</string>
     <string name="adv_taster_title" translatable="true">Otomasyon</string>
     <string name="adv_taster_desc" translatable="true">Rethink\'i başlatabilecek veya durdurabilecek uygulamaları yapılandırın.</string>
     <string name="top_active_conns" translatable="true">en aktif bağlantılar</string>

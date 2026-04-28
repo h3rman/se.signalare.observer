@@ -128,9 +128,9 @@
     <string name="pause_mode_notification_title" translatable="true">Pozastaveno! Blokované aplikace budou nadále firewallovány.</string>
     <string name="status_failing" description="This text appears if the connection is currently not working correctly. [CHAR_LIMIT=NONE]" translatable="true">selhává</string>
     <string name="failed_using_default" translatable="true">Selhalo: používá se záložní DNS</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">Připojeno k RethinkDNS a Firewallu</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">Připojeno k Signalare Observer a Firewallu</string>
     <string name="firewall_mode_info_explanation_new" translatable="true">Monitorujte síťovou aktivitu a firewallujte jakoukoli aplikaci nebo IP adresu.</string>
-    <string name="dns_explanation_dns_connected" translatable="true">Připojeno k RethinkDNS</string>
+    <string name="dns_explanation_dns_connected" translatable="true">Připojeno k Signalare Observer</string>
     <string name="brave_dns_connect_mode_change_firewall" translatable="true">Vyberte mód.</string>
     <string name="apps_info_title" translatable="true">Aplikace</string>
     <string name="hybrid_mode_info_title" translatable="true">DNS + Firewall</string>
@@ -186,7 +186,7 @@
     <string name="hsf_start_btn_state" translatable="true">spustit</string>
     <string name="about_bug_no_log_dialog_message" translatable="true">Nepodařilo se získat crash logy. Chcete chybu nahlásit ručně?</string>
     <string name="about_web" translatable="true">odkazy</string>
-    <string name="about_website" translatable="true">Navštívit rethinkdns.com</string>
+    <string name="about_website" translatable="true">Navštívit signalare.se</string>
     <string name="dns_query_latency" translatable="true">%1$sms</string>
     <string name="fapps_firewall_filter_bypass_universal" translatable="true">Obcházeno</string>
     <string name="fapps_firewall_filter_excluded" translatable="true">Vyloučeno</string>
@@ -432,7 +432,7 @@
     <string name="dc_block_heading" translatable="true">pravidla</string>
     <string name="dc_other_dns_heading" translatable="true">typ</string>
     <string name="dc_custom_dns_radio" translatable="true">Jiné DNS</string>
-    <string name="dc_rethink_dns_radio" translatable="true">Rethink DNS</string>
+    <string name="dc_rethink_dns_radio" translatable="true">Signalare Observer</string>
     <string name="dc_local_block_heading" translatable="true">Blokovací seznamy v zařízení</string>
     <string name="dc_local_block_desc_1" translatable="true">Vyberte si z 195+ blokovacích seznamů. Klepnutím stáhněte nebo upravte seznamy.</string>
     <string name="dc_custom_block_heading" translatable="true">Doménová pravidla</string>
@@ -747,7 +747,7 @@
     <string name="crypt_relay_sweden" translatable="true">Anonymizovaný DNS relay ve Švédsku, poskytováno https://cryptostrom.is/.</string>
     <string name="crypt_relay_us" translatable="true">Anonymizovaný DNS relay v USA - Los Angeles, CA, poskytováno https://cryptostrom.is/.</string>
     <string name="crypt_relay_singapore" translatable="true">Anonymizovaný DNS relay v Singapuru.</string>
-    <string name="whats_new_version_update" translatable="true"><b>Nepanikař 2</b><br/><br/>1. Nové: Zachytávat chyby síťového enginu v uživatelských hlášeních chyb.<br/>2. Nové: používat systémové DNS pro nedelegované domény, pokud je zapnuto „Zabránit únikům DNS“.<br/>3. Vylepšení: Dual-stack (IPv4 + IPv6) konektivita ve WireGuardu.<br/>4. Vylepšení: Zabraňovat blokování prvků uživatelského rozhraní, když síťový engine neodpovídá.<br/>5. Oprava: Vypršení časového limitu při zapnutém pokročilém filtrování DNS.<br/>6. Oprava: Peer endpointy WireGuardu s doménovými názvy se mohou při změnách sítě zaseknout.<br/><br/><a href="https://svc.rethinkdns.com/r/translate">Pomozte přeložit tuto aplikaci</a></string>
+    <string name="whats_new_version_update" translatable="true"><b>Nepanikař 2</b><br/><br/>1. Nové: Zachytávat chyby síťového enginu v uživatelských hlášeních chyb.<br/>2. Nové: používat systémové DNS pro nedelegované domény, pokud je zapnuto „Zabránit únikům DNS“.<br/>3. Vylepšení: Dual-stack (IPv4 + IPv6) konektivita ve WireGuardu.<br/>4. Vylepšení: Zabraňovat blokování prvků uživatelského rozhraní, když síťový engine neodpovídá.<br/>5. Oprava: Vypršení časového limitu při zapnutém pokročilém filtrování DNS.<br/>6. Oprava: Peer endpointy WireGuardu s doménovými názvy se mohou při změnách sítě zaseknout.<br/><br/><a href="https://svc.signalare.se/r/translate">Pomozte přeložit tuto aplikaci</a></string>
     <string name="pcap_failure_toast" translatable="true">Chyba při vytváření pcap souboru, zkuste to znovu!</string>
     <string name="firewall_status_blocked" translatable="true">blokováno</string>
     <string name="dc_entries" translatable="true">%1$s záznamů »</string>

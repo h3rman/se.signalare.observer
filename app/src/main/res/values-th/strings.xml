@@ -102,7 +102,7 @@
     <string name="ssv_most_contacted_ips_heading" description="This label will appear on the stats screen as a header for most visited ips" translatable="true">IP ที่ติดต่อมากที่สุด</string>
     <string name="ssv_most_blocked_domain_heading" description="This label will appear on the stats screen as a header for most blocked domains" translatable="true">โดเมนที่ถูกบล็อคมากที่สุด</string>
     <string name="status_protected_with_tor_private_dns" translatable="true">ได้รับการปกป้องด้วย Tor และ DNS ส่วนตัว</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">เชื่อมต่อกับ RethinkDNS และไฟร์วอลล์</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">เชื่อมต่อกับ Signalare Observer และไฟร์วอลล์</string>
     <string name="status_protected" description="This is a large message in a reassuring color. It indicates that DNS queries can't be surveilled or modified in transit." translatable="true">ได้รับการคุ้มครอง</string>
     <string name="alert_firewall_accessibility_exception" translatable="true">ไม่สามารถเปิดการตั้งค่าการเข้าถึงได้ โปรดลองอีกครั้งในภายหลัง!</string>
     <string name="conn_track_clear_logs_title" translatable="true">ลบบันทึกเครือข่ายทั้งหมดหรือไม่?</string>
@@ -370,7 +370,7 @@
     <string name="status_protected_with_http" translatable="true">ได้รับการปกป้องด้วยพร็อกซี HTTP</string>
     <string name="status_protected_with_proxy" translatable="true">ได้รับการปกป้องด้วยพร็อกซี</string>
     <string name="status_protected_with_wg_private_dns" translatable="true">ได้รับการปกป้องด้วย wireguard และ dns ส่วนตัว</string>
-    <string name="dns_explanation_dns_connected" translatable="true">เชื่อมต่อกับ RethinkDNS</string>
+    <string name="dns_explanation_dns_connected" translatable="true">เชื่อมต่อกับ Signalare Observer</string>
     <string name="dns_explanation_firewall_connected" translatable="true">เชื่อมต่อกับไฟร์วอลล์</string>
     <string name="notification_action_resume_vpn" translatable="true">ประวัติย่อ</string>
     <string name="notification_action_pause_vpn" translatable="true">หยุดชั่วคราว</string>
@@ -573,7 +573,7 @@
     <string name="lbbs_copy" translatable="true">คัดลอกเป็น RDNS+ URL</string>
     <string name="brbs_restore_complete_toast" translatable="true">การคืนค่าเสร็จสมบูรณ์ กำลังรีสตาร์ทแอป…</string>
     <string name="brbs_backup_complete_toast" translatable="true">การสำรองข้อมูลเสร็จสิ้น</string>
-    <string name="dc_rethink_dns_radio" translatable="true">Rethink DNS</string>
+    <string name="dc_rethink_dns_radio" translatable="true">Signalare Observer</string>
     <string name="dc_entries" translatable="true">%1$s รายการ »</string>
     <string name="fapps_bypass_block_dialog_message" translatable="true">ข้ามกฎไฟร์วอลล์สากลสำหรับแอปที่<i>อยู่ในรายการ</i>หรือไม่?</string>
     <string name="cd_toast_added" translatable="true">เพิ่มโดเมนสำเร็จแล้ว</string>
@@ -730,7 +730,7 @@
     <string name="about_bug_report_desc" translatable="true">บันทึกความผิดพลาดของอีเมล์</string>
     <string name="about_bug_no_log_dialog_positive_btn" translatable="true">ส่งอีเมล์</string>
     <string name="about_web" translatable="true">ลิงค์</string>
-    <string name="about_website" translatable="true">เยี่ยมชม rethinkdns.com</string>
+    <string name="about_website" translatable="true">เยี่ยมชม signalare.se</string>
     <string name="about_faq" translatable="true">ดูคำถามที่พบบ่อย</string>
     <string name="about_docs" translatable="true">อ่านเอกสาร</string>
     <string name="about_privacy_policy" translatable="true">อ่านนโยบายความเป็นส่วนตัว</string>
@@ -940,7 +940,7 @@
     <string name="dns_crypt_url_remove_dialog_message" translatable="true">ลบตัวแก้ไข DNSCrypt จากการกำหนดค่าที่บันทึกไว้</string>
     <string name="download_update_dialog_message" translatable="true">สามารถดาวน์โหลดแอปพลิเคชันเวอร์ชันใหม่ได้จากเว็บไซต์ คุณต้องการดำเนินการต่อหรือไม่?</string>
     <string name="download_update_dialog_message_success" translatable="true">ดาวน์โหลดรายการบล็อคสำเร็จแล้ว</string>
-    <string name="whats_new_version_update" translatable="true">&lt;b&gt;Don\'t Panic 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. ใหม่: จับข้อผิดพลาดของกลไกเครือข่ายในรายงานจุดบกพร่องของผู้ใช้&lt;br/&gt; 2. ใหม่: ใช้ System DNS สำหรับชื่อโดเมนที่ไม่ได้รับการมอบหมายก็ต่อเมื่อ Prevent DNS leaks เปิดอยู่&lt;br/&gt; 3. การปรับปรุง: การเชื่อมต่อ WireGuard แบบ Dual-stack (IPv4 + IPv6)&lt;br/&gt; 4. การปรับปรุง: หลีกเลี่ยงการบล็อกองค์ประกอบ UI เมื่อกลไกเครือข่ายไม่มีการตอบสนอง&lt;br/&gt; 5. แก้ไข: หมดเวลาการเชื่อมต่อเมื่อเปิดการกรอง DNS ขั้นสูง&lt;br/&gt; 6. แก้ไข: จุดสิ้นสุดของเพียร์ WireGuard ที่มีชื่อโดเมนค้างเมื่อมีการเปลี่ยนแปลงเครือข่าย&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.rethinkdns.com/r/translate&gt;ช่วยแปลแอปนี้&lt;/a&gt;</string>
+    <string name="whats_new_version_update" translatable="true">&lt;b&gt;Don\'t Panic 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. ใหม่: จับข้อผิดพลาดของกลไกเครือข่ายในรายงานจุดบกพร่องของผู้ใช้&lt;br/&gt; 2. ใหม่: ใช้ System DNS สำหรับชื่อโดเมนที่ไม่ได้รับการมอบหมายก็ต่อเมื่อ Prevent DNS leaks เปิดอยู่&lt;br/&gt; 3. การปรับปรุง: การเชื่อมต่อ WireGuard แบบ Dual-stack (IPv4 + IPv6)&lt;br/&gt; 4. การปรับปรุง: หลีกเลี่ยงการบล็อกองค์ประกอบ UI เมื่อกลไกเครือข่ายไม่มีการตอบสนอง&lt;br/&gt; 5. แก้ไข: หมดเวลาการเชื่อมต่อเมื่อเปิดการกรอง DNS ขั้นสูง&lt;br/&gt; 6. แก้ไข: จุดสิ้นสุดของเพียร์ WireGuard ที่มีชื่อโดเมนค้างเมื่อมีการเปลี่ยนแปลงเครือข่าย&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.signalare.se/r/translate&gt;ช่วยแปลแอปนี้&lt;/a&gt;</string>
     <string name="settings_exclude_proxy_apps_desc" translatable="true">เมื่อปิดใช้งาน จะไม่รวมแอปส่งต่อพร็อกซี (SOCKS5, HTTP, DNS) จากอุโมงค์ VPN ของ Rethink</string>
     <string name="settings_ip_network_desc" translatable="true">เลือกระหว่างเวอร์ชันโปรโตคอลอินเทอร์เน็ต</string>
     <string name="settings_ptrans_desc" translatable="true">แปลทราฟฟิก IPv6 ขาออกให้เป็น IPv4 บนอุปกรณ์ เปิดใช้งานหากคุณเชื่อมต่อกับเครือข่าย IPv4 เท่านั้น</string>

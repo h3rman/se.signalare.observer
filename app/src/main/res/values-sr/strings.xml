@@ -93,9 +93,9 @@
     <string name="status_protected_with_proxy" translatable="true">заштићен са проксијем</string>
     <string name="status_protected_with_wg" translatable="true">заштићен са wireguard-ом</string>
     <string name="status_exposed" description="This is a large message in a scary color.  It indicates that DNS queries can be surveilled or modified in transit." translatable="true">није заштићен</string>
-    <string name="dns_explanation_dns_connected" translatable="true">Повезан са RethinkDNS-ом</string>
+    <string name="dns_explanation_dns_connected" translatable="true">Повезан са Signalare Observer-ом</string>
     <string name="dns_explanation_firewall_connected" translatable="true">Повезан са заштитним зидом</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">Повезан са RethinkDNS-ом и заштитним зидом</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">Повезан са Signalare Observer-ом и заштитним зидом</string>
     <string name="notification_action_resume_vpn" translatable="true">НАСТАВИ</string>
     <string name="hybrid_mode_notification_title" translatable="true">Заштићени! Повезани са DNS + заштитни зид.</string>
     <string name="hybrid_mode_with_proxy_notification_title" translatable="true">Заштићени! Повезани са DNS + заштитни зид + прокси.</string>
@@ -344,7 +344,7 @@
     <string name="dc_block_heading" translatable="true">правила</string>
     <string name="dc_other_dns_heading" translatable="true">врста</string>
     <string name="dc_custom_dns_radio" translatable="true">Други DNS</string>
-    <string name="dc_rethink_dns_radio" translatable="true">Rethink DNS</string>
+    <string name="dc_rethink_dns_radio" translatable="true">Signalare Observer</string>
     <string name="dc_entries" translatable="true">%1$s уноси »</string>
     <string name="dc_local_block_heading" translatable="true">Блок листе на уређају</string>
     <string name="dc_local_block_desc_1" translatable="true">Изаберите међу 195+ блок листи. Кликните овде да преузмете или подесите блок листе.</string>
@@ -366,7 +366,7 @@
     <string name="about_bug_no_log_dialog_title" translatable="true">Извештај о грешки</string>
     <string name="about_bug_no_log_dialog_message" translatable="true">Није успело сакупљање записа о грешки. Да ли желите да ручно пријавите ваш проблем?</string>
     <string name="about_web" translatable="true">везе</string>
-    <string name="about_website" translatable="true">Посети rethinkdns.com</string>
+    <string name="about_website" translatable="true">Посети signalare.se</string>
     <string name="about_github" translatable="true">Допринеси на GitHub-у</string>
     <string name="about_faq" translatable="true">Погледај ЧПП</string>
     <string name="about_docs" translatable="true">Прочитај документацију</string>
@@ -877,7 +877,7 @@
     <string name="firewall_rule_exempt_dns_proxied_desc" translatable="true">Ова DNS конекција је проксована и прослеђена на пожељну DNS крајњу тачку корисника.<br/><br/> За промену онемогући <i>спречи DNS цурења</i> на екрану DNS <i>подешавања</i>.</string>
     <string name="firewall_rule_bypass_dns_firewall_desc" translatable="true">Конекција је дозвољена јер је <i>изворна апликација</i> подешена да <i>заобиђе dns и правила заштитног зида</i>.<br/><br/> За промену идите на екран <i>заштитни зид по апликацији</i>.</string>
     <string name="firewall_rule_trusted_ip_desc" translatable="true">Конекција је дозвољена јер је <i>одредишна IP</i> подешена као IP од поверења.<br/><br/> За промену иди на екран <i>заштитни зид по апликацији</i>.</string>
-    <string name="whats_new_version_update" translatable="true">&lt;b&gt;Не паничите 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. Ново: Хватање грешака мрежног енџина у корисничким извештајима о грешки.&lt;br/&gt; 2. Ново: користи системски DNS за неделегиране називе домена уколико је укључен Спречи DNS цурења.&lt;br/&gt; 3. Унапређење: Двострука (IPv4 + IPv6) WireGuard повезивост.&lt;br/&gt; 4. Унапређење: Избегавај блокирање UI елемената када је мрежни енџин нереспонзиван.&lt;br/&gt; 5. Исправка: истицање времена повезивања са укљученим Напредним DNS филтрирањем.&lt;br/&gt; 6. Исправка: WireGuard peer крајње тачке са називима домена висе при променама мреже.&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.rethinkdns.com/r/translate&gt;Помозите у превођењу ове апликације&lt;/a&gt;</string>
+    <string name="whats_new_version_update" translatable="true">&lt;b&gt;Не паничите 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. Ново: Хватање грешака мрежног енџина у корисничким извештајима о грешки.&lt;br/&gt; 2. Ново: користи системски DNS за неделегиране називе домена уколико је укључен Спречи DNS цурења.&lt;br/&gt; 3. Унапређење: Двострука (IPv4 + IPv6) WireGuard повезивост.&lt;br/&gt; 4. Унапређење: Избегавај блокирање UI елемената када је мрежни енџин нереспонзиван.&lt;br/&gt; 5. Исправка: истицање времена повезивања са укљученим Напредним DNS филтрирањем.&lt;br/&gt; 6. Исправка: WireGuard peer крајње тачке са називима домена висе при променама мреже.&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.signalare.se/r/translate&gt;Помозите у превођењу ове апликације&lt;/a&gt;</string>
     <string name="settings_exclude_proxy_apps_heading" translatable="true">Пошаљи прокси прослеђујуће апликације на повратну петљу</string>
     <string name="settings_exclude_proxy_apps_desc" translatable="true">Када је онемогућено, изузима прокси (SOCKS5, HTTP, DNS) прослеђујуће апликације из Rethink-овог VPN тунела.</string>
     <string name="orbot_stop_dialog_message" translatable="true">Rethink је престао да прослеђује конекције Orbot-у, али Orbot је можда покренут у позадини.</string>

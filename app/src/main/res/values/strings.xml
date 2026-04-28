@@ -285,11 +285,11 @@
     not protected
     </string>
 
-    <string name="dns_explanation_dns_connected" translatable="true">Connected to RethinkDNS</string>
+    <string name="dns_explanation_dns_connected" translatable="true">Connected to Signalare Observer</string>
     <string name="dns_explanation_firewall_connected" translatable="true">Connected to Firewall</string>
 
     <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">
-        Connected to RethinkDNS and Firewall
+        Connected to Signalare Observer and Firewall
     </string>
 
     <string name="universal_firewall_explanation" translatable="true">Apply firewall rules on all applications based on device events, for example, firewall when the device is locked or when a particular app is not in use.
@@ -463,7 +463,7 @@
         5. Fix: Connection timeouts with Advanced DNS filtering turned ON.<br/>
         6. Fix: WireGuard peer endpoints with domain names hang on network changes.<br/><br/>
 
-        <a href="https://svc.rethinkdns.com/r/translate">Help translate this app</a>]]>
+        <a href="https://svc.signalare.se/r/translate">Help translate this app</a>]]>
     </string>
 
     <string name="connection_http3" translatable="true">HTTP3</string>
@@ -782,7 +782,7 @@
     <string name="dc_other_dns_heading" translatable="true">type</string>
 
     <string name="dc_custom_dns_radio" translatable="true">Other DNS</string>
-    <string name="dc_rethink_dns_radio" translatable="true">Rethink DNS</string>
+    <string name="dc_rethink_dns_radio" translatable="true">Signalare Observer</string>
 
     <string name="dc_entries" translatable="true">%1$s entries »</string>
 
@@ -833,7 +833,7 @@
     <string name="bug_report_no_files_available" translatable="false">No bug report files available</string>
 
     <string name="about_web" translatable="true">links</string>
-    <string name="about_website" translatable="true">Visit rethinkdns.com</string>
+    <string name="about_website" translatable="true">Visit signalare.se</string>
     <string name="about_github" translatable="true">Contribute on GitHub</string>
     <string name="about_faq" translatable="true">View FAQs</string>
     <string name="about_docs" translatable="true">Read docs</string>
@@ -859,21 +859,21 @@
     <string name="about_mail_bugreport_subject" translatable="true">[Rethink]: Bug report</string>
     <string name="about_mail_bugreport_text" translatable="true">Send this email to : hello@celzero.com</string>
     <string name="about_mail_bugreport_share_title" translatable="true">Select email provider</string>
-    <string name="about_telegram_link" translatable="false">https://telegram.me/rethinkdns</string>
-    <string name="about_docs_link" translatable="false">https://docs.rethinkdns.com/</string>
-    <string name="about_faq_link" translatable="false">https://www.rethinkdns.com/faq</string>
+    <string name="about_telegram_link" translatable="false">https://signalare.se</string>
+    <string name="about_docs_link" translatable="false">https://docs.signalare.se/</string>
+    <string name="about_faq_link" translatable="false">https://www.signalare.se/faq</string>
     <string name="about_github_link" translatable="false">https://github.com/celzero/rethink-app</string>
-    <string name="about_twitter_handle" translatable="false">https://x.com/rethinkdns</string>
-    <string name="about_website_link" translatable="false">https://www.rethinkdns.com/</string>
+    <string name="about_twitter_handle" translatable="false">https://signalare.se</string>
+    <string name="about_website_link" translatable="false">https://www.signalare.se/</string>
     <string name="about_mozilla_alumni_link" translatable="false">https://builders.mozilla.community/old/alumni.html</string>
     <string name="about_foss_link" translatable="false">https://fossunited.org/grants</string>
     <string name="about_floss_fund_link" translatable="false">https://floss.fund/projects/2025</string>
-    <string name="about_translate_link" translatable="false">https://svc.rethinkdns.com/r/translate</string>
-    <string name="about_privacy_policy_link" translatable="false">https://www.rethinkdns.com/privacy</string>
-    <string name="about_terms_link" translatable="false">https://rethinkdns.com/terms</string>
+    <string name="about_translate_link" translatable="false">https://svc.signalare.se/r/translate</string>
+    <string name="about_privacy_policy_link" translatable="false">https://www.signalare.se/privacy</string>
+    <string name="about_terms_link" translatable="false">https://signalare.se/terms</string>
     <string name="about_license_link" translatable="false">https://opensource.org/license/apache-2-0</string>
     <string name="about_mastodom_handle" translatable="false">https://mastodon.social/@rdns</string>
-    <string name="about_reddit_handle" translatable="false">https://www.reddit.com/r/rethinkdns</string>
+    <string name="about_reddit_handle" translatable="false">https://signalare.se</string>
     <string name="about_matrix_handle" translatable="false">https://matrix.to/#/!jrTSpJiEkFNNBMhSaE:matrix.org</string>
     <string name="about_version" translatable="false">%1$s</string> <!-- remove this string name="about_version" translatable="false">v%1$s</string> -->
     <string name="about_version_install_source" translatable="false">%1$s (%2$s)</string>
@@ -1492,7 +1492,7 @@
     <!-- dns configure fragment -->
     <string name="dc_local_block_enabled" translatable="true">Enabled</string>
 
-    <string name="dc_rethink_dns" translatable="false">Rethink DNS</string>
+    <string name="dc_rethink_dns" translatable="false">Signalare Observer</string>
     <string name="dc_doh" translatable="false">DNS-over-HTTPS</string>
     <string name="dc_dns_crypt" translatable="false">DNSCrypt</string>
     <string name="dc_dns_proxy" translatable="false">DNS Proxy</string>
@@ -1782,7 +1782,7 @@
     <string name="set_auto_dial_desc" translatable="false">Use parallel dialing to connect to multiple servers at once.</string>
 
     <string name="download_ip_info_title" translatable="true">Show provider information</string>
-    <string name="download_ip_info_desc" translatable="true">Fetches service provider details for websites from <i>rethinkdns.com</i>, powered by <i>%1$s</i></string>
+    <string name="download_ip_info_desc" translatable="true">Fetches service provider details for websites from <i>signalare.se</i>, powered by <i>%1$s</i></string>
 
     <string name="adv_taster_title" translatable="true">Automation</string>
     <string name="adv_taster_desc" translatable="true">Configure apps that can start or stop Rethink.</string>
@@ -2058,7 +2058,7 @@
     <string name="resubscribe_btn_not_now" translatable="false">Not Now</string>
     <string name="resubscribe_error" translatable="false">Failed to launch resubscription. Please try again.</string>
 
-    <string name="fallback_rplus_toast" translatable="false">Rethink Plus is active, fallback dns is not supported</string>
+    <string name="fallback_rplus_toast" translatable="false">Signalare Plus is active, fallback dns is not supported</string>
 
     <string name="error_loading_manage_subscription" translatable="false">Error loading purchase details</string>
 
@@ -2077,7 +2077,7 @@
     <string name="rethink_plus_no_play_services" translatable="false">RPN Not Available</string>
     <string name="rethink_plus_no_play_services_desc" translatable="false">RPN requires Google Play Services which is not available on this device.</string>
 
-    <string name="rethink_terms" translatable="false">By subscribing to Rethink Plus you agree to the &lt;a href="https://rethinkdns.com/terms"&gt;Rethink Terms of Service&lt;/a&gt; and &lt;a href="https://rethinkdns.com/privacy"&gt;Privacy Policy&lt;/a&gt;. Powered by Windscribe</string>
+    <string name="rethink_terms" translatable="false">By subscribing to Signalare Plus you agree to the &lt;a href="https://signalare.se/terms"&gt;Rethink Terms of Service&lt;/a&gt; and &lt;a href="https://signalare.se/privacy"&gt;Privacy Policy&lt;/a&gt;. Powered by Windscribe</string>
 
     <!-- Premium Subscription UI Strings -->
     <string name="premium_subtitle" translatable="false">Enhanced privacy, speed, and security</string>
@@ -2579,12 +2579,12 @@
     <string name="device_not_registered_master_badge" translatable="false">master</string>
     <string name="device_not_registered_what_this_means" translatable="false">What this means</string>
     <string name="device_not_registered_what_this_means_desc" translatable="false">Your subscription is active on Google Play but your device could not be linked to it on the Rethink server. This can happen after restoring from a backup or switching devices. Our support team can resolve this quickly once you provide the account details above.</string>
-    <string name="device_not_registered_email_subject" translatable="false">Device Not Registered: Rethink DNS</string>
+    <string name="device_not_registered_email_subject" translatable="false">Device Not Registered: Signalare Observer</string>
     <string name="device_not_registered_email_body_details" translatable="false">I have an active subscription but my device cannot be registered. The account details are:</string>
 
     <!-- Contact Support row in ManagePurchaseFragment -->
     <string name="contact_support_subtitle" translatable="false">Having trouble with your account or device registration? We\'re here to help.</string>
-    <string name="contact_support_email_subject" translatable="false">Subscription Support: Rethink DNS</string>
+    <string name="contact_support_email_subject" translatable="false">Subscription Support: Signalare Observer</string>
     <string name="contact_support_email_body" translatable="false">Hello Rethink Support,\n\nI need help with my subscription or account.</string>
 
     <!-- Device-not-registered system notification -->

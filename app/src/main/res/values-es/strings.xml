@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">RethinkDNS</string>
+    <string name="app_name">Signalare Observer</string>
     <string name="app_name_small_case">rethink</string>
     <string name="fapps_unmetered_block_dialog_message">¿Bloquear las conexiones en la red sin límites (WiFi) para las aplicaciones en la <i>lista</i>\?</string>
     <string name="unicode_question_sign">❔</string>
@@ -10,15 +10,15 @@
     <string name="firewall_rule_isolate">Aislamiento</string>
     <string name="firewall_rule_block_udp_ntp_desc"><![CDATA[Una regla del cortafuegos activada por el usuario bloqueó esta conexión <i>UDP</i>.<br/><br/> Para cambiarla, vaya a la pestaña <i>Universal</i>.]]></string>
     <string name="firewall_rule_bypass_universal_ip">IP omitida</string>
-    <string name="about_website_link">https://www.rethinkdns.com/</string>
-    <string name="about_docs_link">https://docs.rethinkdns.com/</string>
-    <string name="about_faq_link">https://www.rethinkdns.com/faq</string>
+    <string name="about_website_link">https://www.signalare.se/</string>
+    <string name="about_docs_link">https://docs.signalare.se/</string>
+    <string name="about_faq_link">https://www.signalare.se/faq</string>
     <string name="about_mozilla_alumni_link">https://builders.mozilla.community/alumni.html</string>
     <string name="about_dialog_neutral_button">Sugerir características</string>
     <string name="about_mail_bugreport_subject">[Rethink]: Informe de errores</string>
     <string name="about_mail_bugreport_share_title">Seleccione el proveedor de correo electrónico</string>
     <string name="about_twitter_handle">https://twitter.com/rethinkdns</string>
-    <string name="about_privacy_policy_link">https://www.rethinkdns.com/privacy</string>
+    <string name="about_privacy_policy_link">https://www.signalare.se/privacy</string>
     <string name="about_version">v%1$s</string>
     <string name="cd_dns_proxy_error_text_2">El rango de puertos debe ser de 1024 a 65535</string>
     <string name="cd_custom_dns_proxy_default_app">Ninguno</string>
@@ -35,12 +35,12 @@
 \nNúmero de puerto: %2$s</string>
     <string name="dns_proxy_dialog_header_dns">Añadir proxy DNS</string>
     <string name="cd_toast_added">Dominio añadido con éxito</string>
-    <string name="whats_new_version_update">&lt;b&gt;Que no cunda el pánico 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. Nuevo: Captura de errores del motor de red en los informes de errores de los usuarios.&lt;br/&gt; 2. Nuevo: use el DNS del sistema para nombres de dominio no delegados si la opción Evitar fugas de DNS está activada.&lt;br/&gt; 3. Mejora: Conectividad WireGuard de doble pila (IPv4 + IPv6).&lt;br/&gt; 4. Mejora: Evite bloquear los elementos de la interfaz de usuario cuando el motor de red no responde.&lt;br/&gt; 5. Corrección: Tiempos de espera de conexión con el filtrado de DNS avanzado activado.&lt;br/&gt; 6. Corrección: Los terminales de pares de WireGuard con nombres de dominio se bloquean en los cambios de red.&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.rethinkdns.com/r/translate&gt;Help traducir esta aplicación&lt;/a&gt;</string>
+    <string name="whats_new_version_update">&lt;b&gt;Que no cunda el pánico 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. Nuevo: Captura de errores del motor de red en los informes de errores de los usuarios.&lt;br/&gt; 2. Nuevo: use el DNS del sistema para nombres de dominio no delegados si la opción Evitar fugas de DNS está activada.&lt;br/&gt; 3. Mejora: Conectividad WireGuard de doble pila (IPv4 + IPv6).&lt;br/&gt; 4. Mejora: Evite bloquear los elementos de la interfaz de usuario cuando el motor de red no responde.&lt;br/&gt; 5. Corrección: Tiempos de espera de conexión con el filtrado de DNS avanzado activado.&lt;br/&gt; 6. Corrección: Los terminales de pares de WireGuard con nombres de dominio se bloquean en los cambios de red.&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.signalare.se/r/translate&gt;Help traducir esta aplicación&lt;/a&gt;</string>
     <string name="dc_dns_leaks_desc">Cuando está activado, Rethink captura todos los paquetes en el puerto 53 y los reenvía a un punto de acceso DNS establecido por el usuario</string>
     <string name="about_settings_app_info">Información de la aplicación</string>
     <string name="settings_orbot_disabled_error">Desactive el proxy HTTP(S) y/o SOCKS5 para continuar con la configuración de Tor-como-un-proxy.</string>
     <string name="about_settings_vpn_profile">Perfil de la VPN</string>
-    <string name="about_translate_link">https://svc.rethinkdns.com/r/translate</string>
+    <string name="about_translate_link">https://svc.signalare.se/r/translate</string>
     <string name="always_on_dialog_heading">Desactivar la VPN siempre activa</string>
     <string name="always_on_dialog_stop_heading">VPN siempre activa</string>
     <string name="always_on_dialog_lockdown_stop_message">Rethink está ejecutando la VPN en modo <i>Bloqueo</i>. Detenerlo provocaría la pérdida de conectividad a Internet en este perfil de usuario. ¿Desea continuar de todas formas?</string>
@@ -141,8 +141,8 @@
     <string name="status_protected_with_proxy">protegido con proxy</string>
     <string name="status_strict" description="This is similar to dns_on, but the protection is being provided by the operating system, not by Rethink.  It is not color-highlighted.">el dns privado está activado</string>
     <string name="status_exposed" description="This is a large message in a scary color.  It indicates that DNS queries can be surveilled or modified in transit.">no protegido</string>
-    <string name="dns_explanation_dns_connected">Conectado a RethinkDNS</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">Conectado a RethinkDNS y al cortafuegos</string>
+    <string name="dns_explanation_dns_connected">Conectado a Signalare Observer</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">Conectado a Signalare Observer y al cortafuegos</string>
     <string name="dns_explanation_firewall_connected">Conectado al cortafuegos</string>
     <string name="universal_firewall_explanation">Aplique reglas de cortafuegos en todas las aplicaciones en función de los eventos del dispositivo, p.ej., bloqueándolas cuando el dispositivo está bloqueado o cuando una determinada aplicación no está en uso.</string>
     <string name="notification_action_resume_vpn">REANUDAR</string>
@@ -464,7 +464,7 @@
     <string name="dc_custom_dns_radio">Otros DNS</string>
     <string name="hsf_exclude_error">La exclusión no es posible en el modo bloqueo de VPN</string>
     <string name="dc_dns_website_heading">Mostrar el icono del sitio web en los registros de DNS (en pruebas)</string>
-    <string name="dc_rethink_dns_radio">Rethink DNS</string>
+    <string name="dc_rethink_dns_radio">Signalare Observer</string>
     <string name="dc_entries">%1$s entradas »</string>
     <string name="dc_dns_leaks_heading">Evitar las fugas de DNS</string>
     <string name="dc_check_update_desc">Comprueba las actualizaciones de la lista de bloqueo una vez cada <i>tres</i> días</string>
@@ -474,7 +474,7 @@
     <string name="about_bug_no_log_dialog_positive_btn">Enviar correo electrónico</string>
     <string name="about_bug_report_dialog_positive_btn">Enviar correo electrónico</string>
     <string name="about_web">enlaces</string>
-    <string name="about_website">Visite rethinkdns.com</string>
+    <string name="about_website">Visite signalare.se</string>
     <string name="about_github">Contribuir en GitHub</string>
     <string name="about_docs">Leer documentación</string>
     <string name="about_sponsor_link_text">Patrocinadores</string>
@@ -583,7 +583,7 @@
     <string name="rethink_max_desc">Más de 50 ubicaciones; más privadas; resolución recursiva que funciona en fly.io</string>
     <string name="rethink_sky_desc">Más de 280 ubicaciones; mayor tiempo de actividad; resolución local que se ejecuta en cloudflare.com</string>
     <string name="bsrf_sub_group_heading">Subgrupo</string>
-    <string name="dc_rethink_dns">Rethink DNS</string>
+    <string name="dc_rethink_dns">Signalare Observer</string>
     <string name="brbs_title">Respaldo y restauración</string>
     <string name="brbs_restore_dialog_positive">Restaurar</string>
     <string name="brbs_restore_dialog_failure_title">La restauración ha fallado</string>
@@ -695,7 +695,7 @@
     <string name="about_title_desc">Detectar y bloquear las amenazas a la seguridad de la red</string>
     <string name="slide_2_title">Bienvenido</string>
     <string name="about_version_install_source">v%1$s (%2$s)</string>
-    <string name="about_telegram_link">https://telegram.me/rethinkdns</string>
+    <string name="about_telegram_link">https://signalare.se</string>
     <string name="about_github_link">https://github.com/celzero/rethink-app</string>
     <string name="slide_1_desc">Rethink es un programa de código abierto respaldado por el programa MVP de Mozilla Builders, FOSS United Foundation.</string>
     <string name="firewall_mode_notification_title">¡Protegido! Conectado al Cortafuegos.</string>
@@ -1195,7 +1195,7 @@
     <string name="hop_add_remove_title" translatable="true">Añadir / eliminar retransmisión</string>
     <string name="bypasses_network_restrictions" translatable="true">Las comprobaciones de alcance omiten todas las restricciones de red. En modo <i>Auto</i>, Rethink usa aleatoriamente IPs y nombres de host conectados previamente.</string>
     <string name="adv_tasker_dialog_edit_hint" translatable="true">Introduzca el nombre del paquete (ejemplo: net.dinglisch.android.taskerm)</string>
-    <string name="download_ip_info_desc" translatable="true">Obtiene detalles del proveedor de servicios para sitios web desde <i>rethinkdns.com</i>, con tecnología de<i>%1$s</i></string>
+    <string name="download_ip_info_desc" translatable="true">Obtiene detalles del proveedor de servicios para sitios web desde <i>signalare.se</i>, con tecnología de<i>%1$s</i></string>
     <string name="top_active_conns" translatable="true">principales conexiones activas</string>
     <string name="load_more" translatable="true">Cargar todo</string>
     <string name="local_blocklist_delete_desc" translatable="true">¿Eliminar las listas de bloqueo en el dispositivo?</string>

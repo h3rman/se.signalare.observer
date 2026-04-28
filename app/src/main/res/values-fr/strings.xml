@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">RethinkDNS</string>
+    <string name="app_name">Signalare Observer</string>
     <string name="app_name_small_case">rethink</string>
     <string name="title_about">À propos</string>
     <string name="title_settings">Paramètres</string>
@@ -25,7 +25,7 @@
     <string name="status_protected_with_proxy_private_dns">protégé par proxy &amp; DNS privé</string>
     <string name="status_protected_with_http_private_dns">protégé par proxy HTTP &amp; DNS privé</string>
     <string name="status_protected_with_socks5_private_dns">protégé par proxy SOCKS5 &amp; DNS privé</string>
-    <string name="dns_explanation_dns_connected">Connecté via RethinkDNS</string>
+    <string name="dns_explanation_dns_connected">Connecté via Signalare Observer</string>
     <string name="dns_explanation_firewall_connected">Connecté via pare-feu</string>
     <string name="universal_firewall_explanation">Appliquer des règles de pare-feu à toutes les applications en fonction des événements survenant sur l’appareil, par exemple, lorsque l’appareil est verrouillé ou lorsqu’une application particulière n’est pas utilisée.</string>
     <string name="notification_action_dns_mode">DNS</string>
@@ -40,7 +40,7 @@
 \nRethink utilise le service d’accessibilité pour savoir quelles sont les applications en cours d’utilisation (avant-plan) et celles qui ne le sont pas (arrière-plan).</string>
     <string name="bsct_conn_block_desc_device">bloquée %1$s sur l’appareil</string>
     <string name="bsct_block_ip">Bloquer, tolérer <u>cette IP</u> pour <u>cette appli</u></string>
-    <string name="always_on_dialog">L’option \"VPN permanent\" est déjà activée sur cet appareil. Pour lancer RethinkDNS, allez dans les paramètres de l’application et désactivez \"VPN permanent\".</string>
+    <string name="always_on_dialog">L’option \"VPN permanent\" est déjà activée sur cet appareil. Pour lancer Signalare Observer, allez dans les paramètres de l’application et désactivez \"VPN permanent\".</string>
     <string name="bsct_conn_rule_explanation"><u>#1</u> : Bloque la connexion d’une application à Internet. \n <u>#2</u> : Bloque la connexion d’une application à une IP particulière. \n <u>#3</u> : Bloque toutes les connexions lorsque l’appareil est verrouillé (Pare-feu global). \n <u>#4</u> : Bloque les applis non utilisées (Pare-feu global). \n <u>#5</u> : Bloque les connexions lorsque l’application source est inconnue (Pare-feu global). \n <u>#6</u> : Bloque tout le trafic UDP sauf le DNS (Pare-feu global). \n <u>#7</u> : Bloque les connexions lorsque le DNS est contourné (Pare-feu global).</string>
     <string name="status_protected_with_private_dns">protégé par DNS privé</string>
     <string name="allow">autoriser</string>
@@ -55,7 +55,7 @@
     <string name="custom_url_error_invalid_url">URL invalide</string>
     <string name="bsct_conn_desc_blocked">bloquée sur %1$s %2$s</string>
     <string name="always_on_dialog_heading">Désactiver le VPN permanent</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">Connecté via RethinkDNS et pare-feu</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">Connecté via Signalare Observer et pare-feu</string>
     <string name="alert_firewall_accessibility_exception">Échec de l’ouverture des paramètres d’accessibilité. Réessayez plus tard !</string>
     <string name="bsct_conn_block_desc">bloquée %1$s par%2$s</string>
     <string name="always_on_dialog_positive_btn">Aller dans les paramètres d’Android</string>
@@ -84,7 +84,7 @@
     <string name="status_protected_with_socks5">protégé par proxy SOCKS</string>
     <string name="dns_query_clear_logs_message">Cette opération supprime les journaux DNS sur le périphérique. Cette opération est irréversible. Voulez-vous continuer \?</string>
     <string name="notification_action_dns_firewall_mode">DNS + Pare-feu</string>
-    <string name="always_on_dialog_stop_message">Le paramètre VPN permanent est activé pour RethinkDNS. Êtes-vous sûr de vouloir arrêter RethinkDNS \?</string>
+    <string name="always_on_dialog_stop_message">Le paramètre VPN permanent est activé pour Signalare Observer. Êtes-vous sûr de vouloir arrêter Signalare Observer \?</string>
     <string name="about_title_desc">Détecter et bloquer les menaces réseau</string>
     <string name="finish">Finir</string>
     <string name="slide_2_desc">Rethink est le moyen le plus simple pour surveiller l’activité réseau, contourner la censure sur Internet et mettre en place un pare-feu sur votre appareil Android.</string>
@@ -107,7 +107,7 @@
     <string name="download_update_dialog_trylater_title">Impossible d’appliquer la mise à jour actuellement</string>
     <string name="download_update_dialog_trylater_message">La mise à jour ne peut être appliquée pour le moment, veuillez réessayer plus tard.</string>
     <string name="settings_enable_logs">Activer la journalisation embarquée sur l’appareil</string>
-    <string name="whats_new_version_update">&lt;b&gt;Ne paniquez pas 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. Nouveau : capturez les erreurs du moteur réseau dans les rapports de bugs des utilisateurs.&lt;br/&gt; 2. Nouveau : utilisez le DNS système pour les noms de domaine non délégués si empêcher les fuites DNS sont activées.&lt;br/&gt; 3. Amélioration : connectivité WireGuard à double pile (IPv4 + IPv6).&lt;br/&gt; 4. Amélioration : évitez de bloquer les éléments de l\'interface utilisateur lorsque le moteur réseau ne répond pas.&lt;br/&gt; 5. Correction : les délais d\'expiration de connexion avec le filtrage DNS avancé sont activés.&lt;br/&gt; 6. Correction : les points de terminaison homologues WireGuard avec des noms de domaine se bloquent lors des modifications du réseau.&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.rethinkdns.com/r/translate&gt;Aidez à traduire cette application&lt;/a&gt;</string>
+    <string name="whats_new_version_update">&lt;b&gt;Ne paniquez pas 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. Nouveau : capturez les erreurs du moteur réseau dans les rapports de bugs des utilisateurs.&lt;br/&gt; 2. Nouveau : utilisez le DNS système pour les noms de domaine non délégués si empêcher les fuites DNS sont activées.&lt;br/&gt; 3. Amélioration : connectivité WireGuard à double pile (IPv4 + IPv6).&lt;br/&gt; 4. Amélioration : évitez de bloquer les éléments de l\'interface utilisateur lorsque le moteur réseau ne répond pas.&lt;br/&gt; 5. Correction : les délais d\'expiration de connexion avec le filtrage DNS avancé sont activés.&lt;br/&gt; 6. Correction : les points de terminaison homologues WireGuard avec des noms de domaine se bloquent lors des modifications du réseau.&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.signalare.se/r/translate&gt;Aidez à traduire cette application&lt;/a&gt;</string>
     <string name="settings_ptrans_desc">Traduit le trafic sortant IPv6 en IPv4 sur l’appareil. Activez cette option si vous êtes connecté à un réseau uniquement IPv4.</string>
     <string name="settings_allow_bypass_desc">Autorisez les applications requérantes à accéder à tous les réseaux disponibles. Ces applications peuvent contourner le tunnel VPN de Rethink à la demande. Certaines applications de conférence audio/vidéo comme Zoom et Meet peuvent en avoir besoin pour fonctionner correctement.</string>
     <string name="settings_lock_down_mode_desc">Certaines options sont désactivées lorsque le VPN est en mode de verrouillage. <u>Voir les paramètres VPN</u>.</string>
@@ -206,7 +206,7 @@
     <string name="hsf_blocklist_updating_text">Activation…</string>
     <string name="hsf_chip_appearance">Thème : %1$s</string>
     <string name="dc_entries">%1$s entrées »</string>
-    <string name="dc_rethink_dns_radio">Rethink DNS</string>
+    <string name="dc_rethink_dns_radio">Signalare Observer</string>
     <string name="dc_other_dns_heading">type</string>
     <string name="firewall_rule_block_app_unmetered_desc"><![CDATA[Une règle de pare-feu définie par l’utilisateur a bloqué cette <i>application</i> lors de la tentative de connexion sur un réseau <i>Sans abonnement</i>.<br/><br/> Pour la modifier, allez dans l’onglet <i>Toutes les applications</i>.]]></string>
     <string name="fapps_info_dialog_message">Empêchez les applications de se connecter à l’Internet. Limiter l’accès à Internet permet d’éviter une utilisation injustifiée des données et d’économiser la batterie.</string>
@@ -247,7 +247,7 @@
     <string name="univ_firewall_rule_10">Bloquer tout sauf les applications et IP avec exceptions</string>
     <string name="settings_socks5_dialog_hint_port">Port</string>
     <string name="firewall_status_allow">autorisée</string>
-    <string name="about_telegram_link">https://telegram.me/rethinkdns</string>
+    <string name="about_telegram_link">https://signalare.se</string>
     <string name="cd_custom_doh_url_name_default">DoH</string>
     <string name="dns_crypt_custom_url_remove_dialog_title">Supprimer le résolveur DNSCrypt \?</string>
     <string name="ct_bs_app_info_error">Infos sur l’application non trouvées</string>
@@ -258,7 +258,7 @@
     <string name="ci_no_rule_txt">Sans règle</string>
     <string name="notif_channel_vpn_notification">VPN actif</string>
     <string name="doh_custom_url_remove_success">Point de terminaison supprimé.</string>
-    <string name="about_website_link">https://www.rethinkdns.com/</string>
+    <string name="about_website_link">https://www.signalare.se/</string>
     <string name="cd_custom_dns_proxy_name_default">Proxy</string>
     <string name="cd_dns_proxy_error_text_3">Port invalide</string>
     <string name="cd_dns_crypt_dialog_name">Nom</string>
@@ -284,7 +284,7 @@
     <string name="orbot_status_arg_3">DNS et TCP</string>
     <string name="about_join_telegram">Telegram</string>
     <string name="about_dialog_positive_button">Allons-y</string>
-    <string name="about_docs_link">https://docs.rethinkdns.com/</string>
+    <string name="about_docs_link">https://docs.signalare.se/</string>
     <string name="cd_custom_dns_proxy_default_ip">127.0.0.1</string>
     <string name="cd_custom_dns_proxy_default_app">Aucun</string>
     <string name="cd_dns_crypt_dialog_title">Ajouter un résolveur ou un relais DNSCrypt</string>
@@ -504,7 +504,7 @@
     <string name="search_firewall_network_log"><font size="12">Recherche d’applis, d’IP et de domaines</font></string>
     <string name="search_custom_domains"><font size="12">Recherche de noms de domaine</font></string>
     <string name="settings_orbot_heading">Configuration d’Orbot</string>
-    <string name="about_website">Visiter rethinkdns.com</string>
+    <string name="about_website">Visiter signalare.se</string>
     <string name="about_whats_new">Quoi de neuf dans %1$s</string>
     <string name="about_app_update_check">Vérifiez les mises à jour de l’application</string>
     <string name="cd_dns_proxy_mode_external">Externe</string>
@@ -563,7 +563,7 @@
     <string name="about_mozilla">Rethink est soutenu par Mozilla Builders, FOSS United Foundation, FLOSS/fund.</string>
     <string name="about_mail_bugreport_text">Envoyer cet e-mail à : hello@celzero.com</string>
     <string name="about_mail_bugreport_share_title">Sélectionnez le fournisseur d’e-mail</string>
-    <string name="about_faq_link">https://www.rethinkdns.com/faq</string>
+    <string name="about_faq_link">https://www.signalare.se/faq</string>
     <string name="cd_custom_dns_proxy_name">Proxy %1$s</string>
     <string name="cd_dnscrypt_relay_heading">Relais</string>
     <string name="always_on_dialog_positive">Arrêter</string>
@@ -725,9 +725,9 @@
     <string name="settings_app_notification_a13_desc">Activer les notifications pour l’application</string>
     <string name="settings_app_notification_a13_heading">Notifications</string>
     <string name="about_app_translate">Traduire</string>
-    <string name="about_privacy_policy_link">https://www.rethinkdns.com/privacy</string>
+    <string name="about_privacy_policy_link">https://www.signalare.se/privacy</string>
     <string name="notif_download_cancel_content">Téléchargement annulé.</string>
-    <string name="about_translate_link">https://svc.rethinkdns.com/r/translate</string>
+    <string name="about_translate_link">https://svc.signalare.se/r/translate</string>
     <string name="firewall_rule_block_univ_ip">IP / Port (Global)</string>
     <string name="ada_firewall_title">règles de pare-feu pour cette appli</string>
     <string name="ada_app_isolate">Confiner</string>
@@ -1131,7 +1131,7 @@
     <string name="adv_tasker_dialog_instructions" translatable="true">Instructions :\nÉléments requis pour la diffusion :\n• Clé : sender\n• Valeur : Nom du package de l’application appelante\n\nExemple : key : sender value : com.termux\n\nActions prises en charge :\n• Démarrer le VPN : se.signalare.observer.intent.action.VPN_START\n• Arrêter le VPN : se.signalare.observer.intent.action.VPN_STOP</string>
     <string name="adv_tasker_dialog_edit_hint" translatable="true">Saisir le nom du package (exemple : net.dinglisch.android.taskerm)</string>
     <string name="download_ip_info_title" translatable="true">Afficher les informations du fournisseur</string>
-    <string name="download_ip_info_desc" translatable="true">Récupère les informations du fournisseur de services pour les sites web depuis <i>rethinkdns.com</i>, propulsé par <i>%1$s</i></string>
+    <string name="download_ip_info_desc" translatable="true">Récupère les informations du fournisseur de services pour les sites web depuis <i>signalare.se</i>, propulsé par <i>%1$s</i></string>
     <string name="adv_taster_desc" translatable="true">Configurer les applications qui peuvent démarrer ou arrêter Rethink.</string>
     <string name="top_active_conns" translatable="true">connexions actives principales</string>
     <string name="load_more" translatable="true">Tout charger</string>

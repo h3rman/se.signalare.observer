@@ -63,9 +63,9 @@
     <string name="status_protected_with_proxy" translatable="true">Proxy-лак шҳәахәҭаханы иҟоуп</string>
     <string name="status_strict" description="This is similar to dns_on, but the protection is being provided by the operating system, not by Rethink.  It is not color-highlighted." translatable="true">А приватт DNS аҿуп</string>
     <string name="status_exposed" description="This is a large message in a scary color.  It indicates that DNS queries can be surveilled or modified in transit." translatable="true">маҿыцхьауам</string>
-    <string name="dns_explanation_dns_connected" translatable="true">RethinkDNS-иҧшәаҳәара</string>
+    <string name="dns_explanation_dns_connected" translatable="true">Signalare Observer-иҧшәаҳәара</string>
     <string name="dns_explanation_firewall_connected" translatable="true">Аҿыцлара ашәахтәҿы</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">RethinkDNS &amp; Firewall-ик еиццыжьуп</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">Signalare Observer &amp; Firewall-ик еиццыжьуп</string>
     <string name="universal_firewall_explanation" translatable="true">Ашәымҭақәа зегьы ашәымҭа шьҟаҵар, ацынхарҭа амҩаду аҟәыҟәырҵа, мамзаракь ацынхарҭала аҟәыҟәырҵа, абжьы зхыуа аҟәыҟәырҵа, мамзаракь аҟәыҟәырҵа аҟәыҟәырҵа аҟәыҟәырҵа аҟәыҟәырҵа аҟәыҟәырҵа абжьы зхыу аҟәыҟәырҵа аҟәыҟәырҵа аҟәыҟәырҵа аҟәыҟәырҵа аҟәыҟәырҵа аҟәыҟәырҵа апрвило</string>
     <string name="notification_action_resume_vpn" translatable="true">ААДЫЗРА</string>
     <string name="notification_action_pause_vpn" translatable="true">Аҧхыжьра</string>
@@ -365,7 +365,7 @@
     <string name="about_bug_no_log_dialog_message" translatable="true">Акуамта уахасашьақәырԥагоуп. Агәаанагара шəаны ирышəдырхəатəумоу агәаанагара?</string>
     <string name="about_bug_no_log_dialog_positive_btn" translatable="true">Е-маил аашьҭахыжьыршә</string>
     <string name="about_web" translatable="true">Ацқьақәа</string>
-    <string name="about_website" translatable="true">rethinkdns.com Аҿыцра иацзыхьы</string>
+    <string name="about_website" translatable="true">signalare.se Аҿыцра иацзыхьы</string>
     <string name="about_docs" translatable="true">Аҵыхәтәқәа Рыԥшра</string>
     <string name="about_privacy_policy" translatable="true">Апсихуақьтәи аполитика аԥхьа</string>
     <string name="about_connect" translatable="true">Аҧしшәлашь</string>
@@ -1077,7 +1077,7 @@
     <string name="adv_tasker_dialog_instructions" translatable="true">Аусуараҿ иаҭахы аусушқәа:\n • Актәы: sender\n • Ақәцә: адгылала а программы акыр\n Анцәгьы: актәы:sender акәцә:com.termux\n\n Иацәхәахахаз аусушқәа:\n • VPN алагалара – se.signalare.observer.intent.action.VPN_START\n • VPN ашьҭыра – se.signalare.observer.intent.action.VPN_STOP</string>
     <string name="adv_tasker_dialog_edit_hint" translatable="true">Пакет аӡбара (иҟоуп: net.dinglisch.android.taskerm)</string>
     <string name="download_ip_info_title" translatable="true">Аҿыхгаҩ идыртәқәа ирбоит</string>
-    <string name="download_ip_info_desc" translatable="true">Иуаахык информация аиуаахык аҵыхәтқәа а веб-саитқәа рзы <i>rethinkdns.com</i> иҟоу, %1$s аҟынтә иаахәҟьоуп</string>
+    <string name="download_ip_info_desc" translatable="true">Иуаахык информация аиуаахык аҵыхәтқәа а веб-саитқәа рзы <i>signalare.se</i> иҟоу, %1$s аҟынтә иаахәҟьоуп</string>
     <string name="adv_taster_title" translatable="true">Ауиашьаҧшра</string>
     <string name="top_active_conns" translatable="true">Аҧшныла амҩыларақәа рхыԥш</string>
     <string name="load_more" translatable="true">Аҧшра Сы́чк&lt;/h2&gt;</string>

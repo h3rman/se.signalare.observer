@@ -22,7 +22,7 @@
     <string name="status_protected_with_socks5_private_dns">protegido com socks5 e dns privado</string>
     <string name="status_protected_with_http_private_dns">protegido com proxy http e dns privado</string>
     <string name="notification_action_stop_vpn">Parar</string>
-    <string name="dns_explanation_dns_connected">Conectado a RethinkDNS</string>
+    <string name="dns_explanation_dns_connected">Conectado a Signalare Observer</string>
     <string name="dns_explanation_firewall_connected">Conectado a firewall</string>
     <string name="dns_mode_info_explanation_new">Monitorizar, bloquear e cifrar pedidos DNS.</string>
     <string name="dns_firewall_mode_info_explanation_new">Para além dos anteriores (DNS e Firewall), evitar também a censura na Internet.</string>
@@ -30,9 +30,9 @@
     <string name="alert_firewall_accessibility_explanation">Rethink utiliza o serviço de acessibilidade para identificar as aplicações que estão a ser utilizadas (primeiro plano) e as que não estão a ser utilizadas (segundo plano).
 \n
 \nRethink não recolhe qualquer informação nem o monitoriza de forma alguma.</string>
-    <string name="alert_firewall_accessibility_regrant_explanation">O serviço de acessibilidade RethinkDNS parou ou foi bloqueado. <i><b>Aceda às definições, pare</b> </i>RethinkDNS e torne a iniciar para usar <i>a funcionalidade de bloquear todas as aplicações que não estejam a ser utilizadas</i>.
+    <string name="alert_firewall_accessibility_regrant_explanation">O serviço de acessibilidade Signalare Observer parou ou foi bloqueado. <i><b>Aceda às definições, pare</b> </i>Signalare Observer e torne a iniciar para usar <i>a funcionalidade de bloquear todas as aplicações que não estejam a ser utilizadas</i>.
 \n
-\nRethinkDNS utiliza o serviço de acessibilidade para rastrear as aplicações estão a ser utilizadas (primeiro plano) e as que não estão a ser utilizadas (segundo plano).</string>
+\nSignalare Observer utiliza o serviço de acessibilidade para rastrear as aplicações estão a ser utilizadas (primeiro plano) e as que não estão a ser utilizadas (segundo plano).</string>
     <string name="alert_firewall_accessibility_exception">Falha ao abrir as definições de acessibilidade. Tente mais tarde!</string>
     <string name="dns_query_clear_logs_message">Isto elimina os registos DNS do dispositivo. Esta operação não é reversível. Continuar?</string>
     <string name="bsct_app_info">Informações</string>
@@ -48,7 +48,7 @@
 \n <u>##5</u>: Bloqueia as ligações quando a aplicação de origem é desconhecida (firewall universal).
 \n<u>##6</u>: Bloqueia todo o tráfego UDP exceto DNS (firewall universal).
 \n <u>#7</u>: Bloqueia ligações quando o DNS é ignorado (firewall universal).</string>
-    <string name="whats_new_version_update">&lt;b&gt;Não entres em pânico 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. Novo: Capturar erros do motor de rede nos relatórios de erros dos utilizadores.&lt;br/&gt; 2. Novo: utilizar o DNS do sistema para nomes de domínio não delegados se Prevent DNS estiver ativado.&lt;br/&gt;3. Melhoria: Conectividade WireGuard de pilha dupla (IPv4 + IPv6).&lt;br/&gt;4. Melhoria: Evitar o bloqueio dos elementos da IU quando o motor de rede não responde.&lt;br/&gt; 5. Correção: Tempo limite de ligação com a filtragem avançada de DNS ativada.&lt;br/&gt; 6. Correção: Os pontos de extremidade de pares do WireGuard com nomes de domínio ficam suspensos em alterações de rede.&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.rethinkdns.com/r/translate&gt;Ajuda a traduzir esta aplicação&lt;/a&gt;</string>
+    <string name="whats_new_version_update">&lt;b&gt;Não entres em pânico 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. Novo: Capturar erros do motor de rede nos relatórios de erros dos utilizadores.&lt;br/&gt; 2. Novo: utilizar o DNS do sistema para nomes de domínio não delegados se Prevent DNS estiver ativado.&lt;br/&gt;3. Melhoria: Conectividade WireGuard de pilha dupla (IPv4 + IPv6).&lt;br/&gt;4. Melhoria: Evitar o bloqueio dos elementos da IU quando o motor de rede não responde.&lt;br/&gt; 5. Correção: Tempo limite de ligação com a filtragem avançada de DNS ativada.&lt;br/&gt; 6. Correção: Os pontos de extremidade de pares do WireGuard com nomes de domínio ficam suspensos em alterações de rede.&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.signalare.se/r/translate&gt;Ajuda a traduzir esta aplicação&lt;/a&gt;</string>
     <string name="relative_time_yesterday">Ontem</string>
     <string name="always_on_dialog_heading">Desativar VPN sempre ativa</string>
     <string name="always_on_dialog">A opção \"VPN sempre ativa\" está ativada neste dispositivo. Para iniciar Rethink, aceda às definições da VPN Android e desative a opção \"VPN sempre ativa\".</string>
@@ -72,7 +72,7 @@
     <string name="settings_enable_logs_desc">Guardar registos de DNS e de firewall no dispositivo.</string>
     <string name="settings_theme_heading">Aparência</string>
     <string name="settings_http_proxy_error_text3">O nome do servidor está vazio</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">Conectado com RethinkDNS e firewall</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">Conectado com Signalare Observer e firewall</string>
     <string name="notification_action_resume_vpn">Retomar</string>
     <string name="universal_firewall_explanation">Aplicar regras de firewall em todas as aplicações com base em eventos do dispositivo, por exemplo, firewall quando o dispositivo está bloqueado ou quando uma determinada aplicação não está a ser utilizada.</string>
     <string name="notification_action_pause_vpn">Pausa</string>
@@ -241,7 +241,7 @@
     <string name="conn_track_clear_logs_message">Isto elimina os registos da rede mas não as regras de firewall. Esta operação não é reversível. Continuar?</string>
     <string name="info_dialog_url_copy_toast_msg">URL copiado</string>
     <string name="bypass_universal">contorno universal</string>
-    <string name="app_name">RethinkDNS</string>
+    <string name="app_name">Signalare Observer</string>
     <string name="title_about">Acerca</string>
     <string name="orbot_bs_status_trying_connect">A configurar Orbot…</string>
     <string name="orbot_install_dialog_title">Instalar Orbot?</string>
@@ -344,10 +344,10 @@
     <string name="about_app_update_check">Procurar atualizações</string>
     <string name="about_mail_subject">[Rethink]:</string>
     <string name="about_mail_bugreport_share_title">Selecione a aplicação de e-mail</string>
-    <string name="about_docs_link">https://docs.rethinkdns.com/</string>
+    <string name="about_docs_link">https://docs.signalare.se/</string>
     <string name="about_mozilla_alumni_link">https://builders.mozilla.community/alumni.html</string>
     <string name="dc_custom_dns_radio">Outro DNS</string>
-    <string name="dc_rethink_dns_radio">Rethink DNS</string>
+    <string name="dc_rethink_dns_radio">Signalare Observer</string>
     <string name="dc_entries">%1$s entradas »</string>
     <string name="dc_local_block_heading">Listas de bloqueio no dispositivo</string>
     <string name="dc_local_block_desc_1">Escolha entre mais de 195 listas de bloqueio. Clique aqui para descarregar ou configurar listas de bloqueio.</string>
@@ -361,7 +361,7 @@
     <string name="about_bug_no_log_dialog_title">Relatório de erros</string>
     <string name="about_bug_no_log_dialog_positive_btn">Enviar e-mail</string>
     <string name="about_web">ligações</string>
-    <string name="about_website">Visitar rethinkdns.com</string>
+    <string name="about_website">Visitar signalare.se</string>
     <string name="about_github">Contribuir no GitHub</string>
     <string name="about_faq">FAQ</string>
     <string name="about_docs">Documentação</string>
@@ -378,13 +378,13 @@
     <string name="about_mail_to_string">mailto:</string>
     <string name="about_mail_bugreport_subject">[Rethink]: Relatório de erro</string>
     <string name="about_mail_bugreport_text">Enviar e-mail para: hello@celzero.com</string>
-    <string name="about_telegram_link">https://telegram.me/rethinkdns</string>
-    <string name="about_faq_link">https://www.rethinkdns.com/faq</string>
+    <string name="about_telegram_link">https://signalare.se</string>
+    <string name="about_faq_link">https://www.signalare.se/faq</string>
     <string name="about_github_link">https://github.com/celzero/rethink-app</string>
     <string name="about_twitter_handle">https://twitter.com/rethinkdns</string>
-    <string name="about_website_link">https://www.rethinkdns.com/</string>
-    <string name="about_translate_link">https://svc.rethinkdns.com/r/translate</string>
-    <string name="about_privacy_policy_link">https://www.rethinkdns.com/privacy</string>
+    <string name="about_website_link">https://www.signalare.se/</string>
+    <string name="about_translate_link">https://svc.signalare.se/r/translate</string>
+    <string name="about_privacy_policy_link">https://www.signalare.se/privacy</string>
     <string name="about_version">v%1$s</string>
     <string name="about_version_install_source">v%1$s (%2$s)</string>
     <string name="about_dialog_neutral_button">Sugerir funcionalidades</string>
@@ -697,7 +697,7 @@
     <string name="bsrf_sub_group_heading">Subgrupo</string>
     <string name="bsrf_clear_filter">Limpar</string>
     <string name="dc_local_block_enabled">Ativado</string>
-    <string name="dc_rethink_dns">Rethink DNS</string>
+    <string name="dc_rethink_dns">Signalare Observer</string>
     <string name="dc_doh">DNS sobre HTTPS</string>
     <string name="dc_dns_crypt">DNSCrypt</string>
     <string name="dc_dns_proxy">Proxy DNS</string>

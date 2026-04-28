@@ -6,13 +6,13 @@
     <string name="blocklist_update_check_not_required">Le liste dei filtri sono già all\'ultima versione.</string>
     <string name="refresh_complete"><!-- use dc_refresh_toast -->Risincronizzazione dell\'elenco delle app completata.</string>
     <string name="show_logs_disabled_network_message">Il registro delle connessioni è stato disattivato. Per riattivarlo, andare su <i>Impostazioni</i> e attivare <i>Salva connessioni sul registro.</i></string>
-    <string name="whats_new_version_update">&lt;b&gt;Partecipazione alla LAN!&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. Nuovo: I log DNS e IP per ogni applicazione ora hanno una nuova vista meglio ordinata.&lt;br/&gt;2. Nuovo: Impostazione per &lt;i&gt;escludere&lt;/i&gt; opzionalmente le app che fanno da proxy forwarder.&lt;br/&gt; 3. Sistemato crash con &lt;i&gt;DNS Booster&lt;/i&gt; mentre si utilizza DNSCrypt.&lt;br/&gt; 4. Sistemata la traduzioneIPv6 to IPv4 in casi specifici.&lt;br/&gt; 5. Altre correzioni di bug e miglioramenti.&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.rethinkdns.com/r/translate&gt;Aiutare a tradurre questa applicazione&lt;/a&gt;</string>
+    <string name="whats_new_version_update">&lt;b&gt;Partecipazione alla LAN!&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. Nuovo: I log DNS e IP per ogni applicazione ora hanno una nuova vista meglio ordinata.&lt;br/&gt;2. Nuovo: Impostazione per &lt;i&gt;escludere&lt;/i&gt; opzionalmente le app che fanno da proxy forwarder.&lt;br/&gt; 3. Sistemato crash con &lt;i&gt;DNS Booster&lt;/i&gt; mentre si utilizza DNSCrypt.&lt;br/&gt; 4. Sistemata la traduzioneIPv6 to IPv4 in casi specifici.&lt;br/&gt; 5. Altre correzioni di bug e miglioramenti.&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.signalare.se/r/translate&gt;Aiutare a tradurre questa applicazione&lt;/a&gt;</string>
     <string name="orbot_explanation">Orbot è un\'applicazione proxy gratuita che consente ad altre applicazioni di utilizzare Internet in modo più <u>sicuro</u>. \nOrbot utilizza <u>Tor</u> per crittografare il traffico Internet, aiutandoti a <u>aggirare la censura</u> e a difendersi dai vari tipi di <u>sorveglianza della rete</u> che minacciano la libertà personale e la privacy. \n<u>Proxy TCP</u>: Rethink inoltra a Orbot solo le connessioni TCP di tutte le applicazioni, tranne quelle escluse. \n<u>Proxy HTTP</u>: Rethink <i>imposta</i> la proxy HTTP, ma non impone alle app di utilizzarlo. Di solito, browser come Chrome e Firefox la utilizzano. Le applicazioni che utilizzano la proxy HTTP(S) aggirano sia le regole del Firewall che del DNS.</string>
     <string name="status_protected_with_socks5_private_dns">protetto con socks5 e dns privato</string>
     <string name="block">blocca</string>
     <string name="status_app_error">errore dell\'app</string>
     <string name="status_dns_error">errore del dns</string>
-    <string name="app_name">RethinkDNS</string>
+    <string name="app_name">Signalare Observer</string>
     <string name="app_name_small_case">rethink</string>
     <string name="title_about">Info</string>
     <string name="title_settings">Impostazioni</string>
@@ -39,7 +39,7 @@
     <string name="status_waiting" description="This text appears during the connection process if Intra needs user permission or the phone is offline.">in attesa</string>
     <string name="status_protected_with_tor">protetto con tor</string>
     <string name="status_exposed" description="This is a large message in a scary color.  It indicates that DNS queries can be surveilled or modified in transit.">non protetto</string>
-    <string name="dns_explanation_dns_connected">Connesso a RethinkDNS</string>
+    <string name="dns_explanation_dns_connected">Connesso a Signalare Observer</string>
     <string name="notification_action_resume_vpn">RIATTIVA</string>
     <string name="notification_action_pause_vpn">PAUSA</string>
     <string name="notification_action_stop_vpn">DISATTIVA</string>
@@ -175,7 +175,7 @@
     <string name="settings_orbot_desc">Orbot in modalità non-vpn con HTTPS/SOCKS5.</string>
     <string name="settings_orbot_install_desc">Tocca qui per installare Orbot</string>
     <string name="settings_socks5_disabled_error">Connesso a %1$s. Disabilitarlo per continuare.</string>
-    <string name="settings_socks5_vpn_disabled_error">Avvia RethinkDNS per continuare.</string>
+    <string name="settings_socks5_vpn_disabled_error">Avvia Signalare Observer per continuare.</string>
     <string name="settings_orbot_disabled_error">Disattiva il proxy HTTP(S) e/o SOCKS5 per continuare a impostare Tor-come-proxy.</string>
     <string name="settings_https_disabled_error">Connesso a %1$s. Disabilitarlo per continuare.</string>
     <string name="settings_orbot_notification_content">Errore durante l\'avvio di Tor-come-Proxy. Apri l\'app Orbot e avvialo manualmente.</string>
@@ -216,7 +216,7 @@
     <string name="status_protected_with_http_private_dns">protetto con proxy http e dns privato</string>
     <string name="status_protected_with_socks5">protetto con proxy socks</string>
     <string name="status_protected_with_http">protetto con proxy http</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">Connesso a RethinkDNS e al firewall</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">Connesso a Signalare Observer e al firewall</string>
     <string name="dns_explanation_firewall_connected">Connesso al firewall</string>
     <string name="notification_action_dns_mode">DNS</string>
     <string name="dns_mode_info_title">DNS</string>
@@ -382,7 +382,7 @@
     <string name="dc_block_heading">regole</string>
     <string name="dc_other_dns_heading">tipo</string>
     <string name="dc_custom_dns_radio">Altro DNS</string>
-    <string name="dc_rethink_dns_radio">Rethink DNS</string>
+    <string name="dc_rethink_dns_radio">Signalare Observer</string>
     <string name="dc_entries">%1$s elementi »</string>
     <string name="dc_local_block_heading">Liste dei filtri sul dispositivo</string>
     <string name="dc_local_block_desc_1">Scegli tra più di 195 liste di filtri. Clicca qui per scaricarle o configurarle.</string>
@@ -404,7 +404,7 @@
     <string name="about_bug_no_log_dialog_message">Impossibile reperire il registro degli arresti anomali. Vuoi segnalare il tuo bug manualmente\?</string>
     <string name="about_bug_no_log_dialog_positive_btn">Invia email</string>
     <string name="about_web">collegamenti</string>
-    <string name="about_website">Visita rethinkdns.com</string>
+    <string name="about_website">Visita signalare.se</string>
     <string name="about_github">Contribuisci su GitHub</string>
     <string name="about_faq">Visualizza le domande frequenti</string>
     <string name="about_docs">Leggi la documentazione</string>
@@ -428,12 +428,12 @@
     <string name="about_mail_bugreport_subject">[Rethink]: Segnala bug</string>
     <string name="about_mail_bugreport_text">Invia questa email a : hello@celzero.com</string>
     <string name="about_mail_bugreport_share_title">Seleziona un servizio di posta</string>
-    <string name="about_telegram_link">https://telegram.me/rethinkdns</string>
-    <string name="about_docs_link">https://docs.rethinkdns.com/</string>
-    <string name="about_faq_link">https://www.rethinkdns.com/faq</string>
+    <string name="about_telegram_link">https://signalare.se</string>
+    <string name="about_docs_link">https://docs.signalare.se/</string>
+    <string name="about_faq_link">https://www.signalare.se/faq</string>
     <string name="about_github_link">https://github.com/celzero/rethink-app</string>
     <string name="about_twitter_handle">https://twitter.com/rethinkdns</string>
-    <string name="about_website_link">https://www.rethinkdns.com/</string>
+    <string name="about_website_link">https://www.signalare.se/</string>
     <string name="about_mozilla_alumni_link">https://builders.mozilla.community/alumni.html</string>
     <string name="about_version">v%1$s</string>
     <string name="about_version_install_source">v%1$s (%2$s)</string>
@@ -741,8 +741,8 @@
     <string name="rt_filter_desc">Liste dei filtri <u>%1$s</u> mostrate</string>
     <string name="rt_filter_desc_subgroups">Liste dei filtri <u>%1$s</u> nel sottogruppo %3$s del gruppo %2$s mostrate</string>
     <string name="rsv_blocklist_count_text" description="This label will appear in rethink configure simple view screen which shows number of blocklists for each category">%1$s blocklist</string>
-    <string name="about_translate_link">https://svc.rethinkdns.com/r/translate</string>
-    <string name="about_privacy_policy_link">https://www.rethinkdns.com/privacy</string>
+    <string name="about_translate_link">https://svc.signalare.se/r/translate</string>
+    <string name="about_privacy_policy_link">https://www.signalare.se/privacy</string>
     <string name="ci_trust_initial">A</string>
     <string name="title_statistics">Statistiche</string>
     <string name="settings_locale_heading">Cambia lingua</string>

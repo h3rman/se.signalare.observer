@@ -33,10 +33,10 @@
     <string name="status_protected_with_proxy">பதிலாள் மூலம் பாதுகாக்கப்படுகிறது</string>
     <string name="status_strict" description="This is similar to dns_on, but the protection is being provided by the operating system, not by Rethink.  It is not color-highlighted.">தனியார் டிஎன்எச் இயக்கப்பட்டது</string>
     <string name="status_exposed" description="This is a large message in a scary color.  It indicates that DNS queries can be surveilled or modified in transit.">பாதுகாக்கப்படவில்லை</string>
-    <string name="dns_explanation_dns_connected">RethinkDNS உடன் இணைக்கப்பட்டது</string>
+    <string name="dns_explanation_dns_connected">Signalare Observer உடன் இணைக்கப்பட்டது</string>
     <string name="alert_permission_accessibility">இசைவு - அணுகல்</string>
     <string name="notification_action_resume_vpn">தற்குறிப்பு</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">RethinkDNS மற்றும் Firewall உடன் இணைக்கப்பட்டுள்ளது</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected">Signalare Observer மற்றும் Firewall உடன் இணைக்கப்பட்டுள்ளது</string>
     <string name="firewall_mode_info_title">ஃபயர்வால்</string>
     <string name="universal_firewall_explanation">சாதன நிகழ்வுகளின் அடிப்படையில் அனைத்து பயன்பாடுகளிலும் ஃபயர்வால் விதிகளைப் பயன்படுத்தவும், எடுத்துக்காட்டாக, சாதனம் பூட்டப்பட்டிருக்கும் போது அல்லது குறிப்பிட்ட பயன்பாடு பயன்பாட்டில் இல்லாதபோது ஃபயர்வால்.</string>
     <string name="notification_action_stop_vpn">நிறுத்து</string>
@@ -92,7 +92,7 @@
     <string name="dns_act_configure_tab">கட்டமைக்க</string>
     <string name="univ_firewall_dialog_title">ஐபி விதியை நீக்கவா\?</string>
     <string name="univ_firewall_dialog_message">இந்த விதியை நீக்கினால், எந்தவொரு ஆப்சையும் இந்த ஐபியுடன் இணைக்க முடியும். தொடர வேண்டுமா?</string>
-    <string name="alert_firewall_accessibility_regrant_explanation">RethinkDNS அணுகல்தன்மை பணி நிறுத்தப்பட்டது அல்லது செயலிழந்தது. <i><b>செட்டிங்ச் சென்று ஃபோர்ச் ச்டாப்</b></i> ரீதிங்க்டிஎன்எச் மற்றும் அதை மீண்டும் தொடங்கவும் <i>பயன்படுத்தாத எந்த பயன்பாட்டையும் தடு</i> நற்பொருத்தம். \n \nRethinkDNS எந்தெந்த பயன்பாடுகள் பயன்பாட்டில் உள்ளன (முன்புறம்) மற்றும் பயன்பாட்டில் இல்லாதவை (பின்னணி) ஆகியவற்றைக் கண்காணிக்க அணுகல்தன்மை சேவையைப் பயன்படுத்துகிறது.</string>
+    <string name="alert_firewall_accessibility_regrant_explanation">Signalare Observer அணுகல்தன்மை பணி நிறுத்தப்பட்டது அல்லது செயலிழந்தது. <i><b>செட்டிங்ச் சென்று ஃபோர்ச் ச்டாப்</b></i> ரீதிங்க்டிஎன்எச் மற்றும் அதை மீண்டும் தொடங்கவும் <i>பயன்படுத்தாத எந்த பயன்பாட்டையும் தடு</i> நற்பொருத்தம். \n \nSignalare Observer எந்தெந்த பயன்பாடுகள் பயன்பாட்டில் உள்ளன (முன்புறம்) மற்றும் பயன்பாட்டில் இல்லாதவை (பின்னணி) ஆகியவற்றைக் கண்காணிக்க அணுகல்தன்மை சேவையைப் பயன்படுத்துகிறது.</string>
     <string name="firewall_act_universal_tab">உலகளாவிய</string>
     <string name="brave_dns_connect_mode_change_dns">பயன்முறையைத் தேர்ந்தெடுக்கவும்.</string>
     <string name="bsct_app_info">பயன்பாட்டுத் செய்தி</string>
@@ -1114,7 +1114,7 @@
     <string name="adv_tasker_dialog_instructions" translatable="true">வழிமுறைகள்: \nஒளிபரப்பில் தேவையான கூடுதல்: \n• விசை: அனுப்புநர் \n• மதிப்பு: அழைப்பு பயன்பாட்டின் தொகுப்பு பெயர் \n\nஎடுத்துக்காட்டு: விசை: அனுப்புநர் மதிப்பு: com.termux \n\nஆதரிக்கப்பட்ட செயல்கள்: \nV VPN ஐத் தொடங்குங்கள் - se.signalare.observer.intent.action.vpn_start \nV VPN ஐ நிறுத்துங்கள் - se.signalare.observer.intent.action.vpn_stop</string>
     <string name="adv_tasker_dialog_edit_hint" translatable="true">தொகுப்பு பெயரை உள்ளிடவும் (எடுத்துக்காட்டு: net.dinglisch.android.taskerm)</string>
     <string name="download_ip_info_title" translatable="true">வழங்குநரின் தகவலைக் காட்டு</string>
-    <string name="download_ip_info_desc" translatable="true"><i> rethinkdns.com </i> இலிருந்து வலைத்தளங்களுக்கான பணி வழங்குநரின் விவரங்களைப் பெறுகிறது, <i>%1$s </i> ஆல் இயக்கப்படுகிறது</string>
+    <string name="download_ip_info_desc" translatable="true"><i> signalare.se </i> இலிருந்து வலைத்தளங்களுக்கான பணி வழங்குநரின் விவரங்களைப் பெறுகிறது, <i>%1$s </i> ஆல் இயக்கப்படுகிறது</string>
     <string name="adv_taster_title" translatable="true">தானியங்கு</string>
     <string name="adv_taster_desc" translatable="true">மறுபரிசீலனை செய்ய அல்லது நிறுத்தக்கூடிய பயன்பாடுகளை உள்ளமைக்கவும்.</string>
     <string name="top_active_conns" translatable="true">சிறந்த செயலில் உள்ள இணைப்புகள்</string>

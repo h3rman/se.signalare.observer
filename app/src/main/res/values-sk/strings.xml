@@ -93,9 +93,9 @@
     <string name="status_protected_with_wg" translatable="true">chránený s Wireguardom</string>
     <string name="status_protected_with_wg_private_dns" translatable="true">chránený s Wireguardom a súkromným DNS</string>
     <string name="status_strict" description="This is similar to dns_on, but the protection is being provided by the operating system, not by Rethink.  It is not color-highlighted." translatable="true">súkromne DNS je zapnuté</string>
-    <string name="dns_explanation_dns_connected" translatable="true">Pripojený s RethinkDNS</string>
+    <string name="dns_explanation_dns_connected" translatable="true">Pripojený s Signalare Observer</string>
     <string name="dns_explanation_firewall_connected" translatable="true">Pripojený s Firewalom</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">Pripojený s RethinkDNS a Firewalom</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">Pripojený s Signalare Observer a Firewalom</string>
     <string name="notification_action_resume_vpn" translatable="true">POKRAČOVAŤ</string>
     <string name="notification_action_pause_vpn" translatable="true">PAUZA</string>
     <string name="notification_action_stop_vpn" translatable="true">STOP</string>
@@ -133,9 +133,9 @@
     <string name="always_on_dialog_positive" translatable="true">Zastaviť</string>
     <string name="always_on_dialog_neutral" translatable="true">Nastavenia</string>
     <string name="private_dns_dialog_heading" translatable="true">Vypni Súkromné DNS</string>
-    <string name="private_dns_dialog_desc" translatable="true">Nastavenia Rethink DNS sú prepísané súkromným DNS systému Android.
+    <string name="private_dns_dialog_desc" translatable="true">Nastavenia Signalare Observer sú prepísané súkromným DNS systému Android.
 \n
-\nAk chcete použiť Rethink DNS, prejdite do nastavení systému Android a vypnite možnosť „Súkromné DNS“.</string>
+\nAk chcete použiť Signalare Observer, prejdite do nastavení systému Android a vypnite možnosť „Súkromné DNS“.</string>
     <string name="private_dns_dialog_positive" translatable="true">Chodte do Nastavení</string>
     <string name="firewall_act_universal_tab" translatable="true">univerzálny</string>
     <string name="firewall_act_network_monitor_tab" translatable="true">Sieť</string>

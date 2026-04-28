@@ -242,7 +242,7 @@
     <string name="about_bug_report_desc" translatable="true">क्रैश लॉग ईमेल करे</string>
     <string name="about_web" translatable="true">लिंक</string>
     <string name="about_bug_no_log_dialog_positive_btn" translatable="true">ईमेल भेजें</string>
-    <string name="about_website" translatable="true">rethinkdns.com पर जाएं</string>
+    <string name="about_website" translatable="true">signalare.se पर जाएं</string>
     <string name="about_github" translatable="true">गिटहब पर योगदान दें</string>
     <string name="about_mozilla" translatable="true">रीथिंक को मोज़िला बिल्डर्स, FOSS यूनाइटेड फाउंडेशन, OSOM प्रोडक्ट्स इंक. का समर्थन प्राप्त है।</string>
     <string name="about_app_update_check" translatable="true">ऐप अपडेट की जांच करें</string>
@@ -764,7 +764,7 @@
     <string name="ssv_most_blocked_domain_heading" description="This label will appear on the stats screen as a header for most blocked domains" translatable="true">सबसे ज्यादा अवरुद्ध डोमेन</string>
     <string name="firewall_rule_isolate_desc" translatable="true">एक उपयोगकर्ता-सेट फ़ायरवॉल नियम ने इस <i>ऐप</i> को <i>बायपासड आईपी</i> के अलावा अन्य से कनेक्ट करने से रोक दिया है। <br/> <br/> बदलने के लिए <i>सभी ऐप्स</i> टैब पर जाएं।</string>
     <string name="firewall_rule_block_dns_bypass_desc" translatable="true">यह कनेक्शन अवरुद्ध कर दिया गया था क्योंकि <i>स्रोत ऐप</i> ने उपयोगकर्ता-पसंदीदा डीएनएस को दरकिनार कर दिया था।<br/><br/> इस व्यवहार को बदलने के लिए <i>यूनीवर्सल</i> टैब पर जाएं।</string>
-    <string name="whats_new_version_update" translatable="true">&lt;b&gt;पैनिक न करें 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. नया: उपयोगकर्ता बग रिपोर्ट में नेटवर्क इंजन की त्रुटियों को कैप्चर करें।&lt;br/&gt; 2. नया: अप्रतिनियुक्त डोमेन नामों के लिए सिस्टम DNS का उपयोग करें यदि DNS लीक को रोकें चालू है।&lt;br/&gt; 3. सुधार: डुअल-स्टैक (IPv4 + IPv6) वायरगार्ड कनेक्टिविटी।&lt;br/&gt; 4. सुधार: जब नेटवर्क इंजन अनुत्तरदायी हो तो UI तत्वों को ब्लॉक करने से बचें।&lt;br/&gt; 5. फिक्स: उन्नत DNS फ़िल्टरिंग चालू होने पर कनेक्शन टाइमआउट।&lt;br/&gt; 6. फिक्स: डोमेन नामों के साथ वायरगार्ड पीयर एंडपॉइंट नेटवर्क परिवर्तनों पर लटके रहते हैं।&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.rethinkdns.com/r/translate&gt;इस ऐप का अनुवाद करने में सहायता करें&lt;/a&gt;</string>
+    <string name="whats_new_version_update" translatable="true">&lt;b&gt;पैनिक न करें 2&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. नया: उपयोगकर्ता बग रिपोर्ट में नेटवर्क इंजन की त्रुटियों को कैप्चर करें।&lt;br/&gt; 2. नया: अप्रतिनियुक्त डोमेन नामों के लिए सिस्टम DNS का उपयोग करें यदि DNS लीक को रोकें चालू है।&lt;br/&gt; 3. सुधार: डुअल-स्टैक (IPv4 + IPv6) वायरगार्ड कनेक्टिविटी।&lt;br/&gt; 4. सुधार: जब नेटवर्क इंजन अनुत्तरदायी हो तो UI तत्वों को ब्लॉक करने से बचें।&lt;br/&gt; 5. फिक्स: उन्नत DNS फ़िल्टरिंग चालू होने पर कनेक्शन टाइमआउट।&lt;br/&gt; 6. फिक्स: डोमेन नामों के साथ वायरगार्ड पीयर एंडपॉइंट नेटवर्क परिवर्तनों पर लटके रहते हैं।&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.signalare.se/r/translate&gt;इस ऐप का अनुवाद करने में सहायता करें&lt;/a&gt;</string>
     <string name="lbl_rules" translatable="true">नियम</string>
     <string name="lbl_configure" translatable="true">कॉन्फ़िगर</string>
     <string name="lbl_logs" translatable="true">लॉग</string>

@@ -104,12 +104,12 @@
     <string name="lbl_applications" translatable="true">앱</string>
     <string name="lbl_include" translatable="true">포함</string>
     <string name="firewall_rules" translatable="true">네트워크 규칙</string>
-    <string name="dns_explanation_dns_connected" translatable="true">RethinkDNS에 연결됨</string>
+    <string name="dns_explanation_dns_connected" translatable="true">Signalare Observer에 연결됨</string>
     <string name="notification_action_dns_mode" translatable="true">DNS</string>
     <string name="lbl_very" translatable="true">매우</string>
     <string name="bsct_block_ip" translatable="true"><u>이 앱</u>에서 <u>이 IP</u>를 차단 또는 신뢰</string>
     <string name="status_exposed" description="This is a large message in a scary color.  It indicates that DNS queries can be surveilled or modified in transit." translatable="true">보호되지 않음</string>
-    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">RethinkDNS 및 방화벽에 연결됨</string>
+    <string name="dns_explanation_connected" description="The message will be shown when the DNS is connected" translatable="true">Signalare Observer 및 방화벽에 연결됨</string>
     <string name="allow" translatable="true">허용</string>
     <string name="dns_mode_info_explanation_new" translatable="true">DNS 요청을 모니터링, 차단 및 암호화합니다.</string>
     <string name="lbl_select_all" translatable="true">전체 선택</string>
@@ -189,7 +189,7 @@
     <string name="settings_rinr_dialog_desc" translatable="true"><!--settings_network_all_networks-->%1$s설정도 활성화합니다. 계속 하시겠습니까?</string>
     <string name="settings_http_proxy_desc" translatable="true">%1$s로 포워딩하는 중</string>
     <string name="settings_http_proxy_dialog_title" translatable="true">사용자 지정 서버 URL</string>
-    <string name="about_website" translatable="true">rethinkdns.com 방문하기</string>
+    <string name="about_website" translatable="true">signalare.se 방문하기</string>
     <string name="about_github" translatable="true">GitHub에서 기여하기</string>
     <string name="about_sponsor_link_text" translatable="true">후원자</string>
     <string name="about_app" translatable="true">앱</string>
@@ -443,7 +443,7 @@
     <string name="settings_notification_dialog_option_3" translatable="true">\n없음:\n버튼이 표시되지 않습니다.\n</string>
     <string name="apps_icon_content_desc" translatable="true">애플리케이션 아이콘</string>
     <string name="settings_dns_proxy_dialog_hostname" translatable="true">호스트 이름</string>
-    <string name="whats_new_version_update" translatable="true">&lt;b&gt;LAN 파티!&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. &lt;i&gt;새로운 기능&lt;/i&gt;: 사설 IP 제외(LAN / 링크 로컬).&lt;br/&gt; 2. 우회 DNS 만들기 &amp; 방화벽 설정 작업.&lt;br/&gt; 3. 방화벽에 의해 차단되었을 수 있는 도메인에 대한 DNS 로그에 차단 가능성 표시.&lt;br/&gt; 4. 지원되는 경우 적응형 아이콘 표시.&lt;br/&gt; 5. 생체 인증 프롬프트 15분마다 한 번씩.&lt;br/&gt; 6. 6개의 기타 UI 및 성능 개선.&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.rethinkdns.com/r/translate&gt;이 앱 번역을 도와주세요.&lt;/ 가&gt;</string>
+    <string name="whats_new_version_update" translatable="true">&lt;b&gt;LAN 파티!&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; 1. &lt;i&gt;새로운 기능&lt;/i&gt;: 사설 IP 제외(LAN / 링크 로컬).&lt;br/&gt; 2. 우회 DNS 만들기 &amp; 방화벽 설정 작업.&lt;br/&gt; 3. 방화벽에 의해 차단되었을 수 있는 도메인에 대한 DNS 로그에 차단 가능성 표시.&lt;br/&gt; 4. 지원되는 경우 적응형 아이콘 표시.&lt;br/&gt; 5. 생체 인증 프롬프트 15분마다 한 번씩.&lt;br/&gt; 6. 6개의 기타 UI 및 성능 개선.&lt;br/&gt;&lt;br/&gt; &lt;a href=https://svc.signalare.se/r/translate&gt;이 앱 번역을 도와주세요.&lt;/ 가&gt;</string>
     <string name="settings_ip_text_ipv6" translatable="true">IPv6</string>
     <string name="settings_default_dns_desc" translatable="true">드물게 사용자 기본 설정 DNS를 확인할 수 없는 경우 폴백 DNS가 사용됩니다.</string>
     <string name="firewall_status_block_metered" translatable="true">종량제(모바일) 네트워크에서 차단됨</string>
@@ -554,7 +554,7 @@
     <string name="dc_entries" translatable="true">%1$s 항목 »</string>
     <string name="dc_proxy_dns_heading" translatable="true">DNS 프록시 사용 안 함</string>
     <string name="cd_custom_dns_proxy_default_app" translatable="true">없음</string>
-    <string name="dc_rethink_dns_radio" translatable="true">Rethink DNS</string>
+    <string name="dc_rethink_dns_radio" translatable="true">Signalare Observer</string>
     <string name="about_bravedns_toreport_text" translatable="true">도움말 및 피드백</string>
     <string name="cd_dns_proxy_mode_internal" translatable="true">내부의</string>
     <string name="hsf_pause_vpn_failure" translatable="true">일시 중지할 수 없음: Rethink가 비활성화되어 있습니다</string>
@@ -1143,7 +1143,7 @@
     <string name="most_contacted_asn" translatable="true">가장 많이 접속한 제공자</string>
     <string name="most_blocked_asn" translatable="true">가장 많이 차단된 제공자</string>
     <string name="download_ip_info_title" translatable="true">제공자 정보 표시</string>
-    <string name="download_ip_info_desc" translatable="true"><i>rethinkdns.com</i>에서 웹사이트의 제공자 정보를 가져옵니다, <i>%1$s</i> 이용</string>
+    <string name="download_ip_info_desc" translatable="true"><i>signalare.se</i>에서 웹사이트의 제공자 정보를 가져옵니다, <i>%1$s</i> 이용</string>
     <string name="config_invalid_desc" translatable="true">잘못된 WireGuard 구성</string>
     <string name="one_wg_apps_added" translatable="true">모든 앱 라우팅</string>
     <string name="one_wg_dialog_desc" translatable="true">DNS를 포함한 모든 앱으로부터의 연결을 활성화된, 단일 WireGuard VPN으로 라우팅합니다. 다른 활성화된 WireGuard VPN이 있다면, 모두 중지됩니다.</string>

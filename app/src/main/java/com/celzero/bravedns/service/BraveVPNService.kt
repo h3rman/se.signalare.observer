@@ -1,6 +1,7 @@
 /*
  * Copyright 2019 Jigsaw Operations LLC
  * Copyright 2020 RethinkDNS and its authors
+ * Modifications copyright 2025 Signalare
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
