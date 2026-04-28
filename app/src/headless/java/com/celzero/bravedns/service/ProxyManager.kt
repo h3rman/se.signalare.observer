@@ -24,6 +24,7 @@ object ProxyManager : KoinComponent {
     const val ID_TCP_BASE = "TCP"
     const val ID_S5_BASE = "S5"
     const val ID_HTTP_BASE = "HTTP"
+    const val ID_HTTP_INTERCEPT = "HTTP_INTERCEPT" // local HTTP POST interceptor proxy
 
     enum class ProxyMode(val value: Int) {
         SOCKS5(0),

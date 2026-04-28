@@ -90,8 +90,11 @@ import com.celzero.bravedns.rpnproxy.RpnProxyManager.RpnType
 import com.celzero.bravedns.scheduler.RpnProxyUpdateWorker
 import com.celzero.bravedns.scheduler.WgProxyPingController
 import com.celzero.bravedns.service.FirewallManager.NOTIF_CHANNEL_ID_FIREWALL_ALERTS
+import com.celzero.bravedns.service.ProxyManager.ID_HTTP_INTERCEPT
 import com.celzero.bravedns.service.ProxyManager.ID_WG_BASE
 import com.celzero.bravedns.service.ProxyManager.isNotLocalAndRpnProxy
+import com.celzero.bravedns.service.interceptor.HttpPostInterceptProxy
+import com.celzero.bravedns.service.interceptor.InterceptorConfig
 import com.celzero.bravedns.ui.NotificationHandlerActivity
 import com.celzero.bravedns.ui.activity.AppLockActivity
 import com.celzero.bravedns.ui.activity.MiscSettingsActivity
@@ -346,6 +349,9 @@ class BraveVPNService : VpnService(), ConnectionMonitor.NetworkListener, Bridge,
     // only when this flag is true, ensuring unknown app DNS requests are blocked and avoiding
     // issues when Android omits uid in dns requests
     private var isUidPresentInAnyDnsRequest: Boolean = false
+
+    // Local HTTP POST interceptor proxy (spec §3.3)
+    private val httpInterceptProxy = HttpPostInterceptProxy()
 
     private var accessibilityListener: AccessibilityManager.AccessibilityStateChangeListener? = null
 
@@ -1532,6 +1538,13 @@ class BraveVPNService : VpnService(), ConnectionMonitor.NetworkListener, Bridge,
     override fun onCreate() {
         connTracer = ConnectionTracer(this)
         VpnController.onVpnCreated(this)
+
+        // Load DPC-pushed managed config and start the HTTP POST interceptor proxy (spec §3.3, §3.4)
+        InterceptorConfig.loadFromManagedConfig(this)
+        if (InterceptorConfig.isEnabled()) {
+            httpInterceptProxy.start()
+            Logger.i(LOG_TAG_VPN, "HTTP intercept proxy started on port ${InterceptorConfig.proxyPort}")
+        }
 
         // Temp-allow expiry scheduling is only relevant when VPN is active.
         FirewallManager.initTempAllowScheduler(this)
@@ -3420,6 +3433,7 @@ class BraveVPNService : VpnService(), ConnectionMonitor.NetworkListener, Bridge,
         // onVpnStart is also called from the main thread (ui)
         io("cmVpnStop") { connectionMonitor.onVpnStop() }
         wgProxyPingController.stopAll()
+        httpInterceptProxy.stop()
         VpnController.onVpnDestroyed()
         // stop the inapp billing handler if it exists
         //InAppBillingHandler.endConnection()
@@ -5239,6 +5253,15 @@ class BraveVPNService : VpnService(), ConnectionMonitor.NetworkListener, Bridge,
             emptyList()
         }
         logd("flow/inflow: rpn-active? ${RpnProxyManager.isRpnActive()} && $DEBUG, rpids: $rpnIds")
+
+        // HTTP POST interceptor: route matching traffic to the local proxy (spec §3.3, §5)
+        // Applied before other proxy decisions so the interceptor takes precedence.
+        // Rethink's own traffic is excluded to avoid processing our own outgoing connections.
+        if (connTracker.uid != rethinkUid &&
+            InterceptorConfig.shouldIntercept(connTracker.destIP, connTracker.destPort)) {
+            Logger.d(LOG_TAG_VPN, "flow: intercepting HTTP to ${connTracker.destIP}:${connTracker.destPort}, uid=$uid, connId=$connId")
+            return persistAndConstructFlowResponse(connTracker, ID_HTTP_INTERCEPT, connId, uid)
+        }
 
         if (connTracker.uid == rethinkUid && !rinr) {
             val pid = if (persistentState.autoProxyEnabled) Backend.Auto else Backend.Exit

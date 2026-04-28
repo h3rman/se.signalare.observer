@@ -36,6 +36,7 @@ object ProxyManager : KoinComponent {
     const val ID_HTTP_BASE = "HTTP"
     const val ID_NONE = "SYSTEM" // no proxy
     const val ID_RPN_WIN = "RPNWIN" // rpn win proxy
+    const val ID_HTTP_INTERCEPT = "HTTP_INTERCEPT" // local HTTP POST interceptor proxy
 
     const val TCP_PROXY_NAME = "Rethink-Proxy"
     const val ORBOT_PROXY_NAME = "Orbot"

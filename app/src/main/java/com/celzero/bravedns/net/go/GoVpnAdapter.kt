@@ -99,6 +99,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
+import com.celzero.bravedns.service.interceptor.InterceptorConfig
 import java.io.File
 import java.net.URI
 import java.net.URLEncoder
@@ -168,6 +169,7 @@ class GoVpnAdapter : KoinComponent {
         setWireguardTunnelModeIfNeeded(opts.tunProxyMode)
         setSocks5TunnelModeIfNeeded(opts.tunProxyMode)
         setHttpProxyIfNeeded(opts.tunProxyMode)
+        registerHttpInterceptProxyIfNeeded()
         setPcapMode(appConfig.getPcapFilePath())
         setDnsAlg()
         notifyLoopback()
@@ -1198,6 +1200,35 @@ class GoVpnAdapter : KoinComponent {
             }
             logEvent(Severity.HIGH, "set http proxy error", "error setting http proxy, reason: ${e.message}")
             Logger.e(LOG_TAG_VPN, "$TAG error setting http proxy: ${e.message}", e)
+        }
+    }
+
+    /**
+     * Registers the local HTTP POST interceptor proxy with the firestack Go backend.
+     *
+     * Only registered when [InterceptorConfig.isEnabled] is true.  The proxy ID
+     * [ProxyManager.ID_HTTP_INTERCEPT] is what the flow() callback returns in its
+     * Mark for matching traffic; firestack then forwards those connections here using
+     * the standard HTTP forward-proxy protocol.
+     */
+    suspend fun registerHttpInterceptProxyIfNeeded() {
+        if (!InterceptorConfig.isEnabled()) {
+            Logger.d(LOG_TAG_VPN, "$TAG HTTP intercept proxy disabled, skipping registration")
+            return
+        }
+        if (!tunnel.isConnected) {
+            Logger.e(LOG_TAG_VPN, "$TAG no tunnel, skip HTTP intercept proxy registration")
+            return
+        }
+        try {
+            val url = "http://127.0.0.1:${InterceptorConfig.proxyPort}"
+            val p = getProxies()?.addProxy(ProxyManager.ID_HTTP_INTERCEPT, url)
+            Logger.i(LOG_TAG_VPN, "$TAG HTTP intercept proxy registered: $url, success? ${p != null}")
+            logEvent(Severity.LOW, "http intercept proxy", "registered local proxy at $url")
+        } catch (e: Exception) {
+            Logger.e(LOG_TAG_VPN, "$TAG failed to register HTTP intercept proxy: ${e.message}", e)
+            logEvent(Severity.HIGH, "http intercept proxy error",
+                "failed to register local intercept proxy, reason: ${e.message}")
         }
     }
 
