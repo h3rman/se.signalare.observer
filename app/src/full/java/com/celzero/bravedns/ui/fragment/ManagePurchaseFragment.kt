@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.fragment
+package se.signalare.observer.ui.fragment
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -37,28 +37,28 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.FragmentManagePurchaseBinding
-import com.celzero.bravedns.iab.InAppBillingHandler
-import com.celzero.bravedns.iab.InAppBillingHandler.REVOKE_WINDOW_ONE_TIME_2YRS_DAYS
-import com.celzero.bravedns.iab.InAppBillingHandler.REVOKE_WINDOW_ONE_TIME_5YRS_DAYS
-import com.celzero.bravedns.iab.InAppBillingHandler.REVOKE_WINDOW_SUBS_MONTHLY_DAYS
-import com.celzero.bravedns.iab.InAppBillingHandler.REVOKE_WINDOW_SUBS_YEARLY_DAYS
-import com.celzero.bravedns.iab.PurchaseConflictNotifier
-import com.celzero.bravedns.iab.DeviceNotRegisteredNotifier
-import com.celzero.bravedns.iab.ServerApiError
-import com.celzero.bravedns.rpnproxy.RpnProxyManager
-import com.celzero.bravedns.rpnproxy.SubscriptionStateMachineV2
-import com.celzero.bravedns.ui.activity.FragmentHostActivity
-import com.celzero.bravedns.ui.bottomsheet.PurchaseConflictBottomSheet
-import com.celzero.bravedns.ui.bottomsheet.DeviceAuthErrorBottomSheet
-import com.celzero.bravedns.ui.bottomsheet.DeviceNotRegisteredBottomSheet
-import com.celzero.bravedns.ui.bottomsheet.ResubscribeBottomSheet
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.UIUtils.openUrl
-import com.celzero.bravedns.util.Utilities.showToastUiCentered
-import com.celzero.bravedns.viewmodel.ManagePurchaseViewModel
-import com.celzero.bravedns.viewmodel.ManagePurchaseViewModel.OperationState
+import se.signalare.observer.R
+import se.signalare.observer.databinding.FragmentManagePurchaseBinding
+import se.signalare.observer.iab.InAppBillingHandler
+import se.signalare.observer.iab.InAppBillingHandler.REVOKE_WINDOW_ONE_TIME_2YRS_DAYS
+import se.signalare.observer.iab.InAppBillingHandler.REVOKE_WINDOW_ONE_TIME_5YRS_DAYS
+import se.signalare.observer.iab.InAppBillingHandler.REVOKE_WINDOW_SUBS_MONTHLY_DAYS
+import se.signalare.observer.iab.InAppBillingHandler.REVOKE_WINDOW_SUBS_YEARLY_DAYS
+import se.signalare.observer.iab.PurchaseConflictNotifier
+import se.signalare.observer.iab.DeviceNotRegisteredNotifier
+import se.signalare.observer.iab.ServerApiError
+import se.signalare.observer.rpnproxy.RpnProxyManager
+import se.signalare.observer.rpnproxy.SubscriptionStateMachineV2
+import se.signalare.observer.ui.activity.FragmentHostActivity
+import se.signalare.observer.ui.bottomsheet.PurchaseConflictBottomSheet
+import se.signalare.observer.ui.bottomsheet.DeviceAuthErrorBottomSheet
+import se.signalare.observer.ui.bottomsheet.DeviceNotRegisteredBottomSheet
+import se.signalare.observer.ui.bottomsheet.ResubscribeBottomSheet
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.UIUtils.openUrl
+import se.signalare.observer.util.Utilities.showToastUiCentered
+import se.signalare.observer.viewmodel.ManagePurchaseViewModel
+import se.signalare.observer.viewmodel.ManagePurchaseViewModel.OperationState
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

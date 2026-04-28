@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.bottomsheet
+package se.signalare.observer.ui.bottomsheet
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -29,18 +29,18 @@ import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.BottomSheetBugReportFilesBinding
-import com.celzero.bravedns.databinding.ItemBugReportFileBinding
-import com.celzero.bravedns.scheduler.BugReportZipper
-import com.celzero.bravedns.scheduler.EnhancedBugReport
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.isAtleastO
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.Utilities.showToastUiCentered
-import com.celzero.bravedns.util.useTransparentNoDimBackground
+import se.signalare.observer.R
+import se.signalare.observer.databinding.BottomSheetBugReportFilesBinding
+import se.signalare.observer.databinding.ItemBugReportFileBinding
+import se.signalare.observer.scheduler.BugReportZipper
+import se.signalare.observer.scheduler.EnhancedBugReport
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.isAtleastO
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.Utilities.showToastUiCentered
+import se.signalare.observer.util.useTransparentNoDimBackground
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment

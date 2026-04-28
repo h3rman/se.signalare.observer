@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import android.app.Activity
 import android.content.Context
@@ -23,13 +23,13 @@ import android.view.ViewGroup
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.ListItemWgPeersBinding
-import com.celzero.bravedns.service.WireguardManager
-import com.celzero.bravedns.ui.dialog.WgAddPeerDialog
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.wireguard.Peer
+import se.signalare.observer.R
+import se.signalare.observer.databinding.ListItemWgPeersBinding
+import se.signalare.observer.service.WireguardManager
+import se.signalare.observer.ui.dialog.WgAddPeerDialog
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.wireguard.Peer
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

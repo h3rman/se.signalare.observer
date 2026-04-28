@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.database
+package se.signalare.observer.database
 
 import android.database.Cursor
 import androidx.lifecycle.LiveData
 import androidx.room.Transaction
-import com.celzero.bravedns.util.Constants
+import se.signalare.observer.util.Constants
 
 class CustomDomainRepository(private val customDomainDAO: CustomDomainDAO) {
     suspend fun update(customDomain: CustomDomain) {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import Logger
 import Logger.LOG_TAG_FIREWALL
@@ -24,9 +24,9 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.DomainItemBottomSheetBinding
-import com.celzero.bravedns.service.DomainRulesManager
+import se.signalare.observer.R
+import se.signalare.observer.databinding.DomainItemBottomSheetBinding
+import se.signalare.observer.service.DomainRulesManager
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

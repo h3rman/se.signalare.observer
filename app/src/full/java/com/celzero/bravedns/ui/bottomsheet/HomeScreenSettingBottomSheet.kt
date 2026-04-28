@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.bottomsheet
+package se.signalare.observer.ui.bottomsheet
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -28,21 +28,21 @@ import android.view.ViewGroup
 import android.widget.CompoundButton
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.lifecycleScope
-import com.celzero.bravedns.R
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.databinding.BottomSheetHomeScreenBinding
-import com.celzero.bravedns.rpnproxy.RpnProxyManager
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.ui.activity.ProxySettingsActivity
-import com.celzero.bravedns.ui.activity.WgMainActivity
-import com.celzero.bravedns.util.Constants.Companion.INIT_TIME_MS
-import com.celzero.bravedns.util.SsidPermissionManager
-import com.celzero.bravedns.util.Themes.Companion.getBottomsheetCurrentTheme
-import com.celzero.bravedns.util.UIUtils.htmlToSpannedText
-import com.celzero.bravedns.util.UIUtils.openVpnProfile
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.useTransparentNoDimBackground
+import se.signalare.observer.R
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.databinding.BottomSheetHomeScreenBinding
+import se.signalare.observer.rpnproxy.RpnProxyManager
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.ui.activity.ProxySettingsActivity
+import se.signalare.observer.ui.activity.WgMainActivity
+import se.signalare.observer.util.Constants.Companion.INIT_TIME_MS
+import se.signalare.observer.util.SsidPermissionManager
+import se.signalare.observer.util.Themes.Companion.getBottomsheetCurrentTheme
+import se.signalare.observer.util.UIUtils.htmlToSpannedText
+import se.signalare.observer.util.UIUtils.openVpnProfile
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.useTransparentNoDimBackground
 import com.celzero.firestack.backend.Rpn
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import kotlinx.coroutines.Dispatchers

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.viewmodel
+package se.signalare.observer.viewmodel
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -25,9 +25,9 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
-import com.celzero.bravedns.database.ConsoleLog
-import com.celzero.bravedns.database.ConsoleLogDAO
-import com.celzero.bravedns.util.Constants
+import se.signalare.observer.database.ConsoleLog
+import se.signalare.observer.database.ConsoleLogDAO
+import se.signalare.observer.util.Constants
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.flatMapLatest

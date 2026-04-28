@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.iab
+package se.signalare.observer.iab
 
 import Logger
 import Logger.LOG_IAB
@@ -25,14 +25,14 @@ import android.content.Intent
 import android.os.Build
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
-import com.celzero.bravedns.R
-import com.celzero.bravedns.service.FirewallManager.NOTIF_CHANNEL_ID_FIREWALL_ALERTS
-import com.celzero.bravedns.ui.NotificationHandlerActivity
-import com.celzero.bravedns.util.Constants.Companion.NOTIF_ID_IAB_CONFLICT
-import com.celzero.bravedns.util.Constants.Companion.NOTIF_INTENT_EXTRA_IAB_CONFLICT_NAME
-import com.celzero.bravedns.util.Constants.Companion.NOTIF_INTENT_EXTRA_IAB_CONFLICT_VALUE
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.R
+import se.signalare.observer.service.FirewallManager.NOTIF_CHANNEL_ID_FIREWALL_ALERTS
+import se.signalare.observer.ui.NotificationHandlerActivity
+import se.signalare.observer.util.Constants.Companion.NOTIF_ID_IAB_CONFLICT
+import se.signalare.observer.util.Constants.Companion.NOTIF_INTENT_EXTRA_IAB_CONFLICT_NAME
+import se.signalare.observer.util.Constants.Companion.NOTIF_INTENT_EXTRA_IAB_CONFLICT_VALUE
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.Utilities
 
 /**
  * Posts a high-priority system notification whenever an [ITcpProxy] call returns HTTP 409

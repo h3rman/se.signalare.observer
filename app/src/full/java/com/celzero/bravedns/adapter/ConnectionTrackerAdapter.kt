@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -32,22 +32,22 @@ import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.celzero.bravedns.R
-import com.celzero.bravedns.database.ConnectionTracker
-import com.celzero.bravedns.databinding.ListItemConnTrackBinding
-import com.celzero.bravedns.service.FirewallManager
-import com.celzero.bravedns.service.FirewallRuleset
-import com.celzero.bravedns.service.ProxyManager
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.ui.bottomsheet.ConnTrackerBottomSheet
-import com.celzero.bravedns.util.Constants.Companion.TIME_FORMAT_1
-import com.celzero.bravedns.util.KnownPorts
-import com.celzero.bravedns.util.Protocol
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.UIUtils.getDurationInHumanReadableFormat
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.getDefaultIcon
-import com.celzero.bravedns.util.Utilities.getIcon
+import se.signalare.observer.R
+import se.signalare.observer.database.ConnectionTracker
+import se.signalare.observer.databinding.ListItemConnTrackBinding
+import se.signalare.observer.service.FirewallManager
+import se.signalare.observer.service.FirewallRuleset
+import se.signalare.observer.service.ProxyManager
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.ui.bottomsheet.ConnTrackerBottomSheet
+import se.signalare.observer.util.Constants.Companion.TIME_FORMAT_1
+import se.signalare.observer.util.KnownPorts
+import se.signalare.observer.util.Protocol
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.UIUtils.getDurationInHumanReadableFormat
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.getDefaultIcon
+import se.signalare.observer.util.Utilities.getIcon
 import com.google.gson.Gson
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

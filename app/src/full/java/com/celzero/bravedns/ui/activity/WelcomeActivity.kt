@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.activity
+package se.signalare.observer.ui.activity
 
 import android.content.Context
 import android.content.Intent
@@ -28,19 +28,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
-import com.celzero.bravedns.ui.BaseActivity
+import se.signalare.observer.ui.BaseActivity
 import androidx.core.text.HtmlCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.ActivityWelcomeBinding
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.ui.HomeScreenActivity
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.handleFrostEffectIfNeeded
+import se.signalare.observer.R
+import se.signalare.observer.databinding.ActivityWelcomeBinding
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.ui.HomeScreenActivity
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.handleFrostEffectIfNeeded
 import org.koin.android.ext.android.inject
 
 class WelcomeActivity : BaseActivity(R.layout.activity_welcome) {

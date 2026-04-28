@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.scheduler
+package se.signalare.observer.scheduler
 
 import Logger.LOG_TAG_BUG_REPORT
 import android.content.Context
 import android.os.Build
 import android.util.Log
 import androidx.annotation.RequiresApi
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.FirebaseErrorReporting
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.FirebaseErrorReporting
+import se.signalare.observer.util.Utilities
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import java.io.File

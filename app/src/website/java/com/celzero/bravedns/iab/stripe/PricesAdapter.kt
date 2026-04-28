@@ -1,4 +1,4 @@
-package com.celzero.bravedns.iab.stripe
+package se.signalare.observer.iab.stripe
 
 import android.view.LayoutInflater
 import android.view.View

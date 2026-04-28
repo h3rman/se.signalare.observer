@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.provider
+package se.signalare.observer.provider
 
 import Logger.LOG_PROVIDER
 import android.content.*
 import android.database.Cursor
 import android.net.Uri
 import android.os.Bundle
-import com.celzero.bravedns.database.RethinkLocalFileTag
-import com.celzero.bravedns.database.RethinkLocalFileTagRepository
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.RethinkBlocklistManager
+import se.signalare.observer.database.RethinkLocalFileTag
+import se.signalare.observer.database.RethinkLocalFileTagRepository
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.RethinkBlocklistManager
 import org.koin.android.ext.android.inject
 
 class BlocklistProvider : ContentProvider() {
@@ -32,7 +32,7 @@ class BlocklistProvider : ContentProvider() {
     private val persistentState by inject<PersistentState>()
 
     companion object {
-        private const val AUTHORITY = "com.celzero.bravedns.blocklistprovider"
+        private const val AUTHORITY = "se.signalare.observer.blocklistprovider"
         private const val URI_DNS = "vnd.android.cursor.dir/$AUTHORITY.blocklists"
 
         // blocklists: Uri.parse("content://$AUTHORITY/blocklists")

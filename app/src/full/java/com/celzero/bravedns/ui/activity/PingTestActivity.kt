@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.activity
+package se.signalare.observer.ui.activity
 
 import Logger
 import android.animation.AnimatorSet
@@ -27,19 +27,19 @@ import android.view.animation.OvershootInterpolator
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
-import com.celzero.bravedns.ui.BaseActivity
+import se.signalare.observer.ui.BaseActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.lifecycleScope
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.ActivityPingTestBinding
-import com.celzero.bravedns.rpnproxy.RpnProxyManager
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.Utilities.isAtleastQ
+import se.signalare.observer.R
+import se.signalare.observer.databinding.ActivityPingTestBinding
+import se.signalare.observer.rpnproxy.RpnProxyManager
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.Utilities.isAtleastQ
 import com.celzero.firestack.backend.Backend
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers

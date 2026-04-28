@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.celzero.bravedns.download
+package se.signalare.observer.download
 
 import Logger
 import Logger.LOG_TAG_DNS
@@ -30,18 +30,18 @@ import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
 import androidx.work.WorkRequest
 import androidx.work.workDataOf
-import com.celzero.bravedns.customdownloader.LocalBlocklistCoordinator
-import com.celzero.bravedns.customdownloader.RemoteBlocklistCoordinator
-import com.celzero.bravedns.download.BlocklistDownloadHelper.Companion.checkBlocklistUpdate
-import com.celzero.bravedns.download.BlocklistDownloadHelper.Companion.getDownloadableTimestamp
-import com.celzero.bravedns.download.DownloadConstants.Companion.DOWNLOAD_TAG
-import com.celzero.bravedns.download.DownloadConstants.Companion.FILE_TAG
-import com.celzero.bravedns.scheduler.WorkScheduler
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.RethinkBlocklistManager.DownloadType
-import com.celzero.bravedns.util.Constants.Companion.INIT_TIME_MS
-import com.celzero.bravedns.util.Constants.Companion.ONDEVICE_BLOCKLISTS_ADM
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.customdownloader.LocalBlocklistCoordinator
+import se.signalare.observer.customdownloader.RemoteBlocklistCoordinator
+import se.signalare.observer.download.BlocklistDownloadHelper.Companion.checkBlocklistUpdate
+import se.signalare.observer.download.BlocklistDownloadHelper.Companion.getDownloadableTimestamp
+import se.signalare.observer.download.DownloadConstants.Companion.DOWNLOAD_TAG
+import se.signalare.observer.download.DownloadConstants.Companion.FILE_TAG
+import se.signalare.observer.scheduler.WorkScheduler
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.RethinkBlocklistManager.DownloadType
+import se.signalare.observer.util.Constants.Companion.INIT_TIME_MS
+import se.signalare.observer.util.Constants.Companion.ONDEVICE_BLOCKLISTS_ADM
+import se.signalare.observer.util.Utilities
 import java.util.concurrent.TimeUnit
 
 /**

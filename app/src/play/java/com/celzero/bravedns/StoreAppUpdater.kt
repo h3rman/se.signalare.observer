@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns
+package se.signalare.observer
 
 import android.app.Activity
 import android.content.Context
 import android.content.IntentSender
 import android.util.Log
-import com.celzero.bravedns.service.AppUpdater
+import se.signalare.observer.service.AppUpdater
 import com.google.android.play.core.appupdate.AppUpdateManagerFactory
 import com.google.android.play.core.install.InstallStateUpdatedListener
 import com.google.android.play.core.install.model.AppUpdateType

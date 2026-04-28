@@ -13,25 +13,25 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
 import android.content.Context
 import android.os.Looper
 import androidx.lifecycle.MutableLiveData
-import com.celzero.bravedns.R
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.database.DnsCryptRelayEndpoint
-import com.celzero.bravedns.rpnproxy.RpnProxyManager
-import com.celzero.bravedns.ui.activity.AntiCensorshipActivity
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.Constants.Companion.INIT_TIME_MS
-import com.celzero.bravedns.util.Constants.Companion.INVALID_PORT
-import com.celzero.bravedns.util.FirebaseErrorReporting
-import com.celzero.bravedns.util.InternetProtocol
-import com.celzero.bravedns.util.PcapMode
-import com.celzero.bravedns.util.ResourceRecordTypes
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.isAtleastR
+import se.signalare.observer.R
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.database.DnsCryptRelayEndpoint
+import se.signalare.observer.rpnproxy.RpnProxyManager
+import se.signalare.observer.ui.activity.AntiCensorshipActivity
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.Constants.Companion.INIT_TIME_MS
+import se.signalare.observer.util.Constants.Companion.INVALID_PORT
+import se.signalare.observer.util.FirebaseErrorReporting
+import se.signalare.observer.util.InternetProtocol
+import se.signalare.observer.util.PcapMode
+import se.signalare.observer.util.ResourceRecordTypes
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.isAtleastR
 import hu.autsoft.krate.SimpleKrate
 import hu.autsoft.krate.booleanPref
 import hu.autsoft.krate.default.withDefault

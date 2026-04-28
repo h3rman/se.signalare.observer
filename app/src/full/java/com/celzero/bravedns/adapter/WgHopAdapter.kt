@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -25,16 +25,16 @@ import android.widget.Toast
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.ListItemWgHopBinding
-import com.celzero.bravedns.service.ProxyManager.ID_WG_BASE
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.service.WireguardManager
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.UIUtils.fetchColor
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.wireguard.Config
-import com.celzero.bravedns.wireguard.WgHopManager
+import se.signalare.observer.R
+import se.signalare.observer.databinding.ListItemWgHopBinding
+import se.signalare.observer.service.ProxyManager.ID_WG_BASE
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.service.WireguardManager
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.UIUtils.fetchColor
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.wireguard.Config
+import se.signalare.observer.wireguard.WgHopManager
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

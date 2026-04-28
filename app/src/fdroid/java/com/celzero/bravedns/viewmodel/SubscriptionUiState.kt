@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.viewmodel
+package se.signalare.observer.viewmodel
 
 /**
  * Stub: mirrors the play-flavour [SubscriptionUiState] sealed class so that shared
- * `main` source-set code ([com.celzero.bravedns.rpnproxy.PipKeyManager]) compiles on
+ * `main` source-set code ([se.signalare.observer.rpnproxy.PipKeyManager]) compiles on
  * the F-Droid build without modification.
  *
  * Only [Available] is referenced from `main` code; all other subclasses are present for

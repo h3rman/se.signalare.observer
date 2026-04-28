@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.celzero.bravedns.database
+package se.signalare.observer.database
 
 import androidx.lifecycle.LiveData
 import androidx.paging.PagingSource
@@ -26,7 +26,7 @@ import androidx.room.Query
 import androidx.room.RewriteQueriesToDropUnusedColumns
 import androidx.room.Transaction
 import androidx.room.Update
-import com.celzero.bravedns.util.Constants.Companion.UID_EVERYBODY
+import se.signalare.observer.util.Constants.Companion.UID_EVERYBODY
 
 @Dao
 interface CustomIpDao {

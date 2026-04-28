@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import Logger
 import Logger.LOG_TAG_PROXY
@@ -32,17 +32,17 @@ import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.celzero.bravedns.R
-import com.celzero.bravedns.database.ProxyApplicationMapping
-import com.celzero.bravedns.databinding.ListItemWgIncludeAppsBinding
-import com.celzero.bravedns.service.FirewallManager
-import com.celzero.bravedns.service.ProxyManager
-import com.celzero.bravedns.service.ProxyManager.addProxyToApp
-import com.celzero.bravedns.service.ProxyManager.removeProxyFromApp
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.Utilities.getDefaultIcon
-import com.celzero.bravedns.util.Utilities.getIcon
-import com.celzero.bravedns.util.Utilities.showToastUiCentered
+import se.signalare.observer.R
+import se.signalare.observer.database.ProxyApplicationMapping
+import se.signalare.observer.databinding.ListItemWgIncludeAppsBinding
+import se.signalare.observer.service.FirewallManager
+import se.signalare.observer.service.ProxyManager
+import se.signalare.observer.service.ProxyManager.addProxyToApp
+import se.signalare.observer.service.ProxyManager.removeProxyFromApp
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.Utilities.getDefaultIcon
+import se.signalare.observer.util.Utilities.getIcon
+import se.signalare.observer.util.Utilities.showToastUiCentered
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

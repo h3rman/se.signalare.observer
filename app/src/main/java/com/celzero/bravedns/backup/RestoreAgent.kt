@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.backup
+package se.signalare.observer.backup
 
 import Logger
 import Logger.LOG_TAG_BACKUP_RESTORE
@@ -25,24 +25,24 @@ import androidx.core.net.toUri
 import androidx.preference.PreferenceManager
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
-import com.celzero.bravedns.backup.BackupHelper.Companion.DATA_BUILDER_RESTORE_URI
-import com.celzero.bravedns.backup.BackupHelper.Companion.METADATA_FILENAME
-import com.celzero.bravedns.backup.BackupHelper.Companion.SHARED_PREFS_BACKUP_FILE_NAME
-import com.celzero.bravedns.backup.BackupHelper.Companion.TEMP_WG_DIR
-import com.celzero.bravedns.backup.BackupHelper.Companion.VERSION
-import com.celzero.bravedns.backup.BackupHelper.Companion.deleteResidue
-import com.celzero.bravedns.backup.BackupHelper.Companion.getTempDir
-import com.celzero.bravedns.backup.BackupHelper.Companion.stopVpn
-import com.celzero.bravedns.backup.BackupHelper.Companion.unzip
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.database.AppDatabase
-import com.celzero.bravedns.database.LogDatabase
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.RethinkBlocklistManager
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.RemoteFileTagUtil
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.deleteRecursive
+import se.signalare.observer.backup.BackupHelper.Companion.DATA_BUILDER_RESTORE_URI
+import se.signalare.observer.backup.BackupHelper.Companion.METADATA_FILENAME
+import se.signalare.observer.backup.BackupHelper.Companion.SHARED_PREFS_BACKUP_FILE_NAME
+import se.signalare.observer.backup.BackupHelper.Companion.TEMP_WG_DIR
+import se.signalare.observer.backup.BackupHelper.Companion.VERSION
+import se.signalare.observer.backup.BackupHelper.Companion.deleteResidue
+import se.signalare.observer.backup.BackupHelper.Companion.getTempDir
+import se.signalare.observer.backup.BackupHelper.Companion.stopVpn
+import se.signalare.observer.backup.BackupHelper.Companion.unzip
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.database.AppDatabase
+import se.signalare.observer.database.LogDatabase
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.RethinkBlocklistManager
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.RemoteFileTagUtil
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.deleteRecursive
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import java.io.File

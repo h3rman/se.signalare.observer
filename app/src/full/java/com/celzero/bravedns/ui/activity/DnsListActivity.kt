@@ -13,27 +13,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.activity
+package se.signalare.observer.ui.activity
 
 import android.content.Context
 import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
-import com.celzero.bravedns.ui.BaseActivity
+import se.signalare.observer.ui.BaseActivity
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.lifecycleScope
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.databinding.ActivityOtherDnsListBinding
-import com.celzero.bravedns.net.doh.Transaction
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.UIUtils.fetchColor
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.handleFrostEffectIfNeeded
+import se.signalare.observer.R
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.databinding.ActivityOtherDnsListBinding
+import se.signalare.observer.net.doh.Transaction
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.UIUtils.fetchColor
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.handleFrostEffectIfNeeded
 import com.celzero.firestack.backend.Backend
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

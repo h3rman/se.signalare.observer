@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -31,9 +31,9 @@ import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.graphics.drawable.toDrawable
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
-import com.celzero.bravedns.R
-import com.celzero.bravedns.util.Utilities.isAtleastR
-import com.celzero.bravedns.util.Utilities.isAtleastS
+import se.signalare.observer.R
+import se.signalare.observer.util.Utilities.isAtleastR
+import se.signalare.observer.util.Utilities.isAtleastS
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import java.util.function.Consumer

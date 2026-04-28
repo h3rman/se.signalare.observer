@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
 import Logger
 import Logger.LOG_TAG_DOWNLOAD
 import android.content.Context
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.RethinkBlocklistManager
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.RethinkBlocklistManager
 import org.koin.core.component.KoinComponent
 import java.io.File
 import java.io.IOException

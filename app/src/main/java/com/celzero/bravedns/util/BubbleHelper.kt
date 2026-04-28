@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
 import Logger
 import Logger.LOG_TAG_FIREWALL
@@ -30,9 +30,9 @@ import androidx.core.content.pm.ShortcutInfoCompat
 import androidx.core.content.pm.ShortcutManagerCompat
 import androidx.core.graphics.drawable.IconCompat
 import androidx.core.graphics.drawable.toBitmap
-import com.celzero.bravedns.R
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.ui.activity.BubbleActivity
+import se.signalare.observer.R
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.ui.activity.BubbleActivity
 
 /**
  * BubbleHelper - Implements Android's official Bubble API
@@ -222,8 +222,8 @@ object BubbleHelper {
         val disableIntent = PendingIntent.getBroadcast(
             context,
             2,
-            Intent(context, com.celzero.bravedns.receiver.BubbleDismissReceiver::class.java).apply {
-                action = com.celzero.bravedns.receiver.BubbleDismissReceiver.ACTION_BUBBLE_DISABLE
+            Intent(context, se.signalare.observer.receiver.BubbleDismissReceiver::class.java).apply {
+                action = se.signalare.observer.receiver.BubbleDismissReceiver.ACTION_BUBBLE_DISABLE
             },
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
@@ -333,8 +333,8 @@ object BubbleHelper {
             val disableIntent = PendingIntent.getBroadcast(
                 context,
                 2,
-                Intent(context, com.celzero.bravedns.receiver.BubbleDismissReceiver::class.java).apply {
-                    action = com.celzero.bravedns.receiver.BubbleDismissReceiver.ACTION_BUBBLE_DISABLE
+                Intent(context, se.signalare.observer.receiver.BubbleDismissReceiver::class.java).apply {
+                    action = se.signalare.observer.receiver.BubbleDismissReceiver.ACTION_BUBBLE_DISABLE
                 },
                 PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
             )

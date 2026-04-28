@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.database
+package se.signalare.observer.database
 
 import android.Manifest
 import android.content.ContentValues
 import android.content.pm.PackageManager
 import androidx.room.Entity
-import com.celzero.bravedns.database.AppInfoRepository.Companion.NO_PACKAGE_PREFIX
-import com.celzero.bravedns.service.FirewallManager
+import se.signalare.observer.database.AppInfoRepository.Companion.NO_PACKAGE_PREFIX
+import se.signalare.observer.service.FirewallManager
 import java.io.Serializable
 
 @Entity(primaryKeys = ["uid", "packageName"], tableName = "AppInfo")

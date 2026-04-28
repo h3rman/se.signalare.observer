@@ -13,20 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.fragment
+package se.signalare.observer.ui.fragment
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.FragmentFirewallSettingsBinding
-import com.celzero.bravedns.ui.activity.CustomRulesActivity
-import com.celzero.bravedns.ui.activity.UniversalFirewallSettingsActivity
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.Constants.Companion.INTENT_UID
-import com.celzero.bravedns.util.Constants.Companion.UID_EVERYBODY
+import se.signalare.observer.R
+import se.signalare.observer.databinding.FragmentFirewallSettingsBinding
+import se.signalare.observer.ui.activity.CustomRulesActivity
+import se.signalare.observer.ui.activity.UniversalFirewallSettingsActivity
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.Constants.Companion.INTENT_UID
+import se.signalare.observer.util.Constants.Companion.UID_EVERYBODY
 import org.koin.core.component.KoinComponent
 
 class FirewallSettingsFragment : Fragment(R.layout.fragment_firewall_settings), KoinComponent {

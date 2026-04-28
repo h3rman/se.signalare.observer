@@ -1,11 +1,11 @@
-package com.celzero.bravedns
+package se.signalare.observer
 
 import android.app.Application
 import android.content.pm.ApplicationInfo
-import com.celzero.bravedns.scheduler.ScheduleManager
-import com.celzero.bravedns.service.ServiceModule
-import com.celzero.bravedns.util.GlobalExceptionHandler
-import com.celzero.bravedns.util.LocalBlocklistUtil
+import se.signalare.observer.scheduler.ScheduleManager
+import se.signalare.observer.service.ServiceModule
+import se.signalare.observer.util.GlobalExceptionHandler
+import se.signalare.observer.util.LocalBlocklistUtil
 import org.koin.android.ext.android.get
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.activity
+package se.signalare.observer.ui.activity
 
 import Logger
 import android.content.Context
@@ -25,22 +25,22 @@ import android.text.SpannableStringBuilder
 import android.text.style.ForegroundColorSpan
 import android.view.View
 import android.widget.RadioButton
-import com.celzero.bravedns.ui.BaseActivity
+import se.signalare.observer.ui.BaseActivity
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.work.WorkInfo
 import androidx.work.WorkManager
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.ActivityCheckoutProxyBinding
-import com.celzero.bravedns.service.EncryptedFileManager
-import com.celzero.bravedns.service.EncryptionException
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.TcpProxyHelper
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.UIUtils.fetchColor
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.handleFrostEffectIfNeeded
+import se.signalare.observer.R
+import se.signalare.observer.databinding.ActivityCheckoutProxyBinding
+import se.signalare.observer.service.EncryptedFileManager
+import se.signalare.observer.service.EncryptionException
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.TcpProxyHelper
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.UIUtils.fetchColor
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.handleFrostEffectIfNeeded
 import com.celzero.firestack.backend.Backend
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

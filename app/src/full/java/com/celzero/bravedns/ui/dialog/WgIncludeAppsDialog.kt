@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.dialog
+package se.signalare.observer.ui.dialog
 
 import Logger
 import Logger.LOG_TAG_PROXY
@@ -34,12 +34,12 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.database.RefreshDatabase
-import com.celzero.bravedns.databinding.DialogWgAppsBinding
-import com.celzero.bravedns.service.ProxyManager
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.viewmodel.ProxyAppsMappingViewModel
+import se.signalare.observer.R
+import se.signalare.observer.database.RefreshDatabase
+import se.signalare.observer.databinding.DialogWgAppsBinding
+import se.signalare.observer.service.ProxyManager
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.viewmodel.ProxyAppsMappingViewModel
 import com.google.android.material.chip.Chip
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
@@ -265,7 +265,7 @@ class WgIncludeAppsDialog(
         viewModel.setFilter(searchText, filterType, proxyId)
         // If the filter params are unchanged, call refresh() to invalidate the current
         // PagingSource so the adapter still reloads fresh data from the database.
-        (adapter as? com.celzero.bravedns.adapter.WgIncludeAppsAdapter)?.refresh()
+        (adapter as? se.signalare.observer.adapter.WgIncludeAppsAdapter)?.refresh()
     }
 
     private fun clearSearch() {

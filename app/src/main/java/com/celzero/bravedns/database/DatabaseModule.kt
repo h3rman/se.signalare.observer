@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.database
+package se.signalare.observer.database
 
-import com.celzero.bravedns.iab.ServerOrderHistoryRepository
+import se.signalare.observer.iab.ServerOrderHistoryRepository
 import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 

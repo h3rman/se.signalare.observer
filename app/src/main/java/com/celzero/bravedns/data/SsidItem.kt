@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.data
+package se.signalare.observer.data
 
 import android.content.Context
-import com.celzero.bravedns.R
+import se.signalare.observer.R
 import org.json.JSONArray
 import org.json.JSONObject
 

@@ -1,4 +1,4 @@
-package com.celzero.bravedns.iab
+package se.signalare.observer.iab
 
 enum class ResultState(val message: String, val priority: InAppBillingHandler.Priority = InAppBillingHandler.Priority.LOW) {
 

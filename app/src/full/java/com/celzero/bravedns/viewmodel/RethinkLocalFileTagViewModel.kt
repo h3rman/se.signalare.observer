@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.viewmodel
+package se.signalare.observer.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -23,10 +23,10 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.cachedIn
 import androidx.paging.liveData
-import com.celzero.bravedns.data.FileTag
-import com.celzero.bravedns.database.RethinkLocalFileTagDao
-import com.celzero.bravedns.ui.fragment.RethinkBlocklistFragment
-import com.celzero.bravedns.util.Constants.Companion.LIVEDATA_PAGE_SIZE
+import se.signalare.observer.data.FileTag
+import se.signalare.observer.database.RethinkLocalFileTagDao
+import se.signalare.observer.ui.fragment.RethinkBlocklistFragment
+import se.signalare.observer.util.Constants.Companion.LIVEDATA_PAGE_SIZE
 
 class RethinkLocalFileTagViewModel(private val rethinkLocalDao: RethinkLocalFileTagDao) :
     ViewModel() {

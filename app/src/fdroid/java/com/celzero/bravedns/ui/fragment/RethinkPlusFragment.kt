@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.fragment
+package se.signalare.observer.ui.fragment
 
 import android.os.Bundle
 import android.view.View
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.FragmentRethinkPlusBinding
+import se.signalare.observer.R
+import se.signalare.observer.databinding.FragmentRethinkPlusBinding
 
 /**
  * F-Droid flavour, Rethink+ is not yet available on F-Droid.

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.data
+package se.signalare.observer.data
 
 import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module

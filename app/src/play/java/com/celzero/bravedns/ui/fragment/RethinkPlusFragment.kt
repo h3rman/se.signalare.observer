@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.fragment
+package se.signalare.observer.ui.fragment
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -34,22 +34,22 @@ import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.adapter.GooglePlaySubsAdapter
-import com.celzero.bravedns.databinding.FragmentRethinkPlusPremiumBinding
-import com.celzero.bravedns.iab.BillingListener
-import com.celzero.bravedns.iab.InAppBillingHandler
-import com.celzero.bravedns.iab.ProductDetail
-import com.celzero.bravedns.iab.PurchaseDetail
-import com.celzero.bravedns.rpnproxy.SubscriptionStateMachineV2
-import com.celzero.bravedns.ui.activity.FragmentHostActivity
-import com.celzero.bravedns.ui.bottomsheet.PurchaseProcessingBottomSheet
-import com.celzero.bravedns.ui.dialog.SubscriptionAnimDialog
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.UIUtils.htmlToSpannedText
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.viewmodel.RethinkPlusViewModel
-import com.celzero.bravedns.viewmodel.SubscriptionUiState
+import se.signalare.observer.R
+import se.signalare.observer.adapter.GooglePlaySubsAdapter
+import se.signalare.observer.databinding.FragmentRethinkPlusPremiumBinding
+import se.signalare.observer.iab.BillingListener
+import se.signalare.observer.iab.InAppBillingHandler
+import se.signalare.observer.iab.ProductDetail
+import se.signalare.observer.iab.PurchaseDetail
+import se.signalare.observer.rpnproxy.SubscriptionStateMachineV2
+import se.signalare.observer.ui.activity.FragmentHostActivity
+import se.signalare.observer.ui.bottomsheet.PurchaseProcessingBottomSheet
+import se.signalare.observer.ui.dialog.SubscriptionAnimDialog
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.UIUtils.htmlToSpannedText
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.viewmodel.RethinkPlusViewModel
+import se.signalare.observer.viewmodel.SubscriptionUiState
 import com.facebook.shimmer.Shimmer
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -337,7 +337,7 @@ class RethinkPlusFragment : Fragment(R.layout.fragment_rethink_plus_premium),
             cancelProcessingTimeout()
             dismissProcessingBottomSheet()
 
-            val response = com.celzero.bravedns.iab.BillingResponse(billingResult.responseCode)
+            val response = se.signalare.observer.iab.BillingResponse(billingResult.responseCode)
             when {
                 response.isUserCancelled -> {
                     Logger.d(Logger.LOG_IAB, "$TAG: User cancelled purchase")

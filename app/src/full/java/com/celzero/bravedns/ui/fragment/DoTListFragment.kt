@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.fragment
+package se.signalare.observer.ui.fragment
 
 import android.os.Bundle
 import android.view.View
@@ -24,13 +24,13 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.adapter.DoTEndpointAdapter
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.database.DoTEndpoint
-import com.celzero.bravedns.databinding.DialogSetCustomDohBinding
-import com.celzero.bravedns.databinding.FragmentDotListBinding
-import com.celzero.bravedns.viewmodel.DoTEndpointViewModel
+import se.signalare.observer.R
+import se.signalare.observer.adapter.DoTEndpointAdapter
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.database.DoTEndpoint
+import se.signalare.observer.databinding.DialogSetCustomDohBinding
+import se.signalare.observer.databinding.FragmentDotListBinding
+import se.signalare.observer.viewmodel.DoTEndpointViewModel
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

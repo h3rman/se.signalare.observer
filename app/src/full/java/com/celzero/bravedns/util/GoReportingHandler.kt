@@ -1,4 +1,4 @@
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
 import Logger
 import Logger.LOG_GO_LOGGER
@@ -12,17 +12,17 @@ import android.content.Context
 import android.content.Intent
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
-import com.celzero.bravedns.R
-import com.celzero.bravedns.scheduler.EnhancedBugReport
-import com.celzero.bravedns.service.BraveVPNService.Companion.NW_ENGINE_NOTIFICATION_ID
-import com.celzero.bravedns.service.GoCrashFileDescriptorReader
-import com.celzero.bravedns.service.GoLogFileDescriptorReader
-import com.celzero.bravedns.service.GoMemLogConsumer
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.ui.activity.AppLockActivity
-import com.celzero.bravedns.util.UIUtils.getAccentColor
-import com.celzero.bravedns.util.Utilities.isFdroidFlavour
+import se.signalare.observer.R
+import se.signalare.observer.scheduler.EnhancedBugReport
+import se.signalare.observer.service.BraveVPNService.Companion.NW_ENGINE_NOTIFICATION_ID
+import se.signalare.observer.service.GoCrashFileDescriptorReader
+import se.signalare.observer.service.GoLogFileDescriptorReader
+import se.signalare.observer.service.GoMemLogConsumer
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.ui.activity.AppLockActivity
+import se.signalare.observer.util.UIUtils.getAccentColor
+import se.signalare.observer.util.Utilities.isFdroidFlavour
 import com.celzero.firestack.backend.LogConsumer
 import com.celzero.firestack.intra.Console
 import com.celzero.firestack.intra.Intra

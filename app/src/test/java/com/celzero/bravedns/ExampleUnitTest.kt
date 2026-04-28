@@ -1,4 +1,4 @@
-package com.celzero.bravedns
+package se.signalare.observer
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

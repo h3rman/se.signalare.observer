@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.iab
+package se.signalare.observer.iab
 
 
-import com.celzero.bravedns.iab.InAppBillingHandler.RecurringMode
+import se.signalare.observer.iab.InAppBillingHandler.RecurringMode
 
 data class PricingPhase(
     var recurringMode: RecurringMode,

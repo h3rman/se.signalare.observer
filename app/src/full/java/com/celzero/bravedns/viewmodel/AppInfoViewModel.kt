@@ -1,4 +1,4 @@
-package com.celzero.bravedns.viewmodel
+package se.signalare.observer.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -10,11 +10,11 @@ import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
 import androidx.paging.liveData
-import com.celzero.bravedns.database.AppInfo
-import com.celzero.bravedns.database.AppInfoDAO
-import com.celzero.bravedns.service.FirewallManager
-import com.celzero.bravedns.ui.activity.AppListActivity
-import com.celzero.bravedns.util.Constants
+import se.signalare.observer.database.AppInfo
+import se.signalare.observer.database.AppInfoDAO
+import se.signalare.observer.service.FirewallManager
+import se.signalare.observer.ui.activity.AppListActivity
+import se.signalare.observer.util.Constants
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

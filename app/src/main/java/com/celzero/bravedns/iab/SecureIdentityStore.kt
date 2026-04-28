@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.iab
+package se.signalare.observer.iab
 
 import Logger
 import Logger.LOG_IAB
 import android.content.Context
-import com.celzero.bravedns.service.EncryptedFileManager
-import com.celzero.bravedns.service.EncryptionException
-import com.celzero.bravedns.service.PersistentState
+import se.signalare.observer.service.EncryptedFileManager
+import se.signalare.observer.service.EncryptionException
+import se.signalare.observer.service.PersistentState
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.json.JSONObject

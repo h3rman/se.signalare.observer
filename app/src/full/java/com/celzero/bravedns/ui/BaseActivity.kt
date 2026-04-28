@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui
+package se.signalare.observer.ui
 
 import android.content.Context
 import android.content.res.Configuration
@@ -21,10 +21,10 @@ import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.os.Bundle
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
-import com.celzero.bravedns.R
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.R
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.Utilities
 import org.koin.android.ext.android.inject
 
 /**

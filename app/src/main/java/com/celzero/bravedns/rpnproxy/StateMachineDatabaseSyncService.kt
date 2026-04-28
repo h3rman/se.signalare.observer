@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.rpnproxy
+package se.signalare.observer.rpnproxy
 
 import Logger
 import Logger.LOG_IAB
 // BillingResult import removed: savePurchaseFailureHistory now uses Int? for cross-flavor compat
-import com.celzero.bravedns.database.SubscriptionStateHistory
-import com.celzero.bravedns.database.SubscriptionStateHistoryDao
-import com.celzero.bravedns.database.SubscriptionStatus
-import com.celzero.bravedns.database.SubscriptionStatusRepository
-import com.celzero.bravedns.iab.PurchaseDetail
+import se.signalare.observer.database.SubscriptionStateHistory
+import se.signalare.observer.database.SubscriptionStateHistoryDao
+import se.signalare.observer.database.SubscriptionStatus
+import se.signalare.observer.database.SubscriptionStatusRepository
+import se.signalare.observer.iab.PurchaseDetail
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 

@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
 import android.content.Context
 import androidx.test.core.app.ApplicationProvider
-import com.celzero.bravedns.database.AppInfoRepository
+import se.signalare.observer.database.AppInfoRepository
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.mockkObject

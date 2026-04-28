@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
-import com.celzero.bravedns.database.RefreshDatabase
-import com.celzero.bravedns.iab.SecureIdentityStore
+import se.signalare.observer.database.RefreshDatabase
+import se.signalare.observer.iab.SecureIdentityStore
 import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 

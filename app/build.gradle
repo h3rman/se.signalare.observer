@@ -81,10 +81,10 @@ java {
 android {
     compileSdkVersion(36)
     // https://developer.android.com/studio/build/configure-app-module
-    namespace 'com.celzero.bravedns'
+    namespace 'se.signalare.observer'
 
     defaultConfig {
-        applicationId "com.celzero.bravedns"
+        applicationId "se.signalare.observer"
         minSdkVersion(23)
         targetSdkVersion 35
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

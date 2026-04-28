@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 @file:Suppress("MagicNumber")
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
 // From https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml#dns-parameters-4
 // additional ref: https://www.netmeister.org/blog/dns-rrs.html

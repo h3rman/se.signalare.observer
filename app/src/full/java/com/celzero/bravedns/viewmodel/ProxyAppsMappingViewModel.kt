@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.viewmodel
+package se.signalare.observer.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -24,10 +24,10 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.cachedIn
 import androidx.paging.liveData
-import com.celzero.bravedns.database.ProxyApplicationMappingDAO
-import com.celzero.bravedns.service.ProxyManager
-import com.celzero.bravedns.ui.dialog.WgIncludeAppsDialog
-import com.celzero.bravedns.util.Constants.Companion.LIVEDATA_PAGE_SIZE
+import se.signalare.observer.database.ProxyApplicationMappingDAO
+import se.signalare.observer.service.ProxyManager
+import se.signalare.observer.ui.dialog.WgIncludeAppsDialog
+import se.signalare.observer.util.Constants.Companion.LIVEDATA_PAGE_SIZE
 
 class ProxyAppsMappingViewModel(private val mappingDAO: ProxyApplicationMappingDAO) : ViewModel() {
 

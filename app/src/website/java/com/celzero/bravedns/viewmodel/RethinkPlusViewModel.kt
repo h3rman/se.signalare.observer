@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.viewmodel
+package se.signalare.observer.viewmodel
 
 import Logger
 import Logger.LOG_IAB
@@ -22,12 +22,12 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
 import com.android.billingclient.api.BillingClient.ProductType
-import com.celzero.bravedns.iab.InAppBillingHandler
-import com.celzero.bravedns.iab.ProductDetail
-import com.celzero.bravedns.rpnproxy.PipKeyManager
-import com.celzero.bravedns.rpnproxy.RpnProxyManager
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.rpnproxy.SubscriptionStateMachineV2
+import se.signalare.observer.iab.InAppBillingHandler
+import se.signalare.observer.iab.ProductDetail
+import se.signalare.observer.rpnproxy.PipKeyManager
+import se.signalare.observer.rpnproxy.RpnProxyManager
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.rpnproxy.SubscriptionStateMachineV2
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay

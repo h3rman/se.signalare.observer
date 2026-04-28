@@ -1,9 +1,9 @@
-package com.celzero.bravedns.scheduler
+package se.signalare.observer.scheduler
 
 import Logger
 import Logger.LOG_TAG_PROXY
-import com.celzero.bravedns.service.ProxyManager.ID_WG_BASE
-import com.celzero.bravedns.service.VpnController
+import se.signalare.observer.service.ProxyManager.ID_WG_BASE
+import se.signalare.observer.service.VpnController
 import com.celzero.firestack.backend.Backend
 import kotlinx.coroutines.CoroutineName
 import kotlinx.coroutines.CoroutineScope

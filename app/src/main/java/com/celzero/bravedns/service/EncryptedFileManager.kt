@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 @file:Suppress("DEPRECATION")
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
 import Logger
 import android.content.Context
@@ -22,11 +22,11 @@ import android.security.keystore.KeyPermanentlyInvalidatedException
 import android.security.keystore.UserNotAuthenticatedException
 import androidx.security.crypto.EncryptedFile
 import androidx.security.crypto.MasterKey
-import com.celzero.bravedns.database.EventSource
-import com.celzero.bravedns.database.EventType
-import com.celzero.bravedns.database.Severity
-import com.celzero.bravedns.util.Constants.Companion.WIREGUARD_FOLDER_NAME
-import com.celzero.bravedns.wireguard.Config
+import se.signalare.observer.database.EventSource
+import se.signalare.observer.database.EventType
+import se.signalare.observer.database.Severity
+import se.signalare.observer.util.Constants.Companion.WIREGUARD_FOLDER_NAME
+import se.signalare.observer.wireguard.Config
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import java.io.ByteArrayInputStream

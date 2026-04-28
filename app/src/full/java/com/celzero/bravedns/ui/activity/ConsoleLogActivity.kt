@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.activity
+package se.signalare.observer.ui.activity
 
 import Logger
 import Logger.LOG_TAG_BUG_REPORT
@@ -28,7 +28,7 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import com.celzero.bravedns.ui.BaseActivity
+import se.signalare.observer.ui.BaseActivity
 import androidx.core.content.FileProvider
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.lifecycleScope
@@ -37,22 +37,22 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.work.WorkInfo
 import androidx.work.WorkManager
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.adapter.ConsoleLogAdapter
-import com.celzero.bravedns.database.ConsoleLogRepository
-import com.celzero.bravedns.databinding.ActivityConsoleLogBinding
-import com.celzero.bravedns.net.go.GoVpnAdapter
-import com.celzero.bravedns.scheduler.WorkScheduler
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.Utilities.showToastUiCentered
-import com.celzero.bravedns.util.disableFrostTemporarily
-import com.celzero.bravedns.util.handleFrostEffectIfNeeded
-import com.celzero.bravedns.util.restoreFrost
-import com.celzero.bravedns.viewmodel.ConsoleLogViewModel
+import se.signalare.observer.R
+import se.signalare.observer.adapter.ConsoleLogAdapter
+import se.signalare.observer.database.ConsoleLogRepository
+import se.signalare.observer.databinding.ActivityConsoleLogBinding
+import se.signalare.observer.net.go.GoVpnAdapter
+import se.signalare.observer.scheduler.WorkScheduler
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.Utilities.showToastUiCentered
+import se.signalare.observer.util.disableFrostTemporarily
+import se.signalare.observer.util.handleFrostEffectIfNeeded
+import se.signalare.observer.util.restoreFrost
+import se.signalare.observer.viewmodel.ConsoleLogViewModel
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.FlowPreview

@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
-import com.celzero.bravedns.database.TcpProxyEndpoint
+import se.signalare.observer.database.TcpProxyEndpoint
 import org.koin.core.component.KoinComponent
 
 object TcpProxyHelper : KoinComponent {

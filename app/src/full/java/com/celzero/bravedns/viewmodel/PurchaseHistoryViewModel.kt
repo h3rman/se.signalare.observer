@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.viewmodel
+package se.signalare.observer.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -26,9 +26,9 @@ import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
 import androidx.paging.liveData
-import com.celzero.bravedns.database.SubscriptionStateHistory
-import com.celzero.bravedns.database.SubscriptionStateHistoryDao
-import com.celzero.bravedns.util.Constants.Companion.LIVEDATA_PAGE_SIZE
+import se.signalare.observer.database.SubscriptionStateHistory
+import se.signalare.observer.database.SubscriptionStateHistoryDao
+import se.signalare.observer.util.Constants.Companion.LIVEDATA_PAGE_SIZE
 
 class PurchaseHistoryViewModel(private val historyDao: SubscriptionStateHistoryDao) : ViewModel() {
 

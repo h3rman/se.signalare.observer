@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
 import Logger
 import Logger.LOG_TAG_BUG_REPORT
 import android.content.Context
 import android.system.Os
-import com.celzero.bravedns.scheduler.EnhancedBugReport
-import com.celzero.bravedns.service.GoCrashFileDescriptorReader.Companion.MAX_LINE_BYTES
-import com.celzero.bravedns.util.FileObserverManager
+import se.signalare.observer.scheduler.EnhancedBugReport
+import se.signalare.observer.service.GoCrashFileDescriptorReader.Companion.MAX_LINE_BYTES
+import se.signalare.observer.util.FileObserverManager
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay

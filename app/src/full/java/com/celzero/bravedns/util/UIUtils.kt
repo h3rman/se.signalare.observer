@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -43,12 +43,12 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.getSystemService
 import androidx.core.net.toUri
 import androidx.core.text.HtmlCompat
-import com.celzero.bravedns.R
-import com.celzero.bravedns.database.DnsLog
-import com.celzero.bravedns.glide.FavIconDownloader
-import com.celzero.bravedns.net.doh.Transaction
-import com.celzero.bravedns.service.DnsLogTracker
-import com.celzero.bravedns.service.PersistentState
+import se.signalare.observer.R
+import se.signalare.observer.database.DnsLog
+import se.signalare.observer.glide.FavIconDownloader
+import se.signalare.observer.net.doh.Transaction
+import se.signalare.observer.service.DnsLogTracker
+import se.signalare.observer.service.PersistentState
 import com.celzero.firestack.backend.Backend
 import com.celzero.firestack.backend.NetStat
 import com.google.android.material.bottomnavigation.BottomNavigationView

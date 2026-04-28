@@ -13,27 +13,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
 import Logger
 import Logger.LOG_TAG_PROXY
 import android.content.Context
 import android.text.format.DateUtils
 import com.celzero.firestack.backend.Backend
-import com.celzero.bravedns.backup.BackupHelper.Companion.TEMP_WG_DIR
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.data.SsidItem
-import com.celzero.bravedns.database.WgConfigFiles
-import com.celzero.bravedns.database.WgConfigFilesImmutable
-import com.celzero.bravedns.database.WgConfigFilesRepository
-import com.celzero.bravedns.service.ProxyManager.ID_WG_BASE
-import com.celzero.bravedns.util.Constants.Companion.WIREGUARD_FOLDER_NAME
-import com.celzero.bravedns.util.InternetProtocol
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.wireguard.Config
-import com.celzero.bravedns.wireguard.Peer
-import com.celzero.bravedns.wireguard.WgHopManager
-import com.celzero.bravedns.wireguard.WgInterface
+import se.signalare.observer.backup.BackupHelper.Companion.TEMP_WG_DIR
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.data.SsidItem
+import se.signalare.observer.database.WgConfigFiles
+import se.signalare.observer.database.WgConfigFilesImmutable
+import se.signalare.observer.database.WgConfigFilesRepository
+import se.signalare.observer.service.ProxyManager.ID_WG_BASE
+import se.signalare.observer.util.Constants.Companion.WIREGUARD_FOLDER_NAME
+import se.signalare.observer.util.InternetProtocol
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.wireguard.Config
+import se.signalare.observer.wireguard.Peer
+import se.signalare.observer.wireguard.WgHopManager
+import se.signalare.observer.wireguard.WgInterface
 import com.celzero.firestack.backend.RouterStats
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

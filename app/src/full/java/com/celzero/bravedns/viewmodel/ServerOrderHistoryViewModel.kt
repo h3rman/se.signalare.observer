@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.viewmodel
+package se.signalare.observer.viewmodel
 
 import Logger
 import Logger.LOG_TAG_UI
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.celzero.bravedns.iab.ServerOrderEntry
-import com.celzero.bravedns.iab.ServerOrderHistoryRepository
+import se.signalare.observer.iab.ServerOrderEntry
+import se.signalare.observer.iab.ServerOrderHistoryRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

@@ -1,4 +1,4 @@
-package com.celzero.bravedns.iab.stripe
+package se.signalare.observer.iab.stripe
 
 import android.util.Log
 import androidx.lifecycle.LiveData

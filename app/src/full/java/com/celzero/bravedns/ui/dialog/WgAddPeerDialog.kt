@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.dialog
+package se.signalare.observer.ui.dialog
 
 import Logger
 import android.app.Activity
@@ -26,12 +26,12 @@ import android.widget.Toast
 import androidx.core.widget.doOnTextChanged
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
-import com.celzero.bravedns.databinding.DialogWgAddPeerBinding
-import com.celzero.bravedns.service.WireguardManager
-import com.celzero.bravedns.util.UIUtils.getDurationInHumanReadableFormat
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.wireguard.Peer
-import com.celzero.bravedns.wireguard.util.ErrorMessages
+import se.signalare.observer.databinding.DialogWgAddPeerBinding
+import se.signalare.observer.service.WireguardManager
+import se.signalare.observer.util.UIUtils.getDurationInHumanReadableFormat
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.wireguard.Peer
+import se.signalare.observer.wireguard.util.ErrorMessages
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

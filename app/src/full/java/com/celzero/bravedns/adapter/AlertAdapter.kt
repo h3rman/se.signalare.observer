@@ -14,16 +14,16 @@
  * limitations under the License.
  *//*
 
-   package com.celzero.bravedns.adapter
+   package se.signalare.observer.adapter
 
    import android.content.Context
    import android.view.LayoutInflater
    import android.view.View
    import android.view.ViewGroup
    import androidx.recyclerview.widget.RecyclerView
-   import com.celzero.bravedns.database.AlertRegistry
-   import com.celzero.bravedns.databinding.ListItemAlertRegistryBinding
-   import com.celzero.bravedns.service.AlertCategory
+   import se.signalare.observer.database.AlertRegistry
+   import se.signalare.observer.databinding.ListItemAlertRegistryBinding
+   import se.signalare.observer.service.AlertCategory
    import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
    class AlertAdapter(

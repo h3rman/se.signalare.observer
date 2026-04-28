@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
 import Logger
 import Logger.LOG_TAG_VPN
@@ -25,11 +25,11 @@ import android.os.SystemClock
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.celzero.bravedns.R
-import com.celzero.bravedns.database.ConsoleLog
-import com.celzero.bravedns.rpnproxy.RpnProxyManager
-import com.celzero.bravedns.util.Constants.Companion.INVALID_UID
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.R
+import se.signalare.observer.database.ConsoleLog
+import se.signalare.observer.rpnproxy.RpnProxyManager
+import se.signalare.observer.util.Constants.Companion.INVALID_UID
+import se.signalare.observer.util.Utilities
 import com.celzero.firestack.backend.Client
 import com.celzero.firestack.backend.DNSTransport
 import com.celzero.firestack.backend.NetStat

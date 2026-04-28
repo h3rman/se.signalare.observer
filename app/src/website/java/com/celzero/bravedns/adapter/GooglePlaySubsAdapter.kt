@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import Logger.LOG_IAB
 import Logger.LOG_TAG_UI
@@ -27,12 +27,12 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.android.billingclient.api.BillingClient.ProductType
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.ListItemPlaySubsBinding
-import com.celzero.bravedns.databinding.ListItemShimmerCardBinding
-import com.celzero.bravedns.iab.InAppBillingHandler
-import com.celzero.bravedns.iab.ProductDetail
-import com.celzero.bravedns.util.UIUtils.fetchColor
+import se.signalare.observer.R
+import se.signalare.observer.databinding.ListItemPlaySubsBinding
+import se.signalare.observer.databinding.ListItemShimmerCardBinding
+import se.signalare.observer.iab.InAppBillingHandler
+import se.signalare.observer.iab.ProductDetail
+import se.signalare.observer.util.UIUtils.fetchColor
 import com.facebook.shimmer.ShimmerFrameLayout
 
 class GooglePlaySubsAdapter(

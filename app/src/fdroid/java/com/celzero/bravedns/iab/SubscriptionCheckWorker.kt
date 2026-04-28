@@ -1,11 +1,11 @@
-package com.celzero.bravedns.iab
+package se.signalare.observer.iab
 
 import Logger
 import Logger.LOG_IAB
 import android.content.Context
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
-import com.celzero.bravedns.service.PersistentState
+import se.signalare.observer.service.PersistentState
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.koin.core.component.KoinComponent

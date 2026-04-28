@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -21,13 +21,13 @@ import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.RethinkDnsApplication.Companion.DEBUG
-import com.celzero.bravedns.database.ConsoleLog
-import com.celzero.bravedns.databinding.ListItemConsoleLogBinding
-import com.celzero.bravedns.util.Constants.Companion.TIME_FORMAT_1
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.R
+import se.signalare.observer.RethinkDnsApplication.Companion.DEBUG
+import se.signalare.observer.database.ConsoleLog
+import se.signalare.observer.databinding.ListItemConsoleLogBinding
+import se.signalare.observer.util.Constants.Companion.TIME_FORMAT_1
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.Utilities
 
 class ConsoleLogAdapter(private val context: Context) :
     PagingDataAdapter<ConsoleLog, ConsoleLogAdapter.ConsoleLogViewHolder>(DIFF_CALLBACK) {

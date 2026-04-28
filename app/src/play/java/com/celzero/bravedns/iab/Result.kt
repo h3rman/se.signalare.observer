@@ -1,4 +1,4 @@
-package com.celzero.bravedns.iab
+package se.signalare.observer.iab
 
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

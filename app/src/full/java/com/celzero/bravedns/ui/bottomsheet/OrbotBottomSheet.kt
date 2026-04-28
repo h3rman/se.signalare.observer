@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.bottomsheet
+package se.signalare.observer.ui.bottomsheet
 
 import android.content.DialogInterface
 import android.content.Intent
@@ -31,29 +31,29 @@ import android.widget.Toast
 import androidx.core.text.HtmlCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.lifecycleScope
-import com.celzero.bravedns.R
-import com.celzero.bravedns.adapter.WgIncludeAppsAdapter
-import com.celzero.bravedns.animation.Rotate3dAnimation
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.database.EventSource
-import com.celzero.bravedns.database.EventType
-import com.celzero.bravedns.database.Severity
-import com.celzero.bravedns.databinding.BottomSheetOrbotBinding
-import com.celzero.bravedns.databinding.DialogInfoRulesLayoutBinding
-import com.celzero.bravedns.service.EventLogger
-import com.celzero.bravedns.service.FirewallManager
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.ProxyManager
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.ui.activity.DnsDetailActivity
-import com.celzero.bravedns.ui.dialog.WgIncludeAppsDialog
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.OrbotHelper
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.useTransparentNoDimBackground
-import com.celzero.bravedns.viewmodel.ProxyAppsMappingViewModel
+import se.signalare.observer.R
+import se.signalare.observer.adapter.WgIncludeAppsAdapter
+import se.signalare.observer.animation.Rotate3dAnimation
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.database.EventSource
+import se.signalare.observer.database.EventType
+import se.signalare.observer.database.Severity
+import se.signalare.observer.databinding.BottomSheetOrbotBinding
+import se.signalare.observer.databinding.DialogInfoRulesLayoutBinding
+import se.signalare.observer.service.EventLogger
+import se.signalare.observer.service.FirewallManager
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.ProxyManager
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.ui.activity.DnsDetailActivity
+import se.signalare.observer.ui.dialog.WgIncludeAppsDialog
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.OrbotHelper
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.useTransparentNoDimBackground
+import se.signalare.observer.viewmodel.ProxyAppsMappingViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers

@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
-import com.celzero.bravedns.database.AppInfo
+import se.signalare.observer.database.AppInfo
 import org.koin.core.component.KoinComponent
 
 object ProxyManager : KoinComponent {

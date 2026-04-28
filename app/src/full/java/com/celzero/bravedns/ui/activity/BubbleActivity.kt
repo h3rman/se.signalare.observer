@@ -13,35 +13,35 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.activity
+package se.signalare.observer.ui.activity
 
 import Logger
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.addCallback
-import com.celzero.bravedns.ui.BaseActivity
+import se.signalare.observer.ui.BaseActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.cachedIn
 import androidx.recyclerview.widget.LinearLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.adapter.BubbleAllowedAppsAdapter
-import com.celzero.bravedns.adapter.BubbleBlockedAppsAdapter
-import com.celzero.bravedns.data.AllowedAppInfo
-import com.celzero.bravedns.viewmodel.AllowedAppsBubbleViewModel
-import com.celzero.bravedns.data.BlockedAppInfo
-import com.celzero.bravedns.viewmodel.BlockedAppsBubbleViewModel
-import com.celzero.bravedns.database.AppInfoRepository
-import com.celzero.bravedns.database.ConnectionTrackerDAO
-import com.celzero.bravedns.database.DnsLogDAO
-import com.celzero.bravedns.databinding.ActivityBubbleBinding
-import com.celzero.bravedns.service.FirewallManager
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.util.Themes.Companion.getCurrentTheme
+import se.signalare.observer.R
+import se.signalare.observer.adapter.BubbleAllowedAppsAdapter
+import se.signalare.observer.adapter.BubbleBlockedAppsAdapter
+import se.signalare.observer.data.AllowedAppInfo
+import se.signalare.observer.viewmodel.AllowedAppsBubbleViewModel
+import se.signalare.observer.data.BlockedAppInfo
+import se.signalare.observer.viewmodel.BlockedAppsBubbleViewModel
+import se.signalare.observer.database.AppInfoRepository
+import se.signalare.observer.database.ConnectionTrackerDAO
+import se.signalare.observer.database.DnsLogDAO
+import se.signalare.observer.databinding.ActivityBubbleBinding
+import se.signalare.observer.service.FirewallManager
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.util.Themes.Companion.getCurrentTheme
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

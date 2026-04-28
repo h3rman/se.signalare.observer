@@ -13,20 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.fragment
+package se.signalare.observer.ui.fragment
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.database.AppInfo
-import com.celzero.bravedns.scheduler.WorkScheduler
-import com.celzero.bravedns.service.BraveVPNService
-import com.celzero.bravedns.service.FirewallManager
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.service.WireguardManager
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.database.AppInfo
+import se.signalare.observer.scheduler.WorkScheduler
+import se.signalare.observer.service.BraveVPNService
+import se.signalare.observer.service.FirewallManager
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.service.WireguardManager
+import se.signalare.observer.util.Utilities
 import com.waseemsabir.betterypermissionhelper.BatteryPermissionHelper
 import io.mockk.Runs
 import io.mockk.coEvery
@@ -57,7 +57,7 @@ import org.robolectric.annotation.Config
 @RunWith(AndroidJUnit4::class)
 @Config(
     sdk = [28],
-    shadows = [com.celzero.bravedns.shadows.ShadowRouterStats::class]
+    shadows = [se.signalare.observer.shadows.ShadowRouterStats::class]
 )
 class HomeScreenFragmentTest : KoinTest {
 
@@ -101,9 +101,9 @@ class HomeScreenFragmentTest : KoinTest {
             mockkObject(BatteryPermissionHelper)
 
             // Mock static methods - removed relaxed parameter
-            mockkStatic("com.celzero.bravedns.util.UIUtils")
-            mockkStatic("com.celzero.bravedns.util.Utilities")
-            mockkStatic("com.celzero.bravedns.scheduler.WorkScheduler")
+            mockkStatic("se.signalare.observer.util.UIUtils")
+            mockkStatic("se.signalare.observer.util.Utilities")
+            mockkStatic("se.signalare.observer.scheduler.WorkScheduler")
             println("✅ Static objects and methods mocked successfully")
         } catch (e: Exception) {
             println("⚠️  Warning: Failed to mock some static objects: ${e.message}")
@@ -219,13 +219,13 @@ class HomeScreenFragmentTest : KoinTest {
             modules(
                 module {
                     // Mock all the dependencies that the services might need
-                    single { mockk<com.celzero.bravedns.database.AppInfoRepository>(relaxed = true) }
-                    single { mockk<com.celzero.bravedns.database.CustomDomainRepository>(relaxed = true) }
-                    single { mockk<com.celzero.bravedns.database.CustomIpRepository>(relaxed = true) }
-                    single { mockk<com.celzero.bravedns.database.WgConfigFilesRepository>(relaxed = true) }
-                    single { mockk<com.celzero.bravedns.database.ProxyEndpointRepository>(relaxed = true) }
-                    single { mockk<com.celzero.bravedns.database.DnsLogRepository>(relaxed = true) }
-                    single { mockk<com.celzero.bravedns.database.ConnectionTrackerRepository>(relaxed = true) }
+                    single { mockk<se.signalare.observer.database.AppInfoRepository>(relaxed = true) }
+                    single { mockk<se.signalare.observer.database.CustomDomainRepository>(relaxed = true) }
+                    single { mockk<se.signalare.observer.database.CustomIpRepository>(relaxed = true) }
+                    single { mockk<se.signalare.observer.database.WgConfigFilesRepository>(relaxed = true) }
+                    single { mockk<se.signalare.observer.database.ProxyEndpointRepository>(relaxed = true) }
+                    single { mockk<se.signalare.observer.database.DnsLogRepository>(relaxed = true) }
+                    single { mockk<se.signalare.observer.database.ConnectionTrackerRepository>(relaxed = true) }
 
                     // Mock the injected dependencies
                     single { mockk<PersistentState>(relaxed = true) }

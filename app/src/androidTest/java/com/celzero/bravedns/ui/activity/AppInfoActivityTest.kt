@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.activity
+package se.signalare.observer.ui.activity
 
 import android.content.Context
 import android.content.Intent
@@ -26,8 +26,8 @@ import androidx.test.espresso.action.ViewActions.*
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.celzero.bravedns.R
-import com.celzero.bravedns.util.Constants.Companion.INVALID_UID
+import se.signalare.observer.R
+import se.signalare.observer.util.Constants.Companion.INVALID_UID
 import org.hamcrest.Matchers.*
 import org.junit.After
 import org.junit.Assert.*

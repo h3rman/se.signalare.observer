@@ -13,16 +13,16 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-package com.celzero.bravedns.database
+package se.signalare.observer.database
 
 import androidx.room.Entity
 import androidx.room.Index
 import androidx.room.PrimaryKey
-import com.celzero.bravedns.net.doh.Transaction
-import com.celzero.bravedns.service.ProxyManager
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.Constants.Companion.INIT_TIME_MS
-import com.celzero.bravedns.util.Constants.Companion.INVALID_UID
+import se.signalare.observer.net.doh.Transaction
+import se.signalare.observer.service.ProxyManager
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.Constants.Companion.INIT_TIME_MS
+import se.signalare.observer.util.Constants.Companion.INVALID_UID
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale

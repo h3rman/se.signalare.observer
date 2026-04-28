@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 import android.util.Log
-import com.celzero.bravedns.database.ConsoleLog
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.VpnController
+import se.signalare.observer.database.ConsoleLog
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.VpnController
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 

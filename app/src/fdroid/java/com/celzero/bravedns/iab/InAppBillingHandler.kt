@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.iab
+package se.signalare.observer.iab
 
 import android.app.Activity
 import android.content.Context

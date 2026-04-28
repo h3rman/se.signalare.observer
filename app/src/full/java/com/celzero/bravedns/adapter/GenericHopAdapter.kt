@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -25,15 +25,15 @@ import android.widget.Toast
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.ListItemWgHopBinding
-import com.celzero.bravedns.service.ProxyManager
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.service.WireguardManager
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.UIUtils.fetchColor
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.wireguard.WgHopManager
+import se.signalare.observer.R
+import se.signalare.observer.databinding.ListItemWgHopBinding
+import se.signalare.observer.service.ProxyManager
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.service.WireguardManager
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.UIUtils.fetchColor
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.wireguard.WgHopManager
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -155,7 +155,7 @@ class GenericHopAdapter(
             }
         }
 
-        private fun updateWgPropertiesChip(config: com.celzero.bravedns.wireguard.Config) {
+        private fun updateWgPropertiesChip(config: se.signalare.observer.wireguard.Config) {
             val mapping = WireguardManager.getConfigFilesById(config.getId()) ?: return
             if (!mapping.isCatchAll && !mapping.useOnlyOnMetered && !mapping.ssidEnabled) {
                 b.chipProperties.visibility = View.GONE
@@ -187,7 +187,7 @@ class GenericHopAdapter(
             b.chipProperties.visibility = visible
         }
 
-        private fun updateRpnPropertiesChip(countryConfig: com.celzero.bravedns.database.CountryConfig) {
+        private fun updateRpnPropertiesChip(countryConfig: se.signalare.observer.database.CountryConfig) {
             // Use the countryConfig directly since it already has all the properties
             if (!countryConfig.catchAll && !countryConfig.lockdown && !countryConfig.mobileOnly && !countryConfig.ssidBased) {
                 b.chipProperties.visibility = View.GONE
@@ -227,7 +227,7 @@ class GenericHopAdapter(
             b.chipProperties.visibility = visible
         }
 
-        private fun updateAmzChip(config: com.celzero.bravedns.wireguard.Config) {
+        private fun updateAmzChip(config: se.signalare.observer.wireguard.Config) {
             config.getInterface()?.let {
                 if (it.isAmnezia()) {
                     b.chipGroup.visibility = View.VISIBLE
@@ -272,7 +272,7 @@ class GenericHopAdapter(
             }
         }
 
-        private fun updateHopSrcChip(config: com.celzero.bravedns.wireguard.Config) {
+        private fun updateHopSrcChip(config: se.signalare.observer.wireguard.Config) {
             val id = ProxyManager.ID_WG_BASE + config.getId()
             val hop = WgHopManager.getMapBySrc(id)
             if (hop.isNotEmpty()) {
@@ -283,7 +283,7 @@ class GenericHopAdapter(
             }
         }
 
-        private fun updateHoppingChip(config: com.celzero.bravedns.wireguard.Config) {
+        private fun updateHoppingChip(config: se.signalare.observer.wireguard.Config) {
             val id = ProxyManager.ID_WG_BASE + config.getId()
             val hop = WgHopManager.isAlreadyHop(id)
             if (hop) {

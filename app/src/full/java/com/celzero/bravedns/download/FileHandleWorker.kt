@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.download
+package se.signalare.observer.download
 
 import Logger
 import Logger.LOG_TAG_DOWNLOAD
@@ -21,18 +21,18 @@ import android.content.Context
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
 import androidx.work.workDataOf
-import com.celzero.bravedns.download.BlocklistDownloadHelper.Companion.deleteBlocklistResidue
-import com.celzero.bravedns.download.BlocklistDownloadHelper.Companion.deleteOldFiles
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.RethinkBlocklistManager
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.Constants.Companion.INIT_TIME_MS
-import com.celzero.bravedns.util.Constants.Companion.LOCAL_BLOCKLIST_DOWNLOAD_FOLDER_NAME
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.calculateMd5
-import com.celzero.bravedns.util.Utilities.getTagValueFromJson
-import com.celzero.bravedns.util.Utilities.hasLocalBlocklists
-import com.celzero.bravedns.util.Utilities.localBlocklistFileDownloadPath
+import se.signalare.observer.download.BlocklistDownloadHelper.Companion.deleteBlocklistResidue
+import se.signalare.observer.download.BlocklistDownloadHelper.Companion.deleteOldFiles
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.RethinkBlocklistManager
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.Constants.Companion.INIT_TIME_MS
+import se.signalare.observer.util.Constants.Companion.LOCAL_BLOCKLIST_DOWNLOAD_FOLDER_NAME
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.calculateMd5
+import se.signalare.observer.util.Utilities.getTagValueFromJson
+import se.signalare.observer.util.Utilities.hasLocalBlocklists
+import se.signalare.observer.util.Utilities.localBlocklistFileDownloadPath
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

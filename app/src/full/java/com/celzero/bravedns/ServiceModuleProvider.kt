@@ -13,24 +13,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns
+package se.signalare.observer
 
 import android.content.ContentResolver
-import com.celzero.bravedns.iab.BillingModule
-import com.celzero.bravedns.data.DataModule
-import com.celzero.bravedns.database.DatabaseModule
-import com.celzero.bravedns.download.AppDownloadManager
-import com.celzero.bravedns.scheduler.ScheduleManager
-import com.celzero.bravedns.scheduler.WorkScheduler
-import com.celzero.bravedns.service.AppUpdater
-import com.celzero.bravedns.service.InAppMessageProvider
-import com.celzero.bravedns.service.NoOpInAppMessageProvider
-import com.celzero.bravedns.service.ServiceModule
-import com.celzero.bravedns.rpnproxy.StateMachineDatabaseSyncService
-import com.celzero.bravedns.rpnproxy.SubscriptionStateMachineV2
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.OrbotHelper
-import com.celzero.bravedns.viewmodel.ViewModelModule
+import se.signalare.observer.iab.BillingModule
+import se.signalare.observer.data.DataModule
+import se.signalare.observer.database.DatabaseModule
+import se.signalare.observer.download.AppDownloadManager
+import se.signalare.observer.scheduler.ScheduleManager
+import se.signalare.observer.scheduler.WorkScheduler
+import se.signalare.observer.service.AppUpdater
+import se.signalare.observer.service.InAppMessageProvider
+import se.signalare.observer.service.NoOpInAppMessageProvider
+import se.signalare.observer.service.ServiceModule
+import se.signalare.observer.rpnproxy.StateMachineDatabaseSyncService
+import se.signalare.observer.rpnproxy.SubscriptionStateMachineV2
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.OrbotHelper
+import se.signalare.observer.viewmodel.ViewModelModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.module.Module
 import org.koin.dsl.module

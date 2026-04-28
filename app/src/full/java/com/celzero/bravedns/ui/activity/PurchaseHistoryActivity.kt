@@ -13,35 +13,35 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.activity
+package se.signalare.observer.ui.activity
 
 import Logger
 import Logger.LOG_TAG_UI
 import android.content.Context
 import android.content.res.Configuration
 import android.os.Bundle
-import com.celzero.bravedns.ui.BaseActivity
+import se.signalare.observer.ui.BaseActivity
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.core.view.isVisible
 import androidx.paging.LoadState
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.adapter.PurchaseHistoryAdapter
-import com.celzero.bravedns.databinding.ActivityPurchaseHistoryBinding
-import com.celzero.bravedns.rpnproxy.RpnProxyManager
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.handleFrostEffectIfNeeded
-import com.celzero.bravedns.viewmodel.PurchaseHistoryViewModel
+import se.signalare.observer.R
+import se.signalare.observer.adapter.PurchaseHistoryAdapter
+import se.signalare.observer.databinding.ActivityPurchaseHistoryBinding
+import se.signalare.observer.rpnproxy.RpnProxyManager
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.handleFrostEffectIfNeeded
+import se.signalare.observer.viewmodel.PurchaseHistoryViewModel
 import com.facebook.shimmer.Shimmer
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import androidx.lifecycle.lifecycleScope
-import com.celzero.bravedns.iab.InAppBillingHandler
+import se.signalare.observer.iab.InAppBillingHandler
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -144,7 +144,7 @@ class PurchaseHistoryActivity : BaseActivity(R.layout.activity_purchase_history)
     }
 
     /**
-     * Feeds pages of [com.celzero.bravedns.database.SubscriptionStateHistory] into the
+     * Feeds pages of [se.signalare.observer.database.SubscriptionStateHistory] into the
      * adapter (no JOIN, no product-name / token fields).
      * PagingDataAdapter.submitData is lifecycle-aware: it automatically cancels
      * the previous collection when a new PagingData arrives (e.g. after invalidation).

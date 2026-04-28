@@ -1,4 +1,4 @@
-package com.celzero.bravedns.iab
+package se.signalare.observer.iab
 
 interface OnPurchaseListener {
 

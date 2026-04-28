@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
 import android.content.Context
-import com.celzero.bravedns.R
-import com.celzero.bravedns.database.DnsLog
+import se.signalare.observer.R
+import se.signalare.observer.database.DnsLog
 
 object UIUtils {
     fun fetchFavIcon(context: Context, dnsLog: DnsLog) {}

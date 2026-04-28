@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.customdownloader
+package se.signalare.observer.customdownloader
 
 import android.os.Parcel
 import android.os.Parcelable

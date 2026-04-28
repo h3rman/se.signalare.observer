@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import Logger
 import Logger.LOG_TAG_DNS
@@ -31,16 +31,16 @@ import androidx.lifecycle.lifecycleScope
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.database.RethinkDnsEndpoint
-import com.celzero.bravedns.databinding.RethinkEndpointListItemBinding
-import com.celzero.bravedns.service.RethinkBlocklistManager
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.ui.activity.ConfigureRethinkBasicActivity
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.UIUtils.clipboardCopy
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.R
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.database.RethinkDnsEndpoint
+import se.signalare.observer.databinding.RethinkEndpointListItemBinding
+import se.signalare.observer.service.RethinkBlocklistManager
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.ui.activity.ConfigureRethinkBasicActivity
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.UIUtils.clipboardCopy
+import se.signalare.observer.util.Utilities
 import com.celzero.firestack.backend.Backend
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers

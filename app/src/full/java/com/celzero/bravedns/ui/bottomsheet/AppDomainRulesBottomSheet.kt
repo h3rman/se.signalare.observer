@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.bottomsheet
+package se.signalare.observer.ui.bottomsheet
 
 import Logger
 import Logger.LOG_TAG_FIREWALL
@@ -28,25 +28,25 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.lifecycleScope
-import com.celzero.bravedns.R
-import com.celzero.bravedns.adapter.AppWiseDomainsAdapter
-import com.celzero.bravedns.database.CustomDomain
-import com.celzero.bravedns.database.EventSource
-import com.celzero.bravedns.database.EventType
-import com.celzero.bravedns.database.Severity
-import com.celzero.bravedns.database.WgConfigFilesImmutable
-import com.celzero.bravedns.databinding.BottomSheetAppConnectionsBinding
-import com.celzero.bravedns.service.DomainRulesManager
-import com.celzero.bravedns.service.EventLogger
-import com.celzero.bravedns.service.FirewallManager
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.WireguardManager
-import com.celzero.bravedns.util.Constants.Companion.INVALID_UID
-import com.celzero.bravedns.util.Themes.Companion.getBottomsheetCurrentTheme
-import com.celzero.bravedns.util.UIUtils.htmlToSpannedText
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.useTransparentNoDimBackground
+import se.signalare.observer.R
+import se.signalare.observer.adapter.AppWiseDomainsAdapter
+import se.signalare.observer.database.CustomDomain
+import se.signalare.observer.database.EventSource
+import se.signalare.observer.database.EventType
+import se.signalare.observer.database.Severity
+import se.signalare.observer.database.WgConfigFilesImmutable
+import se.signalare.observer.databinding.BottomSheetAppConnectionsBinding
+import se.signalare.observer.service.DomainRulesManager
+import se.signalare.observer.service.EventLogger
+import se.signalare.observer.service.FirewallManager
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.WireguardManager
+import se.signalare.observer.util.Constants.Companion.INVALID_UID
+import se.signalare.observer.util.Themes.Companion.getBottomsheetCurrentTheme
+import se.signalare.observer.util.UIUtils.htmlToSpannedText
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.useTransparentNoDimBackground
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

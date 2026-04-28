@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.scheduler
+package se.signalare.observer.scheduler
 
 import Logger
 import Logger.LOG_IAB
@@ -27,14 +27,14 @@ import androidx.work.NetworkType
 import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkManager
 import androidx.work.WorkerParameters
-import com.celzero.bravedns.iab.BillingBackendClient
-import com.celzero.bravedns.iab.InAppBillingHandler
-import com.celzero.bravedns.iab.PurchaseDetail
-import com.celzero.bravedns.iab.RegisterDeviceResult
-import com.celzero.bravedns.iab.ServerApiError
-import com.celzero.bravedns.rpnproxy.RpnProxyManager
-import com.celzero.bravedns.scheduler.RpnProxyUpdateWorker.Companion.INTERVAL_MINUTES
-import com.celzero.bravedns.service.PersistentState
+import se.signalare.observer.iab.BillingBackendClient
+import se.signalare.observer.iab.InAppBillingHandler
+import se.signalare.observer.iab.PurchaseDetail
+import se.signalare.observer.iab.RegisterDeviceResult
+import se.signalare.observer.iab.ServerApiError
+import se.signalare.observer.rpnproxy.RpnProxyManager
+import se.signalare.observer.scheduler.RpnProxyUpdateWorker.Companion.INTERVAL_MINUTES
+import se.signalare.observer.service.PersistentState
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.koin.core.component.KoinComponent

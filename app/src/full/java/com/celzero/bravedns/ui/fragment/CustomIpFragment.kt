@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.fragment
+package se.signalare.observer.ui.fragment
 
 import android.content.Context.INPUT_METHOD_SERVICE
 import android.os.Bundle
@@ -31,22 +31,22 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.RecyclerView
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.adapter.CustomIpAdapter
-import com.celzero.bravedns.database.EventSource
-import com.celzero.bravedns.database.EventType
-import com.celzero.bravedns.database.Severity
-import com.celzero.bravedns.databinding.DialogAddCustomIpBinding
-import com.celzero.bravedns.databinding.FragmentCustomIpBinding
-import com.celzero.bravedns.service.EventLogger
-import com.celzero.bravedns.service.FirewallManager
-import com.celzero.bravedns.service.IpRulesManager
-import com.celzero.bravedns.ui.activity.CustomRulesActivity
-import com.celzero.bravedns.util.Constants.Companion.INTENT_UID
-import com.celzero.bravedns.util.Constants.Companion.UID_EVERYBODY
-import com.celzero.bravedns.util.CustomLinearLayoutManager
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.viewmodel.CustomIpViewModel
+import se.signalare.observer.R
+import se.signalare.observer.adapter.CustomIpAdapter
+import se.signalare.observer.database.EventSource
+import se.signalare.observer.database.EventType
+import se.signalare.observer.database.Severity
+import se.signalare.observer.databinding.DialogAddCustomIpBinding
+import se.signalare.observer.databinding.FragmentCustomIpBinding
+import se.signalare.observer.service.EventLogger
+import se.signalare.observer.service.FirewallManager
+import se.signalare.observer.service.IpRulesManager
+import se.signalare.observer.ui.activity.CustomRulesActivity
+import se.signalare.observer.util.Constants.Companion.INTENT_UID
+import se.signalare.observer.util.Constants.Companion.UID_EVERYBODY
+import se.signalare.observer.util.CustomLinearLayoutManager
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.viewmodel.CustomIpViewModel
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import inet.ipaddr.IPAddress
 import kotlinx.coroutines.Dispatchers

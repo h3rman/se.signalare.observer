@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.dialog
+package se.signalare.observer.ui.dialog
 
 import android.app.Activity
 import android.app.Dialog
@@ -23,9 +23,9 @@ import android.view.WindowManager
 import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.adapter.GenericHopAdapter
-import com.celzero.bravedns.adapter.HopItem
-import com.celzero.bravedns.databinding.DialogWgHopBinding
+import se.signalare.observer.adapter.GenericHopAdapter
+import se.signalare.observer.adapter.HopItem
+import se.signalare.observer.databinding.DialogWgHopBinding
 
 /**
  * Generic dialog for hopping between different proxy types

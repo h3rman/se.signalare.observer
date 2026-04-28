@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui
+package se.signalare.observer.ui
 
 import android.net.VpnService
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.result.contract.ActivityResultContracts
-import com.celzero.bravedns.service.VpnController
+import se.signalare.observer.service.VpnController
 
 class PrepareVpnActivity : ComponentActivity() {
 

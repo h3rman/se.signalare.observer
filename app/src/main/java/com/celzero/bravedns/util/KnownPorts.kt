@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 @file:Suppress("MagicNumber")
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
 class KnownPorts {
 

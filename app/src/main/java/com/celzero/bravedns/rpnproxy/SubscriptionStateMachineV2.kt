@@ -13,25 +13,25 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.rpnproxy
+package se.signalare.observer.rpnproxy
 
 import Logger.LOG_IAB
 import com.android.billingclient.api.BillingClient
 import com.android.billingclient.api.Purchase
-import com.celzero.bravedns.database.SubscriptionStatus
-import com.celzero.bravedns.database.SubscriptionStatusRepository
-import com.celzero.bravedns.iab.InAppBillingHandler
-import com.celzero.bravedns.iab.InAppBillingHandler.ONE_TIME_PRODUCT_2YRS
-import com.celzero.bravedns.iab.InAppBillingHandler.ONE_TIME_PRODUCT_5YRS
-import com.celzero.bravedns.iab.InAppBillingHandler.ONE_TIME_PRODUCT_ID
-import com.celzero.bravedns.iab.InAppBillingHandler.ONE_TIME_TEST_PRODUCT_ID
-import com.celzero.bravedns.iab.InAppBillingHandler.REVOKE_WINDOW_ONE_TIME_2YRS_DAYS
-import com.celzero.bravedns.iab.InAppBillingHandler.REVOKE_WINDOW_ONE_TIME_5YRS_DAYS
-import com.celzero.bravedns.iab.InAppBillingHandler.REVOKE_WINDOW_SUBS_MONTHLY_DAYS
-import com.celzero.bravedns.iab.InAppBillingHandler.STD_PRODUCT_ID
-import com.celzero.bravedns.iab.PurchaseDetail
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.database.SubscriptionStatus
+import se.signalare.observer.database.SubscriptionStatusRepository
+import se.signalare.observer.iab.InAppBillingHandler
+import se.signalare.observer.iab.InAppBillingHandler.ONE_TIME_PRODUCT_2YRS
+import se.signalare.observer.iab.InAppBillingHandler.ONE_TIME_PRODUCT_5YRS
+import se.signalare.observer.iab.InAppBillingHandler.ONE_TIME_PRODUCT_ID
+import se.signalare.observer.iab.InAppBillingHandler.ONE_TIME_TEST_PRODUCT_ID
+import se.signalare.observer.iab.InAppBillingHandler.REVOKE_WINDOW_ONE_TIME_2YRS_DAYS
+import se.signalare.observer.iab.InAppBillingHandler.REVOKE_WINDOW_ONE_TIME_5YRS_DAYS
+import se.signalare.observer.iab.InAppBillingHandler.REVOKE_WINDOW_SUBS_MONTHLY_DAYS
+import se.signalare.observer.iab.InAppBillingHandler.STD_PRODUCT_ID
+import se.signalare.observer.iab.PurchaseDetail
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.Utilities
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob

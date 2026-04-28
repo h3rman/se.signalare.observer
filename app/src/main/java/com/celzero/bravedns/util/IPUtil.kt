@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
 import Logger
 import Logger.LOG_TAG_VPN
-import com.celzero.bravedns.RethinkDnsApplication.Companion.DEBUG
+import se.signalare.observer.RethinkDnsApplication.Companion.DEBUG
 import inet.ipaddr.IPAddress
 import java.net.InetAddress
 import java.net.UnknownHostException

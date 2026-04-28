@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
 import Logger
 import Logger.LOG_TAG_CONNECTION
@@ -24,8 +24,8 @@ import android.net.NetworkCapabilities
 import android.net.NetworkRequest
 import android.os.Build
 import androidx.annotation.RequiresApi
-import com.celzero.bravedns.util.Daemons
-import com.celzero.bravedns.util.Utilities.isAtleastS
+import se.signalare.observer.util.Daemons
+import se.signalare.observer.util.Utilities.isAtleastS
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import org.koin.core.component.KoinComponent

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.celzero.bravedns.receiver
+package se.signalare.observer.receiver
 
 import android.content.Context
 import android.content.Intent
@@ -69,7 +69,7 @@ class UserPresentReceiverTest {
     fun `receiver class should have proper package`() {
         // Test that the receiver is in the correct package
         assertEquals("Package should be correct", 
-                    "com.celzero.bravedns.receiver", 
+                    "se.signalare.observer.receiver", 
                     receiver.javaClass.packageName)
     }
 

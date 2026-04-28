@@ -1,4 +1,4 @@
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
 import Logger
 import Logger.LOG_TAG_PROXY
@@ -10,12 +10,12 @@ import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkInfo
 import androidx.work.WorkManager
 import androidx.work.WorkRequest
-import com.celzero.bravedns.customdownloader.IBillingServerApi
-import com.celzero.bravedns.customdownloader.RetrofitManager
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.database.TcpProxyEndpoint
-import com.celzero.bravedns.database.TcpProxyRepository
-import com.celzero.bravedns.scheduler.PaymentWorker
+import se.signalare.observer.customdownloader.IBillingServerApi
+import se.signalare.observer.customdownloader.RetrofitManager
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.database.TcpProxyEndpoint
+import se.signalare.observer.database.TcpProxyRepository
+import se.signalare.observer.scheduler.PaymentWorker
 import com.celzero.firestack.backend.Backend
 import com.celzero.firestack.backend.IpTree
 import kotlinx.coroutines.CoroutineScope

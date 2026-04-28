@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
 import android.content.Context
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.util.Constants.Companion.ONDEVICE_BLOCKLISTS_IN_APP
-import com.celzero.bravedns.util.Constants.Companion.ONDEVICE_BLOCKLIST_FILE_BASIC_CONFIG
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.util.Constants.Companion.ONDEVICE_BLOCKLISTS_IN_APP
+import se.signalare.observer.util.Constants.Companion.ONDEVICE_BLOCKLIST_FILE_BASIC_CONFIG
 import com.google.gson.JsonObject
 import com.google.gson.JsonParser
 import java.io.File

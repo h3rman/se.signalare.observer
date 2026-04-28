@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.customdownloader
+package se.signalare.observer.customdownloader
 
 import com.google.gson.JsonObject
 import retrofit2.Response
@@ -50,7 +50,7 @@ import retrofit2.http.Query
  * - `getPublicKey` has no test variant; callers must always use [IBillingServerApi].
  *
  * ### Selection
- * [com.celzero.bravedns.iab.BillingBackendClient] resolves which interface to use per-request
+ * [se.signalare.observer.iab.BillingBackendClient] resolves which interface to use per-request
  * via its internal `resolveApi()` helper.
  */
 interface IBillingServerApiTest {

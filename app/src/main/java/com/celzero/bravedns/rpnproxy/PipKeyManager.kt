@@ -13,18 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.rpnproxy
+package se.signalare.observer.rpnproxy
 
 import Logger
 import Logger.LOG_IAB
 import Logger.LOG_TAG_PROXY
 import android.content.Context
-import com.celzero.bravedns.customdownloader.IBillingServerApi
-import com.celzero.bravedns.customdownloader.SafeResponseConverterFactory
-import com.celzero.bravedns.customdownloader.RetrofitManager
-import com.celzero.bravedns.service.EncryptedFileManager
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.viewmodel.SubscriptionUiState
+import se.signalare.observer.customdownloader.IBillingServerApi
+import se.signalare.observer.customdownloader.SafeResponseConverterFactory
+import se.signalare.observer.customdownloader.RetrofitManager
+import se.signalare.observer.service.EncryptedFileManager
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.viewmodel.SubscriptionUiState
 import org.json.JSONObject
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject

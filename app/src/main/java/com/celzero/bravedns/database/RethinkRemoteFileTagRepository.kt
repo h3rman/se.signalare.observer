@@ -14,10 +14,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package com.celzero.bravedns.database
+package se.signalare.observer.database
 
 import androidx.room.Transaction
-import com.celzero.bravedns.data.FileTag
+import se.signalare.observer.data.FileTag
 
 class RethinkRemoteFileTagRepository(private val rethinkRemoteFileTagDao: RethinkRemoteFileTagDao) {
 

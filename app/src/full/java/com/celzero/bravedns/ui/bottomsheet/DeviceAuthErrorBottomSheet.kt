@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.bottomsheet
+package se.signalare.observer.ui.bottomsheet
 
 import Logger
 import Logger.LOG_IAB
@@ -23,9 +23,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.BottomsheetDeviceAuthErrorBinding
-import com.celzero.bravedns.iab.ServerApiError
+import se.signalare.observer.R
+import se.signalare.observer.databinding.BottomsheetDeviceAuthErrorBinding
+import se.signalare.observer.iab.ServerApiError
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import androidx.core.net.toUri
 

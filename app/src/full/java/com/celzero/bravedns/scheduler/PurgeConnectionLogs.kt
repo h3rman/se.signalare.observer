@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.scheduler
+package se.signalare.observer.scheduler
 
 import Logger
 import Logger.LOG_TAG_SCHEDULER
 import android.content.Context
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
-import com.celzero.bravedns.database.RefreshDatabase
-import com.celzero.bravedns.service.EventLogger
+import se.signalare.observer.database.RefreshDatabase
+import se.signalare.observer.service.EventLogger
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import java.util.Calendar

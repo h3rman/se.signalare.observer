@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
 import Logger
 import Logger.LOG_TAG_APP
 import android.content.Context
-import com.celzero.bravedns.scheduler.EnhancedBugReport
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.util.Utilities.isFdroidFlavour
+import se.signalare.observer.scheduler.EnhancedBugReport
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.util.Utilities.isFdroidFlavour
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import java.lang.ref.WeakReference

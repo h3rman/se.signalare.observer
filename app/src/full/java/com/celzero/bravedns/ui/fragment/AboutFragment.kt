@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.fragment
+package se.signalare.observer.ui.fragment
 
 import Logger
 import Logger.LOG_IAB
@@ -46,48 +46,48 @@ import androidx.lifecycle.lifecycleScope
 import androidx.work.WorkInfo
 import androidx.work.WorkManager
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.RethinkDnsApplication.Companion.DEBUG
-import com.celzero.bravedns.database.AppDatabase
-import com.celzero.bravedns.database.EventSource
-import com.celzero.bravedns.database.EventType
-import com.celzero.bravedns.database.Severity
-import com.celzero.bravedns.databinding.DialogInfoRulesLayoutBinding
-import com.celzero.bravedns.databinding.DialogWhatsnewBinding
-import com.celzero.bravedns.databinding.FragmentAboutBinding
-import com.celzero.bravedns.rpnproxy.RpnProxyManager
-import com.celzero.bravedns.scheduler.BugReportZipper
-import com.celzero.bravedns.scheduler.BugReportZipper.getZipFileName
-import com.celzero.bravedns.scheduler.EnhancedBugReport
-import com.celzero.bravedns.scheduler.WorkScheduler
-import com.celzero.bravedns.service.AppUpdater
-import com.celzero.bravedns.service.EventLogger
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.ui.HomeScreenActivity
-import com.celzero.bravedns.ui.activity.FragmentHostActivity
-import com.celzero.bravedns.ui.bottomsheet.BugReportFilesBottomSheet
-import com.celzero.bravedns.util.Constants.Companion.INIT_TIME_MS
-import com.celzero.bravedns.util.Constants.Companion.RETHINKDNS_SPONSOR_LINK
-import com.celzero.bravedns.util.Constants.Companion.TIME_FORMAT_4
-import com.celzero.bravedns.util.FirebaseErrorReporting.TOKEN_LENGTH
-import com.celzero.bravedns.util.KernelProc
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.UIUtils.htmlToSpannedText
-import com.celzero.bravedns.util.UIUtils.openAppInfo
-import com.celzero.bravedns.util.UIUtils.openUrl
-import com.celzero.bravedns.util.UIUtils.openVpnProfile
-import com.celzero.bravedns.util.UIUtils.sendEmailIntent
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.getPackageMetadata
-import com.celzero.bravedns.util.Utilities.getRandomString
-import com.celzero.bravedns.util.Utilities.isAtleastO
-import com.celzero.bravedns.util.Utilities.isFdroidFlavour
-import com.celzero.bravedns.util.Utilities.isPlayStoreFlavour
-import com.celzero.bravedns.util.Utilities.showToastUiCentered
-import com.celzero.bravedns.util.disableFrostTemporarily
-import com.celzero.bravedns.util.restoreFrost
+import se.signalare.observer.R
+import se.signalare.observer.RethinkDnsApplication.Companion.DEBUG
+import se.signalare.observer.database.AppDatabase
+import se.signalare.observer.database.EventSource
+import se.signalare.observer.database.EventType
+import se.signalare.observer.database.Severity
+import se.signalare.observer.databinding.DialogInfoRulesLayoutBinding
+import se.signalare.observer.databinding.DialogWhatsnewBinding
+import se.signalare.observer.databinding.FragmentAboutBinding
+import se.signalare.observer.rpnproxy.RpnProxyManager
+import se.signalare.observer.scheduler.BugReportZipper
+import se.signalare.observer.scheduler.BugReportZipper.getZipFileName
+import se.signalare.observer.scheduler.EnhancedBugReport
+import se.signalare.observer.scheduler.WorkScheduler
+import se.signalare.observer.service.AppUpdater
+import se.signalare.observer.service.EventLogger
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.ui.HomeScreenActivity
+import se.signalare.observer.ui.activity.FragmentHostActivity
+import se.signalare.observer.ui.bottomsheet.BugReportFilesBottomSheet
+import se.signalare.observer.util.Constants.Companion.INIT_TIME_MS
+import se.signalare.observer.util.Constants.Companion.RETHINKDNS_SPONSOR_LINK
+import se.signalare.observer.util.Constants.Companion.TIME_FORMAT_4
+import se.signalare.observer.util.FirebaseErrorReporting.TOKEN_LENGTH
+import se.signalare.observer.util.KernelProc
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.UIUtils.htmlToSpannedText
+import se.signalare.observer.util.UIUtils.openAppInfo
+import se.signalare.observer.util.UIUtils.openUrl
+import se.signalare.observer.util.UIUtils.openVpnProfile
+import se.signalare.observer.util.UIUtils.sendEmailIntent
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.getPackageMetadata
+import se.signalare.observer.util.Utilities.getRandomString
+import se.signalare.observer.util.Utilities.isAtleastO
+import se.signalare.observer.util.Utilities.isFdroidFlavour
+import se.signalare.observer.util.Utilities.isPlayStoreFlavour
+import se.signalare.observer.util.Utilities.showToastUiCentered
+import se.signalare.observer.util.disableFrostTemporarily
+import se.signalare.observer.util.restoreFrost
 import com.celzero.firestack.intra.Intra
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
@@ -487,7 +487,7 @@ class AboutFragment : Fragment(R.layout.fragment_about), View.OnClickListener, K
     }
 
     private fun openEventLogs() {
-        val intent = Intent(requireContext(), com.celzero.bravedns.ui.activity.EventsActivity::class.java)
+        val intent = Intent(requireContext(), se.signalare.observer.ui.activity.EventsActivity::class.java)
         startActivity(intent)
     }
 

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
 import Logger
 import Logger.LOG_TAG_FIREWALL
@@ -22,11 +22,11 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.text.TextUtils
 import android.view.accessibility.AccessibilityEvent
-import com.celzero.bravedns.service.FirewallManager
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.util.Utilities.isAtleastP
-import com.celzero.bravedns.util.Utilities.isAtleastT
+import se.signalare.observer.service.FirewallManager
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.util.Utilities.isAtleastP
+import se.signalare.observer.util.Utilities.isAtleastT
 import org.koin.android.ext.android.inject
 import org.koin.core.component.KoinComponent
 

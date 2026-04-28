@@ -1,4 +1,4 @@
-package com.celzero.bravedns.net.manager
+package se.signalare.observer.net.manager
 
 import Logger
 import Logger.LOG_TAG_VPN
@@ -7,9 +7,9 @@ import android.net.ConnectivityManager
 import android.os.Build
 import android.text.TextUtils
 import androidx.annotation.RequiresApi
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.Protocol
-import com.celzero.bravedns.util.Utilities.isUnspecifiedIp
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.Protocol
+import se.signalare.observer.util.Utilities.isUnspecifiedIp
 import com.google.common.cache.Cache
 import com.google.common.cache.CacheBuilder
 import inet.ipaddr.IPAddressString

@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.activity
+package se.signalare.observer.ui.activity
 
-import com.celzero.bravedns.ui.BaseActivity
-import com.celzero.bravedns.R
+import se.signalare.observer.ui.BaseActivity
+import se.signalare.observer.R
 
 class AlertsActivity : BaseActivity(R.layout.activity_alerts) {
 

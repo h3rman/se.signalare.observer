@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
 import Logger
 import Logger.LOG_TAG_CONNECTION
@@ -37,24 +37,24 @@ import android.os.SystemClock
 import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
-import com.celzero.bravedns.R
-import com.celzero.bravedns.RethinkDnsApplication.Companion.DEBUG
-import com.celzero.bravedns.service.FirewallManager.NOTIF_CHANNEL_ID_FIREWALL_ALERTS
-import com.celzero.bravedns.service.VpnBuilderPolicy.Companion.getNetworkBehaviourDuration
-import com.celzero.bravedns.service.WireguardManager.NOTIF_CHANNEL_ID_WIREGUARD_ALERTS
-import com.celzero.bravedns.ui.NotificationHandlerActivity
-import com.celzero.bravedns.util.ConnectivityCheckHelper
-import com.celzero.bravedns.util.Constants.Companion.NOTIF_WG_PERMISSION_NAME
-import com.celzero.bravedns.util.Constants.Companion.NOTIF_WG_PERMISSION_VALUE
-import com.celzero.bravedns.util.InternetProtocol
-import com.celzero.bravedns.util.SsidPermissionManager
-import com.celzero.bravedns.util.UIUtils.getAccentColor
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.isAtleastO
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.Utilities.isAtleastR
-import com.celzero.bravedns.util.Utilities.isAtleastS
-import com.celzero.bravedns.util.Utilities.isNetworkSame
+import se.signalare.observer.R
+import se.signalare.observer.RethinkDnsApplication.Companion.DEBUG
+import se.signalare.observer.service.FirewallManager.NOTIF_CHANNEL_ID_FIREWALL_ALERTS
+import se.signalare.observer.service.VpnBuilderPolicy.Companion.getNetworkBehaviourDuration
+import se.signalare.observer.service.WireguardManager.NOTIF_CHANNEL_ID_WIREGUARD_ALERTS
+import se.signalare.observer.ui.NotificationHandlerActivity
+import se.signalare.observer.util.ConnectivityCheckHelper
+import se.signalare.observer.util.Constants.Companion.NOTIF_WG_PERMISSION_NAME
+import se.signalare.observer.util.Constants.Companion.NOTIF_WG_PERMISSION_VALUE
+import se.signalare.observer.util.InternetProtocol
+import se.signalare.observer.util.SsidPermissionManager
+import se.signalare.observer.util.UIUtils.getAccentColor
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.isAtleastO
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.Utilities.isAtleastR
+import se.signalare.observer.util.Utilities.isAtleastS
+import se.signalare.observer.util.Utilities.isNetworkSame
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineName
 import kotlinx.coroutines.CoroutineScope

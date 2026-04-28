@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.iab
+package se.signalare.observer.iab
 
 import Logger
 import Logger.LOG_IAB
@@ -23,8 +23,8 @@ import com.android.billingclient.api.ConsumeParams
 import com.android.billingclient.api.ProductDetails
 import com.android.billingclient.api.Purchase
 import com.android.billingclient.api.QueryProductDetailsParams
-import com.celzero.bravedns.iab.InAppBillingHandler.BestPlan
-import com.celzero.bravedns.iab.InAppBillingHandler.fetchPurchases
+import se.signalare.observer.iab.InAppBillingHandler.BestPlan
+import se.signalare.observer.iab.InAppBillingHandler.fetchPurchases
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlin.collections.filter
 import kotlin.collections.find

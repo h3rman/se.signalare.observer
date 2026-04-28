@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -36,25 +36,25 @@ import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.celzero.bravedns.R
-import com.celzero.bravedns.database.CustomDomain
-import com.celzero.bravedns.database.EventSource
-import com.celzero.bravedns.database.EventType
-import com.celzero.bravedns.database.Severity
-import com.celzero.bravedns.databinding.DialogAddCustomDomainBinding
-import com.celzero.bravedns.databinding.ListItemCustomAllDomainBinding
-import com.celzero.bravedns.databinding.ListItemCustomDomainBinding
-import com.celzero.bravedns.service.DomainRulesManager
-import com.celzero.bravedns.service.DomainRulesManager.isValidDomain
-import com.celzero.bravedns.service.DomainRulesManager.isWildCardEntry
-import com.celzero.bravedns.service.EventLogger
-import com.celzero.bravedns.service.FirewallManager
-import com.celzero.bravedns.ui.activity.CustomRulesActivity
-import com.celzero.bravedns.ui.bottomsheet.CustomDomainRulesBtmSheet
-import com.celzero.bravedns.ui.bottomsheet.CustomDomainRulesBtmSheet.ToggleBtnUi
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.UIUtils.fetchColor
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.R
+import se.signalare.observer.database.CustomDomain
+import se.signalare.observer.database.EventSource
+import se.signalare.observer.database.EventType
+import se.signalare.observer.database.Severity
+import se.signalare.observer.databinding.DialogAddCustomDomainBinding
+import se.signalare.observer.databinding.ListItemCustomAllDomainBinding
+import se.signalare.observer.databinding.ListItemCustomDomainBinding
+import se.signalare.observer.service.DomainRulesManager
+import se.signalare.observer.service.DomainRulesManager.isValidDomain
+import se.signalare.observer.service.DomainRulesManager.isWildCardEntry
+import se.signalare.observer.service.EventLogger
+import se.signalare.observer.service.FirewallManager
+import se.signalare.observer.ui.activity.CustomRulesActivity
+import se.signalare.observer.ui.bottomsheet.CustomDomainRulesBtmSheet
+import se.signalare.observer.ui.bottomsheet.CustomDomainRulesBtmSheet.ToggleBtnUi
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.UIUtils.fetchColor
+import se.signalare.observer.util.Utilities
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

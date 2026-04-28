@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.dialog
+package se.signalare.observer.ui.dialog
 
 import android.app.Activity
 import android.app.Dialog
@@ -27,12 +27,12 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.widget.addTextChangedListener
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.celzero.bravedns.R
-import com.celzero.bravedns.adapter.SsidAdapter
-import com.celzero.bravedns.data.SsidItem
-import com.celzero.bravedns.databinding.DialogWgSsidBinding
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.R
+import se.signalare.observer.adapter.SsidAdapter
+import se.signalare.observer.data.SsidItem
+import se.signalare.observer.databinding.DialogWgSsidBinding
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.Utilities
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class WgSsidDialog(

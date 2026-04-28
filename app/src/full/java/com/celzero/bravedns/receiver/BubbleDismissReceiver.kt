@@ -1,4 +1,4 @@
-package com.celzero.bravedns.receiver
+package se.signalare.observer.receiver
 
 import Logger
 import Logger.LOG_TAG_FIREWALL
@@ -7,8 +7,8 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import androidx.annotation.RequiresApi
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.util.BubbleHelper
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.util.BubbleHelper
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 
@@ -24,8 +24,8 @@ class BubbleDismissReceiver : BroadcastReceiver(), KoinComponent {
     private val persistentState by inject<PersistentState>()
 
     companion object {
-        const val ACTION_BUBBLE_DISMISSED = "com.celzero.bravedns.action.BUBBLE_DISMISSED"
-        const val ACTION_BUBBLE_DISABLE = "com.celzero.bravedns.action.BUBBLE_DISABLE"
+        const val ACTION_BUBBLE_DISMISSED = "se.signalare.observer.action.BUBBLE_DISMISSED"
+        const val ACTION_BUBBLE_DISABLE = "se.signalare.observer.action.BUBBLE_DISABLE"
     }
 
     @RequiresApi(Build.VERSION_CODES.Q)

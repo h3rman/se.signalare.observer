@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.dialog
+package se.signalare.observer.ui.dialog
 
 import android.app.Activity
-import com.celzero.bravedns.adapter.HopItem
-import com.celzero.bravedns.service.WireguardManager
+import se.signalare.observer.adapter.HopItem
+import se.signalare.observer.service.WireguardManager
 import android.app.Dialog
 import android.os.Bundle
 import android.view.Window
@@ -25,9 +25,9 @@ import android.view.WindowManager
 import android.view.animation.Animation
 import android.view.animation.RotateAnimation
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.celzero.bravedns.adapter.WgHopAdapter
-import com.celzero.bravedns.databinding.DialogWgHopBinding
-import com.celzero.bravedns.wireguard.Config
+import se.signalare.observer.adapter.WgHopAdapter
+import se.signalare.observer.databinding.DialogWgHopBinding
+import se.signalare.observer.wireguard.Config
 
 /**
  * Dialog for WireGuard configuration hopping

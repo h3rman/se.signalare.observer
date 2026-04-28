@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.fragment
+package se.signalare.observer.ui.fragment
 
 import android.content.Intent
 import android.content.res.ColorStateList
@@ -23,17 +23,17 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.adapter.SummaryStatisticsAdapter
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.data.DataUsageSummary
-import com.celzero.bravedns.databinding.FragmentSummaryStatisticsBinding
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.ui.activity.DetailedStatisticsActivity
-import com.celzero.bravedns.util.CustomLinearLayoutManager
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.viewmodel.SummaryStatisticsViewModel
+import se.signalare.observer.R
+import se.signalare.observer.adapter.SummaryStatisticsAdapter
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.data.DataUsageSummary
+import se.signalare.observer.databinding.FragmentSummaryStatisticsBinding
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.ui.activity.DetailedStatisticsActivity
+import se.signalare.observer.util.CustomLinearLayoutManager
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.viewmodel.SummaryStatisticsViewModel
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.button.MaterialButtonToggleGroup
 import kotlinx.coroutines.Dispatchers

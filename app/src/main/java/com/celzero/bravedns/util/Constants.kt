@@ -13,7 +13,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
 import java.io.File
 import java.util.concurrent.TimeUnit
@@ -54,7 +54,7 @@ class Constants {
         const val ONDEVICE_BLOCKLIST_UPDATE_CHECK_QUERYPART_1 = "update"
         const val ONDEVICE_BLOCKLIST_UPDATE_CHECK_QUERYPART_2 = "blocklists"
 
-        const val RETHINK_PACKAGE = "com.celzero.bravedns"
+        const val RETHINK_PACKAGE = "se.signalare.observer"
 
         // url to check if there is update available for on-device blocklist
         const val ONDEVICE_IPDB_UPDATE_CHECK_URL =
@@ -195,7 +195,7 @@ class Constants {
         // data-time format used as part of network log adapter
         const val DATE_FORMAT_PATTERN = "HH:mm:ss"
 
-        // constants generated as part of com.celzero.bravedns.BuildConfig.FLAVORS
+        // constants generated as part of se.signalare.observer.BuildConfig.FLAVORS
         // (playstore/fdroid/website)
         const val FLAVOR_PLAY = "play"
         const val FLAVOR_FDROID = "fdroid"
@@ -246,9 +246,9 @@ class Constants {
 
         // The minimum interval before checking if the internal accessibility service
         // (used to block apps-not-in-use) is indeed running.
-        // Ref: {@link com.celzero.bravedns.util.Utilities#isAccessibilityServiceEnabled} and
+        // Ref: {@link se.signalare.observer.util.Utilities#isAccessibilityServiceEnabled} and
         // {@link
-        // com.celzero.bravedns.util.Utilities#isAccessibilityServiceEnabledViaSettingsSecure}
+        // se.signalare.observer.util.Utilities#isAccessibilityServiceEnabledViaSettingsSecure}
         val ACCESSIBILITY_SERVICE_HEARTBEAT_THRESHOLD_MS = TimeUnit.MINUTES.toMillis(5)
 
         // minimum interval before checking if there is a change in active network

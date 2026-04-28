@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.viewmodel
+package se.signalare.observer.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -23,10 +23,10 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.liveData
-import com.celzero.bravedns.database.Event
-import com.celzero.bravedns.database.EventDao
-import com.celzero.bravedns.database.EventSource
-import com.celzero.bravedns.database.Severity
+import se.signalare.observer.database.Event
+import se.signalare.observer.database.EventDao
+import se.signalare.observer.database.EventSource
+import se.signalare.observer.database.Severity
 
 class EventsViewModel(private val eventDao: EventDao) : ViewModel() {
 

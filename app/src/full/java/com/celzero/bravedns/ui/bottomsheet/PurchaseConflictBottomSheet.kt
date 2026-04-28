@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.bottomsheet
+package se.signalare.observer.ui.bottomsheet
 
 import Logger
 import Logger.LOG_IAB
@@ -24,12 +24,12 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.BottomsheetPurchaseConflictBinding
-import com.celzero.bravedns.iab.InAppBillingHandler
-import com.celzero.bravedns.iab.ServerApiError
-import com.celzero.bravedns.util.UIUtils.openUrl
-import com.celzero.bravedns.util.Utilities.showToastUiCentered
+import se.signalare.observer.R
+import se.signalare.observer.databinding.BottomsheetPurchaseConflictBinding
+import se.signalare.observer.iab.InAppBillingHandler
+import se.signalare.observer.iab.ServerApiError
+import se.signalare.observer.util.UIUtils.openUrl
+import se.signalare.observer.util.Utilities.showToastUiCentered
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -237,7 +237,7 @@ class PurchaseConflictBottomSheet : BottomSheetDialogFragment() {
 
     private fun openPlayStoreSubs() {
         try {
-            val productId = com.celzero.bravedns.rpnproxy.RpnProxyManager.getRpnProductId()
+            val productId = se.signalare.observer.rpnproxy.RpnProxyManager.getRpnProductId()
             if (productId.isNotEmpty()) {
                 val link = InAppBillingHandler.PLAY_SUBS_LINK
                     .replace("\$1", productId)

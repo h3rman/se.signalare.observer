@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.dialog
+package se.signalare.observer.ui.dialog
 
 import android.app.Activity
 import android.app.Dialog
 import android.os.Bundle
 import android.view.Window
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.DialogServerWgPeerEditBinding
-import com.celzero.bravedns.wireguard.Peer
+import se.signalare.observer.R
+import se.signalare.observer.databinding.DialogServerWgPeerEditBinding
+import se.signalare.observer.wireguard.Peer
 
 /**
  * Dialog for viewing server WireGuard peer's persistent keepalive

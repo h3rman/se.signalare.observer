@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.database
+package se.signalare.observer.database
 
 import Logger
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.celzero.bravedns.iab.InAppBillingHandler
+import se.signalare.observer.iab.InAppBillingHandler
 
 @Entity(tableName = "SubscriptionStatus")
 class SubscriptionStatus {
@@ -35,8 +35,8 @@ class SubscriptionStatus {
      * storage.  An empty string means no device ID has been stored yet.
      *
      * To obtain the actual device ID, read from
-     * [com.celzero.bravedns.iab.SecureIdentityStore] or call
-     * [com.celzero.bravedns.iab.BillingBackendClient.getDeviceId].
+     * [se.signalare.observer.iab.SecureIdentityStore] or call
+     * [se.signalare.observer.iab.BillingBackendClient.getDeviceId].
      */
     var deviceId: String = ""
 
@@ -104,7 +104,7 @@ class SubscriptionStatus {
     companion object {
         /**
          * Sentinel stored in [deviceId] to indicate the real device ID is present in
-         * [com.celzero.bravedns.iab.SecureIdentityStore] (AES-256-GCM encrypted file at
+         * [se.signalare.observer.iab.SecureIdentityStore] (AES-256-GCM encrypted file at
          * `<filesDir>/pip/identity.json`).
          *
          * This value is intentionally **not** the device ID itself; it is merely a pointer

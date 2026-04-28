@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import android.animation.ObjectAnimator
 import android.content.ClipData
@@ -27,10 +27,10 @@ import android.widget.Toast
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.database.Event
-import com.celzero.bravedns.database.Severity
-import com.celzero.bravedns.databinding.ItemEventBinding
+import se.signalare.observer.R
+import se.signalare.observer.database.Event
+import se.signalare.observer.database.Severity
+import se.signalare.observer.databinding.ItemEventBinding
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale

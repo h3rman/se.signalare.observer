@@ -13,23 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.activity
+package se.signalare.observer.ui.activity
 
 import android.content.Context
 import android.content.res.Configuration
 import android.os.Bundle
 import android.view.View
-import com.celzero.bravedns.ui.BaseActivity
+import se.signalare.observer.ui.BaseActivity
 import androidx.core.view.WindowInsetsControllerCompat
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.RethinkDnsApplication.Companion.DEBUG
-import com.celzero.bravedns.databinding.ActivityAdvancedSettingBinding
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.ui.tour.GuidedTourManager
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.handleFrostEffectIfNeeded
+import se.signalare.observer.R
+import se.signalare.observer.RethinkDnsApplication.Companion.DEBUG
+import se.signalare.observer.databinding.ActivityAdvancedSettingBinding
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.ui.tour.GuidedTourManager
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.handleFrostEffectIfNeeded
 import org.koin.android.ext.android.inject
 
 class AdvancedSettingActivity : BaseActivity(R.layout.activity_advanced_setting) {

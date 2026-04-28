@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
 import Logger
 import Logger.LOG_FIREBASE
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.util.Utilities.getRandomString
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.util.Utilities.getRandomString
 import com.google.firebase.crashlytics.FirebaseCrashlytics
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject

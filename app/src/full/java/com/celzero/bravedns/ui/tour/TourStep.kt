@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.tour
+package se.signalare.observer.ui.tour
 
 import androidx.annotation.IdRes
 import androidx.annotation.StringRes

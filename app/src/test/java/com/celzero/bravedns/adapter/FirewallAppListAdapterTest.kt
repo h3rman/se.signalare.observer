@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import Logger
 import android.content.Context
 import android.view.ViewGroup
 import androidx.lifecycle.LifecycleOwner
 import androidx.test.core.app.ApplicationProvider
-import com.celzero.bravedns.database.AppInfo
-import com.celzero.bravedns.database.AppInfoRepository
-import com.celzero.bravedns.service.EventLogger
-import com.celzero.bravedns.service.FirewallManager
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.ProxyManager
+import se.signalare.observer.database.AppInfo
+import se.signalare.observer.database.AppInfoRepository
+import se.signalare.observer.service.EventLogger
+import se.signalare.observer.service.FirewallManager
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.ProxyManager
 import io.mockk.*
 import io.mockk.impl.annotations.MockK
 import junit.framework.TestCase.assertEquals

@@ -13,18 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
 import Logger
 import Logger.LOG_TAG_FIREWALL
 import android.content.Context
 import androidx.lifecycle.LiveData
-import com.celzero.bravedns.R
-import com.celzero.bravedns.RethinkDnsApplication.Companion.DEBUG
-import com.celzero.bravedns.database.CustomIp
-import com.celzero.bravedns.database.CustomIpRepository
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.Constants.Companion.UNSPECIFIED_PORT
+import se.signalare.observer.R
+import se.signalare.observer.RethinkDnsApplication.Companion.DEBUG
+import se.signalare.observer.database.CustomIp
+import se.signalare.observer.database.CustomIpRepository
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.Constants.Companion.UNSPECIFIED_PORT
 import com.celzero.firestack.backend.Backend
 import com.google.common.cache.Cache
 import com.google.common.cache.CacheBuilder

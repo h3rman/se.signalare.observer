@@ -13,18 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.download
+package se.signalare.observer.download
 
 import Logger
 import Logger.LOG_TAG_DOWNLOAD
 import android.content.Context
-import com.celzero.bravedns.customdownloader.IBlocklistDownload
-import com.celzero.bravedns.customdownloader.RetrofitManager
-import com.celzero.bravedns.service.RethinkBlocklistManager
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.Constants.Companion.INIT_TIME_MS
-import com.celzero.bravedns.util.Utilities.blocklistCanonicalPath
-import com.celzero.bravedns.util.Utilities.deleteRecursive
+import se.signalare.observer.customdownloader.IBlocklistDownload
+import se.signalare.observer.customdownloader.RetrofitManager
+import se.signalare.observer.service.RethinkBlocklistManager
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.Constants.Companion.INIT_TIME_MS
+import se.signalare.observer.util.Utilities.blocklistCanonicalPath
+import se.signalare.observer.util.Utilities.deleteRecursive
 import org.json.JSONException
 import org.json.JSONObject
 import retrofit2.converter.gson.GsonConverterFactory

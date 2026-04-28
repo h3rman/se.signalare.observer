@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.receiver
+package se.signalare.observer.receiver
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import com.celzero.bravedns.service.VpnController
+import se.signalare.observer.service.VpnController
 
 class BraveStartReceiver : BroadcastReceiver() {
 
@@ -29,6 +29,6 @@ class BraveStartReceiver : BroadcastReceiver() {
     }
 
     companion object {
-        private const val ACTION_START = "com.celzero.bravedns.intent.action.START_VPN"
+        private const val ACTION_START = "se.signalare.observer.intent.action.START_VPN"
     }
 }

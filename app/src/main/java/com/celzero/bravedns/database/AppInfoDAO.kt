@@ -13,7 +13,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-package com.celzero.bravedns.database
+package se.signalare.observer.database
 
 import android.database.Cursor
 import androidx.paging.PagingSource
@@ -23,7 +23,7 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
-import com.celzero.bravedns.data.DataUsage
+import se.signalare.observer.data.DataUsage
 
 @Dao
 interface AppInfoDAO {
@@ -174,10 +174,10 @@ interface AppInfoDAO {
     @Query("select uid from AppInfo where packageName = :packageName")
     fun getAppInfoUidForPackageName(packageName: String): Int
 
-    @Query("update AppInfo set isProxyExcluded = :bypass where packageName = 'com.celzero.bravedns'")
+    @Query("update AppInfo set isProxyExcluded = :bypass where packageName = 'se.signalare.observer'")
     fun setRethinkToBypassProxy(bypass: Boolean)
 
-    @Query("update AppInfo set firewallStatus = 7 and connectionStatus = 3 where packageName = 'com.celzero.bravedns'")
+    @Query("update AppInfo set firewallStatus = 7 and connectionStatus = 3 where packageName = 'se.signalare.observer'")
     fun setRethinkToBypassDnsAndFirewall()
 
     @Query("select * from AppInfo where tempAllowEnabled = 1 and tempAllowExpiryTime > 0")

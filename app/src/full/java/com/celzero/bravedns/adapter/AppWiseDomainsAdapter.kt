@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -28,16 +28,16 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.data.AppConnection
-import com.celzero.bravedns.databinding.ListItemAppDomainDetailsBinding
-import com.celzero.bravedns.service.DomainRulesManager
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.ui.bottomsheet.AppDomainRulesBottomSheet
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.removeBeginningTrailingCommas
-import com.celzero.bravedns.util.Utilities.showToastUiCentered
+import se.signalare.observer.R
+import se.signalare.observer.data.AppConnection
+import se.signalare.observer.databinding.ListItemAppDomainDetailsBinding
+import se.signalare.observer.service.DomainRulesManager
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.ui.bottomsheet.AppDomainRulesBottomSheet
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.removeBeginningTrailingCommas
+import se.signalare.observer.util.Utilities.showToastUiCentered
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlin.math.log2
 

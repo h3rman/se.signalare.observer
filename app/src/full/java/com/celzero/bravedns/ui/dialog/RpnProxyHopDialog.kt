@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.dialog
+package se.signalare.observer.ui.dialog
 
 import android.app.Activity
-import com.celzero.bravedns.adapter.HopItem
-import com.celzero.bravedns.database.CountryConfig
+import se.signalare.observer.adapter.HopItem
+import se.signalare.observer.database.CountryConfig
 
 /**
  * Dialog for RPN proxy country-based hopping

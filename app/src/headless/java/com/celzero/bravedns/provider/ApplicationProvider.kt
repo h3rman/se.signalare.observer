@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.provider
+package se.signalare.observer.provider
 
 import Logger.LOG_PROVIDER
 import android.content.ContentProvider
@@ -22,9 +22,9 @@ import android.content.ContentValues
 import android.content.UriMatcher
 import android.database.Cursor
 import android.net.Uri
-import com.celzero.bravedns.database.AppInfo
-import com.celzero.bravedns.database.AppInfoRepository
-import com.celzero.bravedns.service.FirewallManager
+import se.signalare.observer.database.AppInfo
+import se.signalare.observer.database.AppInfoRepository
+import se.signalare.observer.service.FirewallManager
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -35,7 +35,7 @@ class ApplicationProvider : ContentProvider() {
     private val appInfoRepository by inject<AppInfoRepository>()
 
     companion object {
-        private const val AUTHORITY = "com.celzero.bravedns.appprovider"
+        private const val AUTHORITY = "se.signalare.observer.appprovider"
         private const val URI_APP = "vnd.android.cursor.dir/$AUTHORITY.apps"
 
         // apps: Uri.parse("content://$AUTHORITY/apps")

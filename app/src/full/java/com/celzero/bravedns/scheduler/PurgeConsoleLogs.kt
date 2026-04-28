@@ -1,13 +1,13 @@
-package com.celzero.bravedns.scheduler
+package se.signalare.observer.scheduler
 
 import Logger
 import Logger.LOG_BATCH_LOGGER
 import android.content.Context
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
-import com.celzero.bravedns.database.ConsoleLogRepository
-import com.celzero.bravedns.net.go.GoVpnAdapter
-import com.celzero.bravedns.service.PersistentState
+import se.signalare.observer.database.ConsoleLogRepository
+import se.signalare.observer.net.go.GoVpnAdapter
+import se.signalare.observer.service.PersistentState
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import java.util.concurrent.TimeUnit

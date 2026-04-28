@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns
+package se.signalare.observer
 
 import android.app.Application
 import android.content.pm.ApplicationInfo
-import com.celzero.bravedns.scheduler.EnhancedBugReport
-import com.celzero.bravedns.scheduler.ScheduleManager
-import com.celzero.bravedns.scheduler.WorkScheduler
-import com.celzero.bravedns.service.AppUpdater
-import com.celzero.bravedns.service.InAppMessageProvider
-import com.celzero.bravedns.service.PlayInAppMessageProvider
-import com.celzero.bravedns.util.FirebaseErrorReporting
-import com.celzero.bravedns.util.GlobalExceptionHandler
-import com.celzero.bravedns.util.GoReportingHandler
+import se.signalare.observer.scheduler.EnhancedBugReport
+import se.signalare.observer.scheduler.ScheduleManager
+import se.signalare.observer.scheduler.WorkScheduler
+import se.signalare.observer.service.AppUpdater
+import se.signalare.observer.service.InAppMessageProvider
+import se.signalare.observer.service.PlayInAppMessageProvider
+import se.signalare.observer.util.FirebaseErrorReporting
+import se.signalare.observer.util.GlobalExceptionHandler
+import se.signalare.observer.util.GoReportingHandler
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob

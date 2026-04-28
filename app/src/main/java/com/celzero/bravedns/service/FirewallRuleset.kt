@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
-import com.celzero.bravedns.R
+import se.signalare.observer.R
 
 // TODO: Add label and description from strings.xml
 enum class FirewallRuleset(val id: String, val title: Int, val desc: Int, val act: Int) {

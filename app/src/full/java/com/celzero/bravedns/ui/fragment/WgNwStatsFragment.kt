@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.fragment
+package se.signalare.observer.ui.fragment
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -24,15 +24,15 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.adapter.WgNwStatsAdapter
-import com.celzero.bravedns.data.DataUsageSummary
-import com.celzero.bravedns.databinding.FragmentWgNwStatsBinding
-import com.celzero.bravedns.service.ProxyManager
-import com.celzero.bravedns.ui.activity.NetworkLogsActivity.Companion.RULES_SEARCH_ID_WIREGUARD
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.viewmodel.WgNwActivityViewModel
+import se.signalare.observer.R
+import se.signalare.observer.adapter.WgNwStatsAdapter
+import se.signalare.observer.data.DataUsageSummary
+import se.signalare.observer.databinding.FragmentWgNwStatsBinding
+import se.signalare.observer.service.ProxyManager
+import se.signalare.observer.ui.activity.NetworkLogsActivity.Companion.RULES_SEARCH_ID_WIREGUARD
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.viewmodel.WgNwActivityViewModel
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.button.MaterialButtonToggleGroup
 import com.google.android.material.dialog.MaterialAlertDialogBuilder

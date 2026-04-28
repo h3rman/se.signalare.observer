@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.activity
+package se.signalare.observer.ui.activity
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -21,20 +21,20 @@ import android.content.Context
 import android.content.res.Configuration
 import android.os.Bundle
 import android.widget.Toast
-import com.celzero.bravedns.ui.BaseActivity
+import se.signalare.observer.ui.BaseActivity
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.lifecycleScope
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.ActivityRpnWinProxyDetailBinding
-import com.celzero.bravedns.service.DomainRulesManager
-import com.celzero.bravedns.service.IpRulesManager
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.ProxyManager
-import com.celzero.bravedns.util.Themes.Companion.getCurrentTheme
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.handleFrostEffectIfNeeded
+import se.signalare.observer.R
+import se.signalare.observer.databinding.ActivityRpnWinProxyDetailBinding
+import se.signalare.observer.service.DomainRulesManager
+import se.signalare.observer.service.IpRulesManager
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.ProxyManager
+import se.signalare.observer.util.Themes.Companion.getCurrentTheme
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.handleFrostEffectIfNeeded
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

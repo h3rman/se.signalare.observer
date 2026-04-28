@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.iab
+package se.signalare.observer.iab
 
 import Logger
 import Logger.LOG_IAB
 import com.android.billingclient.api.BillingClient.ProductType
 import com.android.billingclient.api.ProductDetails
 import com.android.billingclient.api.Purchase
-import com.celzero.bravedns.database.SubscriptionStatus
-import com.celzero.bravedns.rpnproxy.SubscriptionStateMachineV2
+import se.signalare.observer.database.SubscriptionStatus
+import se.signalare.observer.rpnproxy.SubscriptionStateMachineV2
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.text.SimpleDateFormat

@@ -1,14 +1,14 @@
-package com.celzero.bravedns.rpnproxy
+package se.signalare.observer.rpnproxy
 
 import Logger
 import Logger.LOG_TAG_PROXY
-import com.celzero.bravedns.database.WgHopMap
-import com.celzero.bravedns.database.WgHopMapRepository
-import com.celzero.bravedns.service.ProxyManager.ID_WG_BASE
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.service.WireguardManager
-import com.celzero.bravedns.service.WireguardManager.INVALID_CONF_ID
-import com.celzero.bravedns.wireguard.Config
+import se.signalare.observer.database.WgHopMap
+import se.signalare.observer.database.WgHopMapRepository
+import se.signalare.observer.service.ProxyManager.ID_WG_BASE
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.service.WireguardManager
+import se.signalare.observer.service.WireguardManager.INVALID_CONF_ID
+import se.signalare.observer.wireguard.Config
 import com.celzero.firestack.backend.Backend
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

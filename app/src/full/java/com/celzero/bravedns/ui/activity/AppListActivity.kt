@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.activity
+package se.signalare.observer.ui.activity
 
 import android.content.Context
 import android.content.res.Configuration
@@ -30,7 +30,7 @@ import android.view.animation.RotateAnimation
 import android.widget.CompoundButton
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import com.celzero.bravedns.ui.BaseActivity
+import se.signalare.observer.ui.BaseActivity
 import androidx.appcompat.widget.SearchView
 import androidx.appcompat.widget.TooltipCompat
 import androidx.core.content.ContextCompat
@@ -40,22 +40,22 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.adapter.FirewallAppListAdapter
-import com.celzero.bravedns.database.EventSource
-import com.celzero.bravedns.database.EventType
-import com.celzero.bravedns.database.RefreshDatabase
-import com.celzero.bravedns.database.Severity
-import com.celzero.bravedns.databinding.ActivityAppListBinding
-import com.celzero.bravedns.service.EventLogger
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.ui.bottomsheet.FirewallAppFilterBottomSheet
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.handleFrostEffectIfNeeded
-import com.celzero.bravedns.viewmodel.AppInfoViewModel
+import se.signalare.observer.R
+import se.signalare.observer.adapter.FirewallAppListAdapter
+import se.signalare.observer.database.EventSource
+import se.signalare.observer.database.EventType
+import se.signalare.observer.database.RefreshDatabase
+import se.signalare.observer.database.Severity
+import se.signalare.observer.databinding.ActivityAppListBinding
+import se.signalare.observer.service.EventLogger
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.ui.bottomsheet.FirewallAppFilterBottomSheet
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.handleFrostEffectIfNeeded
+import se.signalare.observer.viewmodel.AppInfoViewModel
 import com.google.android.material.chip.Chip
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers

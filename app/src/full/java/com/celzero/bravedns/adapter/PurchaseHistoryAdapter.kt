@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -23,10 +23,10 @@ import androidx.core.content.ContextCompat
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.database.SubscriptionStateHistory
-import com.celzero.bravedns.database.SubscriptionStatus
-import com.celzero.bravedns.databinding.ListItemPurchaseHistoryBinding
+import se.signalare.observer.R
+import se.signalare.observer.database.SubscriptionStateHistory
+import se.signalare.observer.database.SubscriptionStatus
+import se.signalare.observer.databinding.ListItemPurchaseHistoryBinding
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale

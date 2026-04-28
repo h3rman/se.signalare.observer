@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.iab
+package se.signalare.observer.iab
 
 import Logger
 import Logger.LOG_IAB
@@ -37,29 +37,29 @@ import com.android.billingclient.api.Purchase
 import com.android.billingclient.api.PurchasesUpdatedListener
 import com.android.billingclient.api.QueryProductDetailsParams
 import com.android.billingclient.api.QueryPurchasesParams
-import com.celzero.bravedns.RethinkDnsApplication.Companion.DEBUG
-import com.celzero.bravedns.database.EventSource
-import com.celzero.bravedns.database.EventType
-import com.celzero.bravedns.database.Severity
-import com.celzero.bravedns.database.SubscriptionStatus
-import com.celzero.bravedns.iab.InAppBillingHandler.ONE_TIME_PRODUCT_2YRS
-import com.celzero.bravedns.iab.InAppBillingHandler.ONE_TIME_PRODUCT_5YRS
-import com.celzero.bravedns.iab.InAppBillingHandler.cancelPlaySubscription
-import com.celzero.bravedns.iab.InAppBillingHandler.getObfuscatedDeviceId
-import com.celzero.bravedns.iab.InAppBillingHandler.handlePurchase
-import com.celzero.bravedns.iab.InAppBillingHandler.launchFlow
-import com.celzero.bravedns.iab.InAppBillingHandler.purchasesLiveData
-import com.celzero.bravedns.iab.InAppBillingHandler.queryProductDetails
-import com.celzero.bravedns.iab.InAppBillingHandler.queryUtils
-import com.celzero.bravedns.iab.InAppBillingHandler.registerDevice
-import com.celzero.bravedns.iab.InAppBillingHandler.revokeSubscription
-import com.celzero.bravedns.iab.InAppBillingHandler.startStateObserver
-import com.celzero.bravedns.iab.InAppBillingHandler.updateUIForState
-import com.celzero.bravedns.rpnproxy.RpnProxyManager
-import com.celzero.bravedns.service.EventLogger
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.rpnproxy.SubscriptionStateMachineV2
+import se.signalare.observer.RethinkDnsApplication.Companion.DEBUG
+import se.signalare.observer.database.EventSource
+import se.signalare.observer.database.EventType
+import se.signalare.observer.database.Severity
+import se.signalare.observer.database.SubscriptionStatus
+import se.signalare.observer.iab.InAppBillingHandler.ONE_TIME_PRODUCT_2YRS
+import se.signalare.observer.iab.InAppBillingHandler.ONE_TIME_PRODUCT_5YRS
+import se.signalare.observer.iab.InAppBillingHandler.cancelPlaySubscription
+import se.signalare.observer.iab.InAppBillingHandler.getObfuscatedDeviceId
+import se.signalare.observer.iab.InAppBillingHandler.handlePurchase
+import se.signalare.observer.iab.InAppBillingHandler.launchFlow
+import se.signalare.observer.iab.InAppBillingHandler.purchasesLiveData
+import se.signalare.observer.iab.InAppBillingHandler.queryProductDetails
+import se.signalare.observer.iab.InAppBillingHandler.queryUtils
+import se.signalare.observer.iab.InAppBillingHandler.registerDevice
+import se.signalare.observer.iab.InAppBillingHandler.revokeSubscription
+import se.signalare.observer.iab.InAppBillingHandler.startStateObserver
+import se.signalare.observer.iab.InAppBillingHandler.updateUIForState
+import se.signalare.observer.rpnproxy.RpnProxyManager
+import se.signalare.observer.service.EventLogger
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.rpnproxy.SubscriptionStateMachineV2
 import com.google.gson.JsonObject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.ListItemServerWgPeersBinding
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.wireguard.Peer
+import se.signalare.observer.R
+import se.signalare.observer.databinding.ListItemServerWgPeersBinding
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.wireguard.Peer
 
 /**
  * Adapter for displaying server WireGuard peers with expandable details

@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
 import Logger
 import Logger.LOG_TAG_PROXY
-import com.celzero.bravedns.database.AppInfo
-import com.celzero.bravedns.database.ProxyAppMappingRepository
-import com.celzero.bravedns.database.ProxyApplicationMapping
+import se.signalare.observer.database.AppInfo
+import se.signalare.observer.database.ProxyAppMappingRepository
+import se.signalare.observer.database.ProxyApplicationMapping
 import com.celzero.firestack.backend.Backend
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject

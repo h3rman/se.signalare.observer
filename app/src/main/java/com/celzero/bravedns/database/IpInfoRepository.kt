@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.celzero.bravedns.database
+package se.signalare.observer.database
 
 class IpInfoRepository(private val dao: IpInfoDAO) {
 

@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.rpnproxy
+package se.signalare.observer.rpnproxy
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.android.billingclient.api.BillingClient
 import com.android.billingclient.api.Purchase
-import com.celzero.bravedns.database.SubscriptionStatus
-import com.celzero.bravedns.database.SubscriptionStatusRepository
-import com.celzero.bravedns.iab.PurchaseDetail
-import com.celzero.bravedns.service.PersistentState
+import se.signalare.observer.database.SubscriptionStatus
+import se.signalare.observer.database.SubscriptionStatusRepository
+import se.signalare.observer.iab.PurchaseDetail
+import se.signalare.observer.service.PersistentState
 import io.mockk.*
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.delay
@@ -37,16 +37,16 @@ import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
 
 /**
- * Unit tests for [com.celzero.bravedns.rpnproxy.SubscriptionStateMachineV2].
+ * Unit tests for [se.signalare.observer.rpnproxy.SubscriptionStateMachineV2].
  *
  * ### Test strategy
- * - All Koin dependencies ([SubscriptionStatusRepository], [com.celzero.bravedns.rpnproxy.StateMachineDatabaseSyncService],
+ * - All Koin dependencies ([SubscriptionStatusRepository], [se.signalare.observer.rpnproxy.StateMachineDatabaseSyncService],
  *   [PersistentState]) are replaced with MockK relaxed mocks.
  * - [RpnProxyManager] is a Kotlin `object`; mocked via [mockkObject].
  * - [createMachine] constructs a fresh machine and waits [MACHINE_INIT_WAIT_MS] for the
  *   `initializeStateMachine()` coroutine (launched on Dispatchers.IO) to complete.
  * - By default `loadStateFromDatabase()` returns `null` so init is a no-op and the machine
- *   settles in [com.celzero.bravedns.rpnproxy.SubscriptionStateMachineV2.SubscriptionState.Initial].
+ *   settles in [se.signalare.observer.rpnproxy.SubscriptionStateMachineV2.SubscriptionState.Initial].
  * - Tests that need a specific starting state call [transitionToActive] /
  *   [transitionToActiveWithData] helpers.
  */

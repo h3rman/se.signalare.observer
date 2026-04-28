@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui
+package se.signalare.observer.ui
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -24,33 +24,33 @@ import android.content.res.Configuration
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.os.Bundle
 import android.provider.Settings
-import com.celzero.bravedns.ui.BaseActivity
+import se.signalare.observer.ui.BaseActivity
 import androidx.core.net.toUri
 import androidx.core.view.WindowInsetsControllerCompat
-import com.celzero.bravedns.R
-import com.celzero.bravedns.iab.InAppBillingHandler
-import com.celzero.bravedns.iab.DeviceNotRegisteredNotifier
-import com.celzero.bravedns.iab.PurchaseConflictNotifier
-import com.celzero.bravedns.iab.ServerApiError
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.ui.activity.AppInfoActivity
-import com.celzero.bravedns.ui.activity.AppInfoActivity.Companion.INTENT_UID
-import com.celzero.bravedns.ui.activity.AppListActivity
-import com.celzero.bravedns.ui.activity.AppLockActivity
-import com.celzero.bravedns.ui.activity.FragmentHostActivity
-import com.celzero.bravedns.ui.activity.MiscSettingsActivity.BioMetricType
-import com.celzero.bravedns.ui.activity.PauseActivity
-import com.celzero.bravedns.ui.activity.WgMainActivity
-import com.celzero.bravedns.ui.fragment.ManagePurchaseFragment
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.Constants.Companion.NOTIF_INTENT_EXTRA_IAB_CONFLICT_NAME
-import com.celzero.bravedns.util.Constants.Companion.NOTIF_INTENT_EXTRA_IAB_CONFLICT_VALUE
-import com.celzero.bravedns.util.Constants.Companion.NOTIF_INTENT_EXTRA_IAB_DEVICE_NOT_REGISTERED_NAME
-import com.celzero.bravedns.util.Constants.Companion.NOTIF_INTENT_EXTRA_IAB_DEVICE_NOT_REGISTERED_VALUE
-import com.celzero.bravedns.util.Themes.Companion.getCurrentTheme
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.handleFrostEffectIfNeeded
+import se.signalare.observer.R
+import se.signalare.observer.iab.InAppBillingHandler
+import se.signalare.observer.iab.DeviceNotRegisteredNotifier
+import se.signalare.observer.iab.PurchaseConflictNotifier
+import se.signalare.observer.iab.ServerApiError
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.ui.activity.AppInfoActivity
+import se.signalare.observer.ui.activity.AppInfoActivity.Companion.INTENT_UID
+import se.signalare.observer.ui.activity.AppListActivity
+import se.signalare.observer.ui.activity.AppLockActivity
+import se.signalare.observer.ui.activity.FragmentHostActivity
+import se.signalare.observer.ui.activity.MiscSettingsActivity.BioMetricType
+import se.signalare.observer.ui.activity.PauseActivity
+import se.signalare.observer.ui.activity.WgMainActivity
+import se.signalare.observer.ui.fragment.ManagePurchaseFragment
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.Constants.Companion.NOTIF_INTENT_EXTRA_IAB_CONFLICT_NAME
+import se.signalare.observer.util.Constants.Companion.NOTIF_INTENT_EXTRA_IAB_CONFLICT_VALUE
+import se.signalare.observer.util.Constants.Companion.NOTIF_INTENT_EXTRA_IAB_DEVICE_NOT_REGISTERED_NAME
+import se.signalare.observer.util.Constants.Companion.NOTIF_INTENT_EXTRA_IAB_DEVICE_NOT_REGISTERED_VALUE
+import se.signalare.observer.util.Themes.Companion.getCurrentTheme
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.handleFrostEffectIfNeeded
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import org.koin.android.ext.android.inject
 

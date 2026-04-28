@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.viewmodel
+package se.signalare.observer.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -24,9 +24,9 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.cachedIn
 import androidx.paging.liveData
-import com.celzero.bravedns.database.CustomDomainDAO
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.Constants.Companion.LIVEDATA_PAGE_SIZE
+import se.signalare.observer.database.CustomDomainDAO
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.Constants.Companion.LIVEDATA_PAGE_SIZE
 
 class CustomDomainViewModel(private val customDomainDAO: CustomDomainDAO) : ViewModel() {
 

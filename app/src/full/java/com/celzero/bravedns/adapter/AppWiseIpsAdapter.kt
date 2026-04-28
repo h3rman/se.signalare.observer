@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -27,14 +27,14 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.data.AppConnection
-import com.celzero.bravedns.databinding.ListItemAppIpDetailsBinding
-import com.celzero.bravedns.service.IpRulesManager
-import com.celzero.bravedns.ui.bottomsheet.AppIpRulesBottomSheet
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.removeBeginningTrailingCommas
+import se.signalare.observer.R
+import se.signalare.observer.data.AppConnection
+import se.signalare.observer.databinding.ListItemAppIpDetailsBinding
+import se.signalare.observer.service.IpRulesManager
+import se.signalare.observer.ui.bottomsheet.AppIpRulesBottomSheet
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.removeBeginningTrailingCommas
 import kotlin.math.log2
 
 class AppWiseIpsAdapter(val context: Context, val lifecycleOwner: LifecycleOwner, val uid: Int, val isAsn: Boolean = false) :

@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.customdownloader
+package se.signalare.observer.customdownloader
 
 import Logger
-import com.celzero.bravedns.util.Constants
+import se.signalare.observer.util.Constants
 import okhttp3.Dns
 import okhttp3.HttpUrl.Companion.toHttpUrl
 import okhttp3.OkHttpClient

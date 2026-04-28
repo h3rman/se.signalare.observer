@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.viewmodel
+package se.signalare.observer.viewmodel
 
 import Logger
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.celzero.bravedns.data.AllowedAppInfo
-import com.celzero.bravedns.database.AppInfoRepository
+import se.signalare.observer.data.AllowedAppInfo
+import se.signalare.observer.database.AppInfoRepository
 
 
 /**

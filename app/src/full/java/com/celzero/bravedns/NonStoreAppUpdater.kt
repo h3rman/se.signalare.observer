@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns
+package se.signalare.observer
 
 import Logger
 import Logger.LOG_TAG_APP_UPDATE
 import android.app.Activity
-import com.celzero.bravedns.customdownloader.RetrofitManager
-import com.celzero.bravedns.service.AppUpdater
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.util.Constants.Companion.INIT_TIME_MS
-import com.celzero.bravedns.util.Constants.Companion.JSON_LATEST
-import com.celzero.bravedns.util.Constants.Companion.JSON_UPDATE
-import com.celzero.bravedns.util.Constants.Companion.JSON_VERSION
-import com.celzero.bravedns.util.Constants.Companion.UPDATE_CHECK_RESPONSE_VERSION
+import se.signalare.observer.customdownloader.RetrofitManager
+import se.signalare.observer.service.AppUpdater
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.util.Constants.Companion.INIT_TIME_MS
+import se.signalare.observer.util.Constants.Companion.JSON_LATEST
+import se.signalare.observer.util.Constants.Companion.JSON_UPDATE
+import se.signalare.observer.util.Constants.Companion.JSON_VERSION
+import se.signalare.observer.util.Constants.Companion.UPDATE_CHECK_RESPONSE_VERSION
 import okhttp3.Call
 import okhttp3.Callback
 import okhttp3.Request

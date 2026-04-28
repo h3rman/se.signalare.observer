@@ -1,4 +1,4 @@
-package com.celzero.bravedns.database
+package se.signalare.observer.database
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

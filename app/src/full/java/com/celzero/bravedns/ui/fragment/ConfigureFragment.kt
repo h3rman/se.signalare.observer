@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.fragment
+package se.signalare.observer.ui.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -21,19 +21,19 @@ import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.RethinkDnsApplication.Companion.DEBUG
-import com.celzero.bravedns.databinding.FragmentConfigureBinding
-import com.celzero.bravedns.ui.activity.AdvancedSettingActivity
-import com.celzero.bravedns.ui.activity.AntiCensorshipActivity
-import com.celzero.bravedns.ui.activity.AppListActivity
-import com.celzero.bravedns.ui.activity.DnsDetailActivity
-import com.celzero.bravedns.ui.activity.FirewallActivity
-import com.celzero.bravedns.ui.activity.MiscSettingsActivity
-import com.celzero.bravedns.ui.activity.NetworkLogsActivity
-import com.celzero.bravedns.ui.activity.ProxySettingsActivity
-import com.celzero.bravedns.ui.activity.TunnelSettingsActivity
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.R
+import se.signalare.observer.RethinkDnsApplication.Companion.DEBUG
+import se.signalare.observer.databinding.FragmentConfigureBinding
+import se.signalare.observer.ui.activity.AdvancedSettingActivity
+import se.signalare.observer.ui.activity.AntiCensorshipActivity
+import se.signalare.observer.ui.activity.AppListActivity
+import se.signalare.observer.ui.activity.DnsDetailActivity
+import se.signalare.observer.ui.activity.FirewallActivity
+import se.signalare.observer.ui.activity.MiscSettingsActivity
+import se.signalare.observer.ui.activity.NetworkLogsActivity
+import se.signalare.observer.ui.activity.ProxySettingsActivity
+import se.signalare.observer.ui.activity.TunnelSettingsActivity
+import se.signalare.observer.util.Utilities
 
 class ConfigureFragment : Fragment(R.layout.fragment_configure) {
 

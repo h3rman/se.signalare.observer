@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.fragment
+package se.signalare.observer.ui.fragment
 
 import Logger
 import android.os.Bundle
@@ -26,18 +26,18 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.adapter.DnsProxyEndpointAdapter
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.database.DnsProxyEndpoint
-import com.celzero.bravedns.databinding.DialogSetDnsProxyBinding
-import com.celzero.bravedns.databinding.FragmentDnsProxyListBinding
-import com.celzero.bravedns.service.FirewallManager
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.viewmodel.DnsProxyEndpointViewModel
+import se.signalare.observer.R
+import se.signalare.observer.adapter.DnsProxyEndpointAdapter
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.database.DnsProxyEndpoint
+import se.signalare.observer.databinding.DialogSetDnsProxyBinding
+import se.signalare.observer.databinding.FragmentDnsProxyListBinding
+import se.signalare.observer.service.FirewallManager
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.viewmodel.DnsProxyEndpointViewModel
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import inet.ipaddr.IPAddressString
 import kotlinx.coroutines.Dispatchers

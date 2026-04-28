@@ -14,9 +14,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.net.doh
+package se.signalare.observer.net.doh
 
-import com.celzero.bravedns.util.Constants.Companion.INVALID_UID
+import se.signalare.observer.util.Constants.Companion.INVALID_UID
 import com.celzero.firestack.backend.Backend
 import java.util.Calendar
 

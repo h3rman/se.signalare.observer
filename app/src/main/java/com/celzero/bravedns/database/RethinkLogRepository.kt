@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.database
+package se.signalare.observer.database
 
 import androidx.lifecycle.LiveData
-import com.celzero.bravedns.data.ConnectionSummary
-import com.celzero.bravedns.data.DataUsage
+import se.signalare.observer.data.ConnectionSummary
+import se.signalare.observer.data.DataUsage
 
 class RethinkLogRepository(private val logDao: RethinkLogDao) {
 

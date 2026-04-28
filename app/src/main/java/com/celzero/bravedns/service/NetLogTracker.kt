@@ -14,24 +14,24 @@
  * limitations under the License.
  */
 
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
 import Logger
 import Logger.LOG_BATCH_LOGGER
 import android.content.Context
 import android.util.Log
-import com.celzero.bravedns.data.ConnTrackerMetaData
-import com.celzero.bravedns.data.ConnectionSummary
-import com.celzero.bravedns.database.ConnectionTracker
-import com.celzero.bravedns.database.ConnectionTrackerRepository
-import com.celzero.bravedns.database.ConsoleLog
-import com.celzero.bravedns.database.ConsoleLogRepository
-import com.celzero.bravedns.database.DnsLog
-import com.celzero.bravedns.database.DnsLogRepository
-import com.celzero.bravedns.database.RethinkLog
-import com.celzero.bravedns.database.RethinkLogRepository
-import com.celzero.bravedns.util.Daemons
-import com.celzero.bravedns.util.NetLogBatcher
+import se.signalare.observer.data.ConnTrackerMetaData
+import se.signalare.observer.data.ConnectionSummary
+import se.signalare.observer.database.ConnectionTracker
+import se.signalare.observer.database.ConnectionTrackerRepository
+import se.signalare.observer.database.ConsoleLog
+import se.signalare.observer.database.ConsoleLogRepository
+import se.signalare.observer.database.DnsLog
+import se.signalare.observer.database.DnsLogRepository
+import se.signalare.observer.database.RethinkLog
+import se.signalare.observer.database.RethinkLogRepository
+import se.signalare.observer.util.Daemons
+import se.signalare.observer.util.NetLogBatcher
 import com.celzero.firestack.backend.DNSSummary
 import kotlinx.coroutines.CoroutineName
 import kotlinx.coroutines.CoroutineScope

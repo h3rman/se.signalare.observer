@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.activity
+package se.signalare.observer.ui.activity
 
 import android.content.Context
 import android.content.Intent
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageInfo
 import android.content.pm.PackageManager
-import com.celzero.bravedns.util.Constants.Companion.INVALID_UID
+import se.signalare.observer.util.Constants.Companion.INVALID_UID
 import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.fragment
+package se.signalare.observer.ui.fragment
 
 import Logger
 import android.content.res.Configuration
@@ -26,19 +26,19 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.adapter.DnsCryptEndpointAdapter
-import com.celzero.bravedns.adapter.DnsCryptRelayEndpointAdapter
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.database.DnsCryptEndpoint
-import com.celzero.bravedns.database.DnsCryptRelayEndpoint
-import com.celzero.bravedns.databinding.DialogSetDnsCryptBinding
-import com.celzero.bravedns.databinding.FragmentDnsCryptListBinding
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.ui.dialog.DnsCryptRelaysDialog
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.viewmodel.DnsCryptEndpointViewModel
-import com.celzero.bravedns.viewmodel.DnsCryptRelayEndpointViewModel
+import se.signalare.observer.R
+import se.signalare.observer.adapter.DnsCryptEndpointAdapter
+import se.signalare.observer.adapter.DnsCryptRelayEndpointAdapter
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.database.DnsCryptEndpoint
+import se.signalare.observer.database.DnsCryptRelayEndpoint
+import se.signalare.observer.databinding.DialogSetDnsCryptBinding
+import se.signalare.observer.databinding.FragmentDnsCryptListBinding
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.ui.dialog.DnsCryptRelaysDialog
+import se.signalare.observer.util.Themes
+import se.signalare.observer.viewmodel.DnsCryptEndpointViewModel
+import se.signalare.observer.viewmodel.DnsCryptRelayEndpointViewModel
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

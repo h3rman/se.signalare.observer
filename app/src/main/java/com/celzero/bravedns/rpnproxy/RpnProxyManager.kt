@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.rpnproxy
+package se.signalare.observer.rpnproxy
 
 import Logger
 import Logger.LOG_IAB
@@ -21,30 +21,30 @@ import Logger.LOG_TAG_PROXY
 import android.content.Context
 import android.text.format.DateUtils
 import com.android.billingclient.api.BillingClient
-import com.celzero.bravedns.RethinkDnsApplication.Companion.DEBUG
-import com.celzero.bravedns.data.SsidItem
-import com.celzero.bravedns.database.CountryConfig
-import com.celzero.bravedns.database.CountryConfigRepository
-import com.celzero.bravedns.database.RpnProxy
-import com.celzero.bravedns.database.RpnProxyRepository
-import com.celzero.bravedns.database.SubscriptionStatus
-import com.celzero.bravedns.database.SubscriptionStatusRepository
-import com.celzero.bravedns.iab.BillingBackendClient
-import com.celzero.bravedns.iab.InAppBillingHandler
-import com.celzero.bravedns.iab.InAppBillingHandler.ONE_TIME_PRODUCT_ID
-import com.celzero.bravedns.iab.PurchaseDetail
-import com.celzero.bravedns.iab.SubscriptionCheckWorker
-import com.celzero.bravedns.service.EncryptedFileManager
-import com.celzero.bravedns.service.EncryptionException
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.ProxyManager
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.ui.fragment.ServerSelectionFragment.Companion.AUTO_COUNTRY_CODE
-import com.celzero.bravedns.ui.fragment.ServerSelectionFragment.Companion.AUTO_SERVER_ID
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.Constants.Companion.RPN_PROXY_FOLDER_NAME
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.RethinkDnsApplication.Companion.DEBUG
+import se.signalare.observer.data.SsidItem
+import se.signalare.observer.database.CountryConfig
+import se.signalare.observer.database.CountryConfigRepository
+import se.signalare.observer.database.RpnProxy
+import se.signalare.observer.database.RpnProxyRepository
+import se.signalare.observer.database.SubscriptionStatus
+import se.signalare.observer.database.SubscriptionStatusRepository
+import se.signalare.observer.iab.BillingBackendClient
+import se.signalare.observer.iab.InAppBillingHandler
+import se.signalare.observer.iab.InAppBillingHandler.ONE_TIME_PRODUCT_ID
+import se.signalare.observer.iab.PurchaseDetail
+import se.signalare.observer.iab.SubscriptionCheckWorker
+import se.signalare.observer.service.EncryptedFileManager
+import se.signalare.observer.service.EncryptionException
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.ProxyManager
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.ui.fragment.ServerSelectionFragment.Companion.AUTO_COUNTRY_CODE
+import se.signalare.observer.ui.fragment.ServerSelectionFragment.Companion.AUTO_SERVER_ID
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.Constants.Companion.RPN_PROXY_FOLDER_NAME
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.Utilities
 import com.celzero.firestack.backend.Backend
 import com.celzero.firestack.backend.IPMetadata
 import com.celzero.firestack.backend.RpnServers

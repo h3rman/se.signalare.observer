@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.viewmodel
+package se.signalare.observer.viewmodel
 
 import Logger
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.celzero.bravedns.data.BlockedAppInfo
-import com.celzero.bravedns.database.AppInfoRepository
-import com.celzero.bravedns.database.ConnectionTrackerDAO
-import com.celzero.bravedns.database.DnsLogDAO
-import com.celzero.bravedns.service.FirewallManager
+import se.signalare.observer.data.BlockedAppInfo
+import se.signalare.observer.database.AppInfoRepository
+import se.signalare.observer.database.ConnectionTrackerDAO
+import se.signalare.observer.database.DnsLogDAO
+import se.signalare.observer.service.FirewallManager
 
 /**
  * PagingSource for the Bubble blocked-apps list.

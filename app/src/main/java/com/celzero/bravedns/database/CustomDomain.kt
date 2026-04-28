@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.database
+package se.signalare.observer.database
 
 import android.content.ContentValues
 import android.os.SystemClock
 import androidx.room.Entity
-import com.celzero.bravedns.service.DomainRulesManager
-import com.celzero.bravedns.util.Constants
+import se.signalare.observer.service.DomainRulesManager
+import se.signalare.observer.util.Constants
 import java.io.Serializable
 
 @Entity(primaryKeys = ["domain", "uid"], tableName = "CustomDomain")

@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.backup
+package se.signalare.observer.backup
 
 import Logger
 import android.content.Context
-import com.celzero.bravedns.R
-import com.celzero.bravedns.database.AppDatabase
-import com.celzero.bravedns.service.VpnController
+import se.signalare.observer.R
+import se.signalare.observer.database.AppDatabase
+import se.signalare.observer.service.VpnController
 import java.io.BufferedInputStream
 import java.io.ByteArrayOutputStream
 import java.io.File

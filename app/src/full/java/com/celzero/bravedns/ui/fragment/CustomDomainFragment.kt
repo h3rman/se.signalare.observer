@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.fragment
+package se.signalare.observer.ui.fragment
 
 import android.content.Context.INPUT_METHOD_SERVICE
 import android.os.Bundle
@@ -29,24 +29,24 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.adapter.CustomDomainAdapter
-import com.celzero.bravedns.database.EventSource
-import com.celzero.bravedns.database.EventType
-import com.celzero.bravedns.database.Severity
-import com.celzero.bravedns.databinding.DialogAddCustomDomainBinding
-import com.celzero.bravedns.databinding.FragmentCustomDomainBinding
-import com.celzero.bravedns.service.DomainRulesManager
-import com.celzero.bravedns.service.DomainRulesManager.isValidDomain
-import com.celzero.bravedns.service.DomainRulesManager.isWildCardEntry
-import com.celzero.bravedns.service.EventLogger
-import com.celzero.bravedns.service.FirewallManager
-import com.celzero.bravedns.ui.activity.CustomRulesActivity
-import com.celzero.bravedns.util.Constants.Companion.INTENT_UID
-import com.celzero.bravedns.util.Constants.Companion.UID_EVERYBODY
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.removeLeadingAndTrailingDots
-import com.celzero.bravedns.viewmodel.CustomDomainViewModel
+import se.signalare.observer.R
+import se.signalare.observer.adapter.CustomDomainAdapter
+import se.signalare.observer.database.EventSource
+import se.signalare.observer.database.EventType
+import se.signalare.observer.database.Severity
+import se.signalare.observer.databinding.DialogAddCustomDomainBinding
+import se.signalare.observer.databinding.FragmentCustomDomainBinding
+import se.signalare.observer.service.DomainRulesManager
+import se.signalare.observer.service.DomainRulesManager.isValidDomain
+import se.signalare.observer.service.DomainRulesManager.isWildCardEntry
+import se.signalare.observer.service.EventLogger
+import se.signalare.observer.service.FirewallManager
+import se.signalare.observer.ui.activity.CustomRulesActivity
+import se.signalare.observer.util.Constants.Companion.INTENT_UID
+import se.signalare.observer.util.Constants.Companion.UID_EVERYBODY
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.removeLeadingAndTrailingDots
+import se.signalare.observer.viewmodel.CustomDomainViewModel
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

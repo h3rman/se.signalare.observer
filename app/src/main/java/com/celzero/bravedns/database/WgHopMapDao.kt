@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.database
+package se.signalare.observer.database
 
 import androidx.room.Dao
 import androidx.room.Delete
@@ -21,8 +21,8 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
-import com.celzero.bravedns.rpnproxy.RpnHopManager.ID_RPN
-import com.celzero.bravedns.service.ProxyManager.ID_WG_BASE
+import se.signalare.observer.rpnproxy.RpnHopManager.ID_RPN
+import se.signalare.observer.service.ProxyManager.ID_WG_BASE
 
 @Dao
 interface WgHopMapDao {

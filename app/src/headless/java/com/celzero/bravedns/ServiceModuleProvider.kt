@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns
+package se.signalare.observer
 
 import android.content.ContentResolver
-import com.celzero.bravedns.data.DataModule
-import com.celzero.bravedns.database.DatabaseModule
-import com.celzero.bravedns.scheduler.ScheduleManager
-import com.celzero.bravedns.service.ServiceModule
-import com.celzero.bravedns.util.OrbotHelper
+import se.signalare.observer.data.DataModule
+import se.signalare.observer.database.DatabaseModule
+import se.signalare.observer.scheduler.ScheduleManager
+import se.signalare.observer.service.ServiceModule
+import se.signalare.observer.util.OrbotHelper
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.module.Module
 import org.koin.dsl.module

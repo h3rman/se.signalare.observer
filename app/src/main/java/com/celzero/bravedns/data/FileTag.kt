@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.data
+package se.signalare.observer.data
 
 import com.google.gson.Gson
 import com.google.gson.JsonDeserializationContext

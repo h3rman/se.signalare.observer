@@ -13,7 +13,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-package com.celzero.bravedns.ui.fragment
+package se.signalare.observer.ui.fragment
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -27,14 +27,14 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.adapter.RethinkLogAdapter
-import com.celzero.bravedns.database.RethinkLogRepository
-import com.celzero.bravedns.databinding.FragmentConnectionTrackerBinding
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.UIUtils.formatToRelativeTime
-import com.celzero.bravedns.viewmodel.RethinkLogViewModel
+import se.signalare.observer.R
+import se.signalare.observer.adapter.RethinkLogAdapter
+import se.signalare.observer.database.RethinkLogRepository
+import se.signalare.observer.databinding.FragmentConnectionTrackerBinding
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.UIUtils.formatToRelativeTime
+import se.signalare.observer.viewmodel.RethinkLogViewModel
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.FlowPreview

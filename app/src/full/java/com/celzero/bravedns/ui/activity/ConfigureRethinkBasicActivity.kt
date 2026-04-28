@@ -13,25 +13,25 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.activity
+package se.signalare.observer.ui.activity
 
 import Logger
 import Logger.LOG_TAG_UI
 import android.content.Context
 import android.content.res.Configuration
 import android.os.Bundle
-import com.celzero.bravedns.ui.BaseActivity
+import se.signalare.observer.ui.BaseActivity
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.fragment.app.Fragment
-import com.celzero.bravedns.R
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.RethinkBlocklistManager
-import com.celzero.bravedns.ui.fragment.RethinkBlocklistFragment
-import com.celzero.bravedns.ui.fragment.RethinkListFragment
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.handleFrostEffectIfNeeded
+import se.signalare.observer.R
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.RethinkBlocklistManager
+import se.signalare.observer.ui.fragment.RethinkBlocklistFragment
+import se.signalare.observer.ui.fragment.RethinkListFragment
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.handleFrostEffectIfNeeded
 import org.koin.android.ext.android.inject
 
 class ConfigureRethinkBasicActivity : BaseActivity(R.layout.fragment_rethink_basic) {

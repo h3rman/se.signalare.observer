@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.activity
+package se.signalare.observer.ui.activity
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -25,25 +25,25 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
-import com.celzero.bravedns.ui.BaseActivity
+import se.signalare.observer.ui.BaseActivity
 import androidx.core.content.FileProvider
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.database.SubscriptionStateHistoryDao
-import com.celzero.bravedns.database.SubscriptionStatus
-import com.celzero.bravedns.database.SubscriptionStatusDao
-import com.celzero.bravedns.databinding.ActivityCustomerSupportBinding
-import com.celzero.bravedns.iab.InAppBillingHandler
-import com.celzero.bravedns.rpnproxy.RpnProxyManager
-import com.celzero.bravedns.rpnproxy.SubscriptionStateMachineV2
-import com.celzero.bravedns.scheduler.BugReportZipper
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.handleFrostEffectIfNeeded
+import se.signalare.observer.R
+import se.signalare.observer.database.SubscriptionStateHistoryDao
+import se.signalare.observer.database.SubscriptionStatus
+import se.signalare.observer.database.SubscriptionStatusDao
+import se.signalare.observer.databinding.ActivityCustomerSupportBinding
+import se.signalare.observer.iab.InAppBillingHandler
+import se.signalare.observer.rpnproxy.RpnProxyManager
+import se.signalare.observer.rpnproxy.SubscriptionStateMachineV2
+import se.signalare.observer.scheduler.BugReportZipper
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.handleFrostEffectIfNeeded
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -246,7 +246,7 @@ class CustomerSupportActivity : BaseActivity(R.layout.activity_customer_support)
         description: String,
         category: String?,
         statuses: List<SubscriptionStatus>,
-        history: List<com.celzero.bravedns.database.SubscriptionStateHistory>,
+        history: List<se.signalare.observer.database.SubscriptionStateHistory>,
         rpnStats: String
     ): String {
         // Use plain ASCII separators only: Unicode box-drawing characters (===, ---, arrows)
@@ -412,7 +412,7 @@ class CustomerSupportActivity : BaseActivity(R.layout.activity_customer_support)
             getFileUri(diagFile)?.let { uris.add(it) }
 
             // Existing bug-report zip if available (gives us crash logs etc.)
-            val bugZip = com.celzero.bravedns.scheduler.EnhancedBugReport.getTombstoneZipFile(this)
+            val bugZip = se.signalare.observer.scheduler.EnhancedBugReport.getTombstoneZipFile(this)
             getFileUri(bugZip)?.let { uris.add(it) }
 
             if (uris.isNotEmpty()) {

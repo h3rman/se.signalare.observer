@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import Logger
 import Logger.LOG_TAG_DNS
@@ -36,25 +36,25 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.bumptech.glide.request.target.CustomViewTarget
 import com.bumptech.glide.request.transition.DrawableCrossFadeFactory
 import com.bumptech.glide.request.transition.Transition
-import com.celzero.bravedns.R
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.data.AppConnection
-import com.celzero.bravedns.database.AppInfo
-import com.celzero.bravedns.databinding.ListItemStatisticsSummaryBinding
-import com.celzero.bravedns.glide.FavIconDownloader
-import com.celzero.bravedns.service.FirewallManager
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.ui.activity.AppInfoActivity
-import com.celzero.bravedns.ui.activity.DomainConnectionsActivity
-import com.celzero.bravedns.ui.activity.NetworkLogsActivity
-import com.celzero.bravedns.ui.fragment.SummaryStatisticsFragment.SummaryStatisticsType
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.UIUtils.fetchToggleBtnColors
-import com.celzero.bravedns.util.UIUtils.getCountryNameFromFlag
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.getFlag
-import com.celzero.bravedns.util.Utilities.isAtleastN
-import com.celzero.bravedns.viewmodel.SummaryStatisticsViewModel
+import se.signalare.observer.R
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.data.AppConnection
+import se.signalare.observer.database.AppInfo
+import se.signalare.observer.databinding.ListItemStatisticsSummaryBinding
+import se.signalare.observer.glide.FavIconDownloader
+import se.signalare.observer.service.FirewallManager
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.ui.activity.AppInfoActivity
+import se.signalare.observer.ui.activity.DomainConnectionsActivity
+import se.signalare.observer.ui.activity.NetworkLogsActivity
+import se.signalare.observer.ui.fragment.SummaryStatisticsFragment.SummaryStatisticsType
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.UIUtils.fetchToggleBtnColors
+import se.signalare.observer.util.UIUtils.getCountryNameFromFlag
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.getFlag
+import se.signalare.observer.util.Utilities.isAtleastN
+import se.signalare.observer.viewmodel.SummaryStatisticsViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

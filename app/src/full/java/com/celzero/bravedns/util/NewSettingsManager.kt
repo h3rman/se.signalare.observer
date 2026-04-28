@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
 import Logger
 import Logger.LOG_TAG_UI
-import com.celzero.bravedns.service.PersistentState
+import se.signalare.observer.service.PersistentState
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 

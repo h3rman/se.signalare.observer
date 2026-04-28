@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.customdownloader
+package se.signalare.observer.customdownloader
 
 import Logger
 import Logger.LOG_TAG_DOWNLOAD
@@ -28,23 +28,23 @@ import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
-import com.celzero.bravedns.R
-import com.celzero.bravedns.RethinkDnsApplication.Companion.DEBUG
-import com.celzero.bravedns.customdownloader.RetrofitManager.Companion.getBlocklistBaseBuilder
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.download.BlocklistDownloadHelper
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.RethinkBlocklistManager
-import com.celzero.bravedns.ui.activity.AppLockActivity
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.Constants.Companion.INIT_TIME_MS
-import com.celzero.bravedns.util.Constants.Companion.LOCAL_BLOCKLIST_DOWNLOAD_FOLDER_NAME
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.blocklistDownloadBasePath
-import com.celzero.bravedns.util.Utilities.calculateMd5
-import com.celzero.bravedns.util.Utilities.getTagValueFromJson
-import com.celzero.bravedns.util.Utilities.tempDownloadBasePath
+import se.signalare.observer.R
+import se.signalare.observer.RethinkDnsApplication.Companion.DEBUG
+import se.signalare.observer.customdownloader.RetrofitManager.Companion.getBlocklistBaseBuilder
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.download.BlocklistDownloadHelper
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.RethinkBlocklistManager
+import se.signalare.observer.ui.activity.AppLockActivity
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.Constants.Companion.INIT_TIME_MS
+import se.signalare.observer.util.Constants.Companion.LOCAL_BLOCKLIST_DOWNLOAD_FOLDER_NAME
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.blocklistDownloadBasePath
+import se.signalare.observer.util.Utilities.calculateMd5
+import se.signalare.observer.util.Utilities.getTagValueFromJson
+import se.signalare.observer.util.Utilities.tempDownloadBasePath
 import okhttp3.ResponseBody
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject

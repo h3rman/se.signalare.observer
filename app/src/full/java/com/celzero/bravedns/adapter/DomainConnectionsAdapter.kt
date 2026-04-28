@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import android.content.Context
 import android.content.Intent
@@ -27,15 +27,15 @@ import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.celzero.bravedns.R
-import com.celzero.bravedns.data.AppConnection
-import com.celzero.bravedns.databinding.ListItemStatisticsSummaryBinding
-import com.celzero.bravedns.service.FirewallManager
-import com.celzero.bravedns.ui.activity.AppInfoActivity
-import com.celzero.bravedns.ui.activity.DomainConnectionsActivity
-import com.celzero.bravedns.ui.activity.NetworkLogsActivity
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.R
+import se.signalare.observer.data.AppConnection
+import se.signalare.observer.databinding.ListItemStatisticsSummaryBinding
+import se.signalare.observer.service.FirewallManager
+import se.signalare.observer.ui.activity.AppInfoActivity
+import se.signalare.observer.ui.activity.DomainConnectionsActivity
+import se.signalare.observer.ui.activity.NetworkLogsActivity
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.Utilities
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

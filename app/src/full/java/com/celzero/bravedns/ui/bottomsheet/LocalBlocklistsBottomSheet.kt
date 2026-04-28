@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.bottomsheet
+package se.signalare.observer.ui.bottomsheet
 
 import Logger
 import Logger.LOG_TAG_DNS
@@ -33,30 +33,30 @@ import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.work.WorkInfo
 import androidx.work.WorkManager
-import com.celzero.bravedns.R
-import com.celzero.bravedns.customdownloader.LocalBlocklistCoordinator
-import com.celzero.bravedns.databinding.BottomSheetLocalBlocklistsBinding
-import com.celzero.bravedns.download.AppDownloadManager
-import com.celzero.bravedns.download.DownloadConstants
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.RethinkBlocklistManager
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.ui.activity.ConfigureRethinkBasicActivity
-import com.celzero.bravedns.ui.fragment.DnsSettingsFragment
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.Constants.Companion.INIT_TIME_MS
-import com.celzero.bravedns.util.Constants.Companion.LOCAL_BLOCKLIST_DOWNLOAD_FOLDER_NAME
-import com.celzero.bravedns.util.Constants.Companion.RETHINK_SEARCH_URL
-import com.celzero.bravedns.util.Themes.Companion.getBottomsheetCurrentTheme
-import com.celzero.bravedns.util.UIUtils.clipboardCopy
-import com.celzero.bravedns.util.UIUtils.fetchToggleBtnColors
-import com.celzero.bravedns.util.UIUtils.openUrl
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.blocklistCanonicalPath
-import com.celzero.bravedns.util.Utilities.convertLongToTime
-import com.celzero.bravedns.util.Utilities.deleteRecursive
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.useTransparentNoDimBackground
+import se.signalare.observer.R
+import se.signalare.observer.customdownloader.LocalBlocklistCoordinator
+import se.signalare.observer.databinding.BottomSheetLocalBlocklistsBinding
+import se.signalare.observer.download.AppDownloadManager
+import se.signalare.observer.download.DownloadConstants
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.RethinkBlocklistManager
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.ui.activity.ConfigureRethinkBasicActivity
+import se.signalare.observer.ui.fragment.DnsSettingsFragment
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.Constants.Companion.INIT_TIME_MS
+import se.signalare.observer.util.Constants.Companion.LOCAL_BLOCKLIST_DOWNLOAD_FOLDER_NAME
+import se.signalare.observer.util.Constants.Companion.RETHINK_SEARCH_URL
+import se.signalare.observer.util.Themes.Companion.getBottomsheetCurrentTheme
+import se.signalare.observer.util.UIUtils.clipboardCopy
+import se.signalare.observer.util.UIUtils.fetchToggleBtnColors
+import se.signalare.observer.util.UIUtils.openUrl
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.blocklistCanonicalPath
+import se.signalare.observer.util.Utilities.convertLongToTime
+import se.signalare.observer.util.Utilities.deleteRecursive
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.useTransparentNoDimBackground
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.receiver
+package se.signalare.observer.receiver
 
 import Logger
 import Logger.LOG_TAG_VPN
@@ -22,16 +22,16 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.widget.Toast
-import com.celzero.bravedns.R
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.database.RefreshDatabase
-import com.celzero.bravedns.service.FirewallManager
-import com.celzero.bravedns.service.FirewallManager.NOTIF_CHANNEL_ID_FIREWALL_ALERTS
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.OrbotHelper
-import com.celzero.bravedns.util.OrbotHelper.Companion.NOTIF_CHANNEL_ID_PROXY_ALERTS
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.R
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.database.RefreshDatabase
+import se.signalare.observer.service.FirewallManager
+import se.signalare.observer.service.FirewallManager.NOTIF_CHANNEL_ID_FIREWALL_ALERTS
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.OrbotHelper
+import se.signalare.observer.util.OrbotHelper.Companion.NOTIF_CHANNEL_ID_PROXY_ALERTS
+import se.signalare.observer.util.Utilities
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

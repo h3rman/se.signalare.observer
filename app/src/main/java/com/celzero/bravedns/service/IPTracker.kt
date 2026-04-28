@@ -13,27 +13,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
 import Logger
 import Logger.LOG_TAG_FIREWALL
 import android.content.Context
-import com.celzero.bravedns.R
-import com.celzero.bravedns.data.ConnTrackerMetaData
-import com.celzero.bravedns.data.ConnectionSummary
-import com.celzero.bravedns.database.ConnectionTracker
-import com.celzero.bravedns.database.ConnectionTrackerRepository
-import com.celzero.bravedns.database.RethinkLog
-import com.celzero.bravedns.database.RethinkLogRepository
-import com.celzero.bravedns.util.AndroidUidConfig
-import com.celzero.bravedns.util.Constants.Companion.EMPTY_PACKAGE_NAME
-import com.celzero.bravedns.util.Constants.Companion.INVALID_UID
-import com.celzero.bravedns.util.IPUtil
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.getCountryCode
-import com.celzero.bravedns.util.Utilities.getFlag
-import com.celzero.bravedns.util.Utilities.getPackageInfoForUid
-import com.celzero.bravedns.util.Utilities.isUnspecifiedIp
+import se.signalare.observer.R
+import se.signalare.observer.data.ConnTrackerMetaData
+import se.signalare.observer.data.ConnectionSummary
+import se.signalare.observer.database.ConnectionTracker
+import se.signalare.observer.database.ConnectionTrackerRepository
+import se.signalare.observer.database.RethinkLog
+import se.signalare.observer.database.RethinkLogRepository
+import se.signalare.observer.util.AndroidUidConfig
+import se.signalare.observer.util.Constants.Companion.EMPTY_PACKAGE_NAME
+import se.signalare.observer.util.Constants.Companion.INVALID_UID
+import se.signalare.observer.util.IPUtil
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.getCountryCode
+import se.signalare.observer.util.Utilities.getFlag
+import se.signalare.observer.util.Utilities.getPackageInfoForUid
+import se.signalare.observer.util.Utilities.isUnspecifiedIp
 import inet.ipaddr.HostName
 import inet.ipaddr.IPAddressString
 import org.koin.core.component.KoinComponent

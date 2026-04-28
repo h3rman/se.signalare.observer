@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.fragment
+package se.signalare.observer.ui.fragment
 
 import Logger
 import Logger.LOG_TAG_UI
 import android.animation.ObjectAnimator
 import android.animation.ValueAnimator
-import com.celzero.bravedns.RethinkDnsApplication.Companion.DEBUG
+import se.signalare.observer.RethinkDnsApplication.Companion.DEBUG
 import com.celzero.firestack.backend.IPMetadata
 import android.graphics.Canvas
 import android.graphics.Color
@@ -41,25 +41,25 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.database.CountryConfig
-import com.celzero.bravedns.database.SubscriptionStatus
-import com.celzero.bravedns.database.SubscriptionStatusDao
-import com.celzero.bravedns.databinding.FragmentServerSelectionBinding
-import com.celzero.bravedns.iab.InAppBillingHandler
-import com.celzero.bravedns.rpnproxy.RpnProxyManager
-import com.celzero.bravedns.service.BraveVPNService
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.ui.activity.FragmentHostActivity
-import com.celzero.bravedns.ui.adapter.CountryServerAdapter
-import com.celzero.bravedns.ui.adapter.VpnServerAdapter
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.ui.bottomsheet.ServerRemovalNotificationBottomSheet
-import com.celzero.bravedns.ui.bottomsheet.ServerSettingsBottomSheet
-import com.celzero.bravedns.ui.bottomsheet.ResubscribeBottomSheet
-import com.celzero.bravedns.util.SnackbarHelper
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.R
+import se.signalare.observer.database.CountryConfig
+import se.signalare.observer.database.SubscriptionStatus
+import se.signalare.observer.database.SubscriptionStatusDao
+import se.signalare.observer.databinding.FragmentServerSelectionBinding
+import se.signalare.observer.iab.InAppBillingHandler
+import se.signalare.observer.rpnproxy.RpnProxyManager
+import se.signalare.observer.service.BraveVPNService
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.ui.activity.FragmentHostActivity
+import se.signalare.observer.ui.adapter.CountryServerAdapter
+import se.signalare.observer.ui.adapter.VpnServerAdapter
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.ui.bottomsheet.ServerRemovalNotificationBottomSheet
+import se.signalare.observer.ui.bottomsheet.ServerSettingsBottomSheet
+import se.signalare.observer.ui.bottomsheet.ResubscribeBottomSheet
+import se.signalare.observer.util.SnackbarHelper
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.Utilities
 import com.celzero.firestack.backend.Backend
 import com.google.android.material.appbar.CollapsingToolbarLayout
 import com.google.android.material.dialog.MaterialAlertDialogBuilder

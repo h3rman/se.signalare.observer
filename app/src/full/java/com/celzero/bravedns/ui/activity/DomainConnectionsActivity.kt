@@ -13,26 +13,26 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.activity
+package se.signalare.observer.ui.activity
 
 import android.content.Context
 import android.content.res.Configuration
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.os.Bundle
 import android.view.View
-import com.celzero.bravedns.ui.BaseActivity
+import se.signalare.observer.ui.BaseActivity
 import androidx.core.view.WindowInsetsControllerCompat
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.adapter.DomainConnectionsAdapter
-import com.celzero.bravedns.databinding.ActivityDomainConnectionsBinding
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.util.CustomLinearLayoutManager
-import com.celzero.bravedns.util.Themes.Companion.getCurrentTheme
-import com.celzero.bravedns.util.UIUtils.getCountryNameFromFlag
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.handleFrostEffectIfNeeded
-import com.celzero.bravedns.viewmodel.DomainConnectionsViewModel
+import se.signalare.observer.R
+import se.signalare.observer.adapter.DomainConnectionsAdapter
+import se.signalare.observer.databinding.ActivityDomainConnectionsBinding
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.util.CustomLinearLayoutManager
+import se.signalare.observer.util.Themes.Companion.getCurrentTheme
+import se.signalare.observer.util.UIUtils.getCountryNameFromFlag
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.handleFrostEffectIfNeeded
+import se.signalare.observer.viewmodel.DomainConnectionsViewModel
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
 

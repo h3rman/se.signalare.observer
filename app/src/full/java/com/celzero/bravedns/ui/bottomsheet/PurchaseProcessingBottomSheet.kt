@@ -1,12 +1,12 @@
-package com.celzero.bravedns.ui.bottomsheet
+package se.signalare.observer.ui.bottomsheet
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.BottomsheetPurchaseProcessingBinding
+import se.signalare.observer.R
+import se.signalare.observer.databinding.BottomsheetPurchaseProcessingBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import java.io.Serializable
 

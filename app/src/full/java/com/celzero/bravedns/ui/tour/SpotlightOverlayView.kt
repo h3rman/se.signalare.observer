@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.tour
+package se.signalare.observer.ui.tour
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
@@ -33,7 +33,7 @@ import android.view.MotionEvent
 import android.view.View
 import android.view.animation.DecelerateInterpolator
 import androidx.core.animation.doOnEnd
-import com.celzero.bravedns.R
+import se.signalare.observer.R
 
 /**
  * Full-screen overlay that:

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import Logger
 import Logger.LOG_TAG_PROXY
@@ -31,28 +31,28 @@ import androidx.lifecycle.lifecycleScope
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.database.EventSource
-import com.celzero.bravedns.database.EventType
-import com.celzero.bravedns.database.Severity
-import com.celzero.bravedns.database.WgConfigFiles
-import com.celzero.bravedns.databinding.ListItemWgOneInterfaceBinding
-import com.celzero.bravedns.net.doh.Transaction
-import com.celzero.bravedns.service.EventLogger
-import com.celzero.bravedns.service.ProxyManager
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.service.WireguardManager
-import com.celzero.bravedns.service.WireguardManager.ERR_CODE_OTHER_WG_ACTIVE
-import com.celzero.bravedns.service.WireguardManager.ERR_CODE_VPN_NOT_ACTIVE
-import com.celzero.bravedns.service.WireguardManager.ERR_CODE_VPN_NOT_FULL
-import com.celzero.bravedns.service.WireguardManager.ERR_CODE_WG_INVALID
-import com.celzero.bravedns.service.WireguardManager.WG_UPTIME_THRESHOLD
-import com.celzero.bravedns.ui.activity.WgConfigDetailActivity
-import com.celzero.bravedns.ui.activity.WgConfigDetailActivity.Companion.INTENT_EXTRA_WG_TYPE
-import com.celzero.bravedns.ui.activity.WgConfigEditorActivity.Companion.INTENT_EXTRA_WG_ID
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.UIUtils.fetchColor
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.R
+import se.signalare.observer.database.EventSource
+import se.signalare.observer.database.EventType
+import se.signalare.observer.database.Severity
+import se.signalare.observer.database.WgConfigFiles
+import se.signalare.observer.databinding.ListItemWgOneInterfaceBinding
+import se.signalare.observer.net.doh.Transaction
+import se.signalare.observer.service.EventLogger
+import se.signalare.observer.service.ProxyManager
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.service.WireguardManager
+import se.signalare.observer.service.WireguardManager.ERR_CODE_OTHER_WG_ACTIVE
+import se.signalare.observer.service.WireguardManager.ERR_CODE_VPN_NOT_ACTIVE
+import se.signalare.observer.service.WireguardManager.ERR_CODE_VPN_NOT_FULL
+import se.signalare.observer.service.WireguardManager.ERR_CODE_WG_INVALID
+import se.signalare.observer.service.WireguardManager.WG_UPTIME_THRESHOLD
+import se.signalare.observer.ui.activity.WgConfigDetailActivity
+import se.signalare.observer.ui.activity.WgConfigDetailActivity.Companion.INTENT_EXTRA_WG_TYPE
+import se.signalare.observer.ui.activity.WgConfigEditorActivity.Companion.INTENT_EXTRA_WG_ID
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.UIUtils.fetchColor
+import se.signalare.observer.util.Utilities
 import com.celzero.firestack.backend.RouterStats
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job

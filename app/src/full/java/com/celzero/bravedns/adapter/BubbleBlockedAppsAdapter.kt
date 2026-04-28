@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import Logger
 import android.content.pm.PackageManager
@@ -24,9 +24,9 @@ import androidx.core.content.ContextCompat
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.data.BlockedAppInfo
-import com.celzero.bravedns.databinding.ItemBlockedAppBinding
+import se.signalare.observer.R
+import se.signalare.observer.data.BlockedAppInfo
+import se.signalare.observer.databinding.ItemBlockedAppBinding
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale

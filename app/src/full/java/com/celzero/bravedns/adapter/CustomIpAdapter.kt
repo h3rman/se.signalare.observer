@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -35,25 +35,25 @@ import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.celzero.bravedns.R
-import com.celzero.bravedns.database.CustomIp
-import com.celzero.bravedns.database.EventSource
-import com.celzero.bravedns.database.EventType
-import com.celzero.bravedns.database.Severity
-import com.celzero.bravedns.databinding.DialogAddCustomIpBinding
-import com.celzero.bravedns.databinding.ListItemCustomAllIpBinding
-import com.celzero.bravedns.databinding.ListItemCustomIpBinding
-import com.celzero.bravedns.service.EventLogger
-import com.celzero.bravedns.service.FirewallManager
-import com.celzero.bravedns.service.IpRulesManager
-import com.celzero.bravedns.ui.activity.CustomRulesActivity
-import com.celzero.bravedns.ui.bottomsheet.CustomIpRulesBtmSheet
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.Constants.Companion.UID_EVERYBODY
-import com.celzero.bravedns.util.UIUtils.fetchColor
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.getCountryCode
-import com.celzero.bravedns.util.Utilities.getFlag
+import se.signalare.observer.R
+import se.signalare.observer.database.CustomIp
+import se.signalare.observer.database.EventSource
+import se.signalare.observer.database.EventType
+import se.signalare.observer.database.Severity
+import se.signalare.observer.databinding.DialogAddCustomIpBinding
+import se.signalare.observer.databinding.ListItemCustomAllIpBinding
+import se.signalare.observer.databinding.ListItemCustomIpBinding
+import se.signalare.observer.service.EventLogger
+import se.signalare.observer.service.FirewallManager
+import se.signalare.observer.service.IpRulesManager
+import se.signalare.observer.ui.activity.CustomRulesActivity
+import se.signalare.observer.ui.bottomsheet.CustomIpRulesBtmSheet
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.Constants.Companion.UID_EVERYBODY
+import se.signalare.observer.util.UIUtils.fetchColor
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.getCountryCode
+import se.signalare.observer.util.Utilities.getFlag
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import inet.ipaddr.IPAddress
 import inet.ipaddr.IPAddressString

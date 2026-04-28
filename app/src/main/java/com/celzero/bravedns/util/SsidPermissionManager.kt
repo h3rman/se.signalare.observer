@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -26,7 +26,7 @@ import android.location.LocationManager
 import android.os.Build
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.celzero.bravedns.R
+import se.signalare.observer.R
 
 /**
  * Utility class to handle SSID-related permissions and operations.

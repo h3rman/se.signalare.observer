@@ -13,11 +13,11 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-package com.celzero.bravedns.database
+package se.signalare.observer.database
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.celzero.bravedns.util.Constants.Companion.INIT_TIME_MS
+import se.signalare.observer.util.Constants.Companion.INIT_TIME_MS
 
 @Entity(tableName = "DNSCryptRelayEndpoint")
 class DnsCryptRelayEndpoint {

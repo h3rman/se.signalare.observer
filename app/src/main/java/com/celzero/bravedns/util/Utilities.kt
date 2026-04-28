@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
 import Logger
 import Logger.LOG_TAG_APP_DB
@@ -45,24 +45,24 @@ import android.widget.Toast
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.content.getSystemService
 import androidx.lifecycle.LifecycleCoroutineScope
-import com.celzero.bravedns.BuildConfig
-import com.celzero.bravedns.R
-import com.celzero.bravedns.RethinkDnsApplication.Companion.DEBUG
-import com.celzero.bravedns.database.AppInfoRepository.Companion.NO_PACKAGE_PREFIX
-import com.celzero.bravedns.net.doh.CountryMap
-import com.celzero.bravedns.service.BraveVPNService
-import com.celzero.bravedns.service.DnsLogTracker
-import com.celzero.bravedns.util.Constants.Companion.BUILD_TYPE_ALPHA
-import com.celzero.bravedns.util.Constants.Companion.FLAVOR_FDROID
-import com.celzero.bravedns.util.Constants.Companion.FLAVOR_HEADLESS
-import com.celzero.bravedns.util.Constants.Companion.FLAVOR_PLAY
-import com.celzero.bravedns.util.Constants.Companion.FLAVOR_WEBSITE
-import com.celzero.bravedns.util.Constants.Companion.INVALID_UID
-import com.celzero.bravedns.util.Constants.Companion.LOCAL_BLOCKLIST_DOWNLOAD_FOLDER_NAME
-import com.celzero.bravedns.util.Constants.Companion.MISSING_UID
-import com.celzero.bravedns.util.Constants.Companion.REMOTE_BLOCKLIST_DOWNLOAD_FOLDER_NAME
-import com.celzero.bravedns.util.Constants.Companion.UNSPECIFIED_IP_IPV4
-import com.celzero.bravedns.util.Constants.Companion.UNSPECIFIED_IP_IPV6
+import se.signalare.observer.BuildConfig
+import se.signalare.observer.R
+import se.signalare.observer.RethinkDnsApplication.Companion.DEBUG
+import se.signalare.observer.database.AppInfoRepository.Companion.NO_PACKAGE_PREFIX
+import se.signalare.observer.net.doh.CountryMap
+import se.signalare.observer.service.BraveVPNService
+import se.signalare.observer.service.DnsLogTracker
+import se.signalare.observer.util.Constants.Companion.BUILD_TYPE_ALPHA
+import se.signalare.observer.util.Constants.Companion.FLAVOR_FDROID
+import se.signalare.observer.util.Constants.Companion.FLAVOR_HEADLESS
+import se.signalare.observer.util.Constants.Companion.FLAVOR_PLAY
+import se.signalare.observer.util.Constants.Companion.FLAVOR_WEBSITE
+import se.signalare.observer.util.Constants.Companion.INVALID_UID
+import se.signalare.observer.util.Constants.Companion.LOCAL_BLOCKLIST_DOWNLOAD_FOLDER_NAME
+import se.signalare.observer.util.Constants.Companion.MISSING_UID
+import se.signalare.observer.util.Constants.Companion.REMOTE_BLOCKLIST_DOWNLOAD_FOLDER_NAME
+import se.signalare.observer.util.Constants.Companion.UNSPECIFIED_IP_IPV4
+import se.signalare.observer.util.Constants.Companion.UNSPECIFIED_IP_IPV6
 import com.google.common.net.InternetDomainName
 import com.google.gson.JsonParser
 import inet.ipaddr.HostName

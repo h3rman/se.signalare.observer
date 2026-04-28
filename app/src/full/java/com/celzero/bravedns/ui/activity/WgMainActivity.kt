@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.activity
+package se.signalare.observer.ui.activity
 
 import Logger
 import Logger.LOG_TAG_PROXY
@@ -27,32 +27,32 @@ import android.view.View
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.result.contract.ActivityResultContracts
-import com.celzero.bravedns.ui.BaseActivity
+import se.signalare.observer.ui.BaseActivity
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.adapter.OneWgConfigAdapter
-import com.celzero.bravedns.adapter.WgConfigAdapter
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.database.EventSource
-import com.celzero.bravedns.database.EventType
-import com.celzero.bravedns.database.Severity
-import com.celzero.bravedns.databinding.ActivityWireguardMainBinding
-import com.celzero.bravedns.service.EventLogger
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.WireguardManager
-import com.celzero.bravedns.util.QrCodeFromFileScanner
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.TunnelImporter
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.UIUtils.fetchToggleBtnColors
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.handleFrostEffectIfNeeded
-import com.celzero.bravedns.viewmodel.WgConfigViewModel
+import se.signalare.observer.R
+import se.signalare.observer.adapter.OneWgConfigAdapter
+import se.signalare.observer.adapter.WgConfigAdapter
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.database.EventSource
+import se.signalare.observer.database.EventType
+import se.signalare.observer.database.Severity
+import se.signalare.observer.databinding.ActivityWireguardMainBinding
+import se.signalare.observer.service.EventLogger
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.WireguardManager
+import se.signalare.observer.util.QrCodeFromFileScanner
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.TunnelImporter
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.UIUtils.fetchToggleBtnColors
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.handleFrostEffectIfNeeded
+import se.signalare.observer.viewmodel.WgConfigViewModel
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.zxing.qrcode.QRCodeReader

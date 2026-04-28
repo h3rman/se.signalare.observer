@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.activity
+package se.signalare.observer.ui.activity
 
 import Logger
 import Logger.LOG_TAG_PROXY
@@ -22,23 +22,23 @@ import android.content.Context
 import android.content.res.Configuration
 import android.os.Bundle
 import android.widget.Toast
-import com.celzero.bravedns.ui.BaseActivity
+import se.signalare.observer.ui.BaseActivity
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.lifecycleScope
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.ActivityWgConfigEditorBinding
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.WireguardManager
-import com.celzero.bravedns.ui.activity.WgConfigDetailActivity.Companion.INTENT_EXTRA_WG_TYPE
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.UIUtils.clipboardCopy
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.handleFrostEffectIfNeeded
-import com.celzero.bravedns.wireguard.Config
-import com.celzero.bravedns.wireguard.WgInterface
-import com.celzero.bravedns.wireguard.util.ErrorMessages
+import se.signalare.observer.R
+import se.signalare.observer.databinding.ActivityWgConfigEditorBinding
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.WireguardManager
+import se.signalare.observer.ui.activity.WgConfigDetailActivity.Companion.INTENT_EXTRA_WG_TYPE
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.UIUtils.clipboardCopy
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.handleFrostEffectIfNeeded
+import se.signalare.observer.wireguard.Config
+import se.signalare.observer.wireguard.WgInterface
+import se.signalare.observer.wireguard.util.ErrorMessages
 import com.celzero.firestack.backend.Backend
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

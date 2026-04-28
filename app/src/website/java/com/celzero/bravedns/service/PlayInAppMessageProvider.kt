@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
 import android.app.Activity
-import com.celzero.bravedns.iab.InAppBillingHandler
+import se.signalare.observer.iab.InAppBillingHandler
 
 /**
  * Play-flavor implementation of [InAppMessageProvider].

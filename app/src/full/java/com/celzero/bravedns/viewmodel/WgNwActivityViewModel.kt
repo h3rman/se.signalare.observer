@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.viewmodel
+package se.signalare.observer.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -25,11 +25,11 @@ import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
 import androidx.paging.liveData
-import com.celzero.bravedns.data.AppConnection
-import com.celzero.bravedns.data.DataUsageSummary
-import com.celzero.bravedns.database.ConnectionTracker
-import com.celzero.bravedns.database.ConnectionTrackerDAO
-import com.celzero.bravedns.util.Constants.Companion.LIVEDATA_PAGE_SIZE
+import se.signalare.observer.data.AppConnection
+import se.signalare.observer.data.DataUsageSummary
+import se.signalare.observer.database.ConnectionTracker
+import se.signalare.observer.database.ConnectionTrackerDAO
+import se.signalare.observer.util.Constants.Companion.LIVEDATA_PAGE_SIZE
 
 class WgNwActivityViewModel(private val dao: ConnectionTrackerDAO) : ViewModel() {
 

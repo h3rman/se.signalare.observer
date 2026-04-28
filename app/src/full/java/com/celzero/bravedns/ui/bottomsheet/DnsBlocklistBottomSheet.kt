@@ -13,7 +13,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-package com.celzero.bravedns.ui.bottomsheet
+package se.signalare.observer.ui.bottomsheet
 
 import Logger
 import Logger.LOG_TAG_DNS
@@ -41,31 +41,31 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.bumptech.glide.request.target.CustomViewTarget
 import com.bumptech.glide.request.transition.DrawableCrossFadeFactory
 import com.bumptech.glide.request.transition.Transition
-import com.celzero.bravedns.R
-import com.celzero.bravedns.adapter.FirewallStatusSpinnerAdapter
-import com.celzero.bravedns.database.DnsLog
-import com.celzero.bravedns.database.EventSource
-import com.celzero.bravedns.database.EventType
-import com.celzero.bravedns.database.Severity
-import com.celzero.bravedns.databinding.BottomSheetDnsLogBinding
-import com.celzero.bravedns.databinding.DialogInfoRulesLayoutBinding
-import com.celzero.bravedns.databinding.DialogIpDetailsLayoutBinding
-import com.celzero.bravedns.glide.FavIconDownloader
-import com.celzero.bravedns.service.DomainRulesManager
-import com.celzero.bravedns.service.EventLogger
-import com.celzero.bravedns.service.FirewallManager
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.ui.activity.DomainConnectionsActivity
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.ResourceRecordTypes
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.UIUtils.fetchColor
-import com.celzero.bravedns.util.UIUtils.htmlToSpannedText
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.getIcon
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.useTransparentNoDimBackground
-import com.celzero.bravedns.viewmodel.DomainConnectionsViewModel
+import se.signalare.observer.R
+import se.signalare.observer.adapter.FirewallStatusSpinnerAdapter
+import se.signalare.observer.database.DnsLog
+import se.signalare.observer.database.EventSource
+import se.signalare.observer.database.EventType
+import se.signalare.observer.database.Severity
+import se.signalare.observer.databinding.BottomSheetDnsLogBinding
+import se.signalare.observer.databinding.DialogInfoRulesLayoutBinding
+import se.signalare.observer.databinding.DialogIpDetailsLayoutBinding
+import se.signalare.observer.glide.FavIconDownloader
+import se.signalare.observer.service.DomainRulesManager
+import se.signalare.observer.service.EventLogger
+import se.signalare.observer.service.FirewallManager
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.ui.activity.DomainConnectionsActivity
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.ResourceRecordTypes
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.UIUtils.fetchColor
+import se.signalare.observer.util.UIUtils.htmlToSpannedText
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.getIcon
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.useTransparentNoDimBackground
+import se.signalare.observer.viewmodel.DomainConnectionsViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.chip.Chip
 import com.google.android.material.dialog.MaterialAlertDialogBuilder

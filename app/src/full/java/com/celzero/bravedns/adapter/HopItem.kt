@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
-import com.celzero.bravedns.database.CountryConfig
-import com.celzero.bravedns.wireguard.Config
+import se.signalare.observer.database.CountryConfig
+import se.signalare.observer.wireguard.Config
 
 /**
  * Sealed class representing different types of hop items

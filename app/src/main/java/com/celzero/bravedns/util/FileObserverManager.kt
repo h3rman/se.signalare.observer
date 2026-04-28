@@ -1,9 +1,9 @@
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
 import Logger
 import android.os.FileObserver
-import com.celzero.bravedns.RethinkDnsApplication.Companion.DEBUG
-import com.celzero.bravedns.util.Utilities.isAtleastQ
+import se.signalare.observer.RethinkDnsApplication.Companion.DEBUG
+import se.signalare.observer.util.Utilities.isAtleastQ
 import java.io.File
 
 class FileObserverManager(

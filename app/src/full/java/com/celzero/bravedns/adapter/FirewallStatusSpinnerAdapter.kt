@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -22,8 +22,8 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.SpinnerItemFirewallStatusBinding
+import se.signalare.observer.R
+import se.signalare.observer.databinding.SpinnerItemFirewallStatusBinding
 
 class FirewallStatusSpinnerAdapter(val context: Context, private val spinnerLabels: Array<String>) :
     BaseAdapter() {

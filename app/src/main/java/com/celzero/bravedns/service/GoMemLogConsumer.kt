@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
 import Logger
 import Logger.LOG_GO_LOGGER
@@ -27,14 +27,14 @@ import android.system.ErrnoException
 import android.system.Os
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
-import com.celzero.bravedns.R
-import com.celzero.bravedns.scheduler.EnhancedBugReport
-import com.celzero.bravedns.service.BraveVPNService.Companion.NW_ENGINE_NOTIFICATION_ID
-import com.celzero.bravedns.ui.activity.AppLockActivity
-import com.celzero.bravedns.util.Daemons
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.UIUtils.getAccentColor
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.R
+import se.signalare.observer.scheduler.EnhancedBugReport
+import se.signalare.observer.service.BraveVPNService.Companion.NW_ENGINE_NOTIFICATION_ID
+import se.signalare.observer.ui.activity.AppLockActivity
+import se.signalare.observer.util.Daemons
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.UIUtils.getAccentColor
+import se.signalare.observer.util.Utilities
 import com.celzero.firestack.backend.LogConsumer
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch

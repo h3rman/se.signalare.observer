@@ -16,12 +16,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.wireguard
+package se.signalare.observer.wireguard
 
-import com.celzero.bravedns.RethinkDnsApplication
-import com.celzero.bravedns.wireguard.BadConfigException.Location
-import com.celzero.bravedns.wireguard.BadConfigException.Reason
-import com.celzero.bravedns.wireguard.BadConfigException.Section
+import se.signalare.observer.RethinkDnsApplication
+import se.signalare.observer.wireguard.BadConfigException.Location
+import se.signalare.observer.wireguard.BadConfigException.Reason
+import se.signalare.observer.wireguard.BadConfigException.Section
 import com.celzero.firestack.backend.Backend
 import com.celzero.firestack.backend.WgKey
 import inet.ipaddr.IPAddressString

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.shadows
+package se.signalare.observer.shadows
 
 import org.robolectric.annotation.Implementation
 import org.robolectric.annotation.Implements

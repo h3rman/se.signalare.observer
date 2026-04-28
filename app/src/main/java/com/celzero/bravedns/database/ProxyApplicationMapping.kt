@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.database
+package se.signalare.observer.database
 
 import android.Manifest
 import android.content.pm.PackageManager
 import androidx.room.Entity
-import com.celzero.bravedns.database.AppInfoRepository.Companion.NO_PACKAGE_PREFIX
+import se.signalare.observer.database.AppInfoRepository.Companion.NO_PACKAGE_PREFIX
 
 @Entity(tableName = "ProxyApplicationMapping", primaryKeys = ["uid", "packageName", "proxyId"])
 class ProxyApplicationMapping {

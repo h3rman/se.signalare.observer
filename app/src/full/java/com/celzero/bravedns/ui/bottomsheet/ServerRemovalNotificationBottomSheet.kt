@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.bottomsheet
+package se.signalare.observer.ui.bottomsheet
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -27,13 +27,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AccelerateDecelerateInterpolator
 import androidx.core.view.WindowInsetsControllerCompat
-import com.celzero.bravedns.R
-import com.celzero.bravedns.database.CountryConfig
-import com.celzero.bravedns.databinding.BottomsheetServerRemovalNotificationBinding
-import com.celzero.bravedns.databinding.ItemRemovedServerBinding
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.util.Themes.Companion.getBottomsheetCurrentTheme
-import com.celzero.bravedns.util.Utilities.isAtleastQ
+import se.signalare.observer.R
+import se.signalare.observer.database.CountryConfig
+import se.signalare.observer.databinding.BottomsheetServerRemovalNotificationBinding
+import se.signalare.observer.databinding.ItemRemovedServerBinding
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.util.Themes.Companion.getBottomsheetCurrentTheme
+import se.signalare.observer.util.Utilities.isAtleastQ
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import org.koin.android.ext.android.inject
 import kotlin.getValue

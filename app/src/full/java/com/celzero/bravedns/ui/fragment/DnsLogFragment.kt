@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.fragment
+package se.signalare.observer.ui.fragment
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -30,18 +30,18 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.bumptech.glide.Glide
-import com.celzero.bravedns.R
-import com.celzero.bravedns.adapter.DnsLogAdapter
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.database.DnsLogRepository
-import com.celzero.bravedns.databinding.FragmentDnsLogsBinding
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.ui.activity.NetworkLogsActivity.Companion.RULES_SEARCH_ID_RPN
-import com.celzero.bravedns.ui.activity.NetworkLogsActivity.Companion.RULES_SEARCH_ID_WIREGUARD
-import com.celzero.bravedns.ui.activity.UniversalFirewallSettingsActivity
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.UIUtils.formatToRelativeTime
-import com.celzero.bravedns.viewmodel.DnsLogViewModel
+import se.signalare.observer.R
+import se.signalare.observer.adapter.DnsLogAdapter
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.database.DnsLogRepository
+import se.signalare.observer.databinding.FragmentDnsLogsBinding
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.ui.activity.NetworkLogsActivity.Companion.RULES_SEARCH_ID_RPN
+import se.signalare.observer.ui.activity.NetworkLogsActivity.Companion.RULES_SEARCH_ID_WIREGUARD
+import se.signalare.observer.ui.activity.UniversalFirewallSettingsActivity
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.UIUtils.formatToRelativeTime
+import se.signalare.observer.viewmodel.DnsLogViewModel
 import com.google.android.material.chip.Chip
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers

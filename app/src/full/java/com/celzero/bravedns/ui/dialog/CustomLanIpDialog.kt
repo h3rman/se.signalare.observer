@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.dialog
+package se.signalare.observer.ui.dialog
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -26,11 +26,11 @@ import android.view.Window
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatDialog
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.DialogCustomLanIpBinding
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.util.UIUtils.fetchColor
-import com.celzero.bravedns.util.UIUtils.fetchToggleBtnColors
+import se.signalare.observer.R
+import se.signalare.observer.databinding.DialogCustomLanIpBinding
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.util.UIUtils.fetchColor
+import se.signalare.observer.util.UIUtils.fetchToggleBtnColors
 import com.google.android.material.button.MaterialButton
 import inet.ipaddr.IPAddressString
 

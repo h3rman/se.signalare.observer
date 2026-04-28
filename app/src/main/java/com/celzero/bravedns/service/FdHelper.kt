@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
 import Logger
 import Logger.LOG_TAG_BUG_REPORT
 import android.os.ParcelFileDescriptor
 import android.system.Os
 import android.system.OsConstants
-import com.celzero.bravedns.util.Utilities.isAtleastO_MR1
-import com.celzero.bravedns.util.Utilities.isAtleastU
+import se.signalare.observer.util.Utilities.isAtleastO_MR1
+import se.signalare.observer.util.Utilities.isAtleastU
 import java.io.FileDescriptor
 import java.lang.reflect.Field
 

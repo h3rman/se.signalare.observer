@@ -13,27 +13,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
 import Logger
 import Logger.LOG_TAG_DNS
 import Logger.LOG_TAG_VPN
 import android.content.Context
-import com.celzero.bravedns.R
-import com.celzero.bravedns.data.FileTag
-import com.celzero.bravedns.data.FileTagDeserializer
-import com.celzero.bravedns.database.LocalBlocklistPacksMap
-import com.celzero.bravedns.database.LocalBlocklistPacksMapRepository
-import com.celzero.bravedns.database.RemoteBlocklistPacksMap
-import com.celzero.bravedns.database.RemoteBlocklistPacksMapRepository
-import com.celzero.bravedns.database.RethinkLocalFileTag
-import com.celzero.bravedns.database.RethinkLocalFileTagRepository
-import com.celzero.bravedns.database.RethinkRemoteFileTag
-import com.celzero.bravedns.database.RethinkRemoteFileTagRepository
-import com.celzero.bravedns.util.Constants.Companion.LOCAL_BLOCKLIST_DOWNLOAD_FOLDER_NAME
-import com.celzero.bravedns.util.Constants.Companion.ONDEVICE_BLOCKLIST_FILE_TAG
-import com.celzero.bravedns.util.Constants.Companion.REMOTE_BLOCKLIST_DOWNLOAD_FOLDER_NAME
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.R
+import se.signalare.observer.data.FileTag
+import se.signalare.observer.data.FileTagDeserializer
+import se.signalare.observer.database.LocalBlocklistPacksMap
+import se.signalare.observer.database.LocalBlocklistPacksMapRepository
+import se.signalare.observer.database.RemoteBlocklistPacksMap
+import se.signalare.observer.database.RemoteBlocklistPacksMapRepository
+import se.signalare.observer.database.RethinkLocalFileTag
+import se.signalare.observer.database.RethinkLocalFileTagRepository
+import se.signalare.observer.database.RethinkRemoteFileTag
+import se.signalare.observer.database.RethinkRemoteFileTagRepository
+import se.signalare.observer.util.Constants.Companion.LOCAL_BLOCKLIST_DOWNLOAD_FOLDER_NAME
+import se.signalare.observer.util.Constants.Companion.ONDEVICE_BLOCKLIST_FILE_TAG
+import se.signalare.observer.util.Constants.Companion.REMOTE_BLOCKLIST_DOWNLOAD_FOLDER_NAME
+import se.signalare.observer.util.Utilities
 import com.celzero.firestack.backend.Backend
 import com.celzero.firestack.backend.RDNS
 import com.google.common.collect.HashMultimap

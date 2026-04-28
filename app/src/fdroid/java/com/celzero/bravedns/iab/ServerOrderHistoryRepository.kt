@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.iab
+package se.signalare.observer.iab
 
-import com.celzero.bravedns.service.PersistentState
+import se.signalare.observer.service.PersistentState
 
 /**
  * Stub: purchase / order history is not available on the F-Droid build.

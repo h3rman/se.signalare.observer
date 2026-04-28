@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.tour
+package se.signalare.observer.ui.tour
 
 import Logger
 import android.app.Activity
@@ -25,7 +25,7 @@ import android.view.ViewGroup
 import android.widget.FrameLayout
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.core.view.doOnLayout
-import com.celzero.bravedns.R
+import se.signalare.observer.R
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.card.MaterialCardView
 

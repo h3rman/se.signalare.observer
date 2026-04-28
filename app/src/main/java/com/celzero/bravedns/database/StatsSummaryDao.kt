@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.database
+package se.signalare.observer.database
 
 import androidx.paging.PagingSource
 import androidx.room.Dao
 import androidx.room.Query
-import com.celzero.bravedns.data.AppConnection
+import se.signalare.observer.data.AppConnection
 
 @Dao
 interface StatsSummaryDao {

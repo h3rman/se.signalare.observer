@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.fragment
+package se.signalare.observer.ui.fragment
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -29,19 +29,19 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.database.SubscriptionStatus
-import com.celzero.bravedns.database.SubscriptionStatusDao
-import com.celzero.bravedns.databinding.ActivityRethinkPlusDashboardBinding
-import com.celzero.bravedns.iab.InAppBillingHandler
-import com.celzero.bravedns.rpnproxy.RpnProxyManager
-import com.celzero.bravedns.rpnproxy.SubscriptionStateMachineV2
-import com.celzero.bravedns.ui.activity.CustomerSupportActivity
-import com.celzero.bravedns.ui.activity.FragmentHostActivity
-import com.celzero.bravedns.ui.activity.PingTestActivity
-import com.celzero.bravedns.ui.activity.PurchaseHistoryActivity
-import com.celzero.bravedns.ui.activity.ServerOrderHistoryActivity
-import com.celzero.bravedns.util.Utilities.showToastUiCentered
+import se.signalare.observer.R
+import se.signalare.observer.database.SubscriptionStatus
+import se.signalare.observer.database.SubscriptionStatusDao
+import se.signalare.observer.databinding.ActivityRethinkPlusDashboardBinding
+import se.signalare.observer.iab.InAppBillingHandler
+import se.signalare.observer.rpnproxy.RpnProxyManager
+import se.signalare.observer.rpnproxy.SubscriptionStateMachineV2
+import se.signalare.observer.ui.activity.CustomerSupportActivity
+import se.signalare.observer.ui.activity.FragmentHostActivity
+import se.signalare.observer.ui.activity.PingTestActivity
+import se.signalare.observer.ui.activity.PurchaseHistoryActivity
+import se.signalare.observer.ui.activity.ServerOrderHistoryActivity
+import se.signalare.observer.util.Utilities.showToastUiCentered
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

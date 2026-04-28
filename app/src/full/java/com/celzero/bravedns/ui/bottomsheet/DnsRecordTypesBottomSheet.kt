@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.bottomsheet
+package se.signalare.observer.ui.bottomsheet
 
 import android.content.res.ColorStateList
 import android.content.res.Configuration
@@ -24,16 +24,16 @@ import android.view.ViewGroup
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.BottomSheetDnsRecordTypesBinding
-import com.celzero.bravedns.databinding.ItemDnsRecordTypeBinding
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.util.ResourceRecordTypes
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.UIUtils.fetchToggleBtnColors
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.useTransparentNoDimBackground
+import se.signalare.observer.R
+import se.signalare.observer.databinding.BottomSheetDnsRecordTypesBinding
+import se.signalare.observer.databinding.ItemDnsRecordTypeBinding
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.util.ResourceRecordTypes
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.UIUtils.fetchToggleBtnColors
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.useTransparentNoDimBackground
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.button.MaterialButton
 import org.koin.android.ext.android.inject

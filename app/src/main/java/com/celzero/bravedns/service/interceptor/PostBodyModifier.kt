@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.service.interceptor
+package se.signalare.observer.service.interceptor
 
 import Logger
 import java.net.URLDecoder

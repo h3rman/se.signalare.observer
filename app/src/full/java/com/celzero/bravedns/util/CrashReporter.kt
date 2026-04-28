@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
-import com.celzero.bravedns.util.Utilities.isFdroidFlavour
+import se.signalare.observer.util.Utilities.isFdroidFlavour
 
 object CrashReporter {
     // safe cutoff

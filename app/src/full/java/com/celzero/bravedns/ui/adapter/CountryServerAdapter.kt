@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.adapter
+package se.signalare.observer.ui.adapter
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -24,11 +24,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.database.CountryConfig
-import com.celzero.bravedns.databinding.ItemServerGroupBinding
-import com.celzero.bravedns.databinding.ListItemCountryCardBinding
-import com.celzero.bravedns.util.UIUtils.fetchColor
+import se.signalare.observer.R
+import se.signalare.observer.database.CountryConfig
+import se.signalare.observer.databinding.ItemServerGroupBinding
+import se.signalare.observer.databinding.ListItemCountryCardBinding
+import se.signalare.observer.util.UIUtils.fetchColor
 import java.util.Locale
 
 /**
@@ -240,7 +240,7 @@ class CountryServerAdapter(
                     if (group.serverCount > 1) {
                         tvServerCount.visibility = View.VISIBLE
                         tvServerCount.text = itemView.context.resources.getQuantityString(
-                            com.celzero.bravedns.R.plurals.server_count,
+                            se.signalare.observer.R.plurals.server_count,
                             group.serverCount,
                             group.serverCount
                         )

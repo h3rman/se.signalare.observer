@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.viewmodel
+package se.signalare.observer.viewmodel
 
-import com.celzero.bravedns.iab.ServerOrderHistoryRepository
+import se.signalare.observer.iab.ServerOrderHistoryRepository
 import org.koin.core.module.dsl.viewModel
 import org.koin.dsl.module
 

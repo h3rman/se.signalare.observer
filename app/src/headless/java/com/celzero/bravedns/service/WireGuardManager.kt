@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
-import com.celzero.bravedns.database.WgConfigFiles
-import com.celzero.bravedns.wireguard.Config
+import se.signalare.observer.database.WgConfigFiles
+import se.signalare.observer.wireguard.Config
 import org.koin.core.component.KoinComponent
 
 object WireguardManager : KoinComponent {

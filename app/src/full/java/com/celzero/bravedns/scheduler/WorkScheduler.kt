@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.celzero.bravedns.scheduler
+package se.signalare.observer.scheduler
 
 import Logger
 import Logger.LOG_TAG_SCHEDULER
@@ -28,7 +28,7 @@ import androidx.work.PeriodicWorkRequest
 import androidx.work.WorkInfo
 import androidx.work.WorkManager
 import androidx.work.WorkRequest
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.util.Utilities
 import com.google.common.util.concurrent.ListenableFuture
 import java.util.concurrent.ExecutionException
 import java.util.concurrent.TimeUnit

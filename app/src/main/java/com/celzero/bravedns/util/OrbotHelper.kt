@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
 import Logger
 import Logger.LOG_TAG_VPN
@@ -33,23 +33,23 @@ import android.widget.Toast
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
 import androidx.core.net.toUri
-import com.celzero.bravedns.R
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.database.ProxyEndpoint
-import com.celzero.bravedns.database.ProxyEndpoint.Companion.DEFAULT_PROXY_TYPE
-import com.celzero.bravedns.receiver.NotificationActionReceiver
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.ProxyManager
-import com.celzero.bravedns.ui.activity.AppLockActivity
-import com.celzero.bravedns.util.Constants.Companion.HTTP_PROXY_PORT
-import com.celzero.bravedns.util.Constants.Companion.SOCKS_DEFAULT_PORT
-import com.celzero.bravedns.util.Utilities.getActivityPendingIntent
-import com.celzero.bravedns.util.Utilities.getBroadcastPendingIntent
-import com.celzero.bravedns.util.Utilities.isAtleastO
-import com.celzero.bravedns.util.Utilities.isAtleastT
-import com.celzero.bravedns.util.Utilities.isFdroidFlavour
-import com.celzero.bravedns.util.Utilities.isPlayStoreFlavour
-import com.celzero.bravedns.util.Utilities.isValidPort
+import se.signalare.observer.R
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.database.ProxyEndpoint
+import se.signalare.observer.database.ProxyEndpoint.Companion.DEFAULT_PROXY_TYPE
+import se.signalare.observer.receiver.NotificationActionReceiver
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.ProxyManager
+import se.signalare.observer.ui.activity.AppLockActivity
+import se.signalare.observer.util.Constants.Companion.HTTP_PROXY_PORT
+import se.signalare.observer.util.Constants.Companion.SOCKS_DEFAULT_PORT
+import se.signalare.observer.util.Utilities.getActivityPendingIntent
+import se.signalare.observer.util.Utilities.getBroadcastPendingIntent
+import se.signalare.observer.util.Utilities.isAtleastO
+import se.signalare.observer.util.Utilities.isAtleastT
+import se.signalare.observer.util.Utilities.isFdroidFlavour
+import se.signalare.observer.util.Utilities.isPlayStoreFlavour
+import se.signalare.observer.util.Utilities.isValidPort
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay

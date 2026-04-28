@@ -14,27 +14,27 @@
  * limitations under the License.
  */
 
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
 import Logger
 import Logger.LOG_TAG_VPN
 import android.content.Context
 import android.os.SystemClock
-import com.celzero.bravedns.R
-import com.celzero.bravedns.database.DnsLog
-import com.celzero.bravedns.database.DnsLogRepository
-import com.celzero.bravedns.net.doh.Transaction
-import com.celzero.bravedns.util.AndroidUidConfig
-import com.celzero.bravedns.util.Constants.Companion.EMPTY_PACKAGE_NAME
-import com.celzero.bravedns.util.Constants.Companion.INVALID_UID
-import com.celzero.bravedns.util.Constants.Companion.UNSPECIFIED_IP_IPV4
-import com.celzero.bravedns.util.Constants.Companion.UNSPECIFIED_IP_IPV6
-import com.celzero.bravedns.util.ResourceRecordTypes
-import com.celzero.bravedns.util.UIUtils.fetchFavIcon
-import com.celzero.bravedns.util.Utilities.getCountryCode
-import com.celzero.bravedns.util.Utilities.getFlag
-import com.celzero.bravedns.util.Utilities.makeAddressPair
-import com.celzero.bravedns.util.Utilities.normalizeIp
+import se.signalare.observer.R
+import se.signalare.observer.database.DnsLog
+import se.signalare.observer.database.DnsLogRepository
+import se.signalare.observer.net.doh.Transaction
+import se.signalare.observer.util.AndroidUidConfig
+import se.signalare.observer.util.Constants.Companion.EMPTY_PACKAGE_NAME
+import se.signalare.observer.util.Constants.Companion.INVALID_UID
+import se.signalare.observer.util.Constants.Companion.UNSPECIFIED_IP_IPV4
+import se.signalare.observer.util.Constants.Companion.UNSPECIFIED_IP_IPV6
+import se.signalare.observer.util.ResourceRecordTypes
+import se.signalare.observer.util.UIUtils.fetchFavIcon
+import se.signalare.observer.util.Utilities.getCountryCode
+import se.signalare.observer.util.Utilities.getFlag
+import se.signalare.observer.util.Utilities.makeAddressPair
+import se.signalare.observer.util.Utilities.normalizeIp
 import com.celzero.firestack.backend.Backend
 import com.celzero.firestack.backend.DNSSummary
 import kotlinx.coroutines.CoroutineScope

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -24,13 +24,13 @@ import androidx.cardview.widget.CardView
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.database.RemoteBlocklistPacksMap
-import com.celzero.bravedns.databinding.ListItemRethinkBlocklistSimpleBinding
-import com.celzero.bravedns.service.RethinkBlocklistManager
-import com.celzero.bravedns.ui.fragment.RethinkBlocklistFragment
-import com.celzero.bravedns.util.UIUtils.fetchColor
-import com.celzero.bravedns.util.UIUtils.fetchToggleBtnColors
+import se.signalare.observer.R
+import se.signalare.observer.database.RemoteBlocklistPacksMap
+import se.signalare.observer.databinding.ListItemRethinkBlocklistSimpleBinding
+import se.signalare.observer.service.RethinkBlocklistManager
+import se.signalare.observer.ui.fragment.RethinkBlocklistFragment
+import se.signalare.observer.util.UIUtils.fetchColor
+import se.signalare.observer.util.UIUtils.fetchToggleBtnColors
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

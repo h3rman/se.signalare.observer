@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.bottomsheet
+package se.signalare.observer.ui.bottomsheet
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -24,10 +24,10 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.BottomsheetResubscribeBinding
-import com.celzero.bravedns.iab.InAppBillingHandler
-import com.celzero.bravedns.util.Utilities.showToastUiCentered
+import se.signalare.observer.R
+import se.signalare.observer.databinding.BottomsheetResubscribeBinding
+import se.signalare.observer.iab.InAppBillingHandler
+import se.signalare.observer.util.Utilities.showToastUiCentered
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

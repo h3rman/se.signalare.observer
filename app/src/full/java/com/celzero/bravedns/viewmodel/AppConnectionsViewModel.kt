@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.viewmodel
+package se.signalare.observer.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -25,12 +25,12 @@ import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
 import androidx.paging.liveData
-import com.celzero.bravedns.data.AppConnection
-import com.celzero.bravedns.database.ConnectionTrackerDAO
-import com.celzero.bravedns.database.RethinkLogDao
-import com.celzero.bravedns.database.StatsSummaryDao
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.util.Constants
+import se.signalare.observer.data.AppConnection
+import se.signalare.observer.database.ConnectionTrackerDAO
+import se.signalare.observer.database.RethinkLogDao
+import se.signalare.observer.database.StatsSummaryDao
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.util.Constants
 
 class AppConnectionsViewModel(
     private val nwlogDao: ConnectionTrackerDAO,

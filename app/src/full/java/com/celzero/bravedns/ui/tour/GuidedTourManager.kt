@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.tour
+package se.signalare.observer.ui.tour
 
-import com.celzero.bravedns.R
-import com.celzero.bravedns.service.PersistentState
+import se.signalare.observer.R
+import se.signalare.observer.service.PersistentState
 
 /**
  * Singleton that owns the Home-screen guided tour flow.

@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import Logger
 import Logger.LOG_TAG_DNS
@@ -30,14 +30,14 @@ import androidx.lifecycle.lifecycleScope
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.database.DoTEndpoint
-import com.celzero.bravedns.databinding.ListItemEndpointBinding
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.util.UIUtils.clipboardCopy
-import com.celzero.bravedns.util.UIUtils.getDnsStatusStringRes
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.R
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.database.DoTEndpoint
+import se.signalare.observer.databinding.ListItemEndpointBinding
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.util.UIUtils.clipboardCopy
+import se.signalare.observer.util.UIUtils.getDnsStatusStringRes
+import se.signalare.observer.util.Utilities
 import com.celzero.firestack.backend.Backend
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers

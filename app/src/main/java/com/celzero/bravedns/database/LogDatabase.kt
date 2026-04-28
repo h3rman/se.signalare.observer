@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.database
+package se.signalare.observer.database
 
 import Logger
 import Logger.LOG_TAG_APP_DB
@@ -27,8 +27,8 @@ import androidx.room.TypeConverters
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SimpleSQLiteQuery
 import androidx.sqlite.db.SupportSQLiteDatabase
-import com.celzero.bravedns.util.Constants.Companion.EMPTY_PACKAGE_NAME
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.util.Constants.Companion.EMPTY_PACKAGE_NAME
+import se.signalare.observer.util.Utilities
 
 @Database(
     entities = [ConnectionTracker::class, DnsLog::class, RethinkLog::class, IpInfo::class, Event::class],

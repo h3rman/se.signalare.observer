@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.iab
+package se.signalare.observer.iab
 
 import Logger
 import Logger.LOG_IAB
 import android.os.Build
 import com.android.billingclient.api.BillingClient.ProductType
-import com.celzero.bravedns.RethinkDnsApplication.Companion.DEBUG
-import com.celzero.bravedns.customdownloader.IBillingServerApi
-import com.celzero.bravedns.customdownloader.IBillingServerApiTest
-import com.celzero.bravedns.customdownloader.SafeResponseConverterFactory
-import com.celzero.bravedns.customdownloader.RetrofitManager
-import com.celzero.bravedns.rpnproxy.RpnProxyManager
-import com.celzero.bravedns.service.PersistentState
+import se.signalare.observer.RethinkDnsApplication.Companion.DEBUG
+import se.signalare.observer.customdownloader.IBillingServerApi
+import se.signalare.observer.customdownloader.IBillingServerApiTest
+import se.signalare.observer.customdownloader.SafeResponseConverterFactory
+import se.signalare.observer.customdownloader.RetrofitManager
+import se.signalare.observer.rpnproxy.RpnProxyManager
+import se.signalare.observer.service.PersistentState
 import com.google.gson.JsonObject
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.Dispatchers

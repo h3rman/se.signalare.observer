@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.data.AllowedAppInfo
-import com.celzero.bravedns.databinding.ItemAllowedAppBinding
+import se.signalare.observer.R
+import se.signalare.observer.data.AllowedAppInfo
+import se.signalare.observer.databinding.ItemAllowedAppBinding
 
 class BubbleAllowedAppsAdapter(
     private val onRemoveClick: (AllowedAppInfo) -> Unit

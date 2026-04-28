@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.bottomsheet
+package se.signalare.observer.ui.bottomsheet
 
 import Logger
 import Logger.LOG_TAG_FIREWALL
@@ -31,26 +31,26 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.lifecycleScope
-import com.celzero.bravedns.R
-import com.celzero.bravedns.database.ConnectionTracker
-import com.celzero.bravedns.database.RethinkLog
-import com.celzero.bravedns.databinding.BottomSheetConnTrackBinding
-import com.celzero.bravedns.service.DomainRulesManager
-import com.celzero.bravedns.service.FirewallManager
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.ui.activity.AppInfoActivity
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.Protocol
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.UIUtils.fetchColor
-import com.celzero.bravedns.util.UIUtils.htmlToSpannedText
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.getIcon
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.Utilities.showToastUiCentered
-import com.celzero.bravedns.util.useTransparentNoDimBackground
+import se.signalare.observer.R
+import se.signalare.observer.database.ConnectionTracker
+import se.signalare.observer.database.RethinkLog
+import se.signalare.observer.databinding.BottomSheetConnTrackBinding
+import se.signalare.observer.service.DomainRulesManager
+import se.signalare.observer.service.FirewallManager
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.ui.activity.AppInfoActivity
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.Protocol
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.UIUtils.fetchColor
+import se.signalare.observer.util.UIUtils.htmlToSpannedText
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.getIcon
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.Utilities.showToastUiCentered
+import se.signalare.observer.util.useTransparentNoDimBackground
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.gson.Gson
 import kotlinx.coroutines.Dispatchers

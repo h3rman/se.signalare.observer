@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.fragment
+package se.signalare.observer.ui.fragment
 
 import Logger
 import android.content.Intent
@@ -32,24 +32,24 @@ import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import androidx.work.WorkInfo
 import androidx.work.WorkManager
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.adapter.RethinkEndpointAdapter
-import com.celzero.bravedns.customdownloader.LocalBlocklistCoordinator
-import com.celzero.bravedns.customdownloader.RemoteBlocklistCoordinator
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.databinding.FragmentRethinkListBinding
-import com.celzero.bravedns.download.AppDownloadManager
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.RethinkBlocklistManager
-import com.celzero.bravedns.ui.activity.ConfigureRethinkBasicActivity
-import com.celzero.bravedns.ui.activity.ConfigureRethinkBasicActivity.Companion.RETHINK_BLOCKLIST_TYPE
-import com.celzero.bravedns.ui.activity.ConfigureRethinkBasicActivity.Companion.UID
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.Constants.Companion.INIT_TIME_MS
-import com.celzero.bravedns.util.Constants.Companion.MAX_ENDPOINT
-import com.celzero.bravedns.util.UIUtils.fetchColor
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.viewmodel.RethinkEndpointViewModel
+import se.signalare.observer.R
+import se.signalare.observer.adapter.RethinkEndpointAdapter
+import se.signalare.observer.customdownloader.LocalBlocklistCoordinator
+import se.signalare.observer.customdownloader.RemoteBlocklistCoordinator
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.databinding.FragmentRethinkListBinding
+import se.signalare.observer.download.AppDownloadManager
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.RethinkBlocklistManager
+import se.signalare.observer.ui.activity.ConfigureRethinkBasicActivity
+import se.signalare.observer.ui.activity.ConfigureRethinkBasicActivity.Companion.RETHINK_BLOCKLIST_TYPE
+import se.signalare.observer.ui.activity.ConfigureRethinkBasicActivity.Companion.UID
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.Constants.Companion.INIT_TIME_MS
+import se.signalare.observer.util.Constants.Companion.MAX_ENDPOINT
+import se.signalare.observer.util.UIUtils.fetchColor
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.viewmodel.RethinkEndpointViewModel
 import com.google.android.material.chip.Chip
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

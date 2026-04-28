@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -23,10 +23,10 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.databinding.ListItemServerOrderBinding
-import com.celzero.bravedns.iab.ServerOrderEntry
-import com.celzero.bravedns.util.UIUtils
+import se.signalare.observer.R
+import se.signalare.observer.databinding.ListItemServerOrderBinding
+import se.signalare.observer.iab.ServerOrderEntry
+import se.signalare.observer.util.UIUtils
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale

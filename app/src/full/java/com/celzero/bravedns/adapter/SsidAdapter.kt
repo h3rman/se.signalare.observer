@@ -1,12 +1,12 @@
-package com.celzero.bravedns.adapter
+package se.signalare.observer.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.data.SsidItem
-import com.celzero.bravedns.databinding.ItemSsidBinding
-import com.celzero.bravedns.util.UIUtils
+import se.signalare.observer.R
+import se.signalare.observer.data.SsidItem
+import se.signalare.observer.databinding.ItemSsidBinding
+import se.signalare.observer.util.UIUtils
 
 class SsidAdapter(
     private val ssidItems: MutableList<SsidItem>,

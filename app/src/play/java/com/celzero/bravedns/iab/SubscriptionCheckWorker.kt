@@ -1,4 +1,4 @@
-package com.celzero.bravedns.iab
+package se.signalare.observer.iab
 
 import Logger
 import Logger.LOG_IAB
@@ -6,10 +6,10 @@ import android.content.Context
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
 import com.android.billingclient.api.BillingClient
-import com.celzero.bravedns.iab.InAppBillingHandler.isListenerRegistered
-import com.celzero.bravedns.rpnproxy.RpnProxyManager
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.VpnController
+import se.signalare.observer.iab.InAppBillingHandler.isListenerRegistered
+import se.signalare.observer.rpnproxy.RpnProxyManager
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.VpnController
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.koin.core.component.KoinComponent

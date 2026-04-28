@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.provider
+package se.signalare.observer.provider
 
 import Logger.LOG_PROVIDER
 import android.content.ContentProvider
@@ -22,11 +22,11 @@ import android.content.ContentValues
 import android.content.UriMatcher
 import android.database.Cursor
 import android.net.Uri
-import com.celzero.bravedns.RethinkDnsApplication.Companion.DEBUG
-import com.celzero.bravedns.database.CustomDomain
-import com.celzero.bravedns.database.CustomDomainRepository
-import com.celzero.bravedns.service.DomainRulesManager
-import com.celzero.bravedns.util.Constants
+import se.signalare.observer.RethinkDnsApplication.Companion.DEBUG
+import se.signalare.observer.database.CustomDomain
+import se.signalare.observer.database.CustomDomainRepository
+import se.signalare.observer.service.DomainRulesManager
+import se.signalare.observer.util.Constants
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -37,7 +37,7 @@ class DomainRuleProvider : ContentProvider() {
     private val customDomainRepository by inject<CustomDomainRepository>()
 
     companion object {
-        private const val AUTHORITY = "com.celzero.bravedns.domainrulesprovider"
+        private const val AUTHORITY = "se.signalare.observer.domainrulesprovider"
         private const val URI_DOMAIN_RULES = "vnd.android.cursor.dir/$AUTHORITY.domainrules"
 
         // apps: Uri.parse("content://$AUTHORITY/apps")

@@ -1,7 +1,7 @@
-package com.celzero.bravedns.iab.stripe
+package se.signalare.observer.iab.stripe
 
-import com.celzero.bravedns.customdownloader.RetrofitManager
-import com.celzero.bravedns.customdownloader.RetrofitManager.Companion.okHttpClient
+import se.signalare.observer.customdownloader.RetrofitManager
+import se.signalare.observer.customdownloader.RetrofitManager.Companion.okHttpClient
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

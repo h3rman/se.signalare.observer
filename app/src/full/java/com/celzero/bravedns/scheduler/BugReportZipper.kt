@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.celzero.bravedns.scheduler
+package se.signalare.observer.scheduler
 
 import Logger
 import Logger.LOG_TAG_BUG_REPORT
@@ -22,9 +22,9 @@ import android.app.ApplicationExitInfo
 import android.content.SharedPreferences
 import android.os.Build
 import androidx.annotation.RequiresApi
-import com.celzero.bravedns.BuildConfig
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.BuildConfig
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.Utilities
 import com.celzero.firestack.intra.Intra
 import com.google.common.io.Files
 import java.io.File

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.adapter
+package se.signalare.observer.ui.adapter
 
 import Logger.LOG_TAG_UI
 import android.content.Context
@@ -30,18 +30,18 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.celzero.bravedns.R
-import com.celzero.bravedns.database.CountryConfig
-import com.celzero.bravedns.databinding.ListItemVpnServerBinding
-import com.celzero.bravedns.rpnproxy.RpnProxyManager
-import com.celzero.bravedns.service.ProxyManager
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.service.WireguardManager
-import com.celzero.bravedns.ui.activity.RpnConfigDetailActivity
-import com.celzero.bravedns.ui.fragment.ServerSelectionFragment.Companion.AUTO_SERVER_ID
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.UIUtils.fetchColor
-import com.celzero.bravedns.util.Utilities
+import se.signalare.observer.R
+import se.signalare.observer.database.CountryConfig
+import se.signalare.observer.databinding.ListItemVpnServerBinding
+import se.signalare.observer.rpnproxy.RpnProxyManager
+import se.signalare.observer.service.ProxyManager
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.service.WireguardManager
+import se.signalare.observer.ui.activity.RpnConfigDetailActivity
+import se.signalare.observer.ui.fragment.ServerSelectionFragment.Companion.AUTO_SERVER_ID
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.UIUtils.fetchColor
+import se.signalare.observer.util.Utilities
 import com.celzero.firestack.backend.Backend
 import com.celzero.firestack.backend.RouterStats
 import kotlinx.coroutines.Dispatchers

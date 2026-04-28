@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.download
+package se.signalare.observer.download
 
 import Logger
 import Logger.LOG_TAG_DOWNLOAD
@@ -22,7 +22,7 @@ import android.content.Context
 import android.os.SystemClock
 import androidx.work.Worker
 import androidx.work.WorkerParameters
-import com.celzero.bravedns.service.PersistentState
+import se.signalare.observer.service.PersistentState
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import java.util.concurrent.TimeUnit

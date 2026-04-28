@@ -13,18 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.e
  */
-package com.celzero.bravedns.service
+package se.signalare.observer.service
 
 import android.content.Context
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.database.WgConfigFilesImmutable
-import com.celzero.bravedns.database.WgConfigFilesRepository
-import com.celzero.bravedns.database.WgHopMapRepository
-import com.celzero.bravedns.service.ProxyManager.ID_WG_BASE
-import com.celzero.bravedns.wireguard.Config as WgConfig
-import com.celzero.bravedns.wireguard.Peer
-import com.celzero.bravedns.wireguard.WgInterface
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.database.WgConfigFilesImmutable
+import se.signalare.observer.database.WgConfigFilesRepository
+import se.signalare.observer.database.WgHopMapRepository
+import se.signalare.observer.service.ProxyManager.ID_WG_BASE
+import se.signalare.observer.wireguard.Config as WgConfig
+import se.signalare.observer.wireguard.Peer
+import se.signalare.observer.wireguard.WgInterface
 import io.mockk.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi

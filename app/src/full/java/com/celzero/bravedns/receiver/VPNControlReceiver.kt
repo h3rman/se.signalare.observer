@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.celzero.bravedns.receiver
+package se.signalare.observer.receiver
 
 import Logger
 import Logger.LOG_TAG_VPN
@@ -22,11 +22,11 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.net.VpnService
-import com.celzero.bravedns.RethinkDnsApplication.Companion.DEBUG
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.util.Utilities.isAtleastT
-import com.celzero.bravedns.util.Utilities.isAtleastU
+import se.signalare.observer.RethinkDnsApplication.Companion.DEBUG
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.util.Utilities.isAtleastT
+import se.signalare.observer.util.Utilities.isAtleastU
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 
@@ -34,8 +34,8 @@ class VpnControlReceiver: BroadcastReceiver(), KoinComponent {
     private val persistentState by inject<PersistentState>()
     companion object {
         private const val TAG = "VpnCtrlRecr"
-        private const val ACTION_START = "com.celzero.bravedns.intent.action.VPN_START"
-        private const val ACTION_STOP = "com.celzero.bravedns.intent.action.VPN_STOP"
+        private const val ACTION_START = "se.signalare.observer.intent.action.VPN_START"
+        private const val ACTION_STOP = "se.signalare.observer.intent.action.VPN_STOP"
         private const val STOP_REASON = "tasker_stop"
     }
 

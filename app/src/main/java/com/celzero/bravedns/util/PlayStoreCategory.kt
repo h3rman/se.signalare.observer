@@ -13,7 +13,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
 // Hash codes of Play Store category names used for efficient lookups, not magic numbers
 @Suppress("MagicNumber")

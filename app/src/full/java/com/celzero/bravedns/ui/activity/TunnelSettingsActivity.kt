@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.activity
+package se.signalare.observer.ui.activity
 
 import Logger
 import Logger.LOG_TAG_UI
@@ -26,33 +26,33 @@ import android.widget.ArrayAdapter
 import android.widget.CompoundButton
 import android.widget.SeekBar
 import android.widget.Toast
-import com.celzero.bravedns.ui.BaseActivity
+import se.signalare.observer.ui.BaseActivity
 import androidx.appcompat.widget.AppCompatRadioButton
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.lifecycleScope
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.celzero.bravedns.R
-import com.celzero.bravedns.data.AppConfig
-import com.celzero.bravedns.database.EventSource
-import com.celzero.bravedns.database.EventType
-import com.celzero.bravedns.database.Severity
-import com.celzero.bravedns.databinding.ActivityTunnelSettingsBinding
-import com.celzero.bravedns.service.EventLogger
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.service.VpnController
-import com.celzero.bravedns.ui.dialog.NetworkReachabilityDialog
-import com.celzero.bravedns.util.Constants
-import com.celzero.bravedns.util.InternetProtocol
-import com.celzero.bravedns.util.NewSettingsManager
-import com.celzero.bravedns.util.SnackbarHelper
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.UIUtils
-import com.celzero.bravedns.util.UIUtils.setBadgeDotVisible
-import com.celzero.bravedns.util.Utilities
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.Utilities.showToastUiCentered
-import com.celzero.bravedns.util.handleFrostEffectIfNeeded
+import se.signalare.observer.R
+import se.signalare.observer.data.AppConfig
+import se.signalare.observer.database.EventSource
+import se.signalare.observer.database.EventType
+import se.signalare.observer.database.Severity
+import se.signalare.observer.databinding.ActivityTunnelSettingsBinding
+import se.signalare.observer.service.EventLogger
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.service.VpnController
+import se.signalare.observer.ui.dialog.NetworkReachabilityDialog
+import se.signalare.observer.util.Constants
+import se.signalare.observer.util.InternetProtocol
+import se.signalare.observer.util.NewSettingsManager
+import se.signalare.observer.util.SnackbarHelper
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.UIUtils
+import se.signalare.observer.util.UIUtils.setBadgeDotVisible
+import se.signalare.observer.util.Utilities
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.Utilities.showToastUiCentered
+import se.signalare.observer.util.handleFrostEffectIfNeeded
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import org.koin.android.ext.android.inject
 import java.util.concurrent.TimeUnit
@@ -592,7 +592,7 @@ class TunnelSettingsActivity : BaseActivity(R.layout.activity_tunnel_settings) {
             if (Themes.isFrostTheme(themeId)) {
                 themeId = R.style.App_Dialog_NoDim
             }
-            val dialog = com.celzero.bravedns.ui.dialog.CustomLanIpDialog(
+            val dialog = se.signalare.observer.ui.dialog.CustomLanIpDialog(
                 this,
                 persistentState,
                 themeId

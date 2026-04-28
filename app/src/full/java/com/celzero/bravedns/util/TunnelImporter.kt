@@ -16,7 +16,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.util
+package se.signalare.observer.util
 
 import Logger
 import Logger.LOG_TAG_PROXY
@@ -24,10 +24,10 @@ import android.content.ContentResolver
 import android.content.Context
 import android.net.Uri
 import android.provider.OpenableColumns
-import com.celzero.bravedns.R
-import com.celzero.bravedns.service.WireguardManager
-import com.celzero.bravedns.wireguard.Config
-import com.celzero.bravedns.wireguard.util.ErrorMessages
+import se.signalare.observer.R
+import se.signalare.observer.service.WireguardManager
+import se.signalare.observer.wireguard.Config
+import se.signalare.observer.wireguard.util.ErrorMessages
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.koin.core.component.KoinComponent

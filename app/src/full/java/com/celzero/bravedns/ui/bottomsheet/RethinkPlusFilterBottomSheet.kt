@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.celzero.bravedns.ui.bottomsheet
+package se.signalare.observer.ui.bottomsheet
 
 import android.content.res.Configuration
 import android.graphics.PorterDuff
@@ -25,14 +25,14 @@ import android.view.ViewGroup
 import android.widget.CompoundButton
 import androidx.core.content.ContextCompat
 import androidx.core.view.WindowInsetsControllerCompat
-import com.celzero.bravedns.R
-import com.celzero.bravedns.data.FileTag
-import com.celzero.bravedns.databinding.BottomSheetRethinkPlusFilterBinding
-import com.celzero.bravedns.service.PersistentState
-import com.celzero.bravedns.ui.fragment.RethinkBlocklistFragment
-import com.celzero.bravedns.util.Themes
-import com.celzero.bravedns.util.Utilities.isAtleastQ
-import com.celzero.bravedns.util.useTransparentNoDimBackground
+import se.signalare.observer.R
+import se.signalare.observer.data.FileTag
+import se.signalare.observer.databinding.BottomSheetRethinkPlusFilterBinding
+import se.signalare.observer.service.PersistentState
+import se.signalare.observer.ui.fragment.RethinkBlocklistFragment
+import se.signalare.observer.util.Themes
+import se.signalare.observer.util.Utilities.isAtleastQ
+import se.signalare.observer.util.useTransparentNoDimBackground
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.chip.Chip
 import org.koin.android.ext.android.inject
